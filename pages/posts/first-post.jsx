@@ -13,13 +13,14 @@ const FirstPost = () => {
       <p>If you are a React js developer and understand its concepts then, you should consider moving to Next js for the following reasons:</p>
       <ol>
         <li>Built-in Routing Support</li>
-        <li>700 times faster speed in Production</li>
+        <li>700 Times Faster speed in Froduction</li>
         <li>Ability to write both backend and frontend code</li>
         <li>Search Engine Optimization (SEO)</li>
         <li>Scalability</li>
       </ol>
       <p> <strong>Note:-</strong> if you are a student who is building a website using HTML, CSS , JavaScript and Bootstrap, I recommend you learning the basics of React js and then moving on to Next js.</p>
       <hr />
+      <div>
       <p className={utilStyles.headingLg}>1. Built-in Routing Support</p>
       <p>Next js provides a built-in-file-based Routing system, which means you don't need to use any external packages or libraries, React js requires the use of react-router-dom for Routing.</p>
       <h4>For below version to Next.js 13</h4>  
@@ -30,6 +31,18 @@ const FirstPost = () => {
       </p>
       <h4>Include params in Route (:id)</h4>  
       <p>If you want to create a route like <strong>student/:id</strong>, you can create a file called  <strong>[id].js</strong> inside a folder called <strong>student</strong> under the pages directory.</p>
+      </div>
+      <hr />
+      <div>
+      <p className={utilStyles.headingLg}>2. 700 Times Faster Speed in Production</p>
+      <strong>Meaning?</strong>
+      <p>Next.js can be up to 700 times faster in  production mode, which means that When you are building a website and it's running on localhost, any changes you make and save will updated 700 times faster than React. However, in deploment mode, it's speed approximately the same as to React.
+      </p>
+      <strong>Why?</strong>
+      <p>Next.js uses Turbopack, which can updated up to 700 times faster than webpack used by react.</p>
+      <strong>Advantage?</strong>
+      <p>It saves developers time by updating code quickly in production mode.</p>
+      </div>
     </Layout>
   );
 };
