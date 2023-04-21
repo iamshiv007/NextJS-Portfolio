@@ -1,7 +1,6 @@
 import Layout from "@/components/layout";
 import Head from "next/head";
 import utilStyles from "../../styles/utils.module.css";
-import { useEffect, useState } from "react";
 
 const FirstPost = () => {
   return (
@@ -90,8 +89,32 @@ const FirstPost = () => {
         <p className={utilStyles.headingLg}>
           3. Write both Backend and Frontend
         </p>
-        <p>Next js provides developers with a built-in server system, which means that you don't need to set up a separate server to write backend code for your application.</p>
-        <p>When you create a Next js app, a built-in folder called api automatically created inside the pages directory. You can create any file inside this api folder, and you can access the API defined in these files by using the api/&lt;fileName&gt;</p>
+        <p>
+          Next js provides developers with a built-in server system, which means
+          that you don't need to set up a separate server to write backend code
+          for your application.
+        </p>
+        <p>
+          When you create a Next js app, a built-in folder called api
+          automatically created inside the pages directory. You can create any
+          file inside this api folder, and you can access the API defined in
+          these file by using the api/&lt;fileName&gt;
+        </p>
+      </div>
+      <hr />
+      <div>
+        <p className={utilStyles.headingLg}>
+          4. Search Engine Optimization (SEO)
+        </p>
+        <p>
+          SEO means the ranking of your website on Search Engines such as Google, Bing, Yahoo and DuckDuckGo etc.
+        </p>
+        <p>
+          Load speed is the one of most important factors when it comes to SEO and Google ranking and with Next.js you're simply faster. What makes Next.js stand out against other popular framework, is that it renders the HTML on the server(server-side) rather than in the browser (client side)
+        </p>
+        <p>
+
+        </p>
       </div>
     </Layout>
   );
