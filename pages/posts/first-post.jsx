@@ -98,7 +98,7 @@ const FirstPost = () => {
           When you create a Next js app, a built-in folder called api
           automatically created inside the pages directory. You can create any
           file inside this api folder, and you can access the API defined in
-          these file by using the api/&lt;fileName&gt;
+          these file by using the api/&lt;fileName&gt;.
         </p>
       </div>
       <hr />
@@ -107,13 +107,24 @@ const FirstPost = () => {
           4. Search Engine Optimization (SEO)
         </p>
         <p>
-          SEO means the ranking of your website on Search Engines such as Google, Bing, Yahoo and DuckDuckGo etc.
+          SEO means the ranking of your website on Search Engines such as
+          Google, Bing, Yahoo and DuckDuckGo etc.
         </p>
         <p>
-          Load speed is the one of most important factors when it comes to SEO and Google ranking and with Next.js you're simply faster. What makes Next.js stand out against other popular framework, is that it renders the HTML on the server(server-side) rather than in the browser (client side)
+          Load speed is the one of most important factors when it comes to SEO
+          and Google ranking and with Next.js you're simply faster. What makes
+          Next.js stand out against other popular framework, is that it renders
+          the HTML on the server(server-side) rather than in the browser (client
+          side).
         </p>
+      </div>
+      <div>
+        <p className={utilStyles.headingLg}>5. Scalability</p>
         <p>
-
+          Due to it's numerouse benefits such as Search Engine
+          Optimization(SEO), time-saving for Developers, Built-in Server system
+          and Built-in file-based Routing system, Next.js is a scalable platform with a
+          bright future in Web Development.
         </p>
       </div>
     </Layout>

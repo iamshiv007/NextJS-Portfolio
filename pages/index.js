@@ -21,8 +21,8 @@ export default function Home() {
         <p className={utilStyles.headingSm}>Aprile 17, 2023</p>
         </div>
         <div className={utilStyles.gap1}>
-        <Link href='/posts/second-post'>New Features in Next js <span>or</span> Next js Vs React js</Link>
-        <p className={utilStyles.headingSm}>Aprile 20, 2023</p>
+        <Link href='/posts/second-post'>Not Available</Link>
+        {/* <p className={utilStyles.headingSm}>Aprile 20, 2023</p> */}
         </div>
       </section>
     </Layout>

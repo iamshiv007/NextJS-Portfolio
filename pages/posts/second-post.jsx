@@ -6,10 +6,8 @@ const SecondPost = () => {
   return (
     <Layout>
       <Head>
-        <title>Next js Vs React js</title>
+        <title>Not Available</title>
       </Head>
-      <p>Next js Vs React js</p>
-      <p className={utilStyles.headingSm}>Aprile 20, 2023</p>
     </Layout>
   );
 };
