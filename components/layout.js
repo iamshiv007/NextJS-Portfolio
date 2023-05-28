@@ -30,8 +30,8 @@ export default function Layout({ children, home }) {
           <>
             <Image
               priority
-              src="/images/profile.png"
-              className={utilStyles.borderCircle}
+              src="/images/shivraj.jpg"
+              className={`w-44 h-44 object-cover rounded-[100%]`}
               height={144}
               width={144}
               alt=""
@@ -43,8 +43,8 @@ export default function Layout({ children, home }) {
             <Link href="/">
               <Image
                 priority
-                src="/images/profile.png"
-                className={utilStyles.borderCircle}
+                src="/images/shivraj.jpg"
+                className={`rounded-full object-cover w-32 h-32`}
                 height={108}
                 width={108}
                 alt=""

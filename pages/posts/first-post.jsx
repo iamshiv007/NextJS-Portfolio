@@ -10,7 +10,7 @@ const FirstPost = () => {
       </Head>
       <p className={utilStyles.headingXl}>Why you should move in to Next js</p>
       <p className={utilStyles.headingSm}>Aprile 17, 2023</p>
-      <p>
+      <p className="text-blue-700">
         If you are a React js developer and understand its concepts then, you
         should consider moving to Next js for the following reasons:
       </p>
@@ -123,8 +123,8 @@ const FirstPost = () => {
         <p>
           Due to it's numerouse benefits such as Search Engine
           Optimization(SEO), time-saving for Developers, Built-in Server system
-          and Built-in file-based Routing system, Next.js is a scalable platform with a
-          bright future in Web Development.
+          and Built-in file-based Routing system, Next.js is a scalable platform
+          with a bright future in Web Development.
         </p>
       </div>
     </Layout>
