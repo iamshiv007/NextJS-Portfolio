@@ -27,6 +27,6 @@ export default async function handler(req, res) {
 
 
   User.create({ image })
-    .then((res) => res.send(res.status(201).json(success: true, message: "User createsd")))
-    .catch((err) => res.send(err))
+    .then((res) => res.status(201).json({ success: true, message: "User createsd" }))
+    .catch((err) => res.status(500).json(err))
 }
