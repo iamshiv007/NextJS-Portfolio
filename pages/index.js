@@ -17,12 +17,17 @@ export default function Home() {
         </p>
         <p className={utilStyles.headingLg}>Blog</p>
         <div>
-        <Link href='/posts/first-post'>Why we should move in to Next js</Link>
-        <p className={utilStyles.headingSm}>Aprile 17, 2023</p>
+          <Link href='/posts/first-post'>Why we should move in to Next js</Link>
+          <p className={utilStyles.headingSm}>Aprile 17, 2023</p>
         </div>
         <div className={utilStyles.gap1}>
-        <Link href='/posts/second-post'>Not Available</Link>
-        {/* <p className={utilStyles.headingSm}>Aprile 20, 2023</p> */}
+          <Link href='/posts/css-transform'>CSS transform property</Link>
+          <p className={utilStyles.headingSm}>May 29, 2023</p>
+          {/* <p className={utilStyles.headingSm}>Aprile 20, 2023</p> */}
+        </div>
+        <div className={utilStyles.gap1}>
+          <Link href={'/posts/blend-mode'}>CSS background-blend-mode</Link>
+          <p className={utilStyles.headingSm}>May 30, 2023</p>
         </div>
       </section>
     </Layout>
