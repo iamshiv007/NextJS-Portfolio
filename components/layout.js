@@ -9,7 +9,7 @@ export const siteTitle = 'Shiv\'s Next.js Blog';
 
 export default function Layout({ children, home }) {
   return (
-    <div className={styles.container}>
+    <div className='m-auto w-[90%]'>
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <meta

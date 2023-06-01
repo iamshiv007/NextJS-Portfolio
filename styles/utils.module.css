@@ -29,7 +29,6 @@
 .headingSm {
   font-size: 0.9rem;
   line-height: 1.6;
-  margin: 0.4rem 0;
   color: rgba(0, 0, 0, 0.6);
 }
 
@@ -53,4 +52,12 @@
 
 .lightText {
   color: #666;
+}
+
+.shadow1 {
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.shadow1:hover {
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
 }
