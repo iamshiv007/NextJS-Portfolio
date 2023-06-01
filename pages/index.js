@@ -29,6 +29,10 @@ export default function Home() {
           <Link href={'/posts/blend-mode'}>CSS background-blend-mode</Link>
           <p className={utilStyles.headingSm}>May 30, 2023</p>
         </div>
+        <div className={utilStyles.gap1}>
+          <Link href={'/posts/css-rare-selector'}>CSS Rare Selector</Link>
+          <p className={utilStyles.headingSm}>May 31, 2023</p>
+        </div>
       </section>
     </Layout>
   );
