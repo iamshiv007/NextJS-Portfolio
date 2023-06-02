@@ -28,6 +28,9 @@ export default function Home() {
 
           {/* Css Rare Selector */}
           <CssSelector />
+
+          {/* Hoisting in JavaScript */}
+          <Hoisting />
         </div>
       </section>
     </Layout>
@@ -100,6 +103,23 @@ const CssSelector = () => {
         <div className="px-1 py-2">
           <Link href={"/posts/css-rare-selector"}>CSS Rare Selector</Link>
           <p className={utilStyles.headingSm}>May 31, 2023</p>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+const Hoisting = () => {
+  return (
+    <div>
+      <div className={utilStyles.shadow1}>
+        <img
+          src="https://internetingishard.netlify.app/css-selectors-1f0064.464e0c0e.png"
+          alt=""
+        />
+        <div className="px-1 py-2">
+          <Link href={"/posts/Hoisting"}>Hoisting In Javasript</Link>
+          <p className={utilStyles.headingSm}>June 1, 2023</p>
         </div>
       </div>
     </div>
