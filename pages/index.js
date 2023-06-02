@@ -34,6 +34,9 @@ export default function Home() {
 
           {/* Hoisting in JavaScript */}
           <Hoisting />
+
+          {/* React Responsive Carousel */}
+          <ReactResCarousel />
         </div>
       </section>
     </Fragment>
@@ -123,6 +126,23 @@ const Hoisting = () => {
         <div className="px-1 py-2">
           <Link href={"/posts/Hoisting"}>Hoisting In Javasript</Link>
           <p className={utilStyles.headingSm}>June 1, 2023</p>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+const ReactResCarousel = () => {
+  return (
+    <div>
+      <div className={utilStyles.shadow1}>
+        <img
+          src="https://cdn.hashnode.com/res/hashnode/image/upload/v1612248117684/PTiy4Ga2n.jpeg?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webpy"
+          alt=""
+        />
+        <div className="px-1 py-2">
+          <Link href={"/posts/react-res-carousel"}>React Responsive Carousel</Link>
+          <p className={utilStyles.headingSm}>June 2, 2023</p>
         </div>
       </div>
     </div>
