@@ -6,13 +6,13 @@ const Intro = () => {
       <div className="flex flex-col-reverse md:flex-row-reverse">
         <div className="md:w-[70%] w-fit m-auto p-4">
           <img className="w-12 h-12 hiIcon" src="./images/hii.png" alt="" />{" "}
-          <h1 className="md:text-5xl text-3xl myName">My Name Shivraj.</h1>
+          <h1 className="md:text-5xl text-3xl myName">My Name is Shivraj.</h1>
           <MyProfession />
         </div>
         <div className="md:w-[30%] p-4">
           {" "}
           <img
-            className="myImage w-44 rounded-full h-44 object-cover m-auto"
+            className="myImage md:w-44 md:h-44 w-32 h-32 rounded-full object-cover m-auto"
             src="./images/shivraj.jpg"
             alt=""
           />
