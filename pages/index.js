@@ -1,20 +1,23 @@
 import Head from "next/head";
-import Layout, { siteTitle } from "../components/layout";
+import { siteTitle } from "../components/layout";
 import utilStyles from "../styles/utils.module.css";
 import Link from "next/link";
+import { Fragment } from "react";
+import Intro from "@/components/Intro";
 
 export default function Home() {
   return (
-    <Layout home>
+    <Fragment>
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <section className={utilStyles.headingMd}>
-        <p>Hi</p>
+      <Intro />
+      <section className={`${utilStyles.headingMd} w-[90%] m-auto`}>
+        {/* <p>Hi</p>
         <p>
           My name is Shivraj. I am a full stack web developer. I was done many
           projects basic to advance level in MERN stack.
-        </p>
+        </p> */}
         <p className={utilStyles.headingLg}>Blogs</p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 rounded-md mb-5">
           {/* Why Next JS */}
@@ -33,7 +36,7 @@ export default function Home() {
           <Hoisting />
         </div>
       </section>
-    </Layout>
+    </Fragment>
   );
 }
 
@@ -114,7 +117,7 @@ const Hoisting = () => {
     <div>
       <div className={utilStyles.shadow1}>
         <img
-          src="https://internetingishard.netlify.app/css-selectors-1f0064.464e0c0e.png"
+          src="https://cdn.hashnode.com/res/hashnode/image/upload/v1612248117684/PTiy4Ga2n.jpeg?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webpy"
           alt=""
         />
         <div className="px-1 py-2">
