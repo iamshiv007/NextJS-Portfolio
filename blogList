@@ -1,0 +1,17 @@
+{/* Why Next JS */}
+<WhyNextJS />
+
+{/* CSS Transform */}
+<CssTransform />
+
+{/* background-blend-mode */}
+<BlendMode />
+
+{/* Css Rare Selector */}
+<CssSelector />
+
+{/* Hoisting in JavaScript */}
+<Hoisting />
+
+{/* React Responsive Carousel */}
+<ReactResCarousel />
