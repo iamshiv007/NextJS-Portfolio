@@ -17,7 +17,7 @@ const FirstPost = () => {
               <BsFillArrowLeftSquareFill /> <p className="px-2"> Home</p>
             </div>
           </Link> */}
-          <p className="text-4xl mt-4">Why you should move in to Next js</p>
+          <h1 className="text-4xl mt-4">Why you should move in to Next js</h1>
           <p className="text-sm text-gray-600 my-2">Aprile 17, 2023</p>
           <div className="mt-5">
             <p className="font-bold">
