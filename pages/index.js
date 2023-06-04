@@ -1,25 +1,31 @@
 import Head from "next/head";
 import { siteTitle } from "../components/layout";
 import utilStyles from "../styles/utils.module.css";
-import { Fragment } from "react";
+import { Fragment, useState } from "react";
 import Intro from "@/components/Intro";
 import Blogs from "@/components/Blogs";
+import ThemeBtn from "@/components/ThemeBtn";
 
 export default function Home() {
+  const [darkTheme, setDarkTheme] = useState(false);
+  
   return (
     <Fragment>
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <Intro />
-      <section className={`${utilStyles.headingMd} w-[90%] m-auto`}>
-        <p className={utilStyles.headingLg}>Blogs</p>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 rounded-md mb-5">
-          <Blogs />
+      <div className={darkTheme ? "dark" : ""}>
+        <ThemeBtn setDarkTheme={setDarkTheme} darkTheme={darkTheme} />
+        <div
+          className="
+       dark:bg-gray-700 "
+        >
+          <Intro />
+          <div className={`${utilStyles.headingMd} w-[90%] m-auto`}>
+            <Blogs />
+          </div>
         </div>
-      </section>
+      </div>
     </Fragment>
   );
 }
-
-
