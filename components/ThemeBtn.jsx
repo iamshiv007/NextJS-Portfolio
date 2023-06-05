@@ -1,13 +1,16 @@
-import React from "react";
+import React, { useContext } from "react";
+import { BlogContext } from "@/contextApi/blogContext";
 import { BsMoon, BsSun } from "react-icons/bs";
 
-const ThemeBtn = ({ darkTheme, setDarkTheme }) => {
+const ThemeBtn = () => {
+  const { dark, setDark } = useContext(BlogContext);
+
   return (
     <div
-      onClick={() => setDarkTheme(!darkTheme)}
+      onClick={() => setDark(!dark)}
       className="w-fit fixed right-3 bottom-6 rounded-full shadow-md shadow-gray-700 dark:shadow-white p-2 text-2xl dark:bg-black dark:text-white cursor-pointer"
     >
-      {darkTheme ? <BsSun /> : <BsMoon />}
+      {dark ? <BsSun /> : <BsMoon />}
     </div>
   );
 };
