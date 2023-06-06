@@ -1,9 +1,9 @@
 import Head from "next/head";
-import utilStyles from "../../styles/utils.module.css";
 import { Fragment } from "react";
 import Link from "next/link";
-import { BsFillArrowLeftSquareFill } from "react-icons/bs";
 import Navbar from "@/components/Navbar";
+import ThemeBtn from "@/components/ThemeBtn";
+import Theme from "@/components/Theme";
 
 const FirstPost = () => {
   return (
@@ -11,87 +11,72 @@ const FirstPost = () => {
       <Head>
         <title>Why Next js</title>
       </Head>
+      <Theme>
+        <Navbar />
 
-      <Navbar />
+        <ThemeBtn />
 
-      <div className="layoutContainer">
-        <div className="layoutBox1">
-          <h1 className="text-3xl font-bold mt-4 bg-blue-400 p-2 rounded-md">
-            Why you should move in to Next js
-          </h1>
-          <p className="text-sm text-gray-600 my-2">Aprile 17, 2023</p>
-          <div className="mt-5">
-            <p className="font-bold">
-              If you are a React js developer and understand its concepts then,
-              you should consider moving to Next js for the following reasons:
-            </p>
-            <ol>
-              <li>
-                <Link href="#">
-                  1. Built-in Routing Support (Super easy to code)
-                </Link>
-              </li>
-              <li>
-                <Link href="#">
-                  2. 700 Times Faster speed in production (Fast)
-                </Link>
-              </li>
-              <li>
-                <Link href="#">
-                  3. Ability to write both Backend and Frontend code (API
-                  support)
-                </Link>
-              </li>
-              <li>
-                <Link href="#">4. Search Engine Optimization (SEO)</Link>
-              </li>
-            </ol>
-            <div className="w-fit m-auto pt-2">
-              {/* <img
-                    src="https://static.agilitycms.com/illustrations/blog-illustrations/benefits-of-next.js.jpg?w=800"
-                    alt=""
-                    className="w-[600px]"
-                  /> */}
+        <div className="layoutContainer h-full">
+          <div className="layoutBox1">
+            <h1 className="text-3xl font-bold mt-4 bg-blue-400 dark:bg-blue-800 p-2 rounded-md">
+              Why you should move in to Next js
+            </h1>
+            <p className="text-sm text-gray-600 my-2">Aprile 17, 2023</p>
+            <div className="mt-5">
+              <p className="font-bold">
+                If you are a React js developer and understand its concepts
+                then, you should consider moving to Next js for the following
+                reasons:
+              </p>
+              <ol>
+                <li>
+                  <Link href="#">
+                    1. Built-in Routing Support (Super easy to code)
+                  </Link>
+                </li>
+                <li>
+                  <Link href="#">
+                    2. 700 Times Faster speed in production (Fast)
+                  </Link>
+                </li>
+                <li>
+                  <Link href="#">
+                    3. Ability to write both Backend and Frontend code (API
+                    support)
+                  </Link>
+                </li>
+                <li>
+                  <Link href="#">4. Search Engine Optimization (SEO)</Link>
+                </li>
+              </ol>
+              <p className="bg-gray-200 my-4 p-2 rounded dark:bg-black">
+                {" "}
+                <strong>Note:-</strong> if you are a student who is building a
+                website using HTML, CSS , JavaScript and Bootstrap, I recommend
+                you learning the basics of React js and then moving on to Next
+                js.
+              </p>
+              <hr />
+              {/* Routing */}
+              <BuiltInRouting />
+
+              <hr />
+              {/* Speed */}
+              <FasterSpeed />
+
+              <hr />
+              {/* Api */}
+              <ApiSupport />
+
+              <hr />
+              {/* SEO */}
+              <Seo />
             </div>
-            <p className="bg-gray-200 my-4 p-2 rounded">
-              {" "}
-              <strong>Note:-</strong> if you are a student who is building a
-              website using HTML, CSS , JavaScript and Bootstrap, I recommend
-              you learning the basics of React js and then moving on to Next js.
-            </p>
-            <hr />
-            {/* Routing */}
-            <BuiltInRouting />
-
-            <hr />
-            {/* Speed */}
-            <FasterSpeed />
-
-            <hr />
-            {/* Api */}
-            <ApiSupport />
-
-            <hr />
-            {/* SEO */}
-            <Seo />
           </div>
-        </div>
 
-        <div className="layoutBox2">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-          libero quibusdam minus ad odit voluptate dolores, asperiores
-          repudiandae tempore quae, nobis tempora, autem ut dolorem reiciendis
-          fugit. Rem voluptatibus est at cumque modi hic. Perspiciatis, fuga.
-          Laudantium impedit, repellat molestias saepe, laboriosam labore
-          expedita doloribus, iusto culpa placeat ullam voluptas soluta natus.
-          Officia rerum reiciendis illo totam incidunt. Culpa veniam consequatur
-          illum assumenda sed dolorem saepe officiis debitis at eos doloribus
-          temporibus distinctio, fuga, ullam officia adipisci impedit odit
-          nobis, vel quos numquam inventore voluptate corrupti! Magnam ea
-          mollitia qui, dicta sunt reiciendis dignissimos perspiciatis nemo.
-          Architecto fuga in animi.
+          <div className="layoutBox2">Lorem</div>
         </div>
-      </div>
+      </Theme>
     </Fragment>
   );
 };
@@ -107,16 +92,40 @@ const BuiltInRouting = () => {
         don't need to use any external packages or libraries, React js requires
         the use of react-router-dom for Routing.
       </p>
-      <h4 className="font-bold">For below version to Next.js 13</h4>
+      <h4 className="font-bold my-1">For Pages directory</h4>
+      <img
+        className="sm:w-[60%] w-[90%] m-auto mt-3"
+        src="https://res.cloudinary.com/practicaldev/image/fetch/s--DIT1rRjH--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://raw.githubusercontent.com/akuks/Misc/main/Images/nextjs_routing.png"
+        alt="image1"
+      />
+      <p className="text-center mb-3">Image 1</p>
       <p className="text-gray-700 text-sm">
         Currently, i am working with Next js 13.3.0, where pages directory used
         for routing(Because the app directory is in experimental mode). For
         example if you create a directory called <strong>my-folder</strong>{" "}
         under the pages directory and create a file called{" "}
         <strong>my-file.js</strong>, the route to access this file will be{" "}
-        <strong>my-folder/my-file</strong>.
+        <strong>my-folder/my-file</strong>. &#123;image 1&#125;
       </p>
-      <h4 className="font-bold">For above or equal version to Next.js 13</h4>
+      <h4 className="font-bold my-1">Include params in Route (:id)</h4>
+      <p className="text-gray-700 text-sm">
+        If you want to create a route like <strong>student/:id</strong>, you can
+        create a file called <strong>[id].js</strong> inside a folder called{" "}
+        <strong>student</strong> under the pages directory. &#123;image 1&#125;
+      </p>
+      <h4 className="font-bold my-1">For app directory</h4>
+      <img
+        className="sm:w-[75%] w-[90%] m-auto mt-3"
+        src="https://vercel.com/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fe5382hct74si%2FTvIi0gcnHOrapoHrT3qjq%2F9039474cdf25f27125cbdbdde35f32f5%2Froute-segments-to-path-segments.png&w=1920&q=75"
+        alt="image2"
+      />
+      <p className="text-center mb-3">Image 2</p>
+      <img
+        className="sm:w-[75%] w-[90%] m-auto mt-3"
+        src="https://vercel.com/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fe5382hct74si%2FTvIi0gcnHOrapoHrT3qjq%2F9039474cdf25f27125cbdbdde35f32f5%2Froute-segments-to-path-segments.png&w=1920&q=75"
+        alt="image3"
+      />
+      <p className="text-center mb-3">Image 3</p>
       <p className="text-gray-700 text-sm">
         If you are working with Next js version 13 or above and have an{" "}
         <strong>app</strong> directory in your project's folder structure, you
@@ -124,13 +133,7 @@ const BuiltInRouting = () => {
         a <strong>page.js</strong> file inside it. , for example if you create a
         folder called <strong>my-folder</strong> inside app directory and create
         a file called <strong>page.js</strong> inside it, the path of this file
-        will be <strong>/my-folder</strong>.
-      </p>
-      <h4 className="font-bold">Include params in Route (:id)</h4>
-      <p className="text-gray-700 text-sm">
-        If you want to create a route like <strong>student/:id</strong>, you can
-        create a file called <strong>[id].js</strong> inside a folder called{" "}
-        <strong>student</strong> under the pages directory.
+        will be <strong>/my-folder</strong>. &#123;Image 2, Image 3&#125;
       </p>
     </div>
   );
@@ -140,7 +143,7 @@ const FasterSpeed = () => {
   return (
     <div className="py-4">
       <p className="text-2xl pb-2">2. 700 Times Faster Speed in Production</p>
-      <h4 className="font-bold mt-1">Meaning?</h4>
+      <h4 className="font-bold my-1">Meaning?</h4>
       <p className="text-gray-700 text-sm">
         Next.js can be up to 700 times faster in production mode, which means
         that When you are building a website and it's running on localhost, any
@@ -148,12 +151,12 @@ const FasterSpeed = () => {
         However, in deployment mode, it's speed approximately the same as to
         React.
       </p>
-      <h4 className="font-bold">Why?</h4>
+      <h4 className="font-bold my-1">Why?</h4>
       <p className="text-gray-700 text-sm">
         Next.js uses Turbopack, which can updated up to 700 times faster than
         webpack used by react.
       </p>
-      <h4 className="font-bold">Advantage?</h4>
+      <h4 className="font-bold my-1">Advantage?</h4>
       <p className="text-gray-700 text-sm">
         It saves developers time by updating code quickly in production mode.
       </p>
@@ -170,11 +173,30 @@ const ApiSupport = () => {
         that you don't need to set up a separate server to write backend code
         for your application.
       </p>
+      <h4 className="font-bold my-1">For Pages Directory</h4>
       <p className="text-gray-700 text-sm">
         When you create a Next js app, a built-in folder called api
         automatically created inside the pages directory. You can create any
         file inside this api folder, and you can access the API defined in these
         file by using the api/&lt;fileName&gt;.
+      </p>
+      <h4 className="font-bold my-1">For App Directory</h4>
+      <img
+        className="sm:w-[75%] w-[90%] m-auto mt-3"
+        src="https://nextjs.org/_next/image?url=%2Fdocs%2Fdark%2Froute-special-file.png&w=1920&q=75"
+        alt="image4"
+      />
+      <p className="text-center mb-3">Image 4</p>
+      <p className="text-gray-700 text-sm">
+        With next js latest version(13) we can make api routes with help of
+        route.js/route.ts file. In App directory we can make folder and make a
+        file name route.js then our api route is /&lt;folder name&gt;.
+        &#123;image4&#125;
+      </p>
+      <p className="bg-gray-200 my-4 p-2 rounded dark:bg-black">
+        <strong>Note :-</strong> We can make api routes by making folder and
+        route.js file in only app directory. We cannot make same api route or
+        frontend component route in this condition route will conflicted.
       </p>
     </div>
   );

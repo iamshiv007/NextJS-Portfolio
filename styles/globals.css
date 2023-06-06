@@ -2,10 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+p,
+div {
+  text-align: justify;
+}
+
 @layer components {
   /* Navbar */
   .navbar {
-    @apply dark:bg-black border-b border-solid border-gray-300 h-12 flex items-center sticky top-0 py-4 sm:py-6 bg-white opacity-95;
+    @apply dark:bg-black border-b border-solid border-gray-300 h-[8vh] flex items-center sticky top-0 py-4 sm:py-6 bg-white opacity-95;
   }
 
   /* Blogs */
@@ -15,14 +20,20 @@
 
   /* For Blog Page */
   .layoutContainer {
-    @apply flex gap-x-7 w-full;
+    @apply flex gap-x-7 w-full dark:bg-gray-900 sm:dark:bg-gray-700;
   }
 
   .layoutBox1 {
-    @apply sm:w-[60%] ml-[3%] w-[94%] border-0 sm:border border-solid border-gray-300 rounded-xl p-4 mt-4 sm:ml-[10%] sm:h-[88vh] sm:overflow-y-scroll;
+    @apply sm:w-[60%] ml-[3%] w-[94%] border-0 sm:border border-solid border-gray-300 rounded-xl p-4 sm:ml-[10%] sm:h-[88vh] sm:overflow-y-scroll dark:bg-gray-900 my-[2vh];
   }
 
   .layoutBox2 {
     @apply w-[20%] p-2 mt-2 hidden sm:block;
+  }
+  p {
+    @apply dark:text-white;
+  }
+  div {
+    @apply dark:text-white;
   }
 }
