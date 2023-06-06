@@ -41,4 +41,11 @@ export const blogs = [
     linkName: "react-res-carousel",
     date: "June 2, 2023",
   },
+  {
+    name: "CSS Animation",
+    imageUrl:
+      "https://res.cloudinary.com/practicaldev/image/fetch/s--rNSGibyc--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/i/54ydb37tzyny06ac8xdf.jpg",
+    linkName: "css-animation",
+    date: "June 5, 2023",
+  },
 ];

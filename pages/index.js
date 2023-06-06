@@ -18,8 +18,7 @@ export default function Home() {
       <div className={dark ? "dark" : ""}>
         <ThemeBtn />
         <div
-          className="
-       dark:bg-gray-700 "
+          className="dark:bg-gray-700 "
         >
           <Intro />
           <div className={`${utilStyles.headingMd} w-[90%] m-auto`}>

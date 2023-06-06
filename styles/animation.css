@@ -1,0 +1,17 @@
+.animation-1 {
+  animation-name: widthIncrease;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: backwards;
+  animation-delay: 2s;
+  animation-timing-function: linear;
+}
+
+@keyframes widthIncrease {
+  from {
+    width: 6rem;
+  }
+  to {
+    width: 20rem;
+  }
+}

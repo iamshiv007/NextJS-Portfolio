@@ -12,11 +12,6 @@ const FirstPost = () => {
       </Head>
       <div>
         <div className="sm:w-[60%] sm:ml-[10%] w-[90%] m-auto">
-          {/* <Link href="/">
-            <div className="flex items-center fixed top-5 left-5">
-              <BsFillArrowLeftSquareFill /> <p className="px-2"> Home</p>
-            </div>
-          </Link> */}
           <h1 className="text-4xl mt-4">Why you should move in to Next js</h1>
           <p className="text-sm text-gray-600 my-2">Aprile 17, 2023</p>
           <div className="mt-5">
