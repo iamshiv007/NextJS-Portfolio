@@ -16,6 +16,8 @@
   }
 }
 
-.blogLink:hover {
-  transition: all 0.5s;
+@media (max-width: 640px) {
+  .blogLink:hover {
+    transition: all 0.5s;
+  }
 }

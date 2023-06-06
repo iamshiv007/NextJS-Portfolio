@@ -78,7 +78,18 @@ const FirstPost = () => {
         </div>
 
         <div className="layoutBox2">
-          Lorem
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+          libero quibusdam minus ad odit voluptate dolores, asperiores
+          repudiandae tempore quae, nobis tempora, autem ut dolorem reiciendis
+          fugit. Rem voluptatibus est at cumque modi hic. Perspiciatis, fuga.
+          Laudantium impedit, repellat molestias saepe, laboriosam labore
+          expedita doloribus, iusto culpa placeat ullam voluptas soluta natus.
+          Officia rerum reiciendis illo totam incidunt. Culpa veniam consequatur
+          illum assumenda sed dolorem saepe officiis debitis at eos doloribus
+          temporibus distinctio, fuga, ullam officia adipisci impedit odit
+          nobis, vel quos numquam inventore voluptate corrupti! Magnam ea
+          mollitia qui, dicta sunt reiciendis dignissimos perspiciatis nemo.
+          Architecto fuga in animi.
         </div>
       </div>
     </Fragment>
