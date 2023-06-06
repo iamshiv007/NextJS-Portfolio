@@ -1,7 +1,6 @@
 import React, { Fragment } from "react";
 import Link from "next/link";
 import { blogs } from "@/blogData";
-import utilStyles from "../styles/utils.module.css";
 
 const Blogs = () => {
   return (
@@ -20,8 +19,17 @@ const Blogs = () => {
                 alt="img not found"
               />
               <div className="px-1 py-2  border-t border-solid border-gray-600 dark:border-white">
-                <Link href={`/posts/${blog.linkName}`}>{blog.name}</Link>
-                <p className="dark:text-white text-xs py-1">{blog.date}</p>
+                <div className="blogLink text-center p-1">
+                  <Link
+                    className="font-bold font-sans text-xl"
+                    href={`/posts/${blog.linkName}`}
+                  >
+                    {blog.name}
+                  </Link>
+                </div>
+                <p className="dark:text-white text-xs py-1 text-gray-600 text-center">
+                  {blog.date}
+                </p>
               </div>
             </div>
           </div>
