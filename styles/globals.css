@@ -5,12 +5,12 @@
 @layer components {
   /* Navbar */
   .navbar {
-    @apply dark:bg-black border-b border-solid border-gray-300 h-12 flex items-center sticky top-0 py-6 bg-white opacity-95;
+    @apply dark:bg-black border-b border-solid border-gray-300 h-12 flex items-center sticky top-0 py-4 sm:py-6 bg-white opacity-95;
   }
 
   /* Blogs */
   .blogLink {
-    @apply hover:bg-black hover:text-white hover:rounded-md;
+    @apply hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black dark:text-white hover:rounded-md font-bold font-sans text-xl text-center p-1 mx-1;
   }
 
   /* For Blog Page */
@@ -19,7 +19,7 @@
   }
 
   .layoutBox1 {
-    @apply sm:w-[60%] ml-[5%] w-[90%] border-0 sm:border border-solid border-gray-300 rounded-xl p-4 mt-4 sm:ml-[10%] sm:h-[88vh] sm:overflow-y-scroll;
+    @apply sm:w-[60%] ml-[3%] w-[94%] border-0 sm:border border-solid border-gray-300 rounded-xl p-4 mt-4 sm:ml-[10%] sm:h-[88vh] sm:overflow-y-scroll;
   }
 
   .layoutBox2 {

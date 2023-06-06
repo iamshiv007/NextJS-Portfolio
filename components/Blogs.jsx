@@ -19,14 +19,9 @@ const Blogs = () => {
                 alt="img not found"
               />
               <div className="px-1 py-2  border-t border-solid border-gray-600 dark:border-white">
-                <div className="blogLink text-center p-1">
-                  <Link
-                    className="font-bold font-sans text-xl"
-                    href={`/posts/${blog.linkName}`}
-                  >
-                    {blog.name}
-                  </Link>
-                </div>
+                <Link href={`/posts/${blog.linkName}`}>
+                  <div className="blogLink">{blog.name}</div>
+                </Link>
                 <p className="dark:text-white text-xs py-1 text-gray-600 text-center">
                   {blog.date}
                 </p>
