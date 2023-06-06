@@ -1,16 +1,18 @@
-import Layout from "@/components/layout";
+import Navbar from "@/components/Navbar";
 import Head from "next/head";
 import React, { Fragment } from "react";
 
 const BlendMode = () => {
   return (
     <Fragment>
-      <Layout>
-        <Head>
-          <title>Background Blend Mode</title>
-        </Head>
+      <Head>
+        <title>Background Blend Mode</title>
+      </Head>
 
-        <div>
+      <Navbar />
+
+      <div className="layoutContainer">
+        <div className="layoutBox1">
           <h2>Background Blend Mode</h2>
           <p>
             In this blog we are exlore rare but some time very userfull property
@@ -46,7 +48,11 @@ const BlendMode = () => {
           <p>luminosity</p>
           <div className="exa1Images10"></div>
         </div>
-      </Layout>
+
+        <div className="layoutBox2">
+          Hello 
+        </div>
+      </div>
     </Fragment>
   );
 };

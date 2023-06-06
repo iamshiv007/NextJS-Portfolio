@@ -11,70 +11,75 @@ const FirstPost = () => {
       <Head>
         <title>Why Next js</title>
       </Head>
-      <div>
-        <Navbar>
-          <div className="sm:w-[60%] sm:ml-[10%] w-[90%] m-auto">
-            <h1 className="text-4xl mt-4">Why you should move in to Next js</h1>
-            <p className="text-sm text-gray-600 my-2">Aprile 17, 2023</p>
-            <div className="mt-5">
-              <p className="font-bold">
-                If you are a React js developer and understand its concepts
-                then, you should consider moving to Next js for the following
-                reasons:
-              </p>
-              <ol>
-                <li>
-                  <Link href="#">
-                    1. Built-in Routing Support (Super easy to code)
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#">
-                    2. 700 Times Faster speed in production (Fast)
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#">
-                    3. Ability to write both Backend and Frontend code (API
-                    support)
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#">4. Search Engine Optimization (SEO)</Link>
-                </li>
-              </ol>
-              <div className="w-fit m-auto pt-2">
-                <img
-                  src="https://static.agilitycms.com/illustrations/blog-illustrations/benefits-of-next.js.jpg?w=800"
-                  alt=""
-                  className="w-[600px]"
-                />
-              </div>
-              <p className="bg-gray-200 my-4 p-2 rounded">
-                {" "}
-                <strong>Note:-</strong> if you are a student who is building a
-                website using HTML, CSS , JavaScript and Bootstrap, I recommend
-                you learning the basics of React js and then moving on to Next
-                js.
-              </p>
-              <hr />
-              {/* Routing */}
-              <BuiltInRouting />
 
-              <hr />
-              {/* Speed */}
-              <FasterSpeed />
+      <Navbar />
 
-              <hr />
-              {/* Api */}
-              <ApiSupport />
-
-              <hr />
-              {/* SEO */}
-              <Seo />
+      <div className="layoutContainer">
+        <div className="layoutBox1">
+          <h1 className="text-3xl font-bold mt-4 bg-blue-400 p-2 rounded-md">
+            Why you should move in to Next js
+          </h1>
+          <p className="text-sm text-gray-600 my-2">Aprile 17, 2023</p>
+          <div className="mt-5">
+            <p className="font-bold">
+              If you are a React js developer and understand its concepts then,
+              you should consider moving to Next js for the following reasons:
+            </p>
+            <ol>
+              <li>
+                <Link href="#">
+                  1. Built-in Routing Support (Super easy to code)
+                </Link>
+              </li>
+              <li>
+                <Link href="#">
+                  2. 700 Times Faster speed in production (Fast)
+                </Link>
+              </li>
+              <li>
+                <Link href="#">
+                  3. Ability to write both Backend and Frontend code (API
+                  support)
+                </Link>
+              </li>
+              <li>
+                <Link href="#">4. Search Engine Optimization (SEO)</Link>
+              </li>
+            </ol>
+            <div className="w-fit m-auto pt-2">
+              {/* <img
+                    src="https://static.agilitycms.com/illustrations/blog-illustrations/benefits-of-next.js.jpg?w=800"
+                    alt=""
+                    className="w-[600px]"
+                  /> */}
             </div>
+            <p className="bg-gray-200 my-4 p-2 rounded">
+              {" "}
+              <strong>Note:-</strong> if you are a student who is building a
+              website using HTML, CSS , JavaScript and Bootstrap, I recommend
+              you learning the basics of React js and then moving on to Next js.
+            </p>
+            <hr />
+            {/* Routing */}
+            <BuiltInRouting />
+
+            <hr />
+            {/* Speed */}
+            <FasterSpeed />
+
+            <hr />
+            {/* Api */}
+            <ApiSupport />
+
+            <hr />
+            {/* SEO */}
+            <Seo />
           </div>
-        </Navbar>
+        </div>
+
+        <div className="layoutBox2">
+          Lorem
+        </div>
       </div>
     </Fragment>
   );

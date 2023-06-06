@@ -15,3 +15,7 @@
     width: 20rem;
   }
 }
+
+.blogLink:hover {
+  transition: all 0.5s;
+}

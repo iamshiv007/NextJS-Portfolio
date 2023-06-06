@@ -1,3 +1,4 @@
+import Navbar from "@/components/Navbar";
 import Head from "next/head";
 import React, { Fragment, useState } from "react";
 
@@ -13,35 +14,45 @@ const CssTransform = () => {
         <title>CSS Transform</title>
       </Head>
 
-      <div className="sm:w-[60%] sm:ml-[10%] w-[90%] m-auto">
-        <div>
-          <h1 className="text-4xl mt-4">CSS Transform</h1>
-          <p className="text-lg text-gray-600 my-2">
-            Css tranform is less used but very important property of css which
-            is use to give some movement in our web page which make ux better.
-            In this blog we are going to understand css transform with easy
-            examples.
-          </p>
+      <Navbar />
+
+      <div className="layoutContainer">
+        <div className="layoutBox1">
+          <div>
+            <h1 className="text-3xl font-bold mt-4 bg-blue-400 p-2 rounded-md">
+              CSS Transform
+            </h1>
+            <p className="text-lg text-gray-600 my-2">
+              Css tranform is less used but very important property of css which
+              is use to give some movement in our web page which make ux better.
+              In this blog we are going to understand css transform with easy
+              examples.
+            </p>
+          </div>
+
+          <br />
+
+          {/* Example */}
+          <Exa1
+            value1={value1}
+            setValue1={setValue1}
+            direction1={direction1}
+            setDirection1={setDirection1}
+          />
+          <br />
+
+          {/* Example */}
+          <Exa2
+            value2={value2}
+            setValue2={setValue2}
+            direction2={direction2}
+            setDirection2={setDirection2}
+          />
         </div>
 
-        <br />
-
-        {/* Example */}
-        <Exa1
-          value1={value1}
-          setValue1={setValue1}
-          direction1={direction1}
-          setDirection1={setDirection1}
-        />
-        <br />
-
-        {/* Example */}
-        <Exa2
-          value2={value2}
-          setValue2={setValue2}
-          direction2={direction2}
-          setDirection2={setDirection2}
-        />
+        <div className="layoutBox2">
+          Lorem 
+        </div>
       </div>
     </Fragment>
   );

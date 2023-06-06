@@ -2,10 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components{
-  .navbar{
-    @apply dark:bg-black border-b border-solid border-gray-300 h-12 flex items-center sticky top-0 py-6 bg-white opacity-95
+@layer components {
+  /* Navbar */
+  .navbar {
+    @apply dark:bg-black border-b border-solid border-gray-300 h-12 flex items-center sticky top-0 py-6 bg-white opacity-95;
+  }
+
+  /* Blogs */
+  .blogLink {
+    @apply hover:bg-black hover:text-white hover:rounded-md;
+  }
+
+  /* For Blog Page */
+  .layoutContainer {
+    @apply flex gap-x-7 w-full;
+  }
+
+  .layoutBox1 {
+    @apply w-[60%] border border-solid border-gray-300 rounded-xl p-2 mt-2 ml-[10%] h-[88vh] overflow-y-scroll;
+  }
+
+  .layoutBox2 {
+    @apply w-[20%] p-2 mt-2;
   }
 }
-
-
