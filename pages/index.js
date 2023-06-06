@@ -6,6 +6,7 @@ import Intro from "@/components/Intro";
 import Blogs from "@/components/Blogs";
 import ThemeBtn from "@/components/ThemeBtn";
 import { BlogContext } from "@/contextApi/blogContext";
+import Navbar from "@/components/Navbar";
 
 export default function Home() {
   const { dark } = useContext(BlogContext);
@@ -20,10 +21,12 @@ export default function Home() {
         <div
           className="dark:bg-gray-700 "
         >
-          <Intro />
-          <div className={`${utilStyles.headingMd} w-[90%] m-auto`}>
-            <Blogs />
-          </div>
+          <Navbar>
+            <Intro />
+            <div className={`${utilStyles.headingMd} w-[90%] m-auto`}>
+              <Blogs />
+            </div>
+          </Navbar>
         </div>
       </div>
     </Fragment>
