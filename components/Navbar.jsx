@@ -11,7 +11,7 @@ const Navbar = ({ children }) => {
           </Link>
         </div>
         <div className="flex items-center">
-          <div className="mx-4">
+          <div className="sm:mx-4 mx-1">
             <Link
               className="p-2 font-bold dark:text-white text-black hover:no-underline"
               href="/blogs"
@@ -19,7 +19,7 @@ const Navbar = ({ children }) => {
               Blogs
             </Link>
           </div>
-          <div className="mx-4">
+          <div className="sm:mx-4 mx-1">
             <Link
               className="p-2 font-bold dark:text-white text-black hover:no-underline"
               href="/about"
@@ -27,7 +27,7 @@ const Navbar = ({ children }) => {
               About
             </Link>
           </div>
-          <div className="mx-4">
+          <div className="sm:mx-4 mx-1">
             <Link
               className="p-2 font-bold dark:text-white text-black hover:no-underline"
               href="/contacts"
