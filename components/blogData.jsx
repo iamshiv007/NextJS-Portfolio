@@ -55,4 +55,11 @@ export const blogs = [
     linkName: "object-fit",
     date: "June 6, 2023",
   },
+  {
+    name: "linear-gradient",
+    imageUrl:
+      "https://webdesign-trends.net/wp/wp-content/uploads/2020/05/object-fit-tate02-1024x697.png",
+    linkName: "linear-gradient",
+    date: "June 7, 2023",
+  },
 ];
