@@ -51,7 +51,7 @@ export const blogs = [
   {
     name: "object-fit",
     imageUrl:
-      "https://res.cloudinary.com/practicaldev/image/fetch/s--rNSGibyc--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/i/54ydb37tzyny06ac8xdf.jpg",
+      "https://webdesign-trends.net/wp/wp-content/uploads/2020/05/object-fit-tate02-1024x697.png",
     linkName: "object-fit",
     date: "June 6, 2023",
   },

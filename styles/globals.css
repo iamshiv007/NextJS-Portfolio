@@ -10,7 +10,7 @@ div {
 @layer components {
   /* Navbar */
   .navbar {
-    @apply dark:bg-black border-b border-solid border-gray-300 h-[8vh] flex items-center sticky top-0 py-4 sm:py-6 bg-white opacity-95;
+    @apply dark:bg-black border-b border-solid border-gray-300 h-[8vh] flex items-center sticky top-0 py-4 sm:py-6 bg-white opacity-95 z-10;
   }
 
   /* Blogs */

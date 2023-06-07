@@ -8,7 +8,7 @@ const ThemeBtn = () => {
   return (
     <div
       onClick={() => setDark(!dark)}
-      className="w-fit fixed right-3 bottom-6 rounded-full shadow-md shadow-gray-700 dark:shadow-white p-2 text-2xl dark:bg-black dark:text-white cursor-pointer"
+      className="w-fit fixed right-3 bottom-6 rounded-full shadow-md shadow-gray-700 dark:shadow-white p-2 text-2xl dark:bg-black dark:text-white cursor-pointer z-10"
     >
       {dark ? <BsSun /> : <BsMoon />}
     </div>
