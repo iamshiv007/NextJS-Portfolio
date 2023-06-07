@@ -1,18 +1,22 @@
 import Blogs from "@/components/Blogs";
 import Navbar from "@/components/Navbar";
+import Theme from "@/components/Theme";
 import ThemeBtn from "@/components/ThemeBtn";
-import React from "react";
+import React, { Fragment } from "react";
 
 const BlogsPage = () => {
   return (
-    <div>
-      <Navbar>
-        <div className="w-[90%] m-auto">
+    <Fragment>
+      <Theme>
+        <Navbar />
+
+        <ThemeBtn />
+
+        <div className="p-[5%] dark:bg-gray-700">
           <Blogs />
         </div>
-        <ThemeBtn />
-      </Navbar>
-    </div>
+      </Theme>
+    </Fragment>
   );
 };
 

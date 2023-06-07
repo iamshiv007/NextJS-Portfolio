@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 import Link from "next/link";
-import { blogs } from "@/blogData";
+import { blogs } from "@/components/blogData";
 
 const Blogs = () => {
   return (

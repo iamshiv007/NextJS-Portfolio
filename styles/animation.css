@@ -16,7 +16,7 @@
   }
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .blogLink:hover {
     transition: all 0.5s;
   }
