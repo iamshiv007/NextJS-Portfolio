@@ -27,14 +27,12 @@ const HoistingComponent = () => {
             function is on the top so we can call this function from anywhere we
             can call it before it's declaration but when we deaclare a function
             with const, var, or let keyword we can't call the function before
-            it's declaration because in this condition function not going on the
-            top of background proccecing.
+            it's declaration because in this condition function will not go on
+            the top of scope.
           </p>
         </div>
 
-        <div className="layoutBox2">
-          Lorem
-        </div>
+        <div className="layoutBox2">Lorem</div>
       </div>
     </Fragment>
   );

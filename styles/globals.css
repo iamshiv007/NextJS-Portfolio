@@ -20,20 +20,18 @@ div {
 
   /* For Blog Page */
   .layoutContainer {
-    @apply flex gap-x-7 w-full dark:bg-gray-900 sm:dark:bg-gray-700;
+    @apply flex gap-x-7 w-full dark:bg-gray-900 sm:dark:bg-gray-700 transition-all duration-1000;
   }
 
   .layoutBox1 {
-    @apply sm:w-[60%] ml-[3%] w-[94%] border-0 sm:border border-solid border-gray-300 rounded-xl p-4 sm:ml-[10%] sm:h-[88vh] sm:overflow-y-scroll dark:bg-gray-900 my-[2vh];
+    @apply sm:w-[60%] ml-[3%] w-[94%] border-0 sm:border border-solid border-gray-300 rounded-xl p-4 sm:ml-[10%] sm:h-[88vh] sm:overflow-y-scroll dark:bg-gray-900 my-[2vh] transition-all duration-1000;
   }
 
   .layoutBox2 {
-    @apply w-[20%] p-2 mt-2 hidden sm:block;
+    @apply w-[20%] p-2 mt-2 hidden sm:block transition-all duration-1000;
   }
-  p {
-    @apply dark:text-white;
-  }
+  p,
   div {
-    @apply dark:text-white;
+    @apply dark:text-white text-black transition-all duration-1000;
   }
 }

@@ -62,4 +62,11 @@ export const blogs = [
     linkName: "linear-gradient",
     date: "June 7, 2023",
   },
+  {
+    name: "How to send a email with attachment in node js",
+    imageUrl:
+      "https://webdesign-trends.net/wp/wp-content/uploads/2020/05/object-fit-tate02-1024x697.png",
+    linkName: "send-email",
+    date: "June 8, 2023",
+  },
 ];
