@@ -8,6 +8,7 @@ const TicTacToe = () => {
   const [game, setGame] = useState(0);
   const [over, setOver] = useState(false);
   const [winer, setWiner] = useState();
+  const [count, setCount] = useState(0);
 
   useEffect(() => {
     const ones = document.getElementsByClassName("one");
@@ -106,6 +107,7 @@ const TicTacToe = () => {
     if (!e.target.innerText && !over) {
       e.target.innerText = game;
       setGame(game ? 0 : "❌");
+      setCount(count + 1);
     }
   };
 
@@ -116,6 +118,8 @@ const TicTacToe = () => {
     }
 
     setOver(false);
+    setWiner();
+    setCount(0);
   };
 
   return (
@@ -135,13 +139,16 @@ const TicTacToe = () => {
             <SecondRow gameFun={gameFun} />
             <ThirdRow gameFun={gameFun} />
           </div>
-          {over && (
+          {(over || (count === 9 && !winer)) && (
             <div className="flex items-center justify-center flex-col my-5">
-              <div className="text-2xl">
-                {" "}
-                <span className="text-3xl font-bold">{winer}</span> is won the
-                game
-              </div>
+              {count === 9 && !winer ? (
+                <div className="text-2xl">Game draw</div>
+              ) : (
+                <div className="text-2xl">
+                  <span className="text-3xl font-bold">{winer}</span> is won the
+                  game
+                </div>
+              )}
               <button
                 onClick={resetGame}
                 className="rounded bg-red-500 text-xl py-1 px-4 my-2 text-white"
