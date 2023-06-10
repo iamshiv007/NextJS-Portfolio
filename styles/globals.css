@@ -34,4 +34,16 @@ div {
   div {
     @apply dark:text-white text-black transition-all duration-1000;
   }
+
+  /* For tic-tac-toe */
+  .ttt .one,
+  .ttt .two,
+  .ttt .three {
+    @apply sm:w-24  sm:h-24 w-16 h-16 border-l-4 border border-solid border-black text-2xl font-bold flex items-center justify-center dark:border-white;
+  }
+
+  .one,
+  .two {
+    @apply border-r-0;
+  }
 }

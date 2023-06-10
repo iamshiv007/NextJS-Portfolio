@@ -58,15 +58,22 @@ export const blogs = [
   {
     name: "linear-gradient",
     imageUrl:
-      "https://webdesign-trends.net/wp/wp-content/uploads/2020/05/object-fit-tate02-1024x697.png",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxVjbf9Rf5VEHP_D6IiUYOksUi2OgEzhg2ny5DkeV5kA&usqp=CAU&ec=48600112",
     linkName: "linear-gradient",
     date: "June 7, 2023",
   },
   {
     name: "How to send a email with attachment in node js",
     imageUrl:
-      "https://webdesign-trends.net/wp/wp-content/uploads/2020/05/object-fit-tate02-1024x697.png",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1IqjYMScfJK41xjyEnKWgYs2DgTON4QyWKkwQ3Qpmkw&usqp=CAU&ec=48600112",
     linkName: "send-email",
     date: "June 8, 2023",
+  },
+  {
+    name: "Tic-Tac-Toe",
+    imageUrl:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJ76F-qBseNwI8hvVrpG3bthHX-JgZOT1EVqltRRYaSw&usqp=CAU&ec=48600112",
+    linkName: "tic-tac-toe",
+    date: "June 9, 2023",
   },
 ];

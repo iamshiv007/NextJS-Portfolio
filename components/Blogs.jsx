@@ -17,6 +17,7 @@ const Blogs = () => {
                 className="rounded-t-md"
                 src={blog.imageUrl}
                 alt="img not found"
+                style={{width:'100%'}}
               />
               <div className="px-1 py-2  border-t border-solid border-gray-600 dark:border-white">
                 <Link href={`/posts/${blog.linkName}`}>
