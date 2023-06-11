@@ -12,9 +12,9 @@ const FirstPost = () => {
         <title>Why Next js</title>
       </Head>
       <Theme>
-        <Navbar />
-
         <ThemeBtn />
+
+        <Navbar />
 
         <div className="layoutContainer h-full">
           <div className="layoutBox1">

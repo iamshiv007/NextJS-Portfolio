@@ -13,9 +13,9 @@ const ObjectFit = () => {
       </Head>
 
       <Theme>
-        <Navbar />
-
         <ThemeBtn />
+
+        <Navbar />
 
         <div className="layoutContainer">
           <div className="layoutBox1">

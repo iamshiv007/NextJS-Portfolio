@@ -129,12 +129,14 @@ const TicTacToe = () => {
       </Head>
 
       <Theme>
-        <Navbar />
-
         <ThemeBtn />
 
+        <Navbar />
+
         <div className="dark:bg-gray-900 h-[92vh]">
-          <div className="ttt w-fit m-auto h-auto pt-16 flex">
+          <h1 className="text-3xl font-bold text-center pt-5">Tic-Tac-Toe</h1>
+
+          <div className="ttt w-fit m-auto h-auto pt-10 flex">
             <FirstRow gameFun={gameFun} />
             <SecondRow gameFun={gameFun} />
             <ThirdRow gameFun={gameFun} />

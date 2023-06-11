@@ -1,4 +1,6 @@
 import Navbar from "@/components/Navbar";
+import Theme from "@/components/Theme";
+import ThemeBtn from "@/components/ThemeBtn";
 import Head from "next/head";
 import React, { Fragment } from "react";
 
@@ -8,6 +10,9 @@ const CssAnimation = () => {
       <Head>
         <title>Css-Animation</title>
       </Head>
+
+      <Theme>
+        <ThemeBtn/>
 
       <Navbar />
 
@@ -93,6 +98,8 @@ const CssAnimation = () => {
           Lorem
         </div>
       </div>
+
+      </Theme>
     </Fragment>
   );
 };
