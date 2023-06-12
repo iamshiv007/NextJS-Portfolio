@@ -1,4 +1,5 @@
-import React, { Fragment, useEffect, useState } from "react";
+import React, { Fragment } from "react";
+import { TypeAnimation } from "react-type-animation";
 
 const Intro = () => {
   return (
@@ -9,7 +10,7 @@ const Intro = () => {
           <h1 className="md:text-5xl text-3xl myName dark:text-white">
             My Name is Shivraj.
           </h1>
-          <MyProfession />
+          <MyProfession profession={profession} />
         </div>
         <div className="md:w-[30%] p-4">
           {" "}
@@ -26,10 +27,41 @@ const Intro = () => {
 
 export default Intro;
 
+const profession = [
+  "ReactJS",
+  "NextJS",
+  "MERN Stack",
+  "Frontend ",
+  "NodeJS ",
+  "FullStack ",
+];
+
 const MyProfession = () => {
   return (
-    <div className={`md:text-3xl text-2xl mt-4 font-bold italic myProfession`}>
-      I am a web Developer
-    </div>
+    <>
+      <div
+        className={`md:text-3xl text-2xl mt-4 font-bold italic myProfession`}
+      >
+        I am a{" "}
+        <TypeAnimation
+          sequence={[
+            "Software|",
+            1000,
+            "ReactJS|",
+            1000,
+            "NextJS|",
+            1000,
+            "NodeJS|",
+            1000,
+            "MERN Stack|",
+            1000,
+          ]}
+          speed={10}
+          repeat={Infinity}
+          className="text2xl"
+        />
+        developer
+      </div>
+    </>
   );
 };
