@@ -4,16 +4,15 @@ import { TypeAnimation } from "react-type-animation";
 const Intro = () => {
   return (
     <Fragment>
-      <div className="flex flex-col-reverse md:flex-row-reverse">
-        <div className="md:w-[70%] w-fit m-auto p-4">
+      <div className="flex flex-col-reverse justify-center md:flex-row h-[92vh]">
+        <div className="md:w-[70%] w-fit md:ml-8 p-4">
           <img className="w-12 h-12 hiIcon" src="./images/hii.png" alt="" />{" "}
-          <h1 className="md:text-5xl text-3xl myName dark:text-white">
+          <h1 className="md:text-7xl text-3xl myName dark:text-white mt-4 mb-8">
             My Name is Shivraj.
           </h1>
           <MyProfession profession={profession} />
         </div>
         <div className="md:w-[30%] p-4">
-          {" "}
           <img
             className="myImage md:w-44 md:h-44 w-32 h-32 rounded-full object-cover m-auto"
             src="./images/shiv2.jpg"
