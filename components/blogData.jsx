@@ -21,10 +21,10 @@ export const blogs = [
     date: "May 30, 2023",
   },
   {
-    name: "CSS Rare Selector",
+    name: "CSS Rare Selectors",
     imageUrl:
       "https://internetingishard.netlify.app/css-selectors-1f0064.464e0c0e.png",
-    linkName: "css-rare-selector",
+    linkName: "css-rare-selectors",
     date: "May 31, 2023",
   },
   {

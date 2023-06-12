@@ -18,16 +18,14 @@ export default function Home() {
       </Head>
       <div className={dark ? "dark" : ""}>
         <ThemeBtn />
-        <div
-          className="dark:bg-gray-700 "
-        >
+        <div className="dark:bg-gray-700 ">
           <Navbar/>
           <Intro />
-          <div className={`${utilStyles.headingMd} w-[90%] m-auto`}>
+          <div className={`${utilStyles.headingMd} w-[90%] m-auto mt-6`}>
             <Blogs />
           </div>
+        </div>
       </div>
-    </div>
-    </Fragment >
+    </Fragment>
   );
 }
