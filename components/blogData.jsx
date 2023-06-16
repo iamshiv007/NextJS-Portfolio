@@ -76,4 +76,18 @@ export const blogs = [
     linkName: "tic-tac-toe",
     date: "June 9, 2023",
   },
+  {
+    name: "Drag And Drop",
+    imageUrl:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJ76F-qBseNwI8hvVrpG3bthHX-JgZOT1EVqltRRYaSw&usqp=CAU&ec=48600112",
+    linkName: "drag-and-drop",
+    date: "June 15, 2023",
+  },
+  {
+    name: "React Masonary",
+    imageUrl:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJ76F-qBseNwI8hvVrpG3bthHX-JgZOT1EVqltRRYaSw&usqp=CAU&ec=48600112",
+    linkName: "react-masonary",
+    date: "June 16, 2023",
+  },
 ];
