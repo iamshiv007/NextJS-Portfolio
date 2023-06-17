@@ -90,4 +90,11 @@ export const blogs = [
     linkName: "react-masonary",
     date: "June 16, 2023",
   },
+  {
+    name: "Css Grid",
+    imageUrl:
+      "https://www.freecodecamp.org/news/content/images/size/w2000/2022/05/CSS-GRID-3.png",
+    linkName: "css-grid",
+    date: "June 16, 2023",
+  },
 ];

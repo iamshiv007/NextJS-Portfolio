@@ -25,6 +25,9 @@ const ReactMasonary = () => {
 
   return (
     <Fragment>
+      <Head>
+        <title>React Masonary</title>
+      </Head>
       <Theme>
         <Navbar />
 

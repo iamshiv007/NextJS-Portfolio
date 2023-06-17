@@ -8,12 +8,12 @@ div {
 }
 
 @layer components {
-  /* Navbar */
+  /* Navbar.jsx */
   .navbar {
     @apply dark:bg-black border-b border-solid border-gray-300 h-[8vh] flex items-center sticky top-0 py-4 sm:py-6 bg-white opacity-95 z-10;
   }
 
-  /* Blogs */
+  /* Blogs.jsx */
   .blogLink {
     @apply hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black dark:text-white hover:rounded-md font-bold font-sans text-xl text-center p-1 mx-1;
   }
