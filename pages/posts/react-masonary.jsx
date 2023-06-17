@@ -2,6 +2,7 @@ import Navbar from "@/components/Navbar";
 import Theme from "@/components/Theme";
 import ThemeBtn from "@/components/ThemeBtn";
 import axios from "axios";
+import Head from "next/head";
 import React, { Fragment, useEffect, useState } from "react";
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 
