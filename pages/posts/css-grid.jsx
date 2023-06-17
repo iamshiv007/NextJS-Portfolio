@@ -6,7 +6,7 @@ import Head from "next/head";
 import React, { Fragment, useContext } from "react";
 import { github } from "react-syntax-highlighter/dist/cjs/styles/hljs";
 import { dark } from "react-syntax-highlighter/dist/cjs/styles/hljs";
-import SyntaxHighlighter from "react-syntax-highlighter/dist/esm/default-highlight";
+import SyntaxHighlighter from "react-syntax-highlighter";
 
 const CssGrid = () => {
   const { dark: myDark } = useContext(BlogContext);
