@@ -86,7 +86,7 @@ export const blogs = [
   {
     name: "React Masonary",
     imageUrl:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJ76F-qBseNwI8hvVrpG3bthHX-JgZOT1EVqltRRYaSw&usqp=CAU&ec=48600112",
+      "https://reactjsexample.com/content/images/2018/11/React-Photo-Gallery.jpg",
     linkName: "react-masonary",
     date: "June 16, 2023",
   },
