@@ -104,4 +104,11 @@ export const blogs = [
     linkName: "github-pages-deployment",
     date: "June 18, 2023",
   },
+  {
+    name: "Readme file syntax",
+    imageUrl:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfYZKGMNHktg0e4wVK9TNS22qijcqvYg0QmJYp-Hp7Wg&usqp=CAU&ec=48600112",
+    linkName: "readme",
+    date: "June 19, 2023",
+  },
 ];
