@@ -97,4 +97,11 @@ export const blogs = [
     linkName: "css-grid",
     date: "June 16, 2023",
   },
+  {
+    name: "Deployment on Github Pages",
+    imageUrl:
+      "https://www.freecodecamp.org/news/content/images/size/w2000/2022/05/CSS-GRID-3.png",
+    linkName: "github-pages-deployment",
+    date: "June 18, 2023",
+  },
 ];

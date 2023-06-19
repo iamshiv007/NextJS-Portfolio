@@ -46,7 +46,7 @@ const ExampleOne = ({ myDark }) => {
       <SyntaxHighlighter language="css" style={myDark ? dark : github}>
         {codeString1}
       </SyntaxHighlighter>
-      <p className="text-center">Or</p>
+      <p className="text-center">OR</p>
       <SyntaxHighlighter language="css" style={myDark ? dark : github}>
         {codeString2}
       </SyntaxHighlighter>
@@ -122,7 +122,7 @@ grid-row: 2/4;`;
           <SyntaxHighlighter language="css" style={myDark ? dark : github}>
             {codeString2}
           </SyntaxHighlighter>
-          <p className="text-center">Or</p>
+          <p className="text-center">OR</p>
           <SyntaxHighlighter language="css" style={myDark ? dark : github}>
             {codeString3}
           </SyntaxHighlighter>
