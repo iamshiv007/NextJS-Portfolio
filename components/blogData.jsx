@@ -79,7 +79,7 @@ export const blogs = [
   {
     name: "Drag And Drop",
     imageUrl:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJ76F-qBseNwI8hvVrpG3bthHX-JgZOT1EVqltRRYaSw&usqp=CAU&ec=48600112",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvf3LxW2yGYlBT15yJsQmnXbGTSl-Q2_nKkZLJrvU2Hg&usqp=CAU&ec=48600112",
     linkName: "drag-and-drop",
     date: "June 15, 2023",
   },
@@ -100,7 +100,7 @@ export const blogs = [
   {
     name: "Deployment on Github Pages",
     imageUrl:
-      "https://www.freecodecamp.org/news/content/images/size/w2000/2022/05/CSS-GRID-3.png",
+      "https://soshace.com/wp-content/uploads/2019/05/the-ultimate-guide-to-github-pages-main.jpg",
     linkName: "github-pages-deployment",
     date: "June 18, 2023",
   },

@@ -71,6 +71,9 @@ const FirstPost = () => {
               <hr />
               {/* SEO */}
               <Seo />
+
+              <div className="text-center m-5 text-2xl">❤️ Thank You 🙏</div>
+ 
             </div>
           </div>
 
