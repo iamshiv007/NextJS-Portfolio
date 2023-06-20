@@ -24,7 +24,7 @@ const QuizApp = () => {
     setLoading(true);
     axios
       .get(
-        "https://opentdb.com/api.php?amount=1&category=10&difficulty=hard&type=multiple"
+        "https://opentdb.com/api.php?amount=1&type=multiple"
       )
       .then((res) => {
         setLoading(false);
@@ -104,7 +104,7 @@ const QuizApp = () => {
             <div>
               <button
                 onClick={generateQuestion}
-                className="p-2 border-0 dark:bg-gray-300 dark:text-black rounded-md text-xl font-bold m-2 bg-gray-700 sm:static text-white fixed bottom-2 right-[40%]"
+                className="p-2 px-6 border-0 dark:bg-gray-300 dark:text-black rounded-md text-xl font-bold m-2 bg-gray-700 sm:static text-white fixed bottom-5 right-[35%]"
               >
                 Next
               </button>
