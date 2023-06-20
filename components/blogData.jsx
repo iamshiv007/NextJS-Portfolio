@@ -111,4 +111,11 @@ export const blogs = [
     linkName: "readme",
     date: "June 19, 2023",
   },
+  {
+    name: "Quiz App",
+    imageUrl:
+      "https://codingartistweb.com/wp-content/uploads/2022/06/Quiz-App-01.png",
+    linkName: "quiz-app",
+    date: "June 20, 2023",
+  },
 ];
