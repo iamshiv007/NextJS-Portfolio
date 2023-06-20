@@ -16,16 +16,14 @@ const QuizApp = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    generateQuestion();
+    // generateQuestion();
   }, []);
 
   const generateQuestion = () => {
     setAnswer();
     setLoading(true);
     axios
-      .get(
-        "https://opentdb.com/api.php?amount=1&type=multiple"
-      )
+      .get("https://opentdb.com/api.php?amount=1&type=multiple")
       .then((res) => {
         setLoading(false);
         setQuestion(he.decode(res.data.results[0].question));
@@ -102,12 +100,14 @@ const QuizApp = () => {
             ) : null}
 
             <div>
-              <button
-                onClick={generateQuestion}
-                className="p-2 px-6 border-0 dark:bg-gray-300 dark:text-black rounded-md text-xl font-bold m-2 bg-gray-700 sm:static text-white fixed bottom-5 right-[35%]"
-              >
-                Next
-              </button>
+              <div className="fixed bottom-8 md:static w-[100%] flex justify-center">
+                <button
+                  onClick={generateQuestion}
+                  className="p-2 px-6 border-0 dark:bg-gray-300 dark:text-black rounded-md text-xl font-bold m-2 bg-gray-700 text-white"
+                >
+                  Next
+                </button>
+              </div>
             </div>
           </div>
         </div>
