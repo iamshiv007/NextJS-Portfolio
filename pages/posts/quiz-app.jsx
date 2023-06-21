@@ -16,7 +16,7 @@ const QuizApp = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // generateQuestion();
+    generateQuestion();
   }, []);
 
   const generateQuestion = () => {
@@ -52,19 +52,19 @@ const QuizApp = () => {
             <div className="mt-8 dark:bg-slate-800 bg-blue-200 rounded p-4">
               <p className="text-center font-semibold"> Q. {question}</p>
 
-              <div className="mt-4">
+              <div className="mt-6 text-xl">
                 {options.map((option, key) => (
-                  <div key={key}>
+                  <div className="mt-3" key={key}>
                     <input
-                      className="mr-3"
+                      className="mr-3 cursor-pointer"
                       type="checkbox"
                       name="answer"
-                      id="answer1"
+                      id={option}
                       value={he.decode(option)}
                       onChange={(e) => setAnswer(e.target.value)}
                       checked={answer === option}
                     />
-                    <label htmlFor="">{he.decode(option)}</label>
+                    <label className="cursor-pointer" htmlFor={option}>{he.decode(option)}</label>
                   </div>
                 ))}
               </div>
