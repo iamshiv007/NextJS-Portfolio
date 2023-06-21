@@ -112,7 +112,8 @@ const QuizApp = () => {
                     Wrong Answer
                   </p>
                   <p className="dark:text-blue-500 text-blue-500 text-2xl font-bold my-2">
-                    {options.indexOf(correctAnswer)}. {he.decode(correctAnswer)}
+                    {options.indexOf(correctAnswer) + 1}.{" "}
+                    {he.decode(correctAnswer)}
                   </p>
                 </div>
               )

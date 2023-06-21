@@ -114,8 +114,15 @@ export const blogs = [
   {
     name: "Quiz App",
     imageUrl:
-      "https://codingartistweb.com/wp-content/uploads/2022/06/Quiz-App-01.png",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4WCmXtQ2AW5OsFElhZ0PCfpqR6dYPgqyV9Ossb3Smyg&usqp=CAU&ec=48600112",
     linkName: "quiz-app",
     date: "June 20, 2023",
+  },
+  {
+    name: "Hindi-Translator",
+    imageUrl:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGg5kZa7RkIxqvqXflLuI0otBRpypPNBts1Ku29vxcqw&usqp=CAU&ec=48600112",
+    linkName: "hindi-translator",
+    date: "June 21, 2023",
   },
 ];
