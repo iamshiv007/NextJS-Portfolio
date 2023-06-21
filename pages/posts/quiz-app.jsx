@@ -14,6 +14,7 @@ const QuizApp = () => {
   const [correctAnswer, setCorrectAnswer] = useState();
   const [answer, setAnswer] = useState();
   const [loading, setLoading] = useState(true);
+  const [category, setCategory] = useState("");
 
   useEffect(() => {
     generateQuestion();
@@ -27,10 +28,22 @@ const QuizApp = () => {
       .then((res) => {
         setLoading(false);
         setQuestion(he.decode(res.data.results[0].question));
-        setOptions([
-          ...res.data.results[0].incorrect_answers.slice(0, 3),
-          res.data.results[0].correct_answer,
-        ]);
+
+        setCategory(he.decode(res.data.results[0].category));
+
+        let myOptions = [...res.data.results[0].incorrect_answers.slice(0, 3)];
+        let myOptions2 = [...myOptions];
+
+        var randomNumber = Math.floor(Math.random() * 4);
+
+        myOptions2[randomNumber] = res.data.results[0].correct_answer;
+
+        if (randomNumber !== 3) {
+          myOptions2[3] = myOptions[randomNumber];
+        }
+
+        setOptions(myOptions2);
+
         setCorrectAnswer(res.data.results[0].correct_answer);
       });
   };
@@ -48,8 +61,10 @@ const QuizApp = () => {
         <div className="md:px-[10%] px-[3%] dark:bg-gray-900 h-[92vh]">
           <h1 className="text-3xl font-bold text-center pt-5">Quiz App</h1>
 
+          {loading ? "" : <p className="mt-8">Category :- {category}</p>}
+
           {!loading ? (
-            <div className="mt-8 dark:bg-slate-800 bg-blue-200 rounded p-4">
+            <div className="mt-3 dark:bg-slate-800 bg-blue-200 rounded p-4">
               <p className="text-center font-semibold"> Q. {question}</p>
 
               <div className="mt-6 text-xl">
@@ -60,11 +75,15 @@ const QuizApp = () => {
                       type="checkbox"
                       name="answer"
                       id={option}
-                      value={he.decode(option)}
-                      onChange={(e) => setAnswer(e.target.value)}
+                      value={option}
+                      onChange={(e) => {
+                        if (!answer) setAnswer(e.target.value);
+                      }}
                       checked={answer === option}
                     />
-                    <label className="cursor-pointer" htmlFor={option}>{he.decode(option)}</label>
+                    <label className="cursor-pointer" htmlFor={option}>
+                      {key + 1}. {he.decode(option)}
+                    </label>
                   </div>
                 ))}
               </div>
@@ -93,7 +112,7 @@ const QuizApp = () => {
                     Wrong Answer
                   </p>
                   <p className="dark:text-blue-500 text-blue-500 text-2xl font-bold my-2">
-                    Right Answer Is : {correctAnswer}
+                    {options.indexOf(correctAnswer)}. {he.decode(correctAnswer)}
                   </p>
                 </div>
               )
