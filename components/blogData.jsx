@@ -125,4 +125,11 @@ export const blogs = [
     linkName: "hindi-translator",
     date: "June 21, 2023",
   },
+  {
+    name: "Apna-Chat-GPT",
+    imageUrl:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlmA2CxPc1F6Fuim6MSL17w4QTctxSr6kI5QvxLvfLqA&usqp=CAU&ec=48600112",
+    linkName: "apna-chat-gpt",
+    date: "June 22, 2023",
+  },
 ];
