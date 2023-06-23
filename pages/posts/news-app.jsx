@@ -7,13 +7,15 @@ import { savedArticles } from "@/components/NewsData";
 import Link from "next/link";
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 import axios from "axios";
+import { AiOutlineMenu } from "react-icons/ai";
 
 const NewsApp = () => {
   const [articles, setArticles] = useState(savedArticles);
-  const [category, setCategory] = useState("");
-  const [country, setCountry] = useState("");
-  const [language, setLanguage] = useState("");
+  const [category, setCategory] = useState("general");
+  const [country, setCountry] = useState("in");
+  const [language, setLanguage] = useState("en");
   const [loading, setLoading] = useState(false);
+  const [filter, setFilter] = useState(false);
 
   const categories = [
     "general",
@@ -40,7 +42,29 @@ const NewsApp = () => {
     { name: "English", keyword: "en" },
   ];
 
-  useEffect(() => {}, []);
+  useEffect(() => {
+    const url =
+      "https://gnews.io/api/v4/top-headlines?category=general&lang=en&country=us&max=10&apikey=18863985ad4df1e7b0b4244b628ff7f7";
+
+    setLoading(true);
+
+    axios
+      .get(url)
+      .then((res) => {
+        if (res.data.articles === []) {
+          setArticles(savedArticles);
+          setLoading(false);
+        } else {
+          setArticles(res.data.articles);
+          setLoading(false);
+        }
+      })
+      .catch((err) => {
+        alert(err.message);
+        setArticles(savedArticles);
+        setLoading(false);
+      });
+  }, []);
 
   const loadNews = () => {
     const apikey = "18863985ad4df1e7b0b4244b628ff7f7";
@@ -96,9 +120,20 @@ const NewsApp = () => {
         <ThemeBtn />
 
         <div className="dark:bg-gray-900 min-h-[92vh]">
-          <h1 className="text-3xl font-bold text-center pt-5">News App</h1>
+          <div className="text-3xl font-bold text-center pt-5 flex items-center justify-center gap-8">
+            News App
+            <button
+              onClick={() => setFilter(!filter)}
+              className="p-3 text-base bg-blue-700 font-bold rounded-full w-10 h-10 flex items-center justify-center"
+            >
+              <AiOutlineMenu />
+            </button>
+          </div>
 
-          <div className="flex justify-center flex-wrap w-fit m-auto gap-4 p-2 mt-4">
+          <div
+            style={filter ? {} : { display: "none" }}
+            className="flex justify-center flex-wrap w-fit m-auto gap-4 mt-4"
+          >
             <select
               className="dark:bg-black border border-solid dark:border-white border-black rounded"
               name="language"
@@ -157,7 +192,7 @@ const NewsApp = () => {
             </button>
           </div>
 
-          <div className="w-[90%] m-auto mt-8">
+          <div className="w-[90%] m-auto mt-4 sm:mt-8">
             <ResponsiveMasonry
               columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}
             >
