@@ -119,17 +119,24 @@ export const blogs = [
     date: "June 20, 2023",
   },
   {
-    name: "Hindi-Translator",
+    name: "Hindi Translator",
     imageUrl:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGg5kZa7RkIxqvqXflLuI0otBRpypPNBts1Ku29vxcqw&usqp=CAU&ec=48600112",
     linkName: "hindi-translator",
     date: "June 21, 2023",
   },
   {
-    name: "Apna-Chat-GPT",
+    name: "Apna Chat GPT",
     imageUrl:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlmA2CxPc1F6Fuim6MSL17w4QTctxSr6kI5QvxLvfLqA&usqp=CAU&ec=48600112",
     linkName: "apna-chat-gpt",
     date: "June 22, 2023",
+  },
+  {
+    name: "News App",
+    imageUrl:
+      "https://thumbs.dreamstime.com/b/news-newspapers-folded-stacked-word-wooden-block-puzzle-dice-concept-newspaper-media-press-release-42301371.jpg",
+    linkName: "news-app",
+    date: "June 23, 2023",
   },
 ];
