@@ -13,7 +13,7 @@ const Navbar = () => {
         <div className="flex items-center">
           <div className="sm:mx-4 mx-1">
             <Link
-              className="p-2 font-bold text-white hover:no-underline"
+              className="p-2 font-bold dark:text-white hover:no-underline"
               href="/blogs"
             >
               Blogs
@@ -21,7 +21,7 @@ const Navbar = () => {
           </div>
           <div className="sm:mx-4 mx-1">
             <Link
-              className="p-2 font-bold text-white hover:no-underline"
+              className="p-2 font-bold dark:text-white hover:no-underline"
               href="/about"
             >
               About
@@ -29,7 +29,7 @@ const Navbar = () => {
           </div>
           <div className="sm:mx-4 mx-1">
             <Link
-              className="p-2 font-bold text-white hover:no-underline"
+              className="p-2 font-bold dark:text-white hover:no-underline"
               href="/contacts"
             >
               Contacts
@@ -53,7 +53,7 @@ const Navbar2 = () => {
         <div className="flex items-center">
           <div className="sm:mx-4 mx-1">
             <Link
-              className="p-2 font-bold text-white hover:no-underline"
+              className="p-2 font-bold dark:text-white hover:no-underline"
               href="/blogs"
             >
               Blogs
@@ -61,7 +61,7 @@ const Navbar2 = () => {
           </div>
           <div className="sm:mx-4 mx-1">
             <Link
-              className="p-2 font-bold text-white hover:no-underline"
+              className="p-2 font-bold dark:text-white hover:no-underline"
               href="/about"
             >
               About
@@ -69,7 +69,7 @@ const Navbar2 = () => {
           </div>
           <div className="sm:mx-4 mx-1">
             <Link
-              className="p-2 font-bold text-white hover:no-underline"
+              className="p-2 font-bold dark:text-white hover:no-underline"
               href="/contacts"
             >
               Contacts
