@@ -1,25 +1,42 @@
 import React, { Fragment } from "react";
 import { TypeAnimation } from "react-type-animation";
+import Navbar from "./Navbar";
 
 const Intro = () => {
   return (
     <Fragment>
-      <div className="flex flex-col-reverse justify-center md:flex-row h-[92vh]">
-        <div className="md:w-[70%] w-fit md:ml-8 p-4">
-          <img className="w-12 h-12 hiIcon" src="./images/hii.png" alt="" />{" "}
-          <h1 className="md:text-7xl text-3xl myName dark:text-white mt-4 mb-8">
-            My Name is Shivraj.
-          </h1>
-          <MyProfession profession={profession} />
+        <div
+          className="myImage h-[100vh] bg-no-repeat bg-blend-multiply hidden md:block"
+          style={{
+            backgroundImage: `url(./images/shiv2.jpg), linear-gradient(to right, black, gray,  gray)`,
+            backgroundSize: "cover",
+          }}
+        >
+          <Navbar/>
+          <div className="p-4 md:ml-14 md:pt-14">
+            <img className="w-12 h-12 hiIcon" src="./images/hii.png" alt="" />{" "}
+            <h1 className="md:text-7xl text-4xl myName dark:text-blue-700 text-blue-700 mt-4 mb-8">
+              My Name is Shivraj.
+            </h1>
+            <MyProfession profession={profession} />
+          </div>
         </div>
-        <div className="md:w-[30%] p-4">
-          <img
-            className="myImage md:w-44 md:h-44 w-32 h-32 rounded-full object-cover m-auto"
-            src="./images/shiv2.jpg"
-            alt=""
-          />
+
+        <div
+          className="myImage h-[92vh] bg-no-repeat bg-blend-multiply md:hidden block"
+          style={{
+            backgroundImage: `url(./images/shiv1.jpg), linear-gradient(gray, gray)`,
+            backgroundSize: "cover",
+          }}
+        >
+          <div className="p-4 md:ml-14 md:pt-14">
+            <img className="w-12 h-12 hiIcon" src="./images/hii.png" alt="" />{" "}
+            <h1 className="md:text-7xl text-3xl myName dark:text-blue-700 text-blue-700 mt-4 mb-8">
+              My Name is Shivraj.
+            </h1>
+            <MyProfession profession={profession} />
+          </div>
         </div>
-      </div>
     </Fragment>
   );
 };
@@ -39,7 +56,7 @@ const MyProfession = () => {
   return (
     <>
       <div
-        className={`md:text-3xl text-2xl mt-4 font-bold italic myProfession`}
+        className={`md:text-3xl text-left text-2xl font-bold italic myProfession`}
       >
         I am a{" "}
         <TypeAnimation

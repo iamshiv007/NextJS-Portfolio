@@ -8,8 +8,6 @@ const About = () => {
   return (
     <Fragment>
       <Theme>
-        <Navbar />
-
         <ThemeBtn />
 
         <div className="dark:bg-gray-700 h-[92vh]">
