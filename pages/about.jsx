@@ -10,7 +10,7 @@ const About = () => {
       <Theme>
         <ThemeBtn />
 
-        <div className="dark:bg-gray-700 h-[92vh]">
+        <div className="dark:bg-gray-700 h-[100vh]">
           <Intro />
         </div>
       </Theme>

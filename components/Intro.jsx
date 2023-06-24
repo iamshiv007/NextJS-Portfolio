@@ -23,7 +23,7 @@ const Intro = () => {
       </div>
 
       <div
-        className="myImage h-[92vh] bg-no-repeat bg-blend-multiply md:hidden block"
+        className="myImage h-[100vh] bg-no-repeat bg-blend-multiply md:hidden block"
         style={{
           backgroundImage: `url(./images/shiv1.jpg), linear-gradient(gray, gray)`,
           backgroundSize: "cover",
