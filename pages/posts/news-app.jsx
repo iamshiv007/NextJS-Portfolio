@@ -18,7 +18,7 @@ const NewsApp = () => {
   const [filter, setFilter] = useState(false);
 
   useEffect(() => {
-    const apikey = "18863985ad4df1e7b0b4244b628ff7f";
+    const apikey = "18863985ad4df1e7b0b4244b628ff7f7";
 
     const url =
       "https://gnews.io/api/v4/top-headlines?category=general&lang=en&country=in&max=10&apikey=" +

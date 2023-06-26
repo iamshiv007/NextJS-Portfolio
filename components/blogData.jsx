@@ -139,4 +139,18 @@ export const blogs = [
     linkName: "news-app",
     date: "June 23, 2023",
   },
+  {
+    name: "Music Chalao",
+    imageUrl:
+      "https://thumbs.dreamstime.com/b/news-newspapers-folded-stacked-word-wooden-block-puzzle-dice-concept-newspaper-media-press-release-42301371.jpg",
+    linkName: "music-chalao",
+    date: "June 25, 2023",
+  },
+  {
+    name: "Closure in Javascript",
+    imageUrl:
+      "https://thumbs.dreamstime.com/b/news-newspapers-folded-stacked-word-wooden-block-puzzle-dice-concept-newspaper-media-press-release-42301371.jpg",
+    linkName: "closure",
+    date: "June 26, 2023",
+  },
 ];
