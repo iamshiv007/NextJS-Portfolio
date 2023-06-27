@@ -149,8 +149,15 @@ export const blogs = [
   {
     name: "Closure in Javascript",
     imageUrl:
-      "https://thumbs.dreamstime.com/b/news-newspapers-folded-stacked-word-wooden-block-puzzle-dice-concept-newspaper-media-press-release-42301371.jpg",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxuSU_XV8gfjdse5Pl4LyDnVpmLvNEbjiii3yhgmLj_A&usqp=CAU&ec=48600112",
     linkName: "closure",
     date: "June 26, 2023",
+  },
+  {
+    name: "Debouncing in Javascript",
+    imageUrl:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFNt-rL1StGYk10YCMxez5SnHolxHC82nsVrNyBDjcJw&usqp=CAU&ec=48600112",
+    linkName: "debouncing",
+    date: "June 27, 2023",
   },
 ];

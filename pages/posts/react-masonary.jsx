@@ -53,7 +53,7 @@ const ReactMasonary = () => {
 
         <ThemeBtn />
 
-        <div className="dark:bg-black min-h-92">
+        <div className="dark:bg-black min-h-[92]">
           <div className="dowBtn"></div>
           <ResponsiveMasonry
             columnsCountBreakPoints={{ 350: 2, 750: 3, 900: 4 }}
