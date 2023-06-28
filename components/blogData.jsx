@@ -160,4 +160,11 @@ export const blogs = [
     linkName: "debouncing",
     date: "June 27, 2023",
   },
+  {
+    name: "Throttling in Javascript",
+    imageUrl:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDXKGVPWZR3E56lLvZde0pb_uGNkq6A_UFQw&usqp=CAU",
+    linkName: "throttling",
+    date: "June 28, 2023",
+  },
 ];
