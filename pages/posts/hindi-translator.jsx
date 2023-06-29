@@ -1,6 +1,5 @@
 import Navbar from "@/components/Navbar";
 import Theme from "@/components/Theme";
-import ThemeBtn from "@/components/ThemeBtn";
 import Head from "next/head";
 import React, { Fragment, useState } from "react";
 const axios = require("axios");
@@ -52,8 +51,6 @@ const HindiTranslator = () => {
 
       <Theme>
         <Navbar />
-
-        <ThemeBtn />
 
         <div className="md:px-[20%] px-[3%] dark:bg-gray-900 min-h-[92vh]">
           <h1 className="text-3xl font-bold text-center pt-5">

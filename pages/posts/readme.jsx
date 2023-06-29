@@ -1,6 +1,5 @@
 import Navbar from "@/components/Navbar";
 import Theme from "@/components/Theme";
-import ThemeBtn from "@/components/ThemeBtn";
 import { BlogContext } from "@/contextApi/blogContext";
 import React, { Fragment, useContext } from "react";
 import { github } from "react-syntax-highlighter/dist/cjs/styles/hljs";
@@ -19,8 +18,6 @@ const Readme = () => {
 
       <Theme>
         <Navbar />
-
-        <ThemeBtn />
 
         <div className="layoutContainer">
           <div className="layoutBox1">

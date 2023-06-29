@@ -4,7 +4,6 @@ import utilStyles from "../styles/utils.module.css";
 import { Fragment, useContext, useState } from "react";
 import Intro from "@/components/Intro";
 import Blogs from "@/components/Blogs";
-import ThemeBtn from "@/components/ThemeBtn";
 import { BlogContext } from "@/contextApi/blogContext";
 import Navbar from "@/components/Navbar";
 
@@ -23,7 +22,6 @@ export default function Home() {
         <meta name="author" content="Shivraj" />
       </Head>
       <div className={dark ? "dark" : ""}>
-        <ThemeBtn />
         <div className="dark:bg-gray-700 ">
           <Intro />
           <div className={`${utilStyles.headingMd} w-[90%] m-auto mt-6`}>

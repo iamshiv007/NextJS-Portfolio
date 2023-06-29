@@ -2,7 +2,6 @@ import Head from "next/head";
 import { Fragment } from "react";
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
-import ThemeBtn from "@/components/ThemeBtn";
 import Theme from "@/components/Theme";
 
 const FirstPost = () => {
@@ -12,8 +11,6 @@ const FirstPost = () => {
         <title>Why Next js</title>
       </Head>
       <Theme>
-        <ThemeBtn />
-
         <Navbar />
 
         <div className="layoutContainer h-full">
@@ -73,7 +70,6 @@ const FirstPost = () => {
               <Seo />
 
               <div className="text-center m-5 text-2xl">❤️ Thank You 🙏</div>
- 
             </div>
           </div>
 

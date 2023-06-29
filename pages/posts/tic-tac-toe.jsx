@@ -1,6 +1,5 @@
 import Navbar from "@/components/Navbar";
 import Theme from "@/components/Theme";
-import ThemeBtn from "@/components/ThemeBtn";
 import Head from "next/head";
 import React, { Fragment, useEffect, useState } from "react";
 
@@ -129,8 +128,6 @@ const TicTacToe = () => {
       </Head>
 
       <Theme>
-        <ThemeBtn />
-
         <Navbar />
 
         <div className="dark:bg-gray-900 h-[92vh]">

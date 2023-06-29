@@ -1,6 +1,5 @@
 import Navbar from "@/components/Navbar";
 import Theme from "@/components/Theme";
-import ThemeBtn from "@/components/ThemeBtn";
 import Head from "next/head";
 import React, { Fragment, useEffect, useState } from "react";
 import { savedArticles } from "@/components/NewsData";
@@ -89,8 +88,6 @@ const NewsApp = () => {
 
       <Theme>
         <Navbar />
-
-        <ThemeBtn />
 
         <div className="dark:bg-gray-900 min-h-[92vh]">
           <div className="text-3xl font-bold text-center pt-5 flex items-center justify-center gap-8">

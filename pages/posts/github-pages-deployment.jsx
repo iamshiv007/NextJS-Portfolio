@@ -1,6 +1,5 @@
 import Navbar from "@/components/Navbar";
 import Theme from "@/components/Theme";
-import ThemeBtn from "@/components/ThemeBtn";
 import { BlogContext } from "@/contextApi/blogContext";
 import Head from "next/head";
 import React, { Fragment, useContext } from "react";
@@ -19,8 +18,6 @@ const GithubPagesDeploy = () => {
 
       <Theme>
         <Navbar />
-
-        <ThemeBtn />
 
         <div className="layoutContainer">
           <div className="layoutBox1">

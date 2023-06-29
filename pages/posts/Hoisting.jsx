@@ -1,7 +1,5 @@
 import Navbar from "@/components/Navbar";
 import Theme from "@/components/Theme";
-import ThemeBtn from "@/components/ThemeBtn";
-import Layout from "@/components/layout";
 import Head from "next/head";
 import React, { Fragment } from "react";
 
@@ -13,8 +11,6 @@ const HoistingComponent = () => {
       </Head>
 
       <Theme>
-        <ThemeBtn />
-
         <Navbar />
 
         <div className="layoutContainer">

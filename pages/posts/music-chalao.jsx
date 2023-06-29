@@ -1,6 +1,5 @@
 import Navbar from "@/components/Navbar";
 import Theme from "@/components/Theme";
-import ThemeBtn from "@/components/ThemeBtn";
 import Head from "next/head";
 import React, { Fragment, useEffect, useState } from "react";
 const axios = require("axios");
@@ -37,7 +36,6 @@ const MusicChalao = () => {
 
       <Theme>
         <Navbar />
-        <ThemeBtn />
 
         <div className="dark:bg-gray-900 min-h-[92vh]">
           <h1 className="text-3xl font-bold text-center pt-5 flex items-center justify-center gap-8">

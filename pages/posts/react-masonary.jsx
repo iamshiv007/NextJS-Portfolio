@@ -1,6 +1,5 @@
 import Navbar from "@/components/Navbar";
 import Theme from "@/components/Theme";
-import ThemeBtn from "@/components/ThemeBtn";
 import axios from "axios";
 import Head from "next/head";
 import React, { Fragment, useEffect, useState } from "react";
@@ -50,8 +49,6 @@ const ReactMasonary = () => {
       </Head>
       <Theme>
         <Navbar />
-
-        <ThemeBtn />
 
         <div className="dark:bg-black min-h-[92]">
           <div className="dowBtn"></div>

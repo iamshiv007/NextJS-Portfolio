@@ -1,6 +1,5 @@
 import Navbar from "@/components/Navbar";
 import Theme from "@/components/Theme";
-import ThemeBtn from "@/components/ThemeBtn";
 import axios from "axios";
 import Head from "next/head";
 import React, { Fragment, useEffect, useState } from "react";
@@ -56,7 +55,6 @@ const QuizApp = () => {
 
       <Theme>
         <Navbar />
-        <ThemeBtn />
 
         <div className="md:px-[10%] px-[3%] dark:bg-gray-900 h-[92vh]">
           <h1 className="text-3xl font-bold text-center pt-5">Quiz App</h1>

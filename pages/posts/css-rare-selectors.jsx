@@ -1,6 +1,5 @@
 import Navbar from "@/components/Navbar";
 import Theme from "@/components/Theme";
-import ThemeBtn from "@/components/ThemeBtn";
 import Head from "next/head";
 import React, { Fragment } from "react";
 
@@ -12,8 +11,6 @@ const CssSelector = () => {
       </Head>
 
       <Theme>
-        <ThemeBtn />
-
         <Navbar />
 
         <div className="layoutContainer">

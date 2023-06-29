@@ -4,7 +4,6 @@ import { Carousel } from "react-responsive-carousel";
 import Head from "next/head";
 import Navbar from "@/components/Navbar";
 import Theme from "@/components/Theme";
-import ThemeBtn from "@/components/ThemeBtn";
 
 const ReactResposiveCarousel = () => {
   const [arrows, setArrows] = useState(false);
@@ -20,8 +19,6 @@ const ReactResposiveCarousel = () => {
       </Head>
 
       <Theme>
-        <ThemeBtn />
-
         <Navbar />
 
         <div className="layoutContainer">

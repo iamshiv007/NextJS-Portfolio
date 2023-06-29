@@ -1,6 +1,5 @@
 import Navbar from "@/components/Navbar";
 import Theme from "@/components/Theme";
-import ThemeBtn from "@/components/ThemeBtn";
 import Head from "next/head";
 import React, { Fragment, useState } from "react";
 
@@ -24,8 +23,6 @@ const LinearGradient = () => {
       </Head>
 
       <Theme>
-        <ThemeBtn />
-
         <Navbar />
 
         <div className="layoutContainer">
