@@ -167,4 +167,11 @@ export const blogs = [
     linkName: "throttling",
     date: "June 28, 2023",
   },
+  {
+    name: "Rest and  Spread Operator",
+    imageUrl:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1i7928wer2C-LN0mx0bdsp88row0sCsjREw&usqp=CAU",
+    linkName: "spreadOperator",
+    date: "June 29, 2023",
+  },
 ];
