@@ -174,4 +174,11 @@ export const blogs = [
     linkName: "javascript/spreadOperator",
     date: "June 29, 2023",
   },
+  {
+    name: "Let Var and Const",
+    imageUrl:
+      "https://blogger.googleusercontent.com/img/a/AVvXsEjtvbXJQa3o7dsXB27ED6xiA2DlUTEG1eTDaT1wK_cUtLRwoMHBhTeNSimGv9v5d0Fh92nRW02lze1jjhP0CoSEgwdJ2zztMg0QMQuCZrOc4hHsBafBsinTRrkee7O1qcjEY5D5H5sQW-uapZX_DXxIpgtOAamuqtEQkKBiNEgIutlFy989AhyiuTWI=w1200-h630-p-k-no-nu",
+    linkName: "javascript/letVarConst",
+    date: "June 30, 2023",
+  },
 ];
