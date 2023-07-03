@@ -7,6 +7,7 @@ import Link from "next/link";
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 import axios from "axios";
 import { AiOutlineMenu } from "react-icons/ai";
+import MobileNavbar from "@/components/mobileNavbar";
 
 const NewsApp = () => {
   const [articles, setArticles] = useState(savedArticles);

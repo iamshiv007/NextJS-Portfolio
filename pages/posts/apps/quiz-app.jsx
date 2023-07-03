@@ -6,6 +6,7 @@ import React, { Fragment, useEffect, useState } from "react";
 import he from "he";
 import { TiTick } from "react-icons/ti";
 import { ImCross } from "react-icons/im";
+import MobileNavbar from "@/components/mobileNavbar";
 
 const QuizApp = () => {
   const [question, setQuestion] = useState();
