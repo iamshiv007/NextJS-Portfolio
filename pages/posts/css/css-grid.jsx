@@ -17,6 +17,7 @@ const CssGrid = () => {
       </Head>
       <Theme>
         <Navbar />
+        <MobileNavbar />
 
         <div className="min-h-[92vh] gap-x-7 dark:bg-gray-900 sm:dark:bg-gray-700 transition-all duration-1000 p-4 md:p-8">
           <h1 className="text-3xl font-bold bg-blue-400 dark:bg-blue-800 p-2 rounded-md">

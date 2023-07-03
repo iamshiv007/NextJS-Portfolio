@@ -129,6 +129,7 @@ const TicTacToe = () => {
 
       <Theme>
         <Navbar />
+        <MobileNavbar />
 
         <div className="dark:bg-gray-900 h-[92vh]">
           <h1 className="text-3xl font-bold text-center pt-5">Tic-Tac-Toe</h1>

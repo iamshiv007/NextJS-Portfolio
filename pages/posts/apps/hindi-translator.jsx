@@ -51,6 +51,7 @@ const HindiTranslator = () => {
 
       <Theme>
         <Navbar />
+        <MobileNavbar />
 
         <div className="md:px-[20%] px-[3%] dark:bg-gray-900 min-h-[92vh]">
           <h1 className="text-3xl font-bold text-center pt-5">

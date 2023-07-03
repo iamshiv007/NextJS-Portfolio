@@ -55,6 +55,7 @@ const QuizApp = () => {
 
       <Theme>
         <Navbar />
+        <MobileNavbar />
 
         <div className="md:px-[10%] px-[3%] dark:bg-gray-900 h-[92vh]">
           <h1 className="text-3xl font-bold text-center pt-5">Quiz App</h1>

@@ -24,6 +24,7 @@ const LinearGradient = () => {
 
       <Theme>
         <Navbar />
+        <MobileNavbar />
 
         <div className="layoutContainer">
           <div className="layoutBox1">

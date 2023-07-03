@@ -10,11 +10,11 @@ div {
 @layer components {
   /* Navbar.jsx */
   .navbar {
-    @apply dark:bg-black border-b border-solid border-gray-300 h-[8vh] flex items-center sticky top-0 py-4 sm:py-6 bg-white opacity-95 z-10;
+    @apply dark:bg-black border-b border-solid border-gray-300 h-[8vh] md:flex items-center sticky top-0 py-4 sm:py-6 bg-white opacity-95 z-10 hidden;
   }
 
   .navbar2 {
-    @apply h-[8vh] flex items-center sticky top-0 py-4 sm:py-6 opacity-95 z-10;
+    @apply h-[8vh] hidden md:flex items-center sticky top-0 py-4 sm:py-6 opacity-95 z-10;
   }
 
   /* Blogs.jsx */

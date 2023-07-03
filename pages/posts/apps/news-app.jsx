@@ -88,6 +88,7 @@ const NewsApp = () => {
 
       <Theme>
         <Navbar />
+        <MobileNavbar />
 
         <div className="dark:bg-gray-900 min-h-[92vh]">
           <div className="text-3xl font-bold text-center pt-5 flex items-center justify-center gap-8">

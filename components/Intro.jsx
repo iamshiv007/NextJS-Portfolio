@@ -1,6 +1,7 @@
 import React, { Fragment } from "react";
 import { TypeAnimation } from "react-type-animation";
 import { Navbar2 } from "./Navbar";
+import MobileNavbar from "./mobileNavbar";
 
 const Intro = () => {
   return (
@@ -13,6 +14,7 @@ const Intro = () => {
         }}
       >
         <Navbar2 />
+        <MobileNavbar />
         <div className="p-4 md:ml-14 md:pt-14">
           <img className="w-12 h-12 hiIcon" src="./images/hii.png" alt="" />{" "}
           <h1 className="md:text-7xl text-4xl myName dark:text-blue-700 text-blue-700 mt-4 mb-8">
@@ -30,6 +32,7 @@ const Intro = () => {
         }}
       >
         <Navbar2 />
+        <MobileNavbar />
         <div className="p-4 md:ml-14 md:pt-14">
           <img className="w-12 h-12 hiIcon" src="./images/hii.png" alt="" />{" "}
           <h1 className="md:text-7xl text-3xl myName dark:text-blue-700 text-blue-700 mt-4 mb-8">
