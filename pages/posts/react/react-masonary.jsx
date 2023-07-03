@@ -1,5 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Theme from "@/components/Theme";
+import MobileNavbar from "@/components/mobileNavbar";
 import axios from "axios";
 import Head from "next/head";
 import React, { Fragment, useEffect, useState } from "react";
@@ -49,6 +50,7 @@ const ReactMasonary = () => {
       </Head>
       <Theme>
         <Navbar />
+        <MobileNavbar />
 
         <div className="dark:bg-black min-h-[92]">
           <div className="dowBtn"></div>

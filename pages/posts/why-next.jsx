@@ -3,6 +3,7 @@ import { Fragment } from "react";
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Theme from "@/components/Theme";
+import MobileNavbar from "@/components/mobileNavbar";
 
 const FirstPost = () => {
   return (
@@ -12,6 +13,7 @@ const FirstPost = () => {
       </Head>
       <Theme>
         <Navbar />
+        <MobileNavbar />
 
         <div className="layoutContainer h-full">
           <div className="layoutBox1">

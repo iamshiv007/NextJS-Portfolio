@@ -1,5 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Theme from "@/components/Theme";
+import MobileNavbar from "@/components/mobileNavbar";
 import { BlogContext } from "@/contextApi/blogContext";
 import Head from "next/head";
 import React, { Fragment, useContext } from "react";
@@ -17,6 +18,7 @@ const SendEmail = () => {
 
       <Theme>
         <Navbar />
+        <MobileNavbar />
 
         <div className="layoutContainer">
           <div className="layoutBox1">

@@ -20,7 +20,7 @@ const ReactResposiveCarousel = () => {
 
       <Theme>
         <Navbar />
-
+        <MobileNavbar />
         <div className="layoutContainer">
           <div className="layoutBox1">
             <h1 className="text-3xl  text-center my-5">

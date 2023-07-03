@@ -6,6 +6,7 @@ import { github } from "react-syntax-highlighter/dist/cjs/styles/hljs";
 import { dark } from "react-syntax-highlighter/dist/cjs/styles/hljs";
 import SyntaxHighlighter from "react-syntax-highlighter";
 import Head from "next/head";
+import MobileNavbar from "@/components/mobileNavbar";
 
 const Readme = () => {
   const { dark: myDark } = useContext(BlogContext);
@@ -18,6 +19,7 @@ const Readme = () => {
 
       <Theme>
         <Navbar />
+        <MobileNavbar />
 
         <div className="layoutContainer">
           <div className="layoutBox1">

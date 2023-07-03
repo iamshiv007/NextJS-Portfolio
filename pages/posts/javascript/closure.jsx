@@ -6,6 +6,7 @@ import React, { Fragment, useContext, useRef, useState } from "react";
 import { github } from "react-syntax-highlighter/dist/cjs/styles/hljs";
 import { dark } from "react-syntax-highlighter/dist/cjs/styles/hljs";
 import SyntaxHighlighter from "react-syntax-highlighter";
+import MobileNavbar from "../../../components/mobileNavbar";
 
 const Closure = () => {
   const { dark: myDark } = useContext(BlogContext);
@@ -18,6 +19,7 @@ const Closure = () => {
 
       <Theme>
         <Navbar />
+        <MobileNavbar />
 
         <div className="layoutContainer">
           <div className="layoutBox1">

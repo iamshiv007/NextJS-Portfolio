@@ -1,5 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Theme from "@/components/Theme";
+import MobileNavbar from "@/components/mobileNavbar";
 import Head from "next/head";
 import React, { Fragment } from "react";
 
@@ -12,6 +13,7 @@ const HoistingComponent = () => {
 
       <Theme>
         <Navbar />
+        <MobileNavbar />
 
         <div className="layoutContainer">
           <div className="layoutBox1">
