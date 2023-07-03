@@ -4,6 +4,7 @@ import { Carousel } from "react-responsive-carousel";
 import Head from "next/head";
 import Navbar from "@/components/Navbar";
 import Theme from "@/components/Theme";
+import MobileNavbar from "@/components/mobileNavbar";
 
 const ReactResposiveCarousel = () => {
   const [arrows, setArrows] = useState(false);
