@@ -181,12 +181,18 @@ export const blogs = [
     linkName: "javascript/letVarConst",
     date: "June 30, 2023",
   },
-
   {
     name: "Component Life Cycle",
     imageUrl:
-      "https://blogger.googleusercontent.com/img/a/AVvXsEjtvbXJQa3o7dsXB27ED6xiA2DlUTEG1eTDaT1wK_cUtLRwoMHBhTeNSimGv9v5d0Fh92nRW02lze1jjhP0CoSEgwdJ2zztMg0QMQuCZrOc4hHsBafBsinTRrkee7O1qcjEY5D5H5sQW-uapZX_DXxIpgtOAamuqtEQkKBiNEgIutlFy989AhyiuTWI=w1200-h630-p-k-no-nu",
+      "https://cdn-media-1.freecodecamp.org/images/1*_drMYY_IEgboMS4RhvC-lQ.png",
     linkName: "react/component-life-cycle",
     date: "July 3, 2023",
+  },
+  {
+    name: "useEffect in React",
+    imageUrl:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbhezzFR6qB93F9NaClSY5oCFZ1wg4j0YQww&usqp=CAU",
+    linkName: "react/useEffect",
+    date: "July 4, 2023",
   },
 ];
