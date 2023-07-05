@@ -195,4 +195,11 @@ export const blogs = [
     linkName: "react/useEffect",
     date: "July 4, 2023",
   },
+  {
+    name: "useState in React",
+    imageUrl:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYTiTHUjDbI_QrgGMU6NWTtrjV161GoAzxUQ&usqp=CAU",
+    linkName: "react/useState",
+    date: "July 5, 2023",
+  },
 ];
