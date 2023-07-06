@@ -202,4 +202,11 @@ export const blogs = [
     linkName: "react/useState",
     date: "July 5, 2023",
   },
+  {
+    name: "Virtual DOM in React",
+    imageUrl:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQYGau3eAtYMcIqqrHk2U1CR39SCnyhywjHA&usqp=CAU",
+    linkName: "react/virtual-dom",
+    date: "July 5, 2023",
+  },
 ];
