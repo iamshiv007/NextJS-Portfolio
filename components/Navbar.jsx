@@ -1,6 +1,7 @@
 import { BlogContext } from "@/contextApi/blogContext";
 import Link from "next/link";
 import React, { Fragment, useContext } from "react";
+import { BsFillSunFill, BsMoon } from "react-icons/bs";
 
 const Navbar = () => {
   const { dark, setDark } = useContext(BlogContext);
@@ -8,7 +9,7 @@ const Navbar = () => {
   return (
     <Fragment>
       <div
-        className={`hidden items-center justify-between py-4 px-8 h-[12vh] dark:bg-black md:flex sticky top-0`}
+        className={`hidden bg-white items-center justify-between py-4 px-8 h-[12vh] dark:bg-black md:flex sticky -top-3`}
       >
         <div className="flex items-center">
           <img src="/images/NewLogo.png" alt="Logo" className="w-12 h-12" />
@@ -31,7 +32,11 @@ const Navbar = () => {
 
         <div>
           <button className="dark:text-white" onClick={() => setDark(!dark)}>
-            Mode
+            {dark ? (
+              <BsFillSunFill color="#c72c6c" size={22} />
+            ) : (
+              <BsMoon color="#07d0e5" size={22} />
+            )}
           </button>
         </div>
       </div>
