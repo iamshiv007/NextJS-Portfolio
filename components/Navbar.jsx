@@ -9,7 +9,7 @@ const Navbar = () => {
   return (
     <Fragment>
       <div
-        className={`hidden bg-white items-center justify-between py-4 px-8 h-[12vh] dark:bg-black md:flex sticky -top-3`}
+        className={`hidden bg-white items-center justify-between py-4 px-8 h-[12vh] dark:bg-black md:flex sticky top-0`}
       >
         <div className="flex items-center">
           <img src="/images/NewLogo.png" alt="Logo" className="w-12 h-12" />

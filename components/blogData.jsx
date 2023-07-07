@@ -207,6 +207,13 @@ export const blogs = [
     imageUrl:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQYGau3eAtYMcIqqrHk2U1CR39SCnyhywjHA&usqp=CAU",
     linkName: "react/virtual-dom",
-    date: "July 5, 2023",
+    date: "July 6, 2023",
+  },
+  {
+    name: "Fragment In React",
+    imageUrl:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT77S6c9Tlz-zqWRRPgKeJDd8kSjbR_alp30g&usqp=CAU",
+    linkName: "react/fragment",
+    date: "July 7, 2023",
   },
 ];

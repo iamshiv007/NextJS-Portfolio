@@ -36,7 +36,7 @@ div {
   }
 
   .layoutBox1 {
-    @apply sm:w-[60%] ml-[3%] w-[94%] border-0 sm:border border-solid border-gray-300 rounded-xl p-4 sm:ml-[10%] min-h-[88vh] sm:h-[88vh] sm:overflow-y-scroll dark:bg-gray-900 my-[2vh] transition-all duration-1000;
+    @apply sm:w-[60%] ml-[3%] w-[94%] border-0 sm:border border-solid border-gray-300 rounded-xl p-4 sm:ml-[10%] min-h-[84vh] sm:h-[84vh] sm:overflow-y-scroll dark:bg-gray-900 my-[2vh] transition-all duration-1000;
   }
   .layoutBox2 {
     @apply w-[20%] p-2 mt-2 hidden sm:block transition-all duration-1000;
