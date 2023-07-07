@@ -10,7 +10,15 @@ div {
 @layer components {
   /* Navbar.jsx */
   .navbar {
-    @apply dark:bg-black border-b border-solid border-gray-300 h-[8vh] md:flex items-center sticky top-0 py-4 sm:py-6 bg-white opacity-95 z-10 hidden;
+    @apply dark:bg-black h-[12vh] md:flex items-center sticky top-0 py-6 bg-white opacity-95 z-10 hidden;
+  }
+
+  .navLinks {
+    @apply text-lg text-amber-500 font-medium p-2 hover:border-b border-solid border-amber-500;
+  }
+
+  .navbar a {
+    @apply hover:bg-white hover:text-black rounded-md px-4;
   }
 
   .navbar2 {
