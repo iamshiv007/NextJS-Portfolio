@@ -1,7 +1,8 @@
 import { BlogContext } from "@/contextApi/blogContext";
 import Link from "next/link";
 import React, { Fragment, useContext } from "react";
-import { BsFillSunFill, BsMoon } from "react-icons/bs";
+import { BsFillMoonFill } from "react-icons/bs";
+import { RiSunFill } from "react-icons/ri";
 
 const Navbar = () => {
   const { dark, setDark } = useContext(BlogContext);
@@ -33,9 +34,9 @@ const Navbar = () => {
         <div>
           <button className="dark:text-white" onClick={() => setDark(!dark)}>
             {dark ? (
-              <BsFillSunFill color="#c72c6c" size={22} />
+              <RiSunFill color="#c72c6c" size={22} />
             ) : (
-              <BsMoon color="#07d0e5" size={22} />
+              <BsFillMoonFill color="#07d0e5" size={22} />
             )}
           </button>
         </div>
