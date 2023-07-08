@@ -92,7 +92,7 @@ const MyFragment = () => {
             </div>
 
             <p className="text-center my-3">
-              🙏 Thank You You are the most lucky 1 precenty
+              🙏 Thank You, You are the most lucky 1 precenty
             </p>
           </div>
 

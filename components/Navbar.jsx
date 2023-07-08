@@ -16,18 +16,18 @@ const Navbar = () => {
         </div>
 
         <div className="hidden md:flex items-center gap-12">
-          <a href="/" className="navLinks">
+          <Link href="/" className="navLinks">
             Home
-          </a>
-          <a href="/blogs" className="navLinks">
+          </Link>
+          <Link href="/blogs" className="navLinks">
             Blogs
-          </a>
-          <a href="/about" className="navLinks">
+          </Link>
+          <Link href="/about" className="navLinks">
             About
-          </a>
-          <a href="/contact" className="navLinks">
+          </Link>
+          <Link href="/contact" className="navLinks">
             Contact
-          </a>
+          </Link>
         </div>
 
         <div>

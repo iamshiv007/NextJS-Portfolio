@@ -1,44 +1,29 @@
 import React, { Fragment } from "react";
 import { TypeAnimation } from "react-type-animation";
-import { Navbar2 } from "./Navbar";
+import Navbar, { Navbar2 } from "./Navbar";
 import MobileNavbar from "./mobileNavbar";
 
 const Intro = () => {
   return (
     <Fragment>
-      <div
-        className="myImage h-[100vh] bg-no-repeat bg-blend-multiply hidden md:block"
-        style={{
-          backgroundImage: `url(./images/shiv2.jpg), linear-gradient(to right, black, gray,  gray)`,
-          backgroundSize: "cover",
-        }}
-      >
-        <Navbar2 />
+      <div>
+        <Navbar />
         <MobileNavbar />
-        <div className="p-4 md:ml-14 md:pt-14">
-          <img className="w-12 h-12 hiIcon" src="./images/hii.png" alt="" />{" "}
-          <h1 className="md:text-7xl text-4xl myName dark:text-blue-700 text-blue-700 mt-4 mb-8">
-            My Name is Shivraj.
-          </h1>
-          <MyProfession profession={profession} />
-        </div>
-      </div>
 
-      <div
-        className="myImage h-[100vh] bg-no-repeat bg-blend-multiply md:hidden block"
-        style={{
-          backgroundImage: `url(./images/shiv1.jpg), linear-gradient(gray, gray)`,
-          backgroundSize: "cover",
-        }}
-      >
-        <Navbar2 />
-        <MobileNavbar />
-        <div className="p-4 md:ml-14 md:pt-14">
-          <img className="w-12 h-12 hiIcon" src="./images/hii.png" alt="" />{" "}
-          <h1 className="md:text-7xl text-3xl myName dark:text-blue-700 text-blue-700 mt-4 mb-8">
-            My Name is Shivraj.
-          </h1>
-          <MyProfession profession={profession} />
+        <div className="h-[88vh] dark:bg-black bg-white md:grid grid-cols-2">
+          <div className="md:pt-[100px] md:pl-[150px] pt-[70px] ml-[50px]">
+            {/* <img className="w-12 h-12 hiIcon" src="./images/hii.png" alt="" /> */}
+            <p className="text-3xl">Hii</p>
+            <p className="text-3xl mt-4">I am Shivraj Gurjar</p>
+            <p className="text-3xl mt-4">from India,</p>
+            <p className="text-3xl mt-4">I am a Developer of</p>
+            <div className="mt-4">
+              <MyProfession profession={profession} />
+            </div>
+          </div>
+          <div className="flex justify-center items-center">
+            {/* <img className="rounded-full w-[300px] h-[300px] object-cover " src="./images/shivraj.jpg" alt="" /> */}
+          </div>
         </div>
       </div>
     </Fragment>
@@ -59,28 +44,24 @@ const profession = [
 const MyProfession = () => {
   return (
     <>
-      <div
-        className={`md:text-3xl text-left text-2xl font-bold italic myProfession`}
-      >
-        I am a{" "}
+      <div className="text-3xl">
         <TypeAnimation
           sequence={[
-            "Software|",
-            1000,
-            "ReactJS|",
-            1000,
-            "NextJS|",
-            1000,
-            "NodeJS|",
-            1000,
-            "MERN Stack|",
-            1000,
+            "Software",
+            2000,
+            "ReactJS",
+            2000,
+            "NextJS",
+            2000,
+            "NodeJS",
+            2000,
+            "MERN Stack",
+            2000,
           ]}
           speed={10}
           repeat={Infinity}
           className="text2xl"
         />
-        developer
       </div>
     </>
   );
