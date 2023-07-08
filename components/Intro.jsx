@@ -11,15 +11,21 @@ const Intro = () => {
         <MobileNavbar />
 
         <div className="h-[88vh] dark:bg-black bg-white md:grid grid-cols-2">
-          <div className="md:pt-[100px] md:pl-[150px] pt-[70px] ml-[50px]">
+          <div className="md:pt-[100px] md:pl-[120px] pt-[70px] ml-[30px]">
             {/* <img className="w-12 h-12 hiIcon" src="./images/hii.png" alt="" /> */}
-            <p className="text-3xl">Hii</p>
-            <p className="text-3xl mt-4">I am Shivraj Gurjar</p>
-            <p className="text-3xl mt-4">from India,</p>
-            <p className="text-3xl mt-4">I am a Developer of</p>
-            <div className="mt-4">
+            <p className="md:text-6xl text-4xl font-bold">Hi</p>
+            <p className="md:text-6xl text-4xl font-bold mt-5">
+              I'm{" "}
+              <span className="text-[#c72c6c] dark:text-[#07d0e5]">
+                Shivraj
+              </span>
+            </p>
+            <p className="md:text-6xl text-4xl font-bold mt-5">
+              a Web Developer
+            </p>
+            {/* <div className="mt-4">
               <MyProfession profession={profession} />
-            </div>
+            </div> */}
           </div>
           <div className="flex justify-center items-center">
             {/* <img className="rounded-full w-[300px] h-[300px] object-cover " src="./images/shivraj.jpg" alt="" /> */}
@@ -31,38 +37,3 @@ const Intro = () => {
 };
 
 export default Intro;
-
-const profession = [
-  "ReactJS",
-  "NextJS",
-  "MERN Stack",
-  "Frontend ",
-  "NodeJS ",
-  "FullStack ",
-];
-
-const MyProfession = () => {
-  return (
-    <>
-      <div className="text-3xl">
-        <TypeAnimation
-          sequence={[
-            "Software",
-            2000,
-            "ReactJS",
-            2000,
-            "NextJS",
-            2000,
-            "NodeJS",
-            2000,
-            "MERN Stack",
-            2000,
-          ]}
-          speed={10}
-          repeat={Infinity}
-          className="text2xl"
-        />
-      </div>
-    </>
-  );
-};

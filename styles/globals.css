@@ -17,6 +17,10 @@ div {
     @apply dark:text-[#07d0e5] text-[#c72c6c] font-medium p-2 hover:border-b border-solid border-[#c72c6c] dark:border-[#07d0e5];
   }
 
+  .navLinksMobile {
+    @apply text-2xl pl-3 flex items-center gap-8 py-2 text-[#c72c6c] dark:text-[#07d0e5] font-bold;
+  }
+
   .navbar a {
     @apply hover:bg-white hover:text-black rounded-md px-4;
   }
