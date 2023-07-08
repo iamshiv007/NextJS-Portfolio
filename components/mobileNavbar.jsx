@@ -68,7 +68,7 @@ const MobileNavbar = () => {
             </Link>
           </div>
 
-          <div className="fixed bottom-10 flex justify-center w-screen left-0">
+          <div className="fixed bottom-20 flex justify-center w-screen left-0">
             <button
               className=""
               onClick={() => {
