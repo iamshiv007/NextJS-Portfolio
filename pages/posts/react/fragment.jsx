@@ -24,28 +24,27 @@ const MyFragment = () => {
 
         <div className="layoutContainer">
           <div className="layoutBox1">
-            <h1 className="text-3xl font-bold mt-4 bg-blue-400 dark:bg-blue-800 p-2 rounded-md">
-              Fragment in React
-            </h1>
+            <h1 className="blog-heading">Fragment in React</h1>
 
             <p className="mt-5">
               In React Whenever you want to render something on the screen, you
-              need to use a render method inside the component. This render
-              method can return single elements or multiple elements. The render
-              method will only render a single root node inside it at a time.
-              However, if you want to return multiple elements, the render
-              method will require a 'div' tag and put the entire content or
-              elements inside it. This extra node to DOM sometimes result in the
-              wrong formatting of your HTML output and also not loved by the
-              many developers.
+              need to use a <strong>render</strong> method inside the component.
+              This render method can return single elements or multiple
+              elements. The render method will only render a{" "}
+              <strong> single root node</strong> inside it at a time. However,
+              if you want to return multiple elements, the render method will
+              require a 'div' tag and put the entire content or elements inside
+              it. This extra node to DOM sometimes result in the wrong
+              formatting of your HTML output and also not loved by the many
+              developers.
             </p>
 
             <Example1 myDark={myDark} />
 
             <p className="mt-5">
-              To solve this problem, React introduced Fragments from 16.2 and
-              above version. Fragments allows you to group a list of children
-              withouth adding extra node to DOM.{" "}
+              To solve this problem, React introduced Fragment from{" "}
+              <strong> 16.2 and above version</strong>. Fragments allows you to
+              group a list of children without adding extra node to DOM.{" "}
             </p>
 
             <Example2 myDark={myDark} />
@@ -96,7 +95,38 @@ const MyFragment = () => {
             </p>
           </div>
 
-          <div className="layoutBox2">Pranam</div>
+          <div className="layoutBox2">
+            <div>
+              <p>
+                Did you know that the virtual DOM of React is like a secret
+                agent?
+              </p>
+
+              <p className="mt-3">
+                It's always undercover, spying on the real DOM and making
+                changes behind the scenes!
+              </p>
+
+              <p className="mt-3">
+                Virtual DOM: "I see you, real DOM, but you can't see me!"
+              </p>
+
+              <p className="mt-3">
+                Real DOM: "What's that rustling noise? Is someone messing with
+                my elements?"
+              </p>
+
+              <p className="mt-3">
+                Virtual DOM: wearing sunglasses "Just doing my job, keeping
+                things snappy and efficient!"
+              </p>
+
+              <p className="mt-3">
+                Real DOM: "Well, as long as you're not causing any trouble...
+                Carry on, Agent VDOM!"
+              </p>
+            </div>
+          </div>
         </div>
       </Theme>
     </Fragment>
@@ -113,7 +143,7 @@ const Example1 = ({ myDark }) => {
            //Extraneous div element   
            <div>  
              <h2> Hello World! </h2>   
-             <p> Welcome to the JavaTpoint. </p>   
+             <p> Welcome to the Shiv's Blog. </p>   
            </div>   
         );   
        }   
@@ -136,7 +166,7 @@ const Example1 = ({ myDark }) => {
 const Example2 = ({ myDark }) => {
   const codeString = `<React.Fragment>  
   <h2> child1 </h2>   
-<p> child2 </p>   
+  <p> child2 </p>   
   .. ..... .... ...  
 </React.Fragment>  `;
 
@@ -161,7 +191,7 @@ const Example3 = ({ myDark }) => {
        return (   
          <React.Fragment>  
               <h2> Hello World! </h2>   
-          <p> Welcome to the JavaTpoint. </p>   
+              <p> Welcome to the Shiv's Blog. </p>   
            </React.Fragment>  
        );   
       }   
@@ -188,7 +218,7 @@ const Example4 = ({ myDark }) => {
       return (   
         <>    
           <h2> Hello World! </h2>   
-          <p> Welcome to the JavaTpoint </p>   
+          <p> Welcome to the Shiv's Blog </p>   
         </>   
       );   
     }   
