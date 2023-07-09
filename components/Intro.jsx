@@ -1,13 +1,9 @@
 import React, { Fragment } from "react";
-import Navbar from "./Navbar";
-import MobileNavbar from "./mobileNavbar";
 
 const Intro = () => {
   return (
     <Fragment>
       <div>
-        <Navbar />
-        <MobileNavbar />
 
         <div className="h-[88vh] dark:bg-black bg-white md:grid grid-cols-2">
           <div className="md:pt-[100px] md:pl-[120px] pt-[70px] ml-[30px]">

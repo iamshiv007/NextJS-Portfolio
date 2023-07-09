@@ -6,6 +6,7 @@ import Intro from "@/components/Intro";
 import Blogs from "@/components/Blogs";
 import { BlogContext } from "@/contextApi/blogContext";
 import Navbar from "@/components/Navbar";
+import MobileNavbar from "@/components/mobileNavbar";
 
 export default function Home() {
   const { dark } = useContext(BlogContext);
@@ -23,6 +24,8 @@ export default function Home() {
       </Head>
       <div className={dark ? "dark" : ""}>
         <div className="dark:bg-gray-700 ">
+          <Navbar />
+          <MobileNavbar />
           <Intro />
           <div className={`${utilStyles.headingMd} w-[90%] m-auto mt-6`}>
             <Blogs />

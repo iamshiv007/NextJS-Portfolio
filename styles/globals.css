@@ -18,7 +18,7 @@ div {
   }
 
   .navLinksMobile {
-    @apply text-2xl pl-6 flex items-center gap-8 py-2 text-[#c72c6c] dark:text-[#07d0e5] font-bold;
+    @apply text-xl pl-6 flex items-center gap-8 py-2 text-[#c72c6c] dark:text-[#07d0e5] font-bold;
   }
 
   .blog-heading {
