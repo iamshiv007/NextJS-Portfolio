@@ -23,9 +23,7 @@ const CssTransform = () => {
         <div className="layoutContainer">
           <div className="layoutBox1">
             <div>
-              <h1 className="text-3xl font-bold mt-4 bg-blue-400 p-2 rounded-md">
-                CSS Transform
-              </h1>
+              <h1 className="blog-heading">CSS Transform</h1>
               <p className="text-lg text-gray-600 my-2">
                 Css tranform is less used but very important property of css
                 which is use to give some movement in our web page which make ux
@@ -54,7 +52,12 @@ const CssTransform = () => {
             />
           </div>
 
-          <div className="layoutBox2">Lorem</div>
+          <div className="layoutBox2">
+            <p className="text-center">
+              "College or Degree can't define you and can't decide What you
+              can do?."
+            </p>
+          </div>
         </div>
       </Theme>
     </Fragment>
@@ -94,7 +97,7 @@ const Exa1 = ({ value1, setValue1, direction1, setDirection1 }) => {
       </div>
       <div
         style={{ transform: `translate${direction1}(${value1}px)` }}
-        className="box1 m-auto sm:w-[200px] sm:h-[200px] w-[50px] h-[50px] bg-blue-600"
+        className="box1 m-auto mt-5 sm:w-[200px] sm:h-[200px] w-[50px] h-[50px] bg-blue-600"
       ></div>
     </div>
   );
@@ -169,7 +172,7 @@ const Exa2 = ({ value2, setValue2, direction2, setDirection2 }) => {
       </div>
       <div
         style={{ transform: `rotate${direction2}(${value2}deg)` }}
-        className="box2 m-auto sm:w-[200px] sm:h-[200px] w-[50px] h-[50px] bg-blue-600"
+        className="box2 m-auto mt-5 sm:w-[200px] sm:h-[200px] w-[50px] h-[50px] bg-blue-600"
       ></div>
     </div>
   );

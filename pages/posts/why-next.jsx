@@ -1,11 +1,14 @@
 import Head from "next/head";
-import { Fragment } from "react";
+import { Fragment, useState } from "react";
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Theme from "@/components/Theme";
 import MobileNavbar from "@/components/mobileNavbar";
+import { RiCloseLine } from "react-icons/ri";
 
 const FirstPost = () => {
+  const [close, setClose] = useState(false);
+
   return (
     <Fragment>
       <Head>
@@ -17,9 +20,7 @@ const FirstPost = () => {
 
         <div className="layoutContainer h-full">
           <div className="layoutBox1">
-            <h1 className="text-3xl font-bold mt-4 bg-blue-400 dark:bg-blue-800 p-2 rounded-md">
-              Why you should move in to Next js
-            </h1>
+            <h1 className="blog-heading">Why you should move in to Next js</h1>
             <p className="text-sm text-gray-600 my-2">Aprile 17, 2023</p>
             <div className="mt-5">
               <p className="font-bold">
@@ -75,7 +76,30 @@ const FirstPost = () => {
             </div>
           </div>
 
-          <div className="layoutBox2">Lorem</div>
+          <div className="layoutBox2">
+            <div className={close ? "hidden" : ""}>
+              <Link
+                href={"https://shiv-s-blog.vercel.app/posts/react/fragment"}
+              >
+                <div
+                  style={{
+                    backgroundImage: `url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT77S6c9Tlz-zqWRRPgKeJDd8kSjbR_alp30g&usqp=CAU')`,
+                  }}
+                  className={`border border-solid border-black h-[150px]`}
+                >
+                  <div
+                    onClick={() => setClose(true)}
+                    className="text-[0.8rem] w-fit bg-white ml-auto z-20"
+                  >
+                    <RiCloseLine color="blue" />
+                  </div>
+                </div>
+
+                {/* <img className="" src="" alt="" /> */}
+              </Link>
+              <p className="text-[0.6rem] text-right">Report this ad</p>
+            </div>
+          </div>
         </div>
       </Theme>
     </Fragment>

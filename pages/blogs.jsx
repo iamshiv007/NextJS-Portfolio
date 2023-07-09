@@ -16,7 +16,7 @@ const BlogsPage = () => {
         <Navbar />
         <MobileNavbar />
 
-        <div className="p-[5%] dark:bg-gray-700">
+        <div className="p-[5%] pt-[2%] dark:bg-gray-700">
           <Blogs />
         </div>
       </Theme>

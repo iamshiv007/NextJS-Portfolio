@@ -21,6 +21,10 @@ div {
     @apply text-2xl pl-6 flex items-center gap-8 py-2 text-[#c72c6c] dark:text-[#07d0e5] font-bold;
   }
 
+  .blog-heading {
+    @apply md:text-3xl text-xl font-bold text-center bg-[#07d0e5] dark:bg-[#c72c6c] rounded p-2;
+  }
+
   .navbar a {
     @apply hover:bg-white hover:text-black rounded-md px-4;
   }
