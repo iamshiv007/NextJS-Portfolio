@@ -8,6 +8,8 @@ import { TbRectangleFilled } from "react-icons/tb";
 import { SiAboutdotme } from "react-icons/si";
 import { MdContacts } from "react-icons/md";
 import { BsFillMoonFill } from "react-icons/bs";
+import { GiSkills } from "react-icons/gi";
+import { FaBusinessTime } from "react-icons/fa";
 
 const MobileNavbar = () => {
   const { dark, setDark } = useContext(BlogContext);
@@ -44,9 +46,27 @@ const MobileNavbar = () => {
             <Link
               onClick={() => setMenu(!menu)}
               className="navLinksMobile"
+              href="/"
+            >
+              <GiSkills /> Skills
+            </Link>
+          </div>
+          <div>
+            <Link
+              onClick={() => setMenu(!menu)}
+              className="navLinksMobile"
               href="/blogs"
             >
               <TbRectangleFilled /> Blogs
+            </Link>
+          </div>
+          <div>
+            <Link
+              onClick={() => setMenu(!menu)}
+              className="navLinksMobile"
+              href="/blogs"
+            >
+              <FaBusinessTime /> Experience
             </Link>
           </div>
           <div>

@@ -14,7 +14,7 @@ div {
   }
 
   .navLinks {
-    @apply dark:text-[#07d0e5] text-[#c72c6c] font-medium p-2 hover:border-b border-solid border-[#c72c6c] dark:border-[#07d0e5];
+    @apply dark:text-[#07d0e5] text-[#c72c6d] font-medium p-2 hover:border-b border-solid border-[#c72c6c] dark:border-[#07d0e5];
   }
 
   .navLinksMobile {
