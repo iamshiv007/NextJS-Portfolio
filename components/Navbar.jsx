@@ -17,7 +17,7 @@ const Navbar = () => {
         </div>
 
         <div className="hidden md:flex items-center gap-12">
-          <Link href="/" className="navLinks">
+          <Link href="#home" className="navLinks">
             Home
           </Link>
           <Link href="#skills" className="navLinks">
@@ -26,10 +26,10 @@ const Navbar = () => {
           <Link href="#blogs" className="navLinks">
             Blogs
           </Link>
-          <Link href="/experience" className="navLinks">
+          <Link href="#experience" className="navLinks">
             Experience
           </Link>
-          <Link href="/contact" className="navLinks">
+          <Link href="#contact" className="navLinks">
             Contact
           </Link>
         </div>

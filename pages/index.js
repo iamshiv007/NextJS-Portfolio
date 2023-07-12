@@ -26,6 +26,7 @@ export default function Home() {
       </Head>
       <div className={dark ? "dark" : ""}>
         <div className="dark:bg-gray-700 ">
+
           <Navbar />
           <MobileNavbar />
           <Intro />

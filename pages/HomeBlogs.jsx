@@ -1,3 +1,4 @@
+import AnimatedButton from "@/components/AnimatedButtons";
 import { blogs } from "@/components/blogData";
 import Link from "next/link";
 import React, { Fragment } from "react";
@@ -17,7 +18,7 @@ const HomeBlogs = () => {
             Latest Blogs
           </h3>{" "}
           <div className="py-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 rounded-md pb-5">
-            {blogs.slice(-6).map((blog) => (
+            {blogs.slice(-3).map((blog) => (
               <div
                 key={blog.name}
                 className="dark:bg-gray-900 rounded-md border border-gray-400 border-solid"
@@ -40,6 +41,9 @@ const HomeBlogs = () => {
                 </div>
               </div>
             ))}
+          </div>
+          <div className="ml-auto w-fit">
+            <AnimatedButton />
           </div>
         </div>
       </section>

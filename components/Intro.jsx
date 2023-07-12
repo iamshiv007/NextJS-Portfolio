@@ -3,8 +3,7 @@ import React, { Fragment } from "react";
 const Intro = () => {
   return (
     <Fragment>
-      <div>
-
+      <div id="home">
         <div className="h-[88vh] dark:bg-black bg-white md:grid grid-cols-2">
           <div className="md:pt-[100px] md:pl-[120px] pt-[70px] ml-[30px]">
             <p className="md:text-6xl text-4xl font-bold">Hi</p>
