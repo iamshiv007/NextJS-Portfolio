@@ -4,7 +4,7 @@ import Link from "next/link";
 import React, { Fragment } from "react";
 import { FaLaptopCode } from "react-icons/fa";
 
-const HomeBlogs = () => {
+const LatestBlogs = () => {
   return (
     <Fragment>
       {" "}
@@ -51,4 +51,4 @@ const HomeBlogs = () => {
   );
 };
 
-export default HomeBlogs;
+export default LatestBlogs;

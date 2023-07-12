@@ -8,7 +8,8 @@ import { BlogContext } from "@/contextApi/blogContext";
 import Navbar from "@/components/Navbar";
 import MobileNavbar from "@/components/mobileNavbar";
 import Skills from "@/components/Skills";
-import HomeBlogs from "./HomeBlogs";
+import LatestBlogs from "@/components/LatestBlogs";
+import Journey from "@/components/Journey";
 
 export default function Home() {
   const { dark } = useContext(BlogContext);
@@ -26,15 +27,18 @@ export default function Home() {
       </Head>
       <div className={dark ? "dark" : ""}>
         <div className="dark:bg-gray-700 ">
-
+          {/* Desktop Navbar */}
           <Navbar />
+          {/* Mobile Navbar */}
           <MobileNavbar />
+          {/* Welcome Page */}
           <Intro />
-
+          {/* Skills  */}
           <Skills />
-
-          <HomeBlogs />
-
+          {/* LatestBlog */}
+          <LatestBlogs />
+          {/* Education Experience Journey */}
+          <Journey />
         </div>
       </div>
     </Fragment>

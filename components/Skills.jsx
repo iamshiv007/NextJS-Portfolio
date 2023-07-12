@@ -15,7 +15,7 @@ const Skills = () => {
   return (
     <Fragment>
       <section id="skills">
-        <div className="skillsContainer dark:bg-[#000000d0]">
+        <div className="skillsContainer pt-6 dark:bg-[#000000d0]">
           <h3 className="text-center flex items-center justify-center text-3xl md:text-5xl font-medium p-4 dark:text-[#07d0e5] text-[#c72c6c]">
             <span className="mr-4">
               {" "}
