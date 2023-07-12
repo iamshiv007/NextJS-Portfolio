@@ -97,6 +97,7 @@ const MyFragment = () => {
 
           <div className="layoutBox2">
             <div>
+              <p className="text-center">😂</p>
               <p>
                 Did you know that the virtual DOM of React is like a secret
                 agent?

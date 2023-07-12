@@ -8,6 +8,7 @@ import { BlogContext } from "@/contextApi/blogContext";
 import Navbar from "@/components/Navbar";
 import MobileNavbar from "@/components/mobileNavbar";
 import Skills from "@/components/Skills";
+import HomeBlogs from "./HomeBlogs";
 
 export default function Home() {
   const { dark } = useContext(BlogContext);
@@ -31,9 +32,7 @@ export default function Home() {
 
           <Skills />
 
-          <div className={`${utilStyles.headingMd} w-[90%] m-auto mt-6`}>
-            <Blogs />
-          </div>
+          <HomeBlogs />
 
         </div>
       </div>
