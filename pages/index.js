@@ -26,7 +26,7 @@ export default function Home() {
         <meta name="author" content="Shivraj" />
       </Head>
       <div className={dark ? "dark" : ""}>
-        <div className="dark:bg-gray-700 ">
+        <div className="dark:bg-gray-700 overflow-x-hidden">
           {/* Desktop Navbar */}
           <Navbar />
           {/* Mobile Navbar */}
