@@ -7,6 +7,7 @@ import MobileNavbar from "@/components/mobileNavbar";
 import Skills from "@/components/Skills";
 import LatestBlogs from "@/components/LatestBlogs";
 import Journey from "@/components/Journey";
+import Apps from "@/components/Apps";
 
 export default function Home() {
   const { dark } = useContext(BlogContext);
@@ -23,7 +24,7 @@ export default function Home() {
         <meta name="author" content="Shivraj" />
       </Head>
       <div className={dark ? "dark" : ""}>
-        <div className="dark:bg-gray-700 overflow-x-hidden">
+        <div className="dark:bg-gray-700 ">
           {/* Desktop Navbar */}
           <Navbar />
           {/* Mobile Navbar */}
@@ -36,6 +37,8 @@ export default function Home() {
           <LatestBlogs />
           {/* Education Experience Journey */}
           <Journey />
+
+          <Apps />
         </div>
       </div>
     </Fragment>

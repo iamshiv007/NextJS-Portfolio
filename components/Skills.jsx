@@ -21,7 +21,7 @@ const Skills = () => {
               {" "}
               <FaLaptopCode />
             </span>{" "}
-            Skills & Abilities
+            Skills
           </h3>
 
           <div>

@@ -29,8 +29,8 @@ const Navbar = () => {
           <Link href="#myJourney" className="navLinks">
             My Journey
           </Link>
-          <Link href="#contact" className="navLinks">
-            Contact
+          <Link href="#apps" className="navLinks">
+            Apps
           </Link>
         </div>
 

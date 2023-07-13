@@ -69,13 +69,7 @@ export const blogs = [
     linkName: "send-email",
     date: "June 8, 2023",
   },
-  {
-    name: "Tic-Tac-Toe",
-    imageUrl:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJ76F-qBseNwI8hvVrpG3bthHX-JgZOT1EVqltRRYaSw&usqp=CAU&ec=48600112",
-    linkName: "apps/tic-tac-toe",
-    date: "June 9, 2023",
-  },
+
   {
     name: "Drag And Drop",
     imageUrl:
@@ -110,34 +104,6 @@ export const blogs = [
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfYZKGMNHktg0e4wVK9TNS22qijcqvYg0QmJYp-Hp7Wg&usqp=CAU&ec=48600112",
     linkName: "readme",
     date: "June 19, 2023",
-  },
-  {
-    name: "Quiz App",
-    imageUrl:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4WCmXtQ2AW5OsFElhZ0PCfpqR6dYPgqyV9Ossb3Smyg&usqp=CAU&ec=48600112",
-    linkName: "apps/quiz-app",
-    date: "June 20, 2023",
-  },
-  {
-    name: "Hindi Translator",
-    imageUrl:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGg5kZa7RkIxqvqXflLuI0otBRpypPNBts1Ku29vxcqw&usqp=CAU&ec=48600112",
-    linkName: "apps/hindi-translator",
-    date: "June 21, 2023",
-  },
-  {
-    name: "Apna Chat GPT",
-    imageUrl:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlmA2CxPc1F6Fuim6MSL17w4QTctxSr6kI5QvxLvfLqA&usqp=CAU&ec=48600112",
-    linkName: "apps/apna-chat-gpt",
-    date: "June 22, 2023",
-  },
-  {
-    name: "News App",
-    imageUrl:
-      "https://thumbs.dreamstime.com/b/news-newspapers-folded-stacked-word-wooden-block-puzzle-dice-concept-newspaper-media-press-release-42301371.jpg",
-    linkName: "apps/news-app",
-    date: "June 23, 2023",
   },
   {
     name: "Music Chalao",
