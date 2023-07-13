@@ -2,7 +2,7 @@ import Navbar from "@/components/Navbar";
 import Theme from "@/components/Theme";
 import { BlogContext } from "@/contextApi/blogContext";
 import Head from "next/head";
-import React, { Fragment, useContext, useRef, useState } from "react";
+import React, { Fragment, useContext } from "react";
 import { github } from "react-syntax-highlighter/dist/cjs/styles/hljs";
 import { dark } from "react-syntax-highlighter/dist/cjs/styles/hljs";
 import SyntaxHighlighter from "react-syntax-highlighter";

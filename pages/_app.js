@@ -1,5 +1,4 @@
 import '@/styles/globals.css'
-import "@/styles/Intro.css"
 import "@/styles/animation.css"
 import "@/styles/cssGrid.css"
 import { BlogProvider } from '@/contextApi/blogContext'

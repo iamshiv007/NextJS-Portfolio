@@ -1,9 +1,6 @@
 import Head from "next/head";
-import { siteTitle } from "../components/layout";
-import utilStyles from "../styles/utils.module.css";
-import { Fragment, useContext, useState } from "react";
+import { Fragment, useContext } from "react";
 import Intro from "@/components/Intro";
-import Blogs from "@/components/Blogs";
 import { BlogContext } from "@/contextApi/blogContext";
 import Navbar from "@/components/Navbar";
 import MobileNavbar from "@/components/mobileNavbar";
@@ -17,7 +14,7 @@ export default function Home() {
   return (
     <Fragment>
       <Head>
-        <title>{siteTitle}</title>
+        <title>Shiv's Portfolio</title>
         <meta name="description" content="blogs about React, JavaScript, CSS, Next.js, React best Libraries, Github, Git, Web App, Games, Rapid Apis, Free Apis, learn css, css Example, play with css, small projects, and advanced concepts." />
         <meta name="keywords" content="React Projects, Learn JavaScript, Learn CSS, Learn Next.js, small projects, advanced concepts, blog, Shivraj Gurjar Blog, Shivraj, React best Libraries, Github, Git, how To make simple Web App, how to make simple Games, best free Rapid Apis, How to use Free Rapid Apis, learn css, css Example, play with css" />
         <meta property="og:title" content="My Blog" />
