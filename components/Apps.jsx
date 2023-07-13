@@ -32,11 +32,11 @@ const Apps = () => {
               ))}
             </div>
 
-            <div className="md:hidden gap-4 grid grid-cols-4 px-12 pb-10">
+            <div className="md:hidden gap-6 grid grid-cols-4 px-8 pb-10">
               {apps.map((app) => (
                 <div>
                   <Link href={`/posts/${app.linkName}`}>
-                    <div className="p-3 rounded-xl bg-blue-400">
+                    <div className="p-3 rounded-xl bg-[pink]">
                       <img src={app.iconUrl} alt={app.name} />
                     </div>
                   </Link>
