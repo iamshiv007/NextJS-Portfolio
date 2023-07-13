@@ -17,7 +17,16 @@ const Intro = () => {
               a Web Developer
             </p>
           </div>
-          <div className="flex justify-center items-center"></div>
+
+          <div className="mt-14 flex justify-center">
+            <div className="w-[300px]">
+              <img
+                className="w-full rounded-full"
+                src="/images/cartoon 0.png"
+                alt="myimage"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </Fragment>

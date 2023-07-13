@@ -32,7 +32,7 @@ const Apps = () => {
               ))}
             </div>
 
-            <div className="md:hidden gap-4 grid grid-cols-4 px-10 pb-10">
+            <div className="md:hidden gap-4 grid grid-cols-4 px-12 pb-10">
               {apps.map((app) => (
                 <div>
                   <Link href={`/posts/${app.linkName}`}>
