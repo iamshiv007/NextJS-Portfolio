@@ -37,7 +37,7 @@ export default function Home() {
           <LatestBlogs />
           {/* Education Experience Journey */}
           <Journey />
-
+          {/* Apps */}
           <Apps />
         </div>
       </div>
