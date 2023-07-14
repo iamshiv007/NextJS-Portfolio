@@ -5,7 +5,7 @@ const College = () => {
     <Fragment>
       <div className="md:mr-4 mr-0 mt-8 md:mt-[30vh] md:justify-around flex md:flex-row flex-col md:items-start items-center">
         <div className="w-[50vh]">
-          <p className="text-lg font-bold text-center">College</p>
+          <p className="text-lg font-bold text-center">BSC College</p>
           <p className="py-2 px-4">
             After quite IIT again, without reason i jumped to the BSC, actually
             i am finding to my self what can i do in my life in which thing i

@@ -66,19 +66,17 @@ const MobileScreenJourney = () => {
         .classList;
 
     if (smallBorder.contains("h-0")) {
-      smallBorder.add("h-[20px]");
-      smallBorder.remove("h-0");
+      smallBorder.replace("h-0", "h-[20px]");
+      smallBorder.replace("border-0", "border");
     } else {
-      smallBorder.add("h-0");
-      smallBorder.remove("h-[20px]");
+      smallBorder.replace("h-[20px]", "h-0");
+      smallBorder.replace("border", "border-0");
     }
 
     if (detailBox.contains("h-0")) {
-      detailBox.add("h-auto");
-      detailBox.remove("h-0");
+      detailBox.replace("h-0", "min-h-[300px]");
     } else {
-      detailBox.add("h-0");
-      detailBox.remove("h-auto");
+      detailBox.replace("min-h-[300px]", "h-0");
     }
   };
   return (
@@ -86,9 +84,9 @@ const MobileScreenJourney = () => {
       <div className="mx-[5%] pb-10 md:hidden">
         {JourneyData.map((journey, key) => (
           <React.Fragment key={key}>
-            <div className="h-[50px] border border-white m-auto w-fit"></div>
+            <div className="h-[50px] border dark:border-white border-[black] m-auto w-fit"></div>
 
-            <div className="border border-white border-solid rounded">
+            <div className="border-2 dark:border-white border-[black] border-solid rounded">
               <div className="flex gap-5 px-5 py-2">
                 <p onClick={visibleFun}>+</p>
                 <p>{journey.heading}</p>
@@ -96,7 +94,7 @@ const MobileScreenJourney = () => {
               </div>
             </div>
 
-            <div className="border border-white m-auto w-fit h-0"></div>
+            <div className="border dark:border-white border-black m-auto w-fit h-0"></div>
 
             <div className="border-white h-0 overflow-hidden">
               <img

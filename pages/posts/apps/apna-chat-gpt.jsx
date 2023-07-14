@@ -21,21 +21,18 @@ const ApnaChatGpt = () => {
   const generateAnswer = async () => {
     const options = {
       method: "POST",
-      url: "https://chatgpt53.p.rapidapi.com/",
+      url: "https://chatgpt-api8.p.rapidapi.com/",
       headers: {
         "content-type": "application/json",
         "X-RapidAPI-Key": "46e102466emsh069eb8e1a1f88bep148650jsn161589bc0004",
-        "X-RapidAPI-Host": "chatgpt53.p.rapidapi.com",
+        "X-RapidAPI-Host": "chatgpt-api8.p.rapidapi.com",
       },
-      data: {
-        messages: [
-          {
-            role: "user",
-            content: question,
-          },
-        ],
-        temperature: 1,
-      },
+      data: [
+        {
+          content: question,
+          role: "user",
+        },
+      ],
     };
 
     try {
@@ -45,12 +42,10 @@ const ApnaChatGpt = () => {
       setAnswer("");
       const response = await axios.request(options);
       setLoading(false);
-      setAnswer(response.data.choices[0].message.content);
-      setHistory([
-        { question, answer: response.data.choices[0].message.content },
-        ...history,
-      ]);
-      console.log(response.data.choices[0].message.content);
+      console.log(response);
+      setAnswer(response.data.text);
+      setHistory([{ question, answer: response.data.text }, ...history]);
+      console.log(response.data.text);
     } catch (error) {
       console.error(error);
     }

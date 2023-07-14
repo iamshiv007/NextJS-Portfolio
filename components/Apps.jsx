@@ -1,10 +1,13 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useContext } from "react";
 import Theme from "./Theme";
 import { IoMdAppstore } from "react-icons/io";
 import { apps } from "./AppsData";
 import Link from "next/link";
+import { BlogContext } from "@/contextApi/blogContext";
 
 const Apps = () => {
+  const { dark } = useContext(BlogContext);
+
   return (
     <Fragment>
       <Theme>
@@ -24,7 +27,7 @@ const Apps = () => {
                   <Link href={`/posts/${app.linkName}`}>
                     <img
                       className="object-cover rounded md:rounded-[30px] w-full"
-                      src={app.imageUrl}
+                      src={dark ? app.imageUrl : app.imageLight}
                       alt="app"
                     />
                   </Link>
@@ -32,18 +35,7 @@ const Apps = () => {
               ))}
             </div>
 
-            <div className="md:hidden gap-6 grid grid-cols-4 px-8 pb-10">
-              {apps.map((app) => (
-                <div>
-                  <Link href={`/posts/${app.linkName}`}>
-                    <div className="p-3 rounded-xl bg-[pink]">
-                      <img src={app.iconUrl} alt={app.name} />
-                    </div>
-                  </Link>
-                  <p className="text-center text-xs py-1">{app.name}</p>
-                </div>
-              ))}
-            </div>
+            <MobileScreenApps />
           </div>
         </section>
       </Theme>
@@ -52,3 +44,20 @@ const Apps = () => {
 };
 
 export default Apps;
+
+const MobileScreenApps = () => {
+  return (
+    <div className="md:hidden gap-6 grid grid-cols-4 px-8 pb-10">
+      {apps.map((app) => (
+        <div>
+          <Link href={`/posts/${app.linkName}`}>
+            <div className="p-3 rounded-xl bg-[pink]">
+              <img src={app.iconUrl} alt={app.name} />
+            </div>
+          </Link>
+          <p className="text-center text-xs py-1">{app.name}</p>
+        </div>
+      ))}
+    </div>
+  );
+};

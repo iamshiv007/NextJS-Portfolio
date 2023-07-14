@@ -5,7 +5,7 @@ const YouTube = () => {
     <Fragment>
       <div className="ml-5 mt-8 md:mt-[30vh] md:justify-around flex md:flex-row flex-col md:items-start items-center">
         <div className="md:hidden block w-[50vh]">
-          <p className="text-center text-lg font-bold">You Tube Learning</p>
+          <p className="text-center text-lg font-bold">Coding Journey</p>
           <p className="mx-4 my-2">
             After dropped out to college i decided to learn coding from YouTube
             and i started with Java basics and then i learn html, css,
