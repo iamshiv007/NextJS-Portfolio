@@ -48,7 +48,7 @@ const MobileScreenApps = () => {
       {apps.map((app, key) => (
         <div key={key}>
           <Link href={`/${app.linkName}`}>
-            <div className="p-3 rounded-xl bg-[pink]">
+            <div className="p-3 rounded-xl bg-[pink] dark:bg-[aqua]">
               <img src={app.iconUrl} alt={app.name} />
             </div>
           </Link>

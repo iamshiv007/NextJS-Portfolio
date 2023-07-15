@@ -81,7 +81,7 @@ const MobileScreenJourney = () => {
               </div>
             </div>
 
-            <div className="border dark:border-white border-black m-auto w-fit h-0"></div>
+            <div className="border-0 dark:border-white border-black m-auto w-fit h-0"></div>
 
             <div className="border-white h-0 overflow-hidden">
               <img
