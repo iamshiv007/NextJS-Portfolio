@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { Fragment, useContext } from "react";
+import { Fragment, useContext, useEffect } from "react";
 import Intro from "@/components/Intro";
 import { BlogContext } from "@/contextApi/blogContext";
 import Navbar from "@/components/Navbar";
@@ -9,6 +9,8 @@ import LatestBlogs from "@/components/LatestBlogs";
 import Journey from "@/components/Journey";
 import Apps from "@/components/Apps";
 import Footer from "@/components/Footer";
+import SendMail from "@/components/SendMail";
+import SocialMedia from "@/components/SocialMedia";
 
 export default function Home() {
   const { dark } = useContext(BlogContext);
@@ -32,6 +34,8 @@ export default function Home() {
           <MobileNavbar />
           {/* Welcome Page */}
           <Intro />
+          {/* SocialMedia */}
+          <SocialMedia />
           {/* Skills  */}
           <Skills />
           {/* LatestBlog */}
@@ -40,7 +44,9 @@ export default function Home() {
           <Journey />
           {/* Apps */}
           <Apps />
-
+          {/* Send Mail */}
+          <SendMail />
+          {/* Footer */}
           <Footer />
         </div>
       </div>
