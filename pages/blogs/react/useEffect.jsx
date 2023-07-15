@@ -5,6 +5,7 @@ import React, { Fragment, useContext } from "react";
 import { github } from "react-syntax-highlighter/dist/cjs/styles/hljs";
 import { dark } from "react-syntax-highlighter/dist/cjs/styles/hljs";
 import SyntaxHighlighter from "react-syntax-highlighter";
+import BackTo from "@/components/BackTo";
 
 const UseEffect = () => {
   const { dark: myDark } = useContext(BlogContext);
