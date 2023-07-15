@@ -8,6 +8,7 @@ import Skills from "@/components/Skills";
 import LatestBlogs from "@/components/LatestBlogs";
 import Journey from "@/components/Journey";
 import Apps from "@/components/Apps";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   const { dark } = useContext(BlogContext);
@@ -39,6 +40,8 @@ export default function Home() {
           <Journey />
           {/* Apps */}
           <Apps />
+
+          <Footer />
         </div>
       </div>
     </Fragment>

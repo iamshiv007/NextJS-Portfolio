@@ -13,7 +13,7 @@ const Navbar = () => {
         className={`hidden bg-white items-center justify-between py-4 px-8 h-[12vh] dark:bg-black md:flex sticky top-0`}
       >
         <div className="flex items-center">
-          <img src="/images/shivLogo3.png" alt="Logo" className="w-20 h-20" />
+          <img src="/images/shiv-design.png" alt="Logo" className="w-24 h-24" />
         </div>
 
         <div className="hidden md:flex items-center gap-12">
