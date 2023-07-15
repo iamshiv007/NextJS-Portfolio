@@ -106,7 +106,7 @@ const HindiTranslator = () => {
 
         <div className="sm:hidden flex justify-center w-[100%] fixed bottom-10">
           <button
-            className="p-2 px-5 bg-blue-400 font-bold dark:bg-blue-700 dark:text-white rounded sm:ml-5"
+            className="p-2 px-5 dark:bg-[#286969] bg-[#c72c6c] text-white rounded sm:ml-5"
             onClick={translateFun}
           >
             Translate
