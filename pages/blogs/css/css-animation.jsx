@@ -15,7 +15,7 @@ const CssAnimation = () => {
 
         <div className="layoutContainer">
           <div className="layoutBox1">
-            <h1 className="text-4xl mt-4">Css Animation</h1>
+            <h1 className="blog-heading">Css Animation</h1>
             <p className="text-lg text-gray-600 my-2">
               With help of css Animation we can make our UI more attractive and
               user friendly. In this Blog we are going explore all the

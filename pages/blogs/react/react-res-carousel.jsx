@@ -23,10 +23,10 @@ const ReactResposiveCarousel = () => {
 
         <div className="layoutContainer">
           <div className="layoutBox1">
-            <h1 className="text-3xl  text-center my-5">
+            <h1 className="blog-heading">
               React Responsive Carousel
             </h1>
-            <div className="md:w-[80%] w-[90%] m-auto flex flex-wrap gap-5 mb-5">
+            <div className="md:w-[80%] w-[90%] m-auto flex flex-wrap gap-5 mb-5 mt-5">
               <div>
                 <input
                   type="checkbox"

@@ -21,7 +21,7 @@ const SpreadOperator = () => {
 
         <div className="layoutContainer">
           <div className="layoutBox1">
-            <h2 className="text-3xl font-bold mt-4 dark:bg-blue-800 bg-blue-400 p-2 rounded-md">
+            <h2 className="blog-heading">
               Rest And Spread Operator in JavaScript
             </h2>
 

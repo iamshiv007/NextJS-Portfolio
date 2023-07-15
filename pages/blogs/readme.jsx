@@ -21,7 +21,7 @@ const Readme = () => {
 
         <div className="layoutContainer">
           <div className="layoutBox1">
-            <h1 className="text-3xl font-bold mt-4 bg-blue-400 dark:bg-blue-800 p-2 rounded-md">
+            <h1 className="blog-heading">
               Readme File Syntax
             </h1>
             <PointOne myDark={myDark} />
