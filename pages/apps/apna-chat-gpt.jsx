@@ -57,7 +57,7 @@ const ApnaChatGpt = () => {
       </Head>
 
       <Theme>
-        <BackTo backTo={''} />
+        <BackTo backTo={""} />
 
         <div className="dark:bg-gray-900 min-h-[92vh]">
           <h1 className="text-3xl font-bold text-center pt-5">Apna-Chat-Gpt</h1>
@@ -104,7 +104,7 @@ const ApnaChatGpt = () => {
 
           <div className="sm:hidden flex justify-center w-[100%] fixed bottom-10">
             <button
-              className="p-2 px-5 bg-blue-400 font-bold dark:bg-blue-700 dark:text-white rounded sm:ml-5"
+              className="p-2 px-5 dark:bg-[#286969] bg-[#c72c6c] font-bold text-white rounded sm:ml-5"
               onClick={generateAnswer}
             >
               Generate

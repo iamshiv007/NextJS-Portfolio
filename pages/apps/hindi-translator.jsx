@@ -50,7 +50,7 @@ const HindiTranslator = () => {
       </Head>
 
       <Theme>
-        <BackTo backTo={''} />
+        <BackTo backTo={""} />
 
         <div className="md:px-[20%] px-[3%] dark:bg-gray-900 min-h-[92vh]">
           <h1 className="text-3xl font-bold text-center pt-5">
@@ -85,7 +85,7 @@ const HindiTranslator = () => {
               </select>
 
               <button
-                className="p-2 px-5 bg-blue-400 font-bold dark:bg-blue-700 dark:text-white rounded hidden sm:inline sm:ml-5"
+                className="p-2 px-5 dark:bg-[#286969] bg-[#c72c6c] text-white font-bold rounded hidden sm:inline sm:ml-5"
                 onClick={translateFun}
               >
                 Translate

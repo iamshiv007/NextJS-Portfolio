@@ -87,14 +87,14 @@ const NewsApp = () => {
       </Head>
 
       <Theme>
-        <BackTo backTo={''} />
+        <BackTo backTo={""} />
 
         <div className="dark:bg-gray-900 min-h-[92vh]">
           <div className="text-3xl font-bold text-center pt-5 flex items-center justify-center gap-8">
             News App
             <button
               onClick={() => setFilter(!filter)}
-              className="p-3 text-base bg-blue-700 font-bold rounded-full w-10 h-10 flex items-center justify-center"
+              className="p-3 dark:bg-[#0ab0c2] bg-[#c72c6c] text-white font-extrabold rounded-full w-10 h-10 flex items-center justify-center"
             >
               <AiOutlineMenu />
             </button>
@@ -212,7 +212,7 @@ const Filters = ({
       </select>
 
       <button
-        className="bg-gray-600 dark:bg-blue-700 rounded p-1 px-3 text-sm font-bold"
+        className="dark:bg-[#0ab0c2] bg-[#c72c6c] text-white rounded p-1 px-3 text-sm font-bold"
         onClick={loadNews}
       >
         Load News

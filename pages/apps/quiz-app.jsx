@@ -54,7 +54,7 @@ const QuizApp = () => {
       </Head>
 
       <Theme>
-        <BackTo backTo={''} />
+        <BackTo backTo={""} />
 
         <div className="md:px-[10%] px-[3%] dark:bg-gray-900 h-[92vh]">
           <h1 className="text-3xl font-bold text-center pt-5">Quiz App</h1>
@@ -62,7 +62,7 @@ const QuizApp = () => {
           {loading ? "" : <p className="mt-8">Category :- {category}</p>}
 
           {!loading ? (
-            <div className="mt-3 dark:bg-slate-800 bg-blue-200 rounded p-4">
+            <div className="mt-3 dark:bg-[#286969] bg-[pink] rounded p-4">
               <p className="text-center font-semibold"> Q. {question}</p>
 
               <div className="mt-6 text-xl">
@@ -87,7 +87,7 @@ const QuizApp = () => {
               </div>
             </div>
           ) : (
-            <div className="mt-8 text-center dark:bg-slate-800 bg-blue-200 rounded p-4">
+            <div className="mt-8 text-center dark:bg-[#286969] bg-[pink] rounded p-4">
               ...Loading
             </div>
           )}
@@ -109,7 +109,7 @@ const QuizApp = () => {
                     </span>
                     Wrong Answer
                   </p>
-                  <p className="dark:text-blue-500 text-blue-500 text-2xl font-bold my-2">
+                  <p className="text-green-500 dark:text-green-500 text-2xl font-bold my-2">
                     {options.indexOf(correctAnswer) + 1}.{" "}
                     {he.decode(correctAnswer)}
                   </p>
@@ -121,7 +121,7 @@ const QuizApp = () => {
               <div className="fixed bottom-8 md:static w-[100%] flex justify-center">
                 <button
                   onClick={generateQuestion}
-                  className="p-2 px-6 border-0 dark:bg-gray-300 dark:text-black rounded-md text-xl font-bold m-2 bg-gray-700 text-white"
+                  className="p-2 dark:bg-[#0ab0c2] bg-[#c72c6c] text-white px-6 border-0 dark:text-black rounded-md text-xl font-bold m-2"
                 >
                   Next
                 </button>
