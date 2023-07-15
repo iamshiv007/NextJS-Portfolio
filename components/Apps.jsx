@@ -24,7 +24,7 @@ const Apps = () => {
             <div className="md:grid hidden md:grid-cols-5 grid-cols-3 justify-center md:px-16 px-4 gap-5 pb-10">
               {apps.map((app, key) => (
                 <div key={key} className="overflow-hidden">
-                  <Link href={`/posts/${app.linkName}`}>
+                  <Link href={`/${app.linkName}`}>
                     <img
                       className="object-cover rounded md:rounded-[30px] w-full"
                       src={dark ? app.imageUrl : app.imageLight}
@@ -50,7 +50,7 @@ const MobileScreenApps = () => {
     <div className="md:hidden gap-6 grid grid-cols-4 px-8 pb-10">
       {apps.map((app) => (
         <div>
-          <Link href={`/posts/${app.linkName}`}>
+          <Link href={`/${app.linkName}`}>
             <div className="p-3 rounded-xl bg-[pink]">
               <img src={app.iconUrl} alt={app.name} />
             </div>

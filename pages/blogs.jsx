@@ -1,7 +1,6 @@
+import BackTo from "@/components/BackTo";
 import Blogs from "@/components/Blogs";
-import Navbar from "@/components/Navbar";
 import Theme from "@/components/Theme";
-import MobileNavbar from "@/components/mobileNavbar";
 import Head from "next/head";
 import React, { Fragment } from "react";
 
@@ -13,9 +12,7 @@ const BlogsPage = () => {
       </Head>
 
       <Theme>
-        <Navbar />
-        <MobileNavbar />
-
+        <BackTo backTo={""} />
         <div className="p-[5%] pt-[2%] dark:bg-gray-700">
           <Blogs />
         </div>

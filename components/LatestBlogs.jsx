@@ -20,7 +20,7 @@ const LatestBlogs = () => {
           <div className="py-8 grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 rounded-md pb-5">
             {blogs.slice(-4).map((blog) => (
               <div key={blog.name}>
-                <Link href={`/posts/${blog.linkName}`}>
+                <Link href={`/blogs/${blog.linkName}`}>
                   <div className="h-fit dark:bg-gray-900 rounded-md border border-gray-400 border-solid">
                     <img
                       className="rounded-t-md md:h-[180px] h-fit md:object-cover"
