@@ -6,7 +6,6 @@ import { RiCloseLine, RiSunFill } from "react-icons/ri";
 import { AiTwotoneHome } from "react-icons/ai";
 import { TbRectangleFilled } from "react-icons/tb";
 import { SiAboutdotme } from "react-icons/si";
-import { MdContacts } from "react-icons/md";
 import { BsFillMoonFill } from "react-icons/bs";
 import { GiSkills } from "react-icons/gi";
 import { FaBusinessTime } from "react-icons/fa";
@@ -37,7 +36,7 @@ const MobileNavbar = () => {
             <Link
               onClick={() => setMenu(!menu)}
               className="navLinksMobile"
-              href="/"
+              href="#home"
             >
               <AiTwotoneHome /> Home
             </Link>
@@ -46,7 +45,7 @@ const MobileNavbar = () => {
             <Link
               onClick={() => setMenu(!menu)}
               className="navLinksMobile"
-              href="/"
+              href="#skills"
             >
               <GiSkills /> Skills
             </Link>
@@ -55,7 +54,7 @@ const MobileNavbar = () => {
             <Link
               onClick={() => setMenu(!menu)}
               className="navLinksMobile"
-              href="/blogs"
+              href="#blogs"
             >
               <TbRectangleFilled /> Blogs
             </Link>
@@ -64,27 +63,18 @@ const MobileNavbar = () => {
             <Link
               onClick={() => setMenu(!menu)}
               className="navLinksMobile"
-              href="/blogs"
+              href="#myJourney"
             >
-              <FaBusinessTime /> Experience
+              <FaBusinessTime /> My Journey
             </Link>
           </div>
           <div>
             <Link
               onClick={() => setMenu(!menu)}
               className="navLinksMobile"
-              href="/about"
+              href="#apps"
             >
-              <SiAboutdotme /> About
-            </Link>
-          </div>
-          <div>
-            <Link
-              onClick={() => setMenu(!menu)}
-              className="navLinksMobile"
-              href="/contacts"
-            >
-              <MdContacts /> Contacts
+              <SiAboutdotme /> Apps
             </Link>
           </div>
 

@@ -35,7 +35,7 @@ div {
 
   /* Blogs.jsx */
   .blogLink {
-    @apply hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black dark:text-white hover:rounded-md font-bold font-sans text-xl text-center p-1 mx-1;
+    @apply font-bold font-sans text-xl text-center p-1 mx-1;
   }
 
   /* For Blog Page */
