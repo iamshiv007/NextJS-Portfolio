@@ -9,47 +9,34 @@ import { JourneyData } from "./Journey/JourneyData";
 const Journey = () => {
   return (
     <Fragment>
-      <section id="myJourney">
-        <div className="md:min-h-[110vh] h-auto pt-6 dark:bg-[#000000d0] overflow-x-hidden">
-          <h3 className="text-center md:mb-12 flex items-center justify-center text-3xl md:text-5xl font-medium p-4 dark:text-[#07d0e5] text-[#c72c6c]">
+      <div className="dark:bg-[#000000d0] bg-[#efeeee] overflow-x-hidden py-8">
+        <section id="myJourney">
+          <h3 className="sectionHeading">
             <span className="mr-4">
-              {" "}
               <GiRailRoad />
-            </span>{" "}
+            </span>
             My Journey
           </h3>
+        </section>
 
-          <div className="md:flex hidden justify-center pb-10">
-            <div className="py-5">
-              <School />
+        <div className="md:flex hidden justify-center mx-8">
+          <div className="py-5">
+            <School />
 
-              <div className="md:block hidden">
-                <College />
-              </div>
-
-              <div className="md:hidden block">
-                <Iit />
-              </div>
-            </div>
-
-            <div class5ame="border md:block hidden dark:border-white border-black border-solid min-h-[90vh]" />
-
-            <div className="py-5">
-              <div className="md:block hidden">
-                <Iit />
-              </div>
-
-              <div className="md:hidden block">
-                <College />
-              </div>
-
-              <YouTube />
-            </div>
+            <College />
           </div>
 
-          <MobileScreenJourney />
+          <div class5ame="border md:block hidden dark:border-white border-black border-solid min-h-[90vh]" />
+
+          <div className="py-5">
+            <Iit />
+
+            <YouTube />
+          </div>
         </div>
-      </section>
+
+        <MobileScreenJourney />
+      </div>
     </Fragment>
   );
 };

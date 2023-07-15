@@ -10,35 +10,32 @@ const Apps = () => {
 
   return (
     <Fragment>
-      <Theme>
-        <section id="apps">
-          <div className="dark:bg-black pt-6">
-            <h3 className="text-center md:mb-12 mb-3 flex items-center justify-center text-3xl md:text-5xl font-medium p-4 dark:text-[#07d0e5] text-[#c72c6c]">
-              <span className="mr-4">
-                {" "}
-                <IoMdAppstore />
-              </span>{" "}
-              Apps
-            </h3>
+      <div className="dark:bg-black py-8">
+        <section id="apps"></section>
+        <h3 className="sectionHeading">
+          <span className="mr-4">
+            {" "}
+            <IoMdAppstore />
+          </span>{" "}
+          Apps
+        </h3>
 
-            <div className="md:grid hidden md:grid-cols-5 grid-cols-3 justify-center md:px-16 px-4 gap-5 pb-10">
-              {apps.map((app, key) => (
-                <div key={key} className="overflow-hidden">
-                  <Link href={`/${app.linkName}`}>
-                    <img
-                      className="object-cover rounded md:rounded-[30px] w-full"
-                      src={dark ? app.imageUrl : app.imageLight}
-                      alt="app"
-                    />
-                  </Link>
-                </div>
-              ))}
+        <div className="md:grid hidden md:grid-cols-5 grid-cols-3 justify-center mx-8 gap-5">
+          {apps.map((app, key) => (
+            <div key={key} className="overflow-hidden">
+              <Link href={`/${app.linkName}`}>
+                <img
+                  className="object-cover rounded md:rounded-[30px] w-full"
+                  src={dark ? app.imageUrl : app.imageLight}
+                  alt="app"
+                />
+              </Link>
             </div>
+          ))}
+        </div>
 
-            <MobileScreenApps />
-          </div>
-        </section>
-      </Theme>
+        <MobileScreenApps />
+      </div>
     </Fragment>
   );
 };
@@ -48,8 +45,8 @@ export default Apps;
 const MobileScreenApps = () => {
   return (
     <div className="md:hidden gap-6 grid grid-cols-4 px-8 pb-10">
-      {apps.map((app) => (
-        <div>
+      {apps.map((app, key) => (
+        <div key={key}>
           <Link href={`/${app.linkName}`}>
             <div className="p-3 rounded-xl bg-[pink]">
               <img src={app.iconUrl} alt={app.name} />

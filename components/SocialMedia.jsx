@@ -31,12 +31,11 @@ const socials = [
 const SocialMedia = () => {
   return (
     <Fragment>
-      <div className="md:fixed absolute left-14 md:bottom-10 bottom-10 flex flex-col gap-4">
+      <div className="absolute left-14 bottom-10 flex flex-col gap-4">
         {socials.map((social, key) => (
-          <Link href={social.link}>
+          <Link key={key} href={social.link}>
             <div
               style={{ background: social.color }}
-              key={key}
               className={`p-2 rounded-full text-xl dark:text-white text-white`}
             >
               {social.icon}

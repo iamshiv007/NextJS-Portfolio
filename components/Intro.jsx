@@ -1,5 +1,4 @@
 import React, { Fragment } from "react";
-import SocialMedia from "./SocialMedia";
 
 const Intro = () => {
   return (
@@ -29,9 +28,6 @@ const Intro = () => {
             </div>
           </div>
         </div>
-
-        {/* SocialMedia */}
-        <SocialMedia />
       </div>
     </Fragment>
   );

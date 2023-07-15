@@ -7,17 +7,15 @@ import { BsPenFill } from "react-icons/bs";
 const LatestBlogs = () => {
   return (
     <Fragment>
-      {" "}
       <section id="blogs">
-        <div className={`p-[5%] pt-6 dark:bg-black`}>
-          <h3 className="text-center flex items-center justify-center text-3xl md:text-5xl font-medium p-4 dark:text-[#07d0e5] text-[#c72c6c]">
+        <div className={`dark:bg-black py-8`}>
+          <h3 className="sectionHeading">
             <span className="mr-4">
-              {" "}
               <BsPenFill />
-            </span>{" "}
+            </span>
             Latest Blogs
-          </h3>{" "}
-          <div className="py-8 grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 rounded-md pb-5">
+          </h3>
+          <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 rounded-md mx-6">
             {blogs
               .slice(-4)
               .reverse()
@@ -26,7 +24,7 @@ const LatestBlogs = () => {
                   <Link href={`/blogs/${blog.linkName}`}>
                     <div className="h-fit dark:bg-gray-900 rounded-md border border-gray-400 border-solid">
                       <img
-                        className="rounded-t-md md:h-[180px] h-fit md:object-cover"
+                        className="rounded-t-md"
                         src={blog.imageUrl}
                         alt="img not found"
                         style={{ width: "100%" }}
@@ -42,7 +40,7 @@ const LatestBlogs = () => {
                 </div>
               ))}
           </div>
-          <div className="ml-auto w-fit">
+          <div className="ml-auto w-fit  mx-6 mt-8">
             <AnimatedButton />
           </div>
         </div>

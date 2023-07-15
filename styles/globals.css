@@ -5,6 +5,12 @@
 p,
 div {
   text-align: justify;
+  color: #c72c6c;
+  color: #078795;
+}
+
+.sectionHeading {
+  @apply text-center flex justify-center items-center text-3xl md:text-4xl font-medium dark:text-[#07d0e5] text-[#c72c6c] pb-8 md:pb-10;
 }
 
 @layer components {

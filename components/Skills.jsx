@@ -6,17 +6,16 @@ const Skills = () => {
   return (
     <Fragment>
       <section id="skills">
-        <div className="skillsContainer pt-6 dark:bg-[#000000d0]">
-          <h3 className="text-center flex items-center justify-center text-3xl md:text-5xl font-medium p-4 dark:text-[#07d0e5] text-[#c72c6c]">
+        <div className="dark:bg-[#000000d0] bg-[#efeeee] py-8">
+          <h3 className="sectionHeading">
             <span className="mr-4">
-              {" "}
               <FaLaptopCode />
-            </span>{" "}
+            </span>
             Skills
           </h3>
 
           <div>
-            <div className="mx-[7%] flex gap-8 py-8 flex-wrap justify-center">
+            <div className="flex flex-wrap gap-6 mx-6 justify-center">
               {skillsData.map((skill, key) => (
                 <div
                   key={key}
