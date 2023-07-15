@@ -4,11 +4,11 @@ import React, { Fragment, useContext, useState } from "react";
 import { SlMenu } from "react-icons/sl";
 import { RiCloseLine, RiSunFill } from "react-icons/ri";
 import { AiTwotoneHome } from "react-icons/ai";
-import { TbRectangleFilled } from "react-icons/tb";
-import { SiAboutdotme } from "react-icons/si";
+import { BsPenFill } from "react-icons/bs";
+import { IoMdAppstore } from "react-icons/io";
 import { BsFillMoonFill } from "react-icons/bs";
-import { GiSkills } from "react-icons/gi";
-import { FaBusinessTime } from "react-icons/fa";
+import { FaLaptopCode } from "react-icons/fa";
+import { GiRailRoad } from "react-icons/gi";
 
 const MobileNavbar = () => {
   const { dark, setDark } = useContext(BlogContext);
@@ -47,7 +47,7 @@ const MobileNavbar = () => {
               className="navLinksMobile"
               href="#skills"
             >
-              <GiSkills /> Skills
+              <FaLaptopCode /> Skills
             </Link>
           </div>
           <div>
@@ -56,7 +56,7 @@ const MobileNavbar = () => {
               className="navLinksMobile"
               href="#blogs"
             >
-              <TbRectangleFilled /> Blogs
+              <BsPenFill /> Latest Blogs
             </Link>
           </div>
           <div>
@@ -65,7 +65,7 @@ const MobileNavbar = () => {
               className="navLinksMobile"
               href="#myJourney"
             >
-              <FaBusinessTime /> My Journey
+              <GiRailRoad /> My Journey
             </Link>
           </div>
           <div>
@@ -74,7 +74,7 @@ const MobileNavbar = () => {
               className="navLinksMobile"
               href="#apps"
             >
-              <SiAboutdotme /> Apps
+              <IoMdAppstore /> Apps
             </Link>
           </div>
 

@@ -35,7 +35,7 @@ div {
 
   /* Blogs.jsx */
   .blogLink {
-    @apply font-bold font-sans text-xl text-center p-1 mx-1;
+    @apply md:font-bold font-normal text-sm font-sans md:text-xl text-center p-1 mx-1;
   }
 
   /* For Blog Page */
