@@ -12,7 +12,7 @@ const AnimatedButton = () => {
   return (
     <Link href="/blogs">
       <motion.button
-        className="font-bold bg-[#f91071]"
+        className="font-bold text-white dark:bg-[#0ab0c2]  dark:hover:bg-[#078795] bg-[#f91071] hover:bg-[#c72c6c]"
         style={styles}
         initial={{ rotate: 180, scale: 0 }}
         animate={{ rotate: 0, scale: 1 }}
