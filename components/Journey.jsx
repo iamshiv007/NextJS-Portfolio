@@ -6,6 +6,7 @@ import YouTube from "./Journey/YouTube";
 import { GiRailRoad } from "react-icons/gi";
 import { JourneyData } from "./Journey/JourneyData";
 import FirstInternship from "./Journey/FirstInternship";
+import SecondInternship from "./Journey/SecondInternship";
 
 const Journey = () => {
   return (
@@ -35,6 +36,8 @@ const Journey = () => {
             <Iit />
 
             <YouTube />
+
+            <SecondInternship />
           </div>
         </div>
 

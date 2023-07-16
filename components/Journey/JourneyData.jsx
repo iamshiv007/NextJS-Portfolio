@@ -58,7 +58,7 @@ export const JourneyData = [
     summary: (
       <div>
         <p>Company : Good Tech Mind (Kolkata, West Benal)</p>
-        <p>Mode:Remote (Work From Home)</p>
+        <p>Mode : Remote (Work From Home)</p>
         After completing my first internship, I wanted to pursue an offline
         intern job. So, I went for more than 5 interviews in two months. It was
         a little challenging to get shortlisted for interviews because I focused
