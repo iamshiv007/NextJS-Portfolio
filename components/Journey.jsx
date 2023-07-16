@@ -5,6 +5,7 @@ import College from "./Journey/College";
 import YouTube from "./Journey/YouTube";
 import { GiRailRoad } from "react-icons/gi";
 import { JourneyData } from "./Journey/JourneyData";
+import FirstInternship from "./Journey/FirstInternship";
 
 const Journey = () => {
   return (
@@ -24,9 +25,11 @@ const Journey = () => {
             <School />
 
             <College />
+
+            <FirstInternship />
           </div>
 
-          <div class5ame="border md:block hidden dark:border-white border-black border-solid min-h-[90vh]" />
+          <div className="border border-white border-solid min-h-[90vh]"></div>
 
           <div className="py-5">
             <Iit />
@@ -84,11 +87,13 @@ const MobileScreenJourney = () => {
             <div className="border-0 dark:border-white border-black m-auto w-fit h-0"></div>
 
             <div className="border-white h-0 overflow-hidden">
-              <img
-                className="w-full"
-                src={journey.image}
-                alt={journey.heading}
-              />
+              {journey.image && (
+                <img
+                  className="w-full"
+                  src={journey.image}
+                  alt={journey.heading}
+                />
+              )}
               <div className="py-2">
                 <ul className="list-inside list-disc">{journey.summary}</ul>
               </div>

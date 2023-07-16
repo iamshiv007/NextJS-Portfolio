@@ -3,6 +3,7 @@ import Link from "next/link";
 import React, { Fragment, useContext } from "react";
 import { BsFillMoonFill } from "react-icons/bs";
 import { RiSunFill } from "react-icons/ri";
+import { DiTechcrunch } from "react-icons/di";
 
 const Navbar = () => {
   const { dark, setDark } = useContext(BlogContext);
@@ -12,8 +13,11 @@ const Navbar = () => {
       <div
         className={`hidden bg-white items-center justify-between py-4 px-8 h-[12vh] dark:bg-black md:flex sticky top-0`}
       >
-        <div className="flex items-center">
-          <img src="/images/shiv-design.png" alt="Logo" className="w-24 h-24" />
+        <div className="flex dark:text-[gray] text-xl text-[gray] items-start">
+          <span className="font-extrabold font-mono">SHIV</span>
+          <span className="pl-1">
+            <DiTechcrunch />
+          </span>
         </div>
 
         <div className="hidden md:flex items-center gap-12">
