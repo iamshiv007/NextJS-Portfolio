@@ -38,7 +38,7 @@ export const JourneyData = [
       <div>
         {" "}
         <p>
-          Company : Millenia Ahead Technology pvt. ltd. (Nagpur, Haharashtra)
+          Company : Millennia Ahead Technology pvt. ltd. (Nagpur, Haharashtra)
         </p>
         <p>Mode : Remote (Work From Home)</p> I obtained my first internship
         after learning coding from YouTube in 5 months. Essentially, it is a

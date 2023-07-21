@@ -11,6 +11,7 @@ import Apps from "@/components/Apps";
 import Footer from "@/components/Footer";
 import SendMail from "@/components/SendMail";
 import SocialMedia from "@/components/SocialMedia";
+import Projects from "@/components/Projects";
 
 export default function Home() {
   const { dark } = useContext(BlogContext);
@@ -38,6 +39,8 @@ export default function Home() {
           <SocialMedia />
           {/* Skills  */}
           <Skills />
+          {/* Projects */}
+          <Projects />
           {/* LatestBlog */}
           <LatestBlogs />
           {/* Education Experience Journey */}

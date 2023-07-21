@@ -10,7 +10,7 @@ const Apps = () => {
 
   return (
     <Fragment>
-      <div className="dark:bg-black py-8">
+      <div className="dark:bg-[#000000d0] py-8">
         <section id="apps"></section>
         <h3 className="sectionHeading">
           <span className="mr-4">

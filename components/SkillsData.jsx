@@ -21,7 +21,7 @@ export const skillsData = [
   },
   {
     icon: <FaBootstrap color="#673ab7" className="md:text-4xl text-2xl" />,
-    name: "Bootstrap1",
+    name: "Bootstrap",
   },
   {
     icon: <SiMui color="#29b6f6" className="md:text-4xl text-2xl" />,

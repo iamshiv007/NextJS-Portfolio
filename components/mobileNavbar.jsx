@@ -9,6 +9,7 @@ import { IoMdAppstore } from "react-icons/io";
 import { BsFillMoonFill } from "react-icons/bs";
 import { FaLaptopCode } from "react-icons/fa";
 import { GiRailRoad } from "react-icons/gi";
+import { CgClapperBoard } from "react-icons/cg";
 
 const MobileNavbar = () => {
   const { dark, setDark } = useContext(BlogContext);
@@ -48,6 +49,15 @@ const MobileNavbar = () => {
               href="#skills"
             >
               <FaLaptopCode /> Skills
+            </Link>
+          </div>
+          <div>
+            <Link
+              onClick={() => setMenu(!menu)}
+              className="navLinksMobile"
+              href="#skills"
+            >
+              <CgClapperBoard /> Projects
             </Link>
           </div>
           <div>

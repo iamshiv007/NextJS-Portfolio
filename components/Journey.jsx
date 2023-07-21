@@ -11,7 +11,7 @@ import SecondInternship from "./Journey/SecondInternship";
 const Journey = () => {
   return (
     <Fragment>
-      <div className="dark:bg-[#000000d0] bg-[#efeeee] overflow-x-hidden py-8">
+      <div className="dark:bg-black bg-[#efeeee] overflow-x-hidden py-8">
         <section id="myJourney">
           <h3 className="sectionHeading">
             <span className="mr-4">
@@ -81,7 +81,9 @@ const MobileScreenJourney = () => {
 
             <div className="border-2 dark:border-white border-[black] border-solid rounded">
               <div className="flex gap-5 px-5 py-2">
-                <p onClick={visibleFun}>+</p>
+                <p className="cursor-pointer text-lg" onClick={visibleFun}>
+                  +
+                </p>
                 <p>{journey.heading}</p>
                 <p className="ml-auto">{journey.time}</p>
               </div>
