@@ -1,10 +1,21 @@
-import React, { Fragment } from "react";
+import axios from "axios";
+import React, { Fragment, useState } from "react";
 import { FiMessageCircle } from "react-icons/fi";
 
 const SendMail = () => {
+  const [formData, setformData] = useState({});
+
+  const collectData = (e) => {
+    setformData({ ...formData, [e.target.name]: e.target.value });
+  };
+
   const sendMessage = (e) => {
     e.preventDefault();
-    alert("Message Sended");
+    console.log(formData);
+    axios
+      .post(`/api/message/new`, formData)
+      .then((res) => console.log(res.data))
+      .catch((err) => console.log(err));
   };
 
   return (
@@ -24,18 +35,21 @@ const SendMail = () => {
               id="name"
               placeholder="Your Name"
               name="name"
+              onChange={collectData}
             />
             <input
               className="dark:bg-black border dark:border-[#07d0e5] border-[#c72c6c] p-2 rounded"
               id="email"
               placeholder="Your Email Address"
               name="email"
+              onChange={collectData}
             />
             <input
               className="dark:bg-black border dark:border-[#07d0e5] border-[#c72c6c] p-2 rounded"
-              id="mobile"
+              id="mobileNo"
               placeholder="Your Mobile No"
-              name="mobile"
+              name="mobileNo"
+              onChange={collectData}
             />
 
             <textarea
@@ -44,6 +58,7 @@ const SendMail = () => {
               id="message"
               rows="3"
               placeholder="Write Your Message"
+              onChange={collectData}
             />
 
             <button
