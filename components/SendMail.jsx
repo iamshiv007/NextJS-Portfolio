@@ -3,19 +3,31 @@ import React, { Fragment, useState } from "react";
 import { FiMessageCircle } from "react-icons/fi";
 
 const SendMail = () => {
-  const [formData, setformData] = useState({});
+  const [formData, setFormData] = useState({});
 
   const collectData = (e) => {
-    setformData({ ...formData, [e.target.name]: e.target.value });
+    setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
   const sendMessage = (e) => {
     e.preventDefault();
-    console.log(formData);
+
+    const { name, email, message, mobileNo } = formData;
+
+    if (!name || !email || !message || !mobileNo) {
+      return alert("Please Fill All Data");
+    }
+
     axios
       .post(`/api/message/new`, formData)
-      .then((res) => console.log(res.data))
-      .catch((err) => console.log(err));
+      .then((res) => {
+        console.log(res.data);
+        alert("Message Send Successfully");
+        setFormData({});
+      })
+      .catch((err) => {
+        console.log(err);
+      });
   };
 
   return (
