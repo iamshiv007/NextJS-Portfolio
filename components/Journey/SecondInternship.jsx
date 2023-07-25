@@ -7,7 +7,7 @@ const SecondInternship = () => {
       <div className="ml-5 mt-8 md:mt-[30vh] md:justify-around flex md:flex-row flex-col md:items-start items-center">
         <div className={JourneyData[5].image ? "w-[50vh]" : "w-[100vh]"}>
           <p className="text-center text-lg font-bold">
-            {JourneyData[5].heading}-2 Months
+            {JourneyData[5].heading} - 2 Months
           </p>
           <div className={`mx-4 my-2`}>{JourneyData[5].summary}</div>
         </div>

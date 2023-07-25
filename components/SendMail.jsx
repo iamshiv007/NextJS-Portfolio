@@ -4,6 +4,7 @@ import { FiMessageCircle } from "react-icons/fi";
 
 const SendMail = () => {
   const [formData, setFormData] = useState({});
+  const [sending, setSending] = useState(false);
 
   const collectData = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -12,21 +13,25 @@ const SendMail = () => {
   const sendMessage = (e) => {
     e.preventDefault();
 
-    const { name, email, message, mobileNo } = formData;
+    const { name, email, message, subject } = formData;
 
-    if (!name || !email || !message || !mobileNo) {
+    if (!name || !email || !subject || !message) {
       return alert("Please Fill All Data");
     }
 
+    setSending(true);
     axios
       .post(`/api/message/new`, formData)
       .then((res) => {
         console.log(res.data);
+        setSending(false);
         alert("Message Send Successfully");
         setFormData({});
       })
       .catch((err) => {
         console.log(err);
+        setSending(false);
+        alert(err);
       });
   };
 
@@ -37,7 +42,7 @@ const SendMail = () => {
           <span className="mr-4">
             <FiMessageCircle />
           </span>
-          Drop a Message
+          Drop A Message by Mail
         </h3>
 
         <form onSubmit={sendMessage} action="">
@@ -45,9 +50,10 @@ const SendMail = () => {
             <input
               className="dark:bg-black border dark:border-[#07d0e5] border-[#c72c6c] p-2 rounded"
               id="name"
-              placeholder="Your Name"
+              placeholder="Your Good Name"
               name="name"
               onChange={collectData}
+              value={formData.name || ""}
             />
             <input
               className="dark:bg-black border dark:border-[#07d0e5] border-[#c72c6c] p-2 rounded"
@@ -55,13 +61,15 @@ const SendMail = () => {
               placeholder="Your Email Address"
               name="email"
               onChange={collectData}
+              value={formData.email || ""}
             />
             <input
               className="dark:bg-black border dark:border-[#07d0e5] border-[#c72c6c] p-2 rounded"
-              id="mobileNo"
-              placeholder="Your Mobile No"
-              name="mobileNo"
+              id="subject"
+              placeholder="Subject for mail"
+              name="subject"
               onChange={collectData}
+              value={formData.subject || ""}
             />
 
             <textarea
@@ -71,13 +79,15 @@ const SendMail = () => {
               rows="3"
               placeholder="Write Your Message"
               onChange={collectData}
+              value={formData.message || ""}
             />
 
             <button
-              className="font-bold text-white dark:bg-[#0ab0c2] p-2 rounded  dark:hover:bg-[#078795] bg-[#f91071] hover:bg-[#c72c6c]s"
+              className="font-bold text-white dark:bg-[#0ab0c2] disabled:cursor-default p-2 rounded dark:hover:bg-[#078795] bg-[#f91071] hover:bg-[#c72c6c]"
               type="submit"
+              disabled={sending}
             >
-              Send
+              {sending ? "sending..." : "Send"}
             </button>
           </div>
         </form>

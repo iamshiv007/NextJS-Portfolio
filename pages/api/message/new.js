@@ -1,22 +1,34 @@
-import { connectDb } from "@/database/connect"
-import { Message } from "@/models/message"
+// pages/api/send-email.js
+import nodemailer from 'nodemailer';
 
+export default async function handler(req, res) {
+    if (req.method === 'POST') {
+        const { name, email, subject, message } = req.body;
 
-const sendMessage = async (req, res) => {
+        // Replace these with your actual email service settings
+        const transporter = nodemailer.createTransport({
+            service: 'Gmail',
+            auth: {
+                user: 'shivrajg20032003@gmail.com',
+                pass: 'xsxdelmvdzzbrqft',
+            },
+        });
 
-    try {
+        const mailOptions = {
+            from: 'shivrajg20032003@gmail.com',
+            to: "iamshiv20032003@gmail.com",
+            subject,
+            text: `name = ${name}, email = ${email}, message = ${message}`
+        };
 
-        connectDb()
-
-        if (req.method !== 'POST')
-            errorHandler(res, 400, "Only post method is allowed")
-
-        const message = await Message.create(req.body)
-
-        res.status(201).json({ success: true, message })
-    } catch (error) {
-        res.status(500).json({ success: false, message: error })
+        try {
+            await transporter.sendMail(mailOptions);
+            res.status(200).json({ message: 'Email sent successfully' });
+        } catch (error) {
+            console.error('Error sending email:', error);
+            res.status(500).json({ error: 'An error occurred while sending the email' });
+        }
+    } else {
+        res.status(405).json({ error: 'Method not allowed' });
     }
 }
-
-export default sendMessage
