@@ -12,6 +12,7 @@ import Footer from "@/components/Footer";
 import SendMail from "@/components/SendMail";
 import SocialMedia from "@/components/SocialMedia";
 import Projects from "@/components/Projects";
+import ChatSystem from "@/components/ChatSystem";
 
 export default function Home() {
   const { dark } = useContext(BlogContext);
@@ -51,6 +52,8 @@ export default function Home() {
           <SendMail />
           {/* Footer */}
           <Footer />
+
+          <ChatSystem />
         </div>
       </div>
     </Fragment>
