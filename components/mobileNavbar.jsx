@@ -17,7 +17,7 @@ const MobileNavbar = () => {
 
   return (
     <Fragment>
-      <div className="md:hidden z-20 sticky top-0 flex items-center justify-end h-[12vh] p-8 dark:bg-black">
+      <div className="md:hidden z-20 sticky top-0 flex items-center justify-end h-[10vh] p-8 bg-[#ccf2f6] dark:bg-black">
         <button onClick={() => setMenu(!menu)} className="">
           <SlMenu size={22} color={dark ? "#07d0e5" : "#c72c6c"} />
         </button>

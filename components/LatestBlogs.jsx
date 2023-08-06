@@ -8,12 +8,12 @@ const LatestBlogs = () => {
   return (
     <Fragment>
       <section id="blogs">
-        <div className={`dark:bg-[#000000d0] py-8`}>
+        <div className={`dark:bg-[#000000d0] py-8 bg-[#ccf2f6]`}>
           <h3 className="sectionHeading">
             <span className="mr-4">
               <BsPenFill />
             </span>
-            Latest Blogs
+            Blogs
           </h3>
           <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 rounded-md mx-6">
             {blogs

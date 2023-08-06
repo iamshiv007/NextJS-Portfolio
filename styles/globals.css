@@ -8,7 +8,7 @@ div {
 }
 
 .sectionHeading {
-  @apply text-center flex justify-center items-center text-3xl md:text-4xl font-medium dark:text-[#07d0e5] text-[#c72c6c] pb-8 md:pb-10;
+  @apply px-4 text-center flex justify-center items-center text-3xl md:text-4xl font-medium dark:text-[#07d0e5] text-[#c72c6c] pb-8 md:pb-10;
 }
 
 @layer components {

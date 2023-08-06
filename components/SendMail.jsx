@@ -37,12 +37,12 @@ const SendMail = () => {
 
   return (
     <Fragment>
-      <div className="dark:bg-black bg-[#efeeee] py-8">
-        <h3 className="sectionHeading">
+      <div className="dark:bg-black bg-[#ccf2f6] py-8">
+        <h3 className="sectionHeading align-top">
           <span className="mr-4">
             <FiMessageCircle />
           </span>
-          Drop A Message by Mail
+          Drop A Message
         </h3>
 
         <form onSubmit={sendMessage} action="">

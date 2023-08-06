@@ -11,7 +11,7 @@ const Navbar = () => {
   return (
     <Fragment>
       <div
-        className={`hidden bg-white items-center justify-between py-4 px-8 h-[12vh] dark:bg-black md:flex sticky top-0`}
+        className={`hidden bg-[#ccf2f6] items-center justify-between py-4 px-8 h-[12vh] dark:bg-black md:flex sticky top-0`}
       >
         <div className="flex dark:text-[gray] text-xl text-[gray] items-start">
           <span className="font-extrabold font-mono">SHIV</span>
