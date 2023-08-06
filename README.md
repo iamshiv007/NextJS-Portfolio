@@ -1,5 +1,7 @@
 # Shiv's Portfolio [Live](https://shiv-s-portfolio.vercel.app) - 👌 Best NextJS Portfolio
 
+![Welcome Screen](https://res.cloudinary.com/dhcc4rnbc/image/upload/v1691310340/Screenshot_2023-08-06_131904_vtjpbo.png)
+
 ## Features ✅
 
 - Simple and Clean Design
