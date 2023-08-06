@@ -6,7 +6,7 @@ const Skills = () => {
   return (
     <Fragment>
       <section id="skills">
-        <div className="dark:bg-[#000000d0] bg-[#ccf2f6] py-8">
+        <div className="dark:bg-[#000000d0] py-8">
           <h3 className="sectionHeading">
             <span className="mr-4">
               <FaLaptopCode />

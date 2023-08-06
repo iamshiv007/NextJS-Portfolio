@@ -5,7 +5,7 @@ const Projects = () => {
   return (
     <Fragment>
       <section id="projects">
-        <div className={`dark:bg-black py-8 bg-[#ccf2f6]`}>
+        <div className={`dark:bg-black py-8 bg-[#ecf8f9]`}>
           <div>
             <h3 className="sectionHeading">
               <span className="mr-4">

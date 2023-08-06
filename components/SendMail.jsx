@@ -37,7 +37,7 @@ const SendMail = () => {
 
   return (
     <Fragment>
-      <div className="dark:bg-black bg-[#ccf2f6] py-8">
+      <div className="dark:bg-black bg-[#ecf8f9] py-8">
         <h3 className="sectionHeading align-top">
           <span className="mr-4">
             <FiMessageCircle />

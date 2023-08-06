@@ -11,7 +11,7 @@ import SecondInternship from "./Journey/SecondInternship";
 const Journey = () => {
   return (
     <Fragment>
-      <div className="dark:bg-black bg-[#ccf2f6] overflow-x-hidden py-8">
+      <div className="dark:bg-black bg-[#ecf8f9] overflow-x-hidden py-8">
         <section id="myJourney">
           <h3 className="sectionHeading">
             <span className="mr-4">
@@ -30,7 +30,7 @@ const Journey = () => {
             <FirstInternship />
           </div>
 
-          <div className="border dark:border-white border-black border-solid min-h-[90vh]"></div>
+          <div className="border dark:border-white border-gray-700 border-solid min-h-[90vh]"></div>
 
           <div className="py-5">
             <Iit />
