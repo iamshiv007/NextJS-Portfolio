@@ -1,39 +1,39 @@
-# Shiv's blog
-This is a blog website for programmers. Where you can learn simple to advance level coding concepts.
+<h1>Shiv's Portfolio - Best NextJS Portfolio</h1>
 
-## Getting Started
+<h3>features</h3>
 
-First, run the development server:
+<ol>
+  <li>Simple and Clean Design</li>
+  <li>Dark and Light Theme</li>
+  <li>Mobile Responsiveness</li>
+  <li>Chat System - <a href='https://www.tawk.to/'>tawk.to</a>
+  <li>Send Message - <a href='https://nodemailer.com/about/'>nodemailer</a></li>
+</ol>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+<h3>Sections</h3>
+  <ol>
+    <li><a href='https://shiv-s-portfolio.vercel.app'>Home | Intro | Welcome</a></li>
+    <li><a href='https://shiv-s-portfolio.vercel.app/#skills'>Skills</a></li>
+    <li><a href='https://shiv-s-portfolio.vercel.app/#projects'>Projects</a></li>
+    <li><a href='https://shiv-s-portfolio.vercel.app/#blogs'>Blogs</a></li>
+    <li><a href='https://shiv-s-portfolio.vercel.app/#myJourney'>My Journey</a></li>
+    <li><a href='https://shiv-s-portfolio.vercel.app/#apps'>Apps</a></li>
+  </ol>
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+  <h3>Tech Stack</h3>
+  <ul>
+    <li><a href='https://nextjs.org/'>Next JS</a></li>
+    <li><a href='https://tailwindcss.com/'>Tailwind CSS</a></li>
+    <li>Libraries
+        <ul>
+         <li><a href='https://react-icons.github.io/react-icons/search'>react-icons</a></li>
+         <li><a href='https://www.framer.com/'>framer-motion</a></li>
+         <li><a href='https://axios-http.com/docs/intro'>axios</a></li>
+         <li><a href='https://mongoosejs.com/'>mongoose</a></li>
+         <li><a href='https://nodemailer.com/about'>nodemailer</a></li>
+         <li><a href='https://react-responsive-carousel.js.org/'>react-responsive-carousel</a></li>
+         <li><a href='https://www.npmjs.com/package/react-responsive-masonry'>react-responsive-masonry</a></li>
+         <li><a href='https://react-syntax-highlighter.github.io/react-syntax-highlighter/demo/'>react-syntax-highlighter</a></li>
+        </ul>
+    </li>
+  </ul>
