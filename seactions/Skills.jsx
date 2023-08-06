@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import { skillsData } from "./SkillsData";
+import { skillsData } from "../constants/SkillsData";
 import { FaLaptopCode } from "react-icons/fa";
 
 const Skills = () => {

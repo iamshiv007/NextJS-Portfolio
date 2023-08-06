@@ -1,6 +1,6 @@
-import Navbar from "@/components/Navbar";
+import Navbar from "@/components/layout/Navbar";
 import Theme from "@/components/Theme";
-import MobileNavbar from "@/components/mobileNavbar";
+import MobileNavbar from "@/components/layout/mobileNavbar";
 import Head from "next/head";
 import React, { Fragment, useEffect, useState } from "react";
 const axios = require("axios");

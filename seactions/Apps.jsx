@@ -1,7 +1,6 @@
 import React, { Fragment, useContext } from "react";
-import Theme from "./Theme";
 import { IoMdAppstore } from "react-icons/io";
-import { apps } from "./AppsData";
+import { apps } from "../constants/AppsData";
 import Link from "next/link";
 import { BlogContext } from "@/contextApi/blogContext";
 

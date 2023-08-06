@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 import Link from "next/link";
-import { blogs } from "@/components/blogData";
+import { blogs } from "@/constants/blogData";
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 
 const Blogs = () => {

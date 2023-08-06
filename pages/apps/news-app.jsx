@@ -1,7 +1,7 @@
 import Theme from "@/components/Theme";
 import Head from "next/head";
 import React, { Fragment, useEffect, useState } from "react";
-import { savedArticles } from "@/components/NewsData";
+import { savedArticles } from "@/constants/NewsData";
 import Link from "next/link";
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 import axios from "axios";

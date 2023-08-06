@@ -1,17 +1,17 @@
 import Head from "next/head";
-import { Fragment, useContext, useEffect } from "react";
-import Intro from "@/components/Intro";
+import { Fragment, useContext } from "react";
+import Intro from "@/seactions/Intro";
 import { BlogContext } from "@/contextApi/blogContext";
-import Navbar from "@/components/Navbar";
-import MobileNavbar from "@/components/mobileNavbar";
-import Skills from "@/components/Skills";
-import LatestBlogs from "@/components/LatestBlogs";
-import Journey from "@/components/Journey";
-import Apps from "@/components/Apps";
-import Footer from "@/components/Footer";
+import Navbar from "@/components/layout/Navbar";
+import MobileNavbar from "@/components/layout/mobileNavbar";
+import Skills from "@/seactions/Skills";
+import LatestBlogs from "@/seactions/LatestBlogs";
+import Journey from "@/seactions/Journey";
+import Apps from "@/seactions/Apps";
+import Footer from "@/components/layout/Footer";
 import SendMail from "@/components/SendMail";
 import SocialMedia from "@/components/SocialMedia";
-import Projects from "@/components/Projects";
+import Projects from "@/seactions/Projects";
 import ChatSystem from "@/components/ChatSystem";
 
 export default function Home() {

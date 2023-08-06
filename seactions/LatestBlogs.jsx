@@ -1,5 +1,5 @@
 import AnimatedButton from "@/components/AnimatedButtons";
-import { blogs } from "@/components/blogData";
+import { blogs } from "@/constants/blogData";
 import Link from "next/link";
 import React, { Fragment } from "react";
 import { BsPenFill } from "react-icons/bs";

@@ -1,8 +1,8 @@
-import Intro from "@/components/Intro";
+import Intro from "@/seactions/Intro";
 import Theme from "@/components/Theme";
 import React, { Fragment } from "react";
-import MobileNavbar from "@/components/mobileNavbar";
-import Navbar from "@/components/Navbar";
+import MobileNavbar from "@/components/layout/mobileNavbar";
+import Navbar from "@/components/layout/Navbar";
 
 const About = () => {
   return (
