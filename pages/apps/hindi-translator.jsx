@@ -22,7 +22,7 @@ const HindiTranslator = () => {
       },
       headers: {
         "content-type": "application/json",
-        "X-RapidAPI-Key": "46e102466emsh069eb8e1a1f88bep148650jsn161589bc0004",
+        "X-RapidAPI-Key": process.env.REACT_APP_RAPID_API_KEY,
         "X-RapidAPI-Host": "microsoft-translator-text.p.rapidapi.com",
       },
       data: [

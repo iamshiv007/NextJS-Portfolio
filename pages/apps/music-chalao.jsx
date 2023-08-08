@@ -15,7 +15,7 @@ const MusicChalao = () => {
       method: "GET",
       url: "https://deezerdevs-deezer.p.rapidapi.com/infos",
       headers: {
-        "X-RapidAPI-Key": "46e102466emsh069eb8e1a1f88bep148650jsn161589bc0004",
+        "X-RapidAPI-Key": process.enc.REACT_APP_RAPID_API_KEY,
         "X-RapidAPI-Host": "deezerdevs-deezer.p.rapidapi.com",
       },
     };
