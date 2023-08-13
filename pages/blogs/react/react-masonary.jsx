@@ -8,15 +8,9 @@ import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 const ReactMasonary = () => {
   const [photos, setPhotos] = useState([]);
 
-  const config = {
-    headers: {
-      Authorization: "TXyCeZ0GtP0M11icf6Gwn1WBN78b3tlFpIhXOXR3TOaJygR6bAaINnOl",
-    },
-  };
-
   useEffect(() => {
     axios
-      .get(`https://api.pexels.com/v1/curated?page=${1}`, config)
+      .get(`/api/masonary`)
       .then((res) => {
         console.log(res.data.photos);
         setPhotos(res.data.photos);
@@ -56,7 +50,7 @@ const ReactMasonary = () => {
             columnsCountBreakPoints={{ 350: 2, 750: 3, 900: 4 }}
           >
             <Masonry>
-              {photos.map((photo, key) => {
+              {photos?.map((photo, key) => {
                 return (
                   <div style={{ margin: "10px" }} key={key}>
                     <button

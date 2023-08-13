@@ -17,18 +17,12 @@ const NewsApp = () => {
   const [filter, setFilter] = useState(false);
 
   useEffect(() => {
-    const apikey = "18863985ad4df1e7b0b4244b628ff7f7";
-
-    const url =
-      "https://gnews.io/api/v4/top-headlines?category=general&lang=en&country=in&max=10&apikey=" +
-      apikey;
-
     setLoading(true);
 
     axios
-      .get(url)
+      .get("/api/news?category=general&lang=en&country=in&max=10")
       .then((res) => {
-        if (!res.data.articles) {
+        if (!res.data.success) {
           setArticles(savedArticles);
           setLoading(false);
           alert("Not Found1 : Showing Old News");
@@ -41,7 +35,7 @@ const NewsApp = () => {
         }
       })
       .catch((err) => {
-        console.log(err);
+        alert(err?.response?.data?.message || err.message || err);
         alert("Not Found2 : Showing Old News");
         setArticles(savedArticles);
         setLoading(false);
@@ -49,21 +43,11 @@ const NewsApp = () => {
   }, []);
 
   const loadNews = () => {
-    const apikey = "18863985ad4df1e7b0b4244b628ff7f7";
-
-    const url =
-      "https://gnews.io/api/v4/top-headlines?category=" +
-      category +
-      "&lang=" +
-      language +
-      "&country=" +
-      country +
-      "&max=10&apikey=" +
-      apikey;
-
     setLoading(true);
     axios
-      .get(url)
+      .get(
+        `/api/news?category=${category}&lang=${language}&country=${country}&max=10`
+      )
       .then((res) => {
         if (res.data.articles.length === 0) {
           setLoading(false);
@@ -237,7 +221,7 @@ const MyMasonry = ({ loading, articles }) => {
       <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}>
         <Masonry>
           {!loading ? (
-            articles.map((news, key) => {
+            articles?.map((news, key) => {
               const descLength = news.description.split(" ").length / 2;
 
               const dateString = news.publishedAt;

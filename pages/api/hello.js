@@ -3,7 +3,5 @@ import axios from "axios";
 
 export default async function handler(req, res) {
 
-  connectDb()
-
-  axios.post()
+  re.send("Test success")
 }

@@ -18,35 +18,24 @@ const ApnaChatGpt = () => {
   };
 
   const generateAnswer = async () => {
-    const options = {
-      method: "POST",
-      url: "https://chatgpt-api8.p.rapidapi.com/",
-      headers: {
-        "content-type": "application/json",
-        "X-RapidAPI-Key": process.env.REACT_APP_RAPID_API_KEY,
-        "X-RapidAPI-Host": "chatgpt-api8.p.rapidapi.com",
-      },
-      data: [
-        {
-          content: question,
-          role: "user",
-        },
-      ],
-    };
-
     try {
       setLoading(true);
       setQuestionPreview(question);
       setQuestion("");
       setAnswer("");
-      const response = await axios.request(options);
+      const { data } = await axios.post(`/api/chatgpt?query=${question}`);
+      if (!data.success) {
+        alert(data.message);
+        setLoading(false);
+        return;
+      }
       setLoading(false);
-      console.log(response);
-      setAnswer(response.data.text);
-      setHistory([{ question, answer: response.data.text }, ...history]);
-      console.log(response.data.text);
+      setAnswer(data.answer);
+      setHistory([{ question, answer: data.answer }, ...history]);
+      console.log(data.answer);
     } catch (error) {
-      console.error(error);
+      console.log(error);
+      alert(error?.response?.data?.message || error);
     }
   };
 

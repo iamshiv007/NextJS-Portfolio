@@ -11,33 +11,19 @@ const HindiTranslator = () => {
   const [loading, setLoading] = useState(false);
 
   const translateFun = async () => {
-    const options = {
-      method: "POST",
-      url: "https://microsoft-translator-text.p.rapidapi.com/translate",
-      params: {
-        "to[0]": language,
-        "api-version": "3.0",
-        profanityAction: "NoAction",
-        textType: "plain",
-      },
-      headers: {
-        "content-type": "application/json",
-        "X-RapidAPI-Key": process.env.REACT_APP_RAPID_API_KEY,
-        "X-RapidAPI-Host": "microsoft-translator-text.p.rapidapi.com",
-      },
-      data: [
-        {
-          Text: text,
-        },
-      ],
-    };
-
     try {
       setLoading(true);
-      const response = await axios.request(options);
+      const { data } = await axios.post(
+        `/api/translate?text=${text}&language=${language}`
+      );
+      if (!data.success) {
+        alert(data.message);
+        setLoading(false);
+        return;
+      }
       setLoading(false);
-      console.log(response.data);
-      setOutput(response.data[0].translations[0].text);
+      console.log(data.translatedText);
+      setOutput(data.translatedText);
     } catch (error) {
       console.error(error);
     }
