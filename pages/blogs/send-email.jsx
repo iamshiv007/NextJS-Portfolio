@@ -2,6 +2,7 @@ import BackTo from "@/components/BackTo";
 import Theme from "@/components/Theme";
 import { BlogContext } from "@/contextApi/blogContext";
 import Head from "next/head";
+import Image from "next/image";
 import React, { Fragment, useContext } from "react";
 import SyntaxHighlighter from "react-syntax-highlighter";
 import { dark, github } from "react-syntax-highlighter/dist/cjs/styles/hljs";
@@ -84,10 +85,12 @@ const SendEmail = () => {
               </div>
             </div>
 
-            <img
+            <Image
               className="my-6 border border-solid border-black dark:border-white"
               src="/images/screen1.png"
               alt=""
+              width={800}
+              height={200}
             />
 
             <PointFourteen myDark={myDark} />
@@ -98,10 +101,12 @@ const SendEmail = () => {
               Test again 👉 http://localhost:yourport/api/mail/new
             </div>
 
-            <img
+            <Image
               className="p-2 border border-black border-solid dark:border-white"
               src="/images/screen2.png"
               alt=""
+              width={800}
+              height={500}
             />
 
             <div className="text-center m-5 text-2xl">❤️ Thank You 🙏</div>

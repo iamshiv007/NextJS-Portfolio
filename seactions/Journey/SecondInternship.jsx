@@ -13,10 +13,12 @@ const SecondInternship = () => {
         </div>
         {JourneyData[5].image && (
           <div className="md:w-[50vh] w-[40vh] h-[30vh] bg-gray-600 md:rounded-e-3xl rounded-3xl">
-            <img
+            <Image
               src={JourneyData[5].image}
               alt="youtube"
               className="md:rounded-e-3xl rounded-3xl w-full h-full object-cover"
+              width={300}
+              height={200}
             />
           </div>
         )}

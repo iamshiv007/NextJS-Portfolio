@@ -3,6 +3,7 @@ import { IoMdAppstore } from "react-icons/io";
 import { apps } from "../constants/AppsData";
 import Link from "next/link";
 import { BlogContext } from "@/contextApi/blogContext";
+import Image from "next/image";
 
 const Apps = () => {
   const { dark } = useContext(BlogContext);
@@ -23,10 +24,12 @@ const Apps = () => {
           {apps.map((app, key) => (
             <div key={key} className="overflow-hidden">
               <Link href={`/${app.linkName}`}>
-                <img
+                <Image
                   className="object-cover rounded md:rounded-[30px] w-full"
                   src={dark ? app.imageUrl : app.imageLight}
                   alt="app"
+                  width={175}
+                  height={355}
                 />
               </Link>
             </div>
@@ -48,7 +51,13 @@ const MobileScreenApps = () => {
         <div key={key}>
           <Link href={`/${app.linkName}`}>
             <div className="p-3 rounded-xl bg-[pink] dark:bg-[aqua]">
-              <img src={app.iconUrl} alt={app.name} />
+              <Image
+                className="object-cover"
+                width={150}
+                height={150}
+                src={app.iconUrl}
+                alt={app.name}
+              />
             </div>
           </Link>
           <p className="text-center text-xs py-1">{app.name}</p>

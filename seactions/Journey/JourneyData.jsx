@@ -3,7 +3,7 @@ export const JourneyData = [
     heading: "School",
     time: "2015-2019",
     image:
-      "https://scontent.fjdh1-1.fna.fbcdn.net/v/t1.18169-9/11180626_932953900101923_2418688841280992475_n.jpg?_nc_cat=100&cb=99be929b-3346023f&ccb=1-7&_nc_sid=174925&_nc_ohc=p5k0xy1wrJwAX998ZzW&_nc_ht=scontent.fjdh1-1.fna&oh=00_AfAJcbQ7R6X1KMe0cbfgf95MvJN1DnU2fThfh9rSI2wolg&oe=64D624A8",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpCDvRmnjiBTgBd9WyPHlJHEPzRz2shaS3YQ&usqp=CAU",
     summary:
       "Topper during School time, A Mathematics Guy, Shy and Introverted personality, Always with Boyz friend Zone",
   },

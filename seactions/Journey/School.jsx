@@ -1,5 +1,6 @@
 import React, { Fragment } from "react";
 import { JourneyData } from "./JourneyData";
+import Image from "next/image";
 
 const School = () => {
   return (
@@ -13,7 +14,9 @@ const School = () => {
           <div className="py-2 px-4">{JourneyData[0].summary}</div>
         </div>
         <div className="md:w-[50vh] w-[40vh] h-[30vh] bg-gray-600 rounded-3xl md:rounded-s-3xl">
-          <img
+          <Image
+            width={300}
+            height={200}
             src={JourneyData[0].image}
             alt="school"
             className="md:rounded-s-3xl rounded-3xl w-full h-full object-cover"

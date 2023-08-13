@@ -1,5 +1,6 @@
 import AnimatedButton from "@/components/AnimatedButtons";
 import { blogs } from "@/constants/blogData";
+import Image from "next/image";
 import Link from "next/link";
 import React, { Fragment } from "react";
 import { BsPenFill } from "react-icons/bs";
@@ -23,11 +24,13 @@ const LatestBlogs = () => {
                 <div key={blog.name}>
                   <Link href={`/blogs/${blog.linkName}`}>
                     <div className="h-fit dark:bg-gray-900 rounded-md border border-gray-400 border-solid">
-                      <img
+                      <Image
                         className="rounded-t-md"
                         src={blog.imageUrl}
                         alt="img not found"
                         style={{ width: "100%" }}
+                        width={400}
+                        height={250}
                       />
                       <div className="px-1 py-2  border-t border-solid border-gray-600 dark:border-white">
                         <div className="blogLink">{blog.name}</div>

@@ -7,6 +7,7 @@ import { GiRailRoad } from "react-icons/gi";
 import { JourneyData } from "./Journey/JourneyData";
 import FirstInternship from "./Journey/FirstInternship";
 import SecondInternship from "./Journey/SecondInternship";
+import Image from "next/image";
 
 const Journey = () => {
   return (
@@ -93,10 +94,12 @@ const MobileScreenJourney = () => {
 
             <div className="border-white h-0 overflow-hidden">
               {journey.image && (
-                <img
+                <Image
                   className="w-full"
                   src={journey.image}
                   alt={journey.heading}
+                  width={300}
+                  height={200}
                 />
               )}
               <div className="py-2">

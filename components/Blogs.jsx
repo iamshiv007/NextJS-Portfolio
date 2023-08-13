@@ -2,6 +2,7 @@ import React, { Fragment } from "react";
 import Link from "next/link";
 import { blogs } from "@/constants/blogData";
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
+import Image from "next/image";
 
 const Blogs = () => {
   return (
@@ -12,10 +13,15 @@ const Blogs = () => {
         <ResponsiveMasonry columnsCountBreakPoints={{ 350: 2, 750: 3, 900: 4 }}>
           <Masonry>
             {blogs.map((blog) => (
-              <div className="dark:bg-gray-900 rounded-md border border-gray-400 border-solid m-2">
+              <div
+                key={blog.name}
+                className="dark:bg-gray-900 rounded-md border border-gray-400 border-solid m-2"
+              >
                 <Link key={blog.name} href={`/blogs/${blog.linkName}`}>
                   <div>
-                    <img
+                    <Image
+                      width={400}
+                      height={250}
                       className="rounded-t-md"
                       src={blog.imageUrl}
                       alt="img not found"

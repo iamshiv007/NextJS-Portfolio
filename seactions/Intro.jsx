@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React, { Fragment } from "react";
 
 const Intro = () => {
@@ -20,10 +21,12 @@ const Intro = () => {
 
           <div className="mt-14 flex justify-center">
             <div className="w-[300px]">
-              <img
+              <Image
                 className="w-full rounded-full"
                 src="/images/cartoon 0.png"
                 alt="myimage"
+                width={300}
+                height={300}
               />
             </div>
           </div>

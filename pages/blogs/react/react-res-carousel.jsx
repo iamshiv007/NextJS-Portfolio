@@ -4,6 +4,7 @@ import { Carousel } from "react-responsive-carousel";
 import Head from "next/head";
 import Theme from "@/components/Theme";
 import BackTo from "@/components/BackTo";
+import Image from "next/image";
 
 const ReactResposiveCarousel = () => {
   const [arrows, setArrows] = useState(false);
@@ -23,9 +24,7 @@ const ReactResposiveCarousel = () => {
 
         <div className="layoutContainer">
           <div className="layoutBox1">
-            <h1 className="blog-heading">
-              React Responsive Carousel
-            </h1>
+            <h1 className="blog-heading">React Responsive Carousel</h1>
             <div className="md:w-[80%] w-[90%] m-auto flex flex-wrap gap-5 mb-5 mt-5">
               <div>
                 <input
@@ -96,13 +95,28 @@ const ReactResposiveCarousel = () => {
                 showThumbs={thumbs}
               >
                 <div>
-                  <img src="/images/carousel1.png" alt="CarouselImage1" />
+                  <Image
+                    width={500}
+                    height={300}
+                    src="/images/carousel1.png"
+                    alt="CarouselImage1"
+                  />
                 </div>
                 <div>
-                  <img src={`/images/carousel2.png`} alt="CarouselImage2" />
+                  <Image
+                    width={500}
+                    height={300}
+                    src={`/images/carousel2.png`}
+                    alt="CarouselImage2"
+                  />
                 </div>
                 <div>
-                  <img src={`/images/carousel3.png`} alt="CarouselImage3" />
+                  <Image
+                    width={500}
+                    height={300}
+                    src={`/images/carousel3.png`}
+                    alt="CarouselImage3"
+                  />
                 </div>
               </Carousel>
             </div>

@@ -4,6 +4,7 @@ import Link from "next/link";
 import Theme from "@/components/Theme";
 import { RiCloseLine } from "react-icons/ri";
 import BackTo from "@/components/BackTo";
+import Image from "next/image";
 
 const FirstPost = () => {
   const [close, setClose] = useState(false);
@@ -92,8 +93,6 @@ const FirstPost = () => {
                     <RiCloseLine color="blue" />
                   </div>
                 </div>
-
-                {/* <img className="" src="" alt="" /> */}
               </Link>
               <p className="text-[0.6rem] text-right">Report this ad</p>
             </div>
@@ -116,7 +115,9 @@ const BuiltInRouting = () => {
         the use of react-router-dom for Routing.
       </p>
       <h4 className="font-bold my-1">For Pages directory</h4>
-      <img
+      <Image
+        width={800}
+        height={500}
         className="sm:w-[60%] w-[90%] m-auto mt-3"
         src="https://res.cloudinary.com/practicaldev/image/fetch/s--DIT1rRjH--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://raw.githubusercontent.com/akuks/Misc/main/Images/nextjs_routing.png"
         alt="image1"
@@ -137,13 +138,17 @@ const BuiltInRouting = () => {
         <strong>student</strong> under the pages directory. &#123;image 1&#125;
       </p>
       <h4 className="font-bold my-1">For app directory</h4>
-      <img
+      <Image
+        width={800}
+        height={500}
         className="sm:w-[75%] w-[90%] m-auto mt-3"
         src="https://vercel.com/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fe5382hct74si%2FTvIi0gcnHOrapoHrT3qjq%2F9039474cdf25f27125cbdbdde35f32f5%2Froute-segments-to-path-segments.png&w=1920&q=75"
         alt="image2"
       />
       <p className="text-center mb-3">Image 2</p>
-      <img
+      <Image
+        width={800}
+        height={500}
         className="sm:w-[75%] w-[90%] m-auto mt-3"
         src="https://vercel.com/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fe5382hct74si%2FTvIi0gcnHOrapoHrT3qjq%2F9039474cdf25f27125cbdbdde35f32f5%2Froute-segments-to-path-segments.png&w=1920&q=75"
         alt="image3"
@@ -204,7 +209,9 @@ const ApiSupport = () => {
         file by using the api/&lt;fileName&gt;.
       </p>
       <h4 className="font-bold my-1">For App Directory</h4>
-      <img
+      <Image
+        width={800}
+        height={500}
         className="sm:w-[75%] w-[90%] m-auto mt-3"
         src="https://nextjs.org/_next/image?url=%2Fdocs%2Fdark%2Froute-special-file.png&w=1920&q=75"
         alt="image4"

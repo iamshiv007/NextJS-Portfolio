@@ -1,5 +1,6 @@
 import React, { Fragment } from "react";
 import { JourneyData } from "./JourneyData";
+import Image from "next/image";
 
 const YouTube = () => {
   return (
@@ -12,10 +13,12 @@ const YouTube = () => {
           <p className="mx-4 my-2">{JourneyData[3].summary}</p>
         </div>
         <div className="md:w-[50vh] w-[40vh] h-[30vh] bg-gray-600 md:rounded-e-3xl rounded-3xl">
-          <img
+          <Image
             src={JourneyData[3].image}
             alt="youtube"
             className="md:rounded-e-3xl rounded-3xl w-full h-full object-cover"
+            width={300}
+            height={200}
           />
         </div>
       </div>
