@@ -1,15 +1,16 @@
-import { BlogContext } from "@/contextApi/blogContext";
-import Link from "next/link";
 import React, { Fragment, useContext, useState } from "react";
+import Link from "next/link";
 import { SlMenu } from "react-icons/sl";
 import { RiCloseLine, RiSunFill } from "react-icons/ri";
-import { AiTwotoneHome } from "react-icons/ai";
 import { BsPenFill } from "react-icons/bs";
 import { IoMdAppstore } from "react-icons/io";
-import { BsFillMoonFill } from "react-icons/bs";
+import { AiTwotoneHome } from "react-icons/ai";
 import { FaLaptopCode } from "react-icons/fa";
+import { BsFillMoonFill } from "react-icons/bs";
 import { GiRailRoad } from "react-icons/gi";
 import { CgClapperBoard } from "react-icons/cg";
+
+import { BlogContext } from "@/contextApi/blogContext";
 
 const MobileNavbar = () => {
   const { dark, setDark } = useContext(BlogContext);

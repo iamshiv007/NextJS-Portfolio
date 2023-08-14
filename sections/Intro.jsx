@@ -1,5 +1,5 @@
-import Image from "next/image";
 import React, { Fragment } from "react";
+import Image from "next/image";
 
 const Intro = () => {
   return (

@@ -1,9 +1,10 @@
-import { BlogContext } from "@/contextApi/blogContext";
-import Link from "next/link";
 import React, { Fragment, useContext } from "react";
-import { BsFillMoonFill } from "react-icons/bs";
+import Link from "next/link";
 import { RiSunFill } from "react-icons/ri";
+import { BsFillMoonFill } from "react-icons/bs";
 import { DiTechcrunch } from "react-icons/di";
+
+import { BlogContext } from "@/contextApi/blogContext";
 
 const Navbar = () => {
   const { dark, setDark } = useContext(BlogContext);
@@ -11,7 +12,7 @@ const Navbar = () => {
   return (
     <Fragment>
       <div
-        className={`hidden bg-[#ccf2f6] items-center justify-between py-4 px-8 h-[12vh] dark:bg-black md:flex sticky top-0`}
+        className={`hidden bg-[#ccf2f6] items-center justify-between py-4 px-8 h-[12vh] dark:bg-black md:flex sticky top-0 z-20`}
       >
         <div className="flex dark:text-[gray] text-xl text-[gray] items-start">
           <span className="font-extrabold font-mono">SHIV</span>

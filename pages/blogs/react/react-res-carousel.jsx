@@ -1,10 +1,11 @@
 import React, { Fragment, useState } from "react";
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import { Carousel } from "react-responsive-carousel";
 import Head from "next/head";
-import Theme from "@/components/Theme";
-import BackTo from "@/components/BackTo";
 import Image from "next/image";
+import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+
+import Theme from "@/utils/Theme";
+import BackTo from "@/components/buttons/BackTo";
 
 const ReactResposiveCarousel = () => {
   const [arrows, setArrows] = useState(false);

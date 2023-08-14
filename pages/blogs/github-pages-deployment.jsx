@@ -1,11 +1,11 @@
-import Theme from "@/components/Theme";
-import { BlogContext } from "@/contextApi/blogContext";
-import Head from "next/head";
 import React, { Fragment, useContext } from "react";
-import { github } from "react-syntax-highlighter/dist/cjs/styles/hljs";
-import { dark } from "react-syntax-highlighter/dist/cjs/styles/hljs";
+import Head from "next/head";
+import { github, dark } from "react-syntax-highlighter/dist/cjs/styles/hljs";
 import SyntaxHighlighter from "react-syntax-highlighter";
-import BackTo from "@/components/BackTo";
+
+import Theme from "@/utils/Theme";
+import { BlogContext } from "@/contextApi/blogContext";
+import BackTo from "@/components/buttons/BackTo";
 
 const GithubPagesDeploy = () => {
   const { dark: myDark } = useContext(BlogContext);
@@ -21,9 +21,7 @@ const GithubPagesDeploy = () => {
 
         <div className="layoutContainer">
           <div className="layoutBox1">
-            <h1 className="blog-heading">
-              React Deployment on Github Page
-            </h1>
+            <h1 className="blog-heading">React Deployment on Github Page</h1>
 
             <div className="bg-gray-200 my-4 p-2 rounded dark:bg-black">
               {" "}

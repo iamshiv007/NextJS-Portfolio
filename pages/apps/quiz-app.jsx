@@ -1,11 +1,12 @@
-import Theme from "@/components/Theme";
-import axios from "axios";
-import Head from "next/head";
 import React, { Fragment, useEffect, useState } from "react";
+import Head from "next/head";
+import axios from "axios";
 import he from "he";
 import { TiTick } from "react-icons/ti";
 import { ImCross } from "react-icons/im";
-import BackTo from "@/components/BackTo";
+
+import Theme from "@/utils/Theme";
+import BackTo from "@/components/buttons/BackTo";
 
 const QuizApp = () => {
   const [question, setQuestion] = useState();

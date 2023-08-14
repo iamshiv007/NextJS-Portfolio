@@ -1,7 +1,8 @@
-import BackTo from "@/components/BackTo";
-import Theme from "@/components/Theme";
-import Head from "next/head";
 import React, { Fragment } from "react";
+import Head from "next/head";
+
+import Theme from "@/utils/Theme";
+import BackTo from "@/components/buttons/BackTo";
 
 const CssSelector = () => {
   return (

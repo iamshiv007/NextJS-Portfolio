@@ -1,13 +1,16 @@
 import React, { Fragment } from "react";
-import School from "./Journey/School";
-import Iit from "./Journey/Iit";
-import College from "./Journey/College";
-import YouTube from "./Journey/YouTube";
-import { GiRailRoad } from "react-icons/gi";
-import { JourneyData } from "./Journey/JourneyData";
-import FirstInternship from "./Journey/FirstInternship";
-import SecondInternship from "./Journey/SecondInternship";
 import Image from "next/image";
+import { GiRailRoad } from "react-icons/gi";
+
+import {
+  School,
+  Iit,
+  College,
+  YouTube,
+  FirstInternship,
+  SecondInternship,
+} from "./journeyParts";
+import { JourneyData } from "@/constants";
 
 const Journey = () => {
   return (

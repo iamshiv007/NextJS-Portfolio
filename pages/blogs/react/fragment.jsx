@@ -1,11 +1,11 @@
-import Theme from "@/components/Theme";
 import Head from "next/head";
 import React, { Fragment, useContext } from "react";
-import { github } from "react-syntax-highlighter/dist/cjs/styles/hljs";
-import { dark } from "react-syntax-highlighter/dist/cjs/styles/hljs";
 import SyntaxHighlighter from "react-syntax-highlighter";
+import { github, dark } from "react-syntax-highlighter/dist/cjs/styles/hljs";
+
+import Theme from "@/utils/Theme";
 import { BlogContext } from "@/contextApi/blogContext";
-import BackTo from "@/components/BackTo";
+import BackTo from "@/components/buttons/BackTo";
 
 const MyFragment = () => {
   const { dark: myDark } = useContext(BlogContext);

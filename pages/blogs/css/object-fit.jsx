@@ -1,8 +1,9 @@
-import BackTo from "@/components/BackTo";
-import Theme from "@/components/Theme";
+import React, { Fragment } from "react";
 import Head from "next/head";
 import Image from "next/image";
-import React, { Fragment } from "react";
+
+import Theme from "@/utils/Theme";
+import BackTo from "@/components/buttons/BackTo";
 
 const ObjectFit = () => {
   return (

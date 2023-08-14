@@ -1,12 +1,13 @@
-import Theme from "@/components/Theme";
-import Head from "next/head";
 import React, { Fragment, useEffect, useState } from "react";
-import { savedArticles } from "@/constants/NewsData";
+import Head from "next/head";
 import Link from "next/link";
-import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 import axios from "axios";
 import { AiOutlineMenu } from "react-icons/ai";
-import BackTo from "@/components/BackTo";
+import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
+
+import Theme from "@/utils/Theme";
+import { savedArticles } from "@/constants/NewsData";
+import BackTo from "@/components/buttons/BackTo";
 
 const NewsApp = () => {
   const [articles, setArticles] = useState(savedArticles);

@@ -1,5 +1,5 @@
-import axios from "axios";
 import React, { Fragment, useState } from "react";
+import axios from "axios";
 import { FiMessageCircle } from "react-icons/fi";
 
 const SendMail = () => {

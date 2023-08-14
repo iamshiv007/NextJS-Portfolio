@@ -1,11 +1,11 @@
-import Theme from "@/components/Theme";
-import { BlogContext } from "@/contextApi/blogContext";
-import Head from "next/head";
 import React, { Fragment, useContext } from "react";
-import { github } from "react-syntax-highlighter/dist/cjs/styles/hljs";
-import { dark } from "react-syntax-highlighter/dist/cjs/styles/hljs";
+import Head from "next/head";
 import SyntaxHighlighter from "react-syntax-highlighter";
-import BackTo from "@/components/BackTo";
+import { dark, github } from "react-syntax-highlighter/dist/cjs/styles/hljs";
+
+import Theme from "@/utils/Theme";
+import { BlogContext } from "@/contextApi/blogContext";
+import BackTo from "@/components/buttons/BackTo";
 
 const UseEffect = () => {
   const { dark: myDark } = useContext(BlogContext);
@@ -21,9 +21,7 @@ const UseEffect = () => {
 
         <div className="layoutContainer">
           <div className="layoutBox1">
-            <h1 className="blog-heading">
-              useEffect in React
-            </h1>
+            <h1 className="blog-heading">useEffect in React</h1>
 
             <ol className="list-decimal list-inside">
               <li className="mt-5">

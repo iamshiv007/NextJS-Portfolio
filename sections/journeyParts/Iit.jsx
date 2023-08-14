@@ -1,8 +1,9 @@
 import React, { Fragment } from "react";
-import { JourneyData } from "./JourneyData";
 import Image from "next/image";
 
-const Iit = () => {
+import { JourneyData } from "@/constants";
+
+export const Iit = () => {
   return (
     <Fragment>
       <div className="md:ml-5 ml-0 mt-8 md:mt-[30vh] md:justify-around flex md:flex-row flex-col md:items-start items-center">
@@ -28,5 +29,3 @@ const Iit = () => {
     </Fragment>
   );
 };
-
-export default Iit;

@@ -1,4 +1,4 @@
-export const blogs = [
+export const BlogsData = [
   {
     name: "Why we should move in to Next js",
     imageUrl:

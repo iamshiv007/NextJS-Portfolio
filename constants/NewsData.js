@@ -1,5 +1,4 @@
-
-export const savedArticles = [
+export const NewsData = [
     {
         "title": "As HBO Eyes Licensing Deal With Netflix, Industry Sees Opportunities",
         "description": "HBO’s potential deal to license a slew of library titles to rival Netflix, as revealed by Deadline, was met with derision by some, another example of Warner Bros. Discovery boss David Zaslav selling off the crown jewels to hit his savings targets.",

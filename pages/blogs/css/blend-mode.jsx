@@ -1,8 +1,8 @@
-import BackTo from "@/components/BackTo";
-import Theme from "@/components/Theme";
-import Head from "next/head";
-import Image from "next/image";
 import React, { Fragment, useState } from "react";
+import Head from "next/head";
+
+import Theme from "@/utils/Theme";
+import BackTo from "@/components/buttons/BackTo";
 
 const BlendMode = () => {
   const [blendMode, setBlendMode] = useState("normal");
@@ -69,8 +69,7 @@ const BlendMode = () => {
               become a fundamental technology for designing and styling web
               pages.
             </p>
-
-           F
+            F
           </div>
         </div>
       </Theme>

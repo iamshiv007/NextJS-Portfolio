@@ -1,11 +1,12 @@
-import Theme from "@/components/Theme";
-import { BlogContext } from "@/contextApi/blogContext";
 import Head from "next/head";
 import React, { Fragment, useContext, useState } from "react";
+import SyntaxHighlighter from "react-syntax-highlighter";
 import { github } from "react-syntax-highlighter/dist/cjs/styles/hljs";
 import { dark } from "react-syntax-highlighter/dist/cjs/styles/hljs";
-import SyntaxHighlighter from "react-syntax-highlighter";
-import BackTo from "@/components/BackTo";
+
+import Theme from "@/utils/Theme";
+import { BlogContext } from "@/contextApi/blogContext";
+import BackTo from "@/components/buttons/BackTo";
 
 const Throttling = () => {
   const { dark: myDark } = useContext(BlogContext);
@@ -21,9 +22,7 @@ const Throttling = () => {
 
         <div className="layoutContainer">
           <div className="layoutBox1">
-            <h2 className="blog-heading">
-              Throttling in JavaScript
-            </h2>
+            <h2 className="blog-heading">Throttling in JavaScript</h2>
 
             <p className="text-lg font-bold mt-5">Defination</p>
 

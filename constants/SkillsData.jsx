@@ -6,7 +6,7 @@ import { FaBootstrap, FaCss3Alt } from "react-icons/fa";
 import { SiExpress, SiRedux, SiTailwindcss, SiMui } from "react-icons/si";
 import { DiReact, DiMongodb, DiSass } from "react-icons/di";
 
-export const skillsData = [
+export const SkillsData = [
   {
     icon: <DiReact color="#53c1de" className="md:text-4xl text-2xl" />,
     name: "ReactJs",

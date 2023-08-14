@@ -1,9 +1,10 @@
-import AnimatedButton from "@/components/AnimatedButtons";
-import { blogs } from "@/constants/blogData";
-import Image from "next/image";
-import Link from "next/link";
 import React, { Fragment } from "react";
+import Link from "next/link";
+import Image from "next/image";
 import { BsPenFill } from "react-icons/bs";
+
+import { BlogsData } from "@/constants";
+import AnimatedButton from "@/components/buttons/AnimatedButton";
 
 const LatestBlogs = () => {
   return (
@@ -17,8 +18,7 @@ const LatestBlogs = () => {
             Blogs
           </h3>
           <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 rounded-md mx-6">
-            {blogs
-              .slice(-4)
+            {BlogsData.slice(-4)
               .reverse()
               .map((blog) => (
                 <div key={blog.name}>

@@ -1,11 +1,11 @@
-import Theme from "@/components/Theme";
-import Head from "next/head";
 import React, { Fragment, useContext } from "react";
-import { github } from "react-syntax-highlighter/dist/cjs/styles/hljs";
-import { dark } from "react-syntax-highlighter/dist/cjs/styles/hljs";
+import Head from "next/head";
 import SyntaxHighlighter from "react-syntax-highlighter";
+import { github, dark } from "react-syntax-highlighter/dist/cjs/styles/hljs";
+
+import Theme from "@/utils/Theme";
 import { BlogContext } from "@/contextApi/blogContext";
-import BackTo from "@/components/BackTo";
+import BackTo from "@/components/buttons/BackTo";
 
 const LetVarConst = () => {
   const { dark: myDark } = useContext(BlogContext);
@@ -22,9 +22,7 @@ const LetVarConst = () => {
         <div className="layoutContainer">
           <div className="layoutBox1">
             <p className="font-bold text-center mb-3">🙏Namaskaram🙏</p>
-            <h2 className="blog-heading">
-              Let Var and Const
-            </h2>
+            <h2 className="blog-heading">Let Var and Const</h2>
 
             <p className="mt-2">
               In javascript 'let', 'var', and 'const' are used to declare

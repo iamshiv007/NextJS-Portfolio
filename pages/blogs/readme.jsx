@@ -1,11 +1,11 @@
-import Theme from "@/components/Theme";
-import { BlogContext } from "@/contextApi/blogContext";
 import React, { Fragment, useContext } from "react";
-import { github } from "react-syntax-highlighter/dist/cjs/styles/hljs";
-import { dark } from "react-syntax-highlighter/dist/cjs/styles/hljs";
-import SyntaxHighlighter from "react-syntax-highlighter";
 import Head from "next/head";
-import BackTo from "@/components/BackTo";
+import { github, dark } from "react-syntax-highlighter/dist/cjs/styles/hljs";
+import SyntaxHighlighter from "react-syntax-highlighter";
+
+import Theme from "@/utils/Theme";
+import { BlogContext } from "@/contextApi/blogContext";
+import BackTo from "@/components/buttons/BackTo";
 
 const Readme = () => {
   const { dark: myDark } = useContext(BlogContext);
@@ -21,9 +21,7 @@ const Readme = () => {
 
         <div className="layoutContainer">
           <div className="layoutBox1">
-            <h1 className="blog-heading">
-              Readme File Syntax
-            </h1>
+            <h1 className="blog-heading">Readme File Syntax</h1>
             <PointOne myDark={myDark} />
             <PointTwo myDark={myDark} />
             <PointThree myDark={myDark} />

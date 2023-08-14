@@ -1,7 +1,8 @@
-import BackTo from "@/components/BackTo";
-import Theme from "@/components/Theme";
-import Head from "next/head";
 import React, { Fragment, useState } from "react";
+import Head from "next/head";
+
+import Theme from "@/utils/Theme";
+import BackTo from "@/components/buttons/BackTo";
 
 const CssTransform = () => {
   const [value1, setValue1] = useState(0);

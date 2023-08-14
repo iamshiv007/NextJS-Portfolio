@@ -1,10 +1,11 @@
-import Head from "next/head";
 import { Fragment, useState } from "react";
-import Link from "next/link";
-import Theme from "@/components/Theme";
-import { RiCloseLine } from "react-icons/ri";
-import BackTo from "@/components/BackTo";
+import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
+import { RiCloseLine } from "react-icons/ri";
+
+import Theme from "@/utils/Theme";
+import BackTo from "@/components/buttons/BackTo";
 
 const FirstPost = () => {
   const [close, setClose] = useState(false);
@@ -88,7 +89,7 @@ const FirstPost = () => {
                 >
                   <div
                     onClick={() => setClose(true)}
-                    className="text-[0.8rem] w-fit bg-white ml-auto z-20"
+                    className="text-[0.8rem] w-fit bg-white ml-auto z-10"
                   >
                     <RiCloseLine color="blue" />
                   </div>

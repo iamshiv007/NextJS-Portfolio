@@ -1,5 +1,5 @@
-import Link from "next/link";
 import React, { Fragment } from "react";
+import Link from "next/link";
 import { HiArrowNarrowLeft } from "react-icons/hi";
 
 const BackTo = ({ backTo }) => {

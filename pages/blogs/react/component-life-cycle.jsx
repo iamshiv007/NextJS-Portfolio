@@ -1,7 +1,8 @@
-import BackTo from "@/components/BackTo";
-import Theme from "@/components/Theme";
-import Head from "next/head";
 import React, { Fragment } from "react";
+import Head from "next/head";
+
+import Theme from "@/utils/Theme";
+import BackTo from "@/components/buttons/BackTo";
 
 const ComponentLifeCycle = () => {
   return (
@@ -15,9 +16,7 @@ const ComponentLifeCycle = () => {
 
         <div className="layoutContainer">
           <div className="layoutBox1">
-            <h1 className="blog-heading">
-              Component Life Cycle
-            </h1>
+            <h1 className="blog-heading">Component Life Cycle</h1>
 
             <p className="mt-5">
               In ReactJS, every component creation process involves lifecycle

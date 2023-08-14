@@ -1,9 +1,8 @@
-import Navbar from "@/components/layout/Navbar";
-import Theme from "@/components/Theme";
-import MobileNavbar from "@/components/layout/mobileNavbar";
-import Head from "next/head";
 import React, { Fragment, useEffect, useState } from "react";
-const axios = require("axios");
+import Head from "next/head";
+import axios from "axios";
+
+import Theme from "@/utils/Theme";
 
 const MusicChalao = () => {
   const [songs, setSongs] = useState({});
@@ -36,9 +35,6 @@ const MusicChalao = () => {
       </Head>
 
       <Theme>
-        <Navbar />
-        <MobileNavbar />
-
         <div className="dark:bg-gray-900 min-h-[92vh]">
           <h1 className="text-3xl font-bold text-center pt-5 flex items-center justify-center gap-8">
             News App

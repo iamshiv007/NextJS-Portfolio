@@ -1,18 +1,20 @@
-import Head from "next/head";
 import { Fragment, useContext } from "react";
-import Intro from "@/seactions/Intro";
+import Head from "next/head";
+import dynamic from "next/dynamic";
+
 import { BlogContext } from "@/contextApi/blogContext";
-import Navbar from "@/components/layout/Navbar";
-import MobileNavbar from "@/components/layout/mobileNavbar";
-import Skills from "@/seactions/Skills";
-import LatestBlogs from "@/seactions/LatestBlogs";
-import Journey from "@/seactions/Journey";
-import Apps from "@/seactions/Apps";
-import Footer from "@/components/layout/Footer";
-import SendMail from "@/components/SendMail";
-import SocialMedia from "@/components/SocialMedia";
-import Projects from "@/seactions/Projects";
-import ChatSystem from "@/components/ChatSystem";
+const Navbar = dynamic(() => import('@/layout/Navbar'))
+const MobileNavbar = dynamic(() => import('@/layout/mobileNavbar'))
+const Footer = dynamic(() => import("@/layout/Footer"))
+const Intro = dynamic(() => import("@/sections/Intro"))
+const Skills = dynamic(() => import("@/sections/Skills"))
+const Projects = dynamic(() => import("@/sections/Projects"))
+const LatestBlogs = dynamic(() => import("@/sections/LatestBlogs"))
+const Journey = dynamic(() => import("@/sections/Journey"))
+const Apps = dynamic(() => import('@/sections/Apps'))
+const SendMail = dynamic(() => import("@/utils/SendMail"))
+const SocialMedia = dynamic(() => import('@/utils/SocialMedia'))
+const ChatSystem = dynamic(() => import("@/utils/ChatSystem"))
 
 const Home = () => {
   const { dark } = useContext(BlogContext);

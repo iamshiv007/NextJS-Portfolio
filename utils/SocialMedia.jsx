@@ -1,5 +1,5 @@
-import Link from "next/link";
 import React, { Fragment } from "react";
+import Link from "next/link";
 import { AiOutlineInstagram } from "react-icons/ai";
 import { BsGithub } from "react-icons/bs";
 import { FaTwitter, FaLinkedinIn } from "react-icons/fa";
@@ -31,7 +31,7 @@ const socials = [
 const SocialMedia = () => {
   return (
     <Fragment>
-      <div className="absolute left-14 bottom-10 flex flex-col gap-4">
+      <div className="absolute left-14 bottom-10 flex flex-col gap-4 z-10">
         {socials.map((social, key) => (
           <Link key={key} href={social.link}>
             <div

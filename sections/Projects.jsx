@@ -1,8 +1,8 @@
-import Image from "next/image";
 import React, { Fragment } from "react";
+import Image from "next/image";
 import { CgClapperBoard } from "react-icons/cg";
 
-const Projects = () => {
+export const Projects = () => {
   return (
     <Fragment>
       <section id="projects">
@@ -23,8 +23,8 @@ const Projects = () => {
                 href="https://ecommerce-application-shivraj.vercel.app"
               >
                 <Image
-                  width={300}
-                  height={200}
+                  width={500}
+                  height={300}
                   src="/images/ecommerce.png"
                   alt=""
                 />
@@ -37,8 +37,8 @@ const Projects = () => {
                 href="https://shiv-react-admin-dashboard.vercel.app/"
               >
                 <Image
-                  width={300}
-                  height={200}
+                  width={500}
+                  height={300}
                   src="/images/admin-dashboard.png"
                   alt=""
                 />
@@ -48,8 +48,8 @@ const Projects = () => {
             <div>
               <a target="_blank" href="https://online-salon-app.vercel.app/">
                 <Image
-                  width={300}
-                  height={200}
+                  width={500}
+                  height={300}
                   src="/images/salon-application.png"
                   alt=""
                 />

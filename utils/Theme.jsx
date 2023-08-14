@@ -1,5 +1,5 @@
-import { BlogContext } from "@/contextApi/blogContext";
 import React, { useContext } from "react";
+import { BlogContext } from "@/contextApi/blogContext";
 
 const Theme = ({ children }) => {
   const { dark } = useContext(BlogContext);

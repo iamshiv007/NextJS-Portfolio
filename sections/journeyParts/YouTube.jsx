@@ -1,8 +1,9 @@
 import React, { Fragment } from "react";
-import { JourneyData } from "./JourneyData";
 import Image from "next/image";
 
-const YouTube = () => {
+import { JourneyData } from "@/constants";
+
+export const YouTube = () => {
   return (
     <Fragment>
       <div className="ml-5 mt-8 md:mt-[30vh] md:justify-around flex md:flex-row flex-col md:items-start items-center">
@@ -25,5 +26,3 @@ const YouTube = () => {
     </Fragment>
   );
 };
-
-export default YouTube;

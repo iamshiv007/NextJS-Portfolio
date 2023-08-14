@@ -1,11 +1,12 @@
-import Theme from "@/components/Theme";
-import { BlogContext } from "@/contextApi/blogContext";
-import Head from "next/head";
 import React, { Fragment, useContext } from "react";
+import Head from "next/head";
+import SyntaxHighlighter from "react-syntax-highlighter";
 import { github } from "react-syntax-highlighter/dist/cjs/styles/hljs";
 import { dark } from "react-syntax-highlighter/dist/cjs/styles/hljs";
-import SyntaxHighlighter from "react-syntax-highlighter";
-import BackTo from "@/components/BackTo";
+
+import Theme from "@/utils/Theme";
+import { BlogContext } from "@/contextApi/blogContext";
+import BackTo from "@/components/buttons/BackTo";
 
 const SpreadOperator = () => {
   const { dark: myDark } = useContext(BlogContext);

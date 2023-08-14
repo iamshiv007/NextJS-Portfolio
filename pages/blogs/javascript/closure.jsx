@@ -1,11 +1,11 @@
-import Theme from "@/components/Theme";
-import { BlogContext } from "@/contextApi/blogContext";
-import Head from "next/head";
 import React, { Fragment, useContext } from "react";
-import { github } from "react-syntax-highlighter/dist/cjs/styles/hljs";
-import { dark } from "react-syntax-highlighter/dist/cjs/styles/hljs";
+import Head from "next/head";
 import SyntaxHighlighter from "react-syntax-highlighter";
-import BackTo from "@/components/BackTo";
+import { github, dark } from "react-syntax-highlighter/dist/cjs/styles/hljs";
+
+import { BlogContext } from "@/contextApi/blogContext";
+import Theme from "@/utils/Theme";
+import BackTo from "@/components/buttons/BackTo";
 
 const Closure = () => {
   const { dark: myDark } = useContext(BlogContext);
@@ -21,9 +21,7 @@ const Closure = () => {
 
         <div className="layoutContainer">
           <div className="layoutBox1">
-            <h2 className="blog-heading">
-              Closure in JavaScript
-            </h2>
+            <h2 className="blog-heading">Closure in JavaScript</h2>
 
             <h3 className="text-lg font-bold my-4">Defination :-</h3>
             <p className="mt-3 font-bold">Defination by javascript</p>

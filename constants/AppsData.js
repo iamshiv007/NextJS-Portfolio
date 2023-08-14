@@ -1,4 +1,4 @@
-export const apps = [
+export const AppsData = [
   {
     name: "Tic-Tac-Toe",
     imageUrl: "/images/tic-tac-toe.png",

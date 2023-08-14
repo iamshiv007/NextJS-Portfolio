@@ -1,9 +1,10 @@
-import BackTo from "@/components/BackTo";
-import Theme from "@/components/Theme";
-import axios from "axios";
-import Head from "next/head";
 import React, { Fragment, useEffect, useState } from "react";
+import Head from "next/head";
+import axios from "axios";
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
+
+import Theme from "@/utils/Theme";
+import BackTo from "@/components/buttons/BackTo";
 
 const ReactMasonary = () => {
   const [photos, setPhotos] = useState([]);

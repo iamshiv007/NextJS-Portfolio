@@ -1,6 +1,7 @@
 import React, { Fragment } from "react";
-import { skillsData } from "../constants/SkillsData";
 import { FaLaptopCode } from "react-icons/fa";
+
+import { SkillsData } from "@/constants";
 
 const Skills = () => {
   return (
@@ -16,7 +17,7 @@ const Skills = () => {
 
           <div>
             <div className="flex flex-wrap gap-6 mx-6 justify-center">
-              {skillsData.map((skill, key) => (
+              {SkillsData?.map((skill, key) => (
                 <div
                   key={key}
                   className="flex flex-col justify-around items-center p-3 border cursor-pointer border-solid border-black dark:border-white md:w-32 md:h-32 w-20 h-20 rounded-lg"

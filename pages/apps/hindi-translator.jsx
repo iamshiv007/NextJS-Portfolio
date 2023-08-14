@@ -1,8 +1,9 @@
-import BackTo from "@/components/BackTo";
-import Theme from "@/components/Theme";
-import Head from "next/head";
 import React, { Fragment, useState } from "react";
-const axios = require("axios");
+import Head from "next/head";
+import axios from "axios";
+
+import Theme from "@/utils/Theme";
+import BackTo from "@/components/buttons/BackTo";
 
 const HindiTranslator = () => {
   const [text, setText] = useState("");
