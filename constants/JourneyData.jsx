@@ -5,7 +5,7 @@ export const JourneyData = [
     image:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpCDvRmnjiBTgBd9WyPHlJHEPzRz2shaS3YQ&usqp=CAU",
     summary:
-      "Topper during School time, A Mathematics Guy, Shy and Introverted personality, Always with Boyz friend Zone",
+      "Topper during School time, A Mathematics Guy, Shy and Introverted personality, Always with Boyz friend Zone.",
   },
   {
     heading: "IIT Preparation",
@@ -21,7 +21,7 @@ export const JourneyData = [
     image:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3xSTnbK57kUx2XgDd_zzXJp5uXPSNUmeZ9g&usqp=CAUF",
     summary:
-      "After quite IIT, again without reason i jumped to the BSC,  I was trying to figure out what I wanted to do with my life and which career path to choose. However, by the end of my first year, I made the decision to enter the tech field, so I quit BSc after completing my first year exams.",
+      "After quite IIT, again without reason i jumped to the BSC,  I was trying to figure out what I wanted to do with my life and which career path to choose. However, by the end of my first year, I made the decision to enter the tech field, so I quit BSC after completing my first year exams.",
   },
   {
     heading: "Coding Journey",
@@ -38,7 +38,7 @@ export const JourneyData = [
       <div>
         {" "}
         <p>
-          Company : Millennia Ahead Technology pvt. ltd. (Nagpur, Haharashtra)
+          Company : Millennia Ahead Technology pvt. ltd. (Nagpur, Maharashtra)
         </p>
         <p>Mode : Remote (Work From Home)</p> I obtained my first internship
         after learning coding from YouTube in 5 months. Essentially, it is a
@@ -48,7 +48,7 @@ export const JourneyData = [
         from it. Primarily, I learned frontend design and the functionality of
         dynamic applications, Redux, reactstrap, as well as how a team
         collaborates on a single project, including code merging using Git and
-        GitHub.`
+        GitHub.
       </div>
     ),
   },

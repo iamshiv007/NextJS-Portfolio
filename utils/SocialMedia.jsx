@@ -2,7 +2,8 @@ import React, { Fragment } from "react";
 import Link from "next/link";
 import { AiOutlineInstagram } from "react-icons/ai";
 import { BsGithub } from "react-icons/bs";
-import { FaTwitter, FaLinkedinIn } from "react-icons/fa";
+import { FaLinkedinIn } from "react-icons/fa";
+import { IoClose } from "react-icons/io5";
 
 const socials = [
   {
@@ -12,14 +13,14 @@ const socials = [
     link: "https://www.instagram.com/iam_shiv_726",
   },
   {
-    icon: <FaTwitter />,
-    color: "#00acee",
+    icon: <IoClose />,
+    color: "#0f0f0f",
     link: "https://twitter.com/ShivrajGurjar15",
   },
   {
     icon: <FaLinkedinIn />,
     color: "#0072b1",
-    link: "https://www.linkedin.com/in/shivraj-gurjar-iamshiv007007",
+    link: "https://www.linkedin.com/in/shivraj-dev",
   },
   {
     icon: <BsGithub />,

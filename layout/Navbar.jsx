@@ -5,6 +5,7 @@ import { BsFillMoonFill } from "react-icons/bs";
 import { DiTechcrunch } from "react-icons/di";
 
 import { BlogContext } from "@/contextApi/blogContext";
+import { NavbarData } from "@/constants/NavbarData";
 
 const Navbar = () => {
   const { dark, setDark } = useContext(BlogContext);
@@ -22,24 +23,11 @@ const Navbar = () => {
         </div>
 
         <div className="hidden md:flex items-center gap-12">
-          <Link href="#home" className="navLinks">
-            Home
-          </Link>
-          <Link href="#skills" className="navLinks">
-            Skills
-          </Link>
-          <Link href="#projects" className="navLinks">
-            Projects
-          </Link>
-          <Link href="#blogs" className="navLinks">
-            Blogs
-          </Link>
-          <Link href="#myJourney" className="navLinks">
-            My Journey
-          </Link>
-          <Link href="#apps" className="navLinks">
-            Apps
-          </Link>
+          {NavbarData.map((item) => (
+            <Link key={item.name} href={item.link} className="navLinks">
+              {item.name}
+            </Link>
+          ))}
         </div>
 
         <div>

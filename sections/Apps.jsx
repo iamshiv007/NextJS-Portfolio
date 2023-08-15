@@ -29,8 +29,8 @@ const Apps = () => {
                   className="object-cover rounded md:rounded-[30px] w-full"
                   src={dark ? app.imageUrl : app.imageLight}
                   alt="app"
-                  width={175}
-                  height={355}
+                  width={250}
+                  height={500}
                 />
               </Link>
             </div>

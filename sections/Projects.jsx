@@ -17,11 +17,16 @@ export const Projects = () => {
             </h3>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mx-8">
+          <div className="flex flex-wrap gap-6 mx-6 justify-center">
             {ProjectsData.map((project) => (
-              <div>
+              <div key={project.name}>
                 <a target="_blank" href={project.url}>
-                  <Image width={500} height={300} src={project.imageUrl} alt={project.name} />
+                  <Image
+                    width={300}
+                    height={200}
+                    src={project.imageUrl}
+                    alt={project.name}
+                  />
                 </a>
                 <p className="text-center p-1">{project.name}</p>
               </div>

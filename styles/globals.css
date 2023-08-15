@@ -43,7 +43,7 @@ div {
   }
 
   .navLinksMobile {
-    @apply text-lg pl-6 flex items-center gap-8 py-2 text-[#c72c6c] dark:text-[#07d0e5] font-medium;
+    @apply text-lg pl-3 flex items-center gap-6 py-2 hover:bg-[#ccfaff] dark:hover:bg-[#0f0f0f] text-[#c72c6c] dark:text-[#07d0e5] font-medium;
   }
 
   .blog-heading {
