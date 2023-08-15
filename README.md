@@ -2,6 +2,19 @@
 
 ![Welcome Screen](https://shiv-s-portfolio.vercel.app/images/welcome-screen.png)
 
+## Table of content
+
+1. Features
+2. Sections
+3. Tech Stacks
+4. Getting Started
+5. How to Edit This Portfolio (Make It Your'S)
+6. How to Implement a Live Chat System Using [Tawk.to](https://www.tawk.to/)
+7. Required APIs for This Project (All Are Free APIs)
+8. .env.local - file
+9. Contribute
+
+
 ## Features ✅
 
 - Simple and Clean Design
@@ -78,6 +91,33 @@ That's it! You're now ready to explore the project locally.
 
 Happy coding! 🚀
 
+
+## How to Edit This Portfolio (Make It Your's)
+
+### 1. Your Name and Photo
+
+In the `root` directory, you'll find a `sections` folder. Inside this folder, locate the `Intro.jsx` file.
+
+Within the `intro` file, update the following details:
+- Shivraj - Your Name
+- Web Developer - Profession
+- /images/cartoon0.png - Your Photo
+
+Remember to have your photo uploaded in the `images` folder located within the `public` directory.
+
+### 2. Skills
+
+In the `root` directory, you'll find a `constants` folder. Inside this folder, locate the `SkillsData.jsx`
+
+- Add or remove skills according to your preferences.
+- Use Desire icon from `react-icons` library.
+- Give desire color to icon.
+
+
+<div align="center">
+  <h4>⭐️ If You want to show your appreciation, please give this repository a star.</h4>
+</div>
+
 ## How to Implement a Live Chat System Using [Tawk.to](https://www.tawk.to/)
 
 I'm excited to introduce you to this amazing feature, and the best part is, it's completely free!
@@ -96,6 +136,7 @@ Navigate to the `Components` directory, locate the `ChatSystem.jsx` file, and in
 
 By following these steps, you'll have an efficient live chat system up and running in no time, enhancing your user experience and engagement.
 
+
 ## Required APIs for This Project (All Are Free APIs)
 
 1. **ChatGPT API** from RapidAPI - [Details](https://rapidapi.com/haxednet/api/chatgpt-api8)
@@ -108,31 +149,17 @@ By following these steps, you'll have an efficient live chat system up and runni
 
 5. **Images API** from Pexels API - [Details](https://www.pexels.com/api/)
 
-## Environment Variables
+## .env.local - file
 
-To securely store your API keys, create a `.env.local` file in your project's root directory.
+After obtaining the above mentioned API, create a `.env.local` file and put values and restart your project.
 
-1. For Tawk.to Chat System:
+const RAPID_API_KEY = VALUE_XXXX
+const GOOGLE_NEWS_API_KEY = VALUE_XXXX
+const PEXELS_API_KEY = VALUE_XXXX
+const MONGODB_CONNECTION_STRING = VALUE_XXXX
 
-- TAWK_TO_SECRET_KEY = VALUE_XXXX
 
-2. For ChatGPT API and Microsoft Translator API:
-
-- RAPID_API_KEY = VALUE_XXXX
-
-3. For Google News API:
-
-- GOOGLE_NEWS_API_KEY = VALUE_XXXX
-
-4. For Images API:
-
-- PEXELS_API_KEY = VALUE_XXXX
-
-5. For MongoDB database (Cluster)
-
-- MONGODB_CONNECTION_STRING = VALUE_XXXX
-
-## Contribute and Create Your Own Portfolio 🎁
+## Contribute 🎁
 
 Thank you for checking out my portfolio! I invite you to join in and make it your own. Feel free to contribute by editing the information, images, and name to personalize it according to your skills and achievements.
 
