@@ -15,7 +15,7 @@
 9. Contribute
 
 
-## Features ✅
+## 1. Features ✅
 
 - Simple and Clean Design
 - Dark and Light Theme
@@ -23,7 +23,7 @@
 - Chat System - [tawk.to](https://www.tawk.to/)
 - Message by gmail - [nodemailer](https://nodemailer.com/about/)
 
-## Sections 🧱
+## 2. Sections 🧱
 
 1. [Home | Intro | Welcome](https://shiv-s-portfolio.vercel.app)
 2. [Skills](https://shiv-s-portfolio.vercel.app/#skills)
@@ -32,7 +32,7 @@
 5. [My Journey](https://shiv-s-portfolio.vercel.app/#myJourney)
 6. [Apps](https://shiv-s-portfolio.vercel.app/#apps)
 
-## Tech Stack 💻
+## 3. Tech Stack 💻
 
 - [Next JS](https://nextjs.org/)
 - [Tailwind CSS](https://tailwindcss.com/)
@@ -47,11 +47,11 @@
   - [react-responsive-masonry](https://www.npmjs.com/package/react-responsive-masonry)
   - [react-syntax-highlighter](https://react-syntax-highlighter.github.io/react-syntax-highlighter/demo/)
 
-## Getting Started ▶️
+## 4. Getting Started ▶️
 
 Follow these steps to set up and run the project on your local machine.
 
-### 1. Clone the Repository
+#### 1. Clone the Repository
 
 To get a local copy of this repository, run the following command in your terminal:
 
@@ -59,7 +59,7 @@ To get a local copy of this repository, run the following command in your termin
 git clone https://github.com/iamshiv007/Shiv-s-portfolio.git
 ```
 
-### 2. Navigate to the Project
+#### 2. Navigate to the Project
 
 Change your working directory to the project folder:
 
@@ -67,7 +67,7 @@ Change your working directory to the project folder:
 cd shiv-s-portfolio
 ```
 
-### 3. Install Dependencies
+#### 3. Install Dependencies
 
 Install the required packages using npm:
 
@@ -75,7 +75,7 @@ Install the required packages using npm:
 npm i
 ```
 
-### 4. Start the Project
+#### 4. Start the Project
 
 Run the following command to launch the Next.js project in your local environment:
 
@@ -83,7 +83,7 @@ Run the following command to launch the Next.js project in your local environmen
 npm run dev
 ```
 
-### 5. Access the Project
+#### 5. Access the Project
 
 Open your web browser and go to [http://localhost:3000](http://localhost:3000) to view the project.
 
@@ -92,7 +92,7 @@ That's it! You're now ready to explore the project locally.
 Happy coding! 🚀
 
 
-## How to Edit This Portfolio (Make It Your's)
+## 5. How to Edit This Portfolio (Make It Your's)
 
 ### 1. Your Name and Photo
 
@@ -118,7 +118,7 @@ In the `root` directory, you'll find a `constants` folder. Inside this folder, l
   <h4>⭐️ If You want to show your appreciation, please give this repository a star.</h4>
 </div>
 
-## How to Implement a Live Chat System Using [Tawk.to](https://www.tawk.to/)
+## 6. How to Implement a Live Chat System Using [Tawk.to](https://www.tawk.to/)
 
 I'm excited to introduce you to this amazing feature, and the best part is, it's completely free!
 
@@ -137,7 +137,7 @@ Navigate to the `Components` directory, locate the `ChatSystem.jsx` file, and in
 By following these steps, you'll have an efficient live chat system up and running in no time, enhancing your user experience and engagement.
 
 
-## Required APIs for This Project (All Are Free APIs)
+## 7. Required APIs for This Project (All Are Free APIs)
 
 1. **ChatGPT API** from RapidAPI - [Details](https://rapidapi.com/haxednet/api/chatgpt-api8)
 
@@ -149,7 +149,7 @@ By following these steps, you'll have an efficient live chat system up and runni
 
 5. **Images API** from Pexels API - [Details](https://www.pexels.com/api/)
 
-## .env.local - file
+## 8. .env.local - file
 
 After obtaining the above mentioned API, create a `.env.local` file and put values and restart your project.
 
@@ -159,7 +159,7 @@ const PEXELS_API_KEY = VALUE_XXXX
 const MONGODB_CONNECTION_STRING = VALUE_XXXX
 
 
-## Contribute 🎁
+## 9. Contribute 🎁
 
 Thank you for checking out my portfolio! I invite you to join in and make it your own. Feel free to contribute by editing the information, images, and name to personalize it according to your skills and achievements.
 
