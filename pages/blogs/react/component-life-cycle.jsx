@@ -20,9 +20,9 @@ const ComponentLifeCycle = () => {
 
             <p className="mt-5">
               In ReactJS, every component creation process involves lifecycle
-              methods. These lifecycle methods are termed as component's
+              methods. These lifecycle methods are termed as component&apos;s
               lifecycle. These lifecycle methods are not very complicated and
-              called at various points during a component's life. The lifecycle
+              called at various points during a component&apos;s life. The lifecycle
               of the component is divided into four phases.
             </p>
             <ol className="list-inside list-decimal mt-3">
@@ -83,7 +83,7 @@ const ComponentLifeCycle = () => {
                   <p>
                     This method is defined in each and every component. It is
                     responsible for returning a single root HTML node element.
-                    If you don't want to render anything, you can return a null
+                    If you don&apos;t want to render anything, you can return a null
                     or false value.
                   </p>
                 </div>
@@ -117,7 +117,7 @@ const ComponentLifeCycle = () => {
                   </p>
                   <p>
                     It is invoked when a component decides any changes/updation
-                    to the DOM. It allows you to control the component's
+                    to the DOM. It allows you to control the component&apos;s
                     behavior of updating itself. If this method returns true,
                     the component will update. Otherwise, the component will
                     skip the updating.
@@ -128,7 +128,7 @@ const ComponentLifeCycle = () => {
                   </p>
                   <p>
                     It is invoked just before the component updating accurs.
-                    Here you can't change the component state by invoking
+                    Here you can&apos;t change the component state by invoking
                     this.setState() method. It will not be called, if
                     shouldComponentUpdate() return false.
                   </p>

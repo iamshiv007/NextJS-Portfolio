@@ -60,7 +60,7 @@ const Example1 = ({ myDark }) => {
         function before it is actually defined. However JavaScript hoists
         function declaration to the top of their scope, so the function can be
         called before its declarations without causing a error. The output will
-        be "Hello".
+        be &quot;Hello&quot;.
       </div>
     </>
   );
@@ -83,11 +83,11 @@ const Example2 = ({ myDark }) => {
       </SyntaxHighlighter>
       <div className="mt-2">
         In this example, we try to access the value of the variable{" "}
-        <strong>'x'</strong> before it is declared. However javaScript hoists
+        <strong>&quot;x&quot;</strong> before it is declared. However javaScript hoists
         variable declaration to the top of their scope, so the variable is
         created before the console log statement is executed. The output will be{" "}
-        <strong> 'undefined' </strong> because the variable is declared but not
-        assigned a value at the time 'console log' statement.
+        <strong> &quot;undefined&quot; </strong> because the variable is declared but not
+        assigned a value at the time &quot;console log&quot; statement.
       </div>
     </>
   );
@@ -114,15 +114,15 @@ const Example3 = ({ myDark }) => {
         {codeString}
       </SyntaxHighlighter>
       <div className="mt-2">
-        In this example, we define a function <strong>'foo'</strong> that
+        In this example, we define a function <strong>&quot;foo&quot;</strong> that
         contain variable declaration and assignment. When we call the function{" "}
-        JavaScript hoist the variable declarations <strong>'var x'</strong> to
-        the top of the functon's scope. However, the assignment{" "}
-        <strong> 'x=10' </strong> is not hoisted, so the first{" "}
-        <strong>'console.log'</strong> statement will output{" "}
-        <strong> 'undefined'</strong>, and the second{" "}
-        <strong>'console.log'</strong> statement will output{" "}
-        <strong>'10'</strong>
+        JavaScript hoist the variable declarations <strong>&quot;var x&quot;</strong> to
+        the top of the functon&apos;s scope. However, the assignment{" "}
+        <strong> &quot;x=10&quot; </strong> is not hoisted, so the first{" "}
+        <strong>&quot;console.log&quot;</strong> statement will output{" "}
+        <strong> &quot;undefined&quot;</strong>, and the second{" "}
+        <strong>&quot;console.log&quot;</strong> statement will output{" "}
+        <strong>&quot;10&quot;</strong>
       </div>
     </>
   );

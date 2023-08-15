@@ -245,6 +245,7 @@ const MyMasonry = ({ loading, articles }) => {
                   </p>
 
                   <Link href={news.url} target="_blank">
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img src={news.image} alt="Not Found" />
                   </Link>
 

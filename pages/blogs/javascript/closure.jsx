@@ -35,7 +35,7 @@ const Closure = () => {
             <p className="mt-3">
               In Other words, when a function is defined inside another
               function, the inner function retains access to the variables,
-              parameters and function of it's parent function, even after the
+              parameters and function of it&apos;s parent function, even after the
               parent function has completed execution. This access to the outer
               scope is made possible by the closure.
             </p>

@@ -26,8 +26,8 @@ const ObjectFit = () => {
             </div>
 
             <p className="text-gray-700 text-sm my-2">
-              In This condition image cover all it's parent width and height but
-              not maintain it's own width and hight ratio.
+              In This condition image cover all it&apos;s parent width and height but
+              not maintain it&apos;s own width and hight ratio.
             </p>
 
             <div className="sm:w-[200px] sm:h-[200px] w-[150px] h-[150px] border border-solid dark:border-white border-black relative">
@@ -38,8 +38,8 @@ const ObjectFit = () => {
               object-fit : <strong>contain</strong>
             </div>
             <p className="text-gray-700 text-sm my-2">
-              In This condition image maintain it's own width and heigth ratio
-              but not neccessary to cover parent element's all height and width.
+              In This condition image maintain it&apos;s own width and heigth ratio
+              but not neccessary to cover parent element&apos;s all height and width.
             </p>
             <div className="sm:w-[200px] sm:h-[200px] w-[150px] h-[150px] border border-solid dark:border-white border-black relative">
               <Image
@@ -70,7 +70,7 @@ const ObjectFit = () => {
               object-fit : <strong>none</strong>
             </div>
             <p className="text-gray-700 text-sm my-2">
-              In This condition image have it's real width and height.
+              In This condition image have it&apos;s real width and height.
             </p>
             <div className="sm:w-[200px] sm:h-[200px] w-[150px] h-[150px] border border-solid dark:border-white border-black relative">
               <Image

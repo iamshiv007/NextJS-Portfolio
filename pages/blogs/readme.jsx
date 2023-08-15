@@ -183,7 +183,7 @@ const PointFive = ({ myDark }) => {
       <ol className="list-inside list-decimal mt-4">
         <li>simple write number in</li>
         <li>starting of line</li>
-        <li>and don't forget</li>
+        <li>and don&apos;t forget</li>
         <li>dot (.) after number</li>
       </ol>
 

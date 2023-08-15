@@ -21,7 +21,7 @@ const VirtualDom = () => {
             </h1>
 
             <p className="mt-5">
-              When you're working with a web application built using frameworks
+              When you&apos;re working with a web application built using frameworks
               like React, there are often many changes happening in user
               interface(UI). The virtual dom is a concept that helps optimize
               these changes and improve performance.
@@ -32,21 +32,21 @@ const VirtualDom = () => {
               The document object model(DOM) is representation of the html
               structure of a web page. It defines how elements are organized,
               their attributes and their relationship with each other. Whenever
-              there's a change in the application's state or data, the DOM needs
+              there&apos;s a change in the application&apos;s state or data, the DOM needs
               to be updated to reflect those changes.
             </p>
 
             <p className="my-3 font-bold">2. Virtual DOM</p>
             <p>
               The virtual DOM is like a lightweight copy or representation of
-              actual DOM. It's a javascript object that keeps track of current
+              actual DOM. It&apos;s a javascript object that keeps track of current
               state of the ui. When changes occures in your application, the
               virtual dom is updated instead of directly modifying the actual
               DOM.
             </p>
           </div>
 
-          <div className="layoutBox2">"Ram Ram"</div>
+          <div className="layoutBox2">&quot;Ram Ram&quot;</div>
         </div>
       </Theme>
     </Fragment>

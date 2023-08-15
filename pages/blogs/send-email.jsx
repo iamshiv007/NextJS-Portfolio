@@ -260,7 +260,7 @@ const PointEight = () => {
       <div className="mt-8 mb-3 font-bold text-lg">Sender : -</div>
       <p>
         Sender is like Info about sender like, which service use for send mail
-        ?, sender's email address and password.
+        ?, sender&apos;s email address and password.
       </p>
       <div className="mt-8 mb-3 font-bold text-lg">Mail : -</div>
       <p>
@@ -595,7 +595,7 @@ const PointSixTeen = ({ myDark }) => {
 
       <div className="bg-gray-200 my-4 p-2 rounded dark:bg-black">
         {" "}
-        <strong>Note:- </strong> Make sure "attachment" string will same for
+        <strong>Note:- </strong> Make sure &quot;attachment&quot; string will same for
         file, when we hit post request.
       </div>
     </>

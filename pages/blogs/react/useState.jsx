@@ -84,7 +84,7 @@ const Syntax = ({ myDark }) => {
       </div>
 
       <div>
-        <p className="my-4">Here's the breakdown of syntax :-</p>
+        <p className="my-4">Here&apos;s the breakdown of syntax :-</p>
 
         <p className="mt-2">
           <strong>state</strong> = Represents the current value of the state

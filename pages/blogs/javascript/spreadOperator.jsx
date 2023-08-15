@@ -29,10 +29,11 @@ const SpreadOperator = () => {
             <p className="text-lg font-bold mt-5">What is Spread Operator?</p>
 
             <p>
-              The spread operator, denoted by three dots('...'), is a feature
-              introduced in javascript ES6 that allow us to expand and spread
-              the elements of an array or an object. It provides a concise and
-              flexible way to manipulate and combine array and object.
+              The spread operator, denoted by three dots(&quot;...&quot;), is a
+              feature introduced in javascript ES6 that allow us to expand and
+              spread the elements of an array or an object. It provides a
+              concise and flexible way to manipulate and combine array and
+              object.
             </p>
 
             <Example1 myDark={myDark} />
@@ -45,10 +46,10 @@ const SpreadOperator = () => {
             <p className="text-lg font-bold mt-8">What is Rest Operator?</p>
 
             <p>
-              The rest operator also denoted by three dot('...'), is another
-              feature introduced in JavaScript ES6 that works in the opposite
-              way to the spread operator. It Allows us to gather or collect
-              multiple elements into an array.
+              The rest operator also denoted by three dot(&quot;...&quot;), is
+              another feature introduced in JavaScript ES6 that works in the
+              opposite way to the spread operator. It Allows us to gather or
+              collect multiple elements into an array.
             </p>
             <Example7 myDark={myDark} />
             <Example8 myDark={myDark} />

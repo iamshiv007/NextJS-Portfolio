@@ -63,7 +63,7 @@ export const JourneyData = [
         intern job. So, I went for more than 5 interviews in two months. It was
         a little challenging to get shortlisted for interviews because I focused
         on learning web development and the mathematics involved. As a result, I
-        didn't create many projects to showcase and was not aware of GitHub.
+        didn&apos;t create many projects to showcase and was not aware of GitHub.
         Subsequently, I joined a remote non-paid internship that would pay me
         after two months. However, due to a lack of response and slow progress,
         my trust was broken, and I quit the internship. Nevertheless, I worked

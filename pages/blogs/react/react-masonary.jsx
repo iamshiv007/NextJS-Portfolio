@@ -61,6 +61,7 @@ const ReactMasonary = () => {
                     >
                       Download
                     </button>
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img src={photo.src.original} alt={photo.photographer} />
                   </div>
                 );

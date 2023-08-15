@@ -25,9 +25,9 @@ const LetVarConst = () => {
             <h2 className="blog-heading">Let Var and Const</h2>
 
             <p className="mt-2">
-              In javascript 'let', 'var', and 'const' are used to declare
-              variables, but they have some differences in terms of their scope
-              and behavior.
+              In javascript &quot;let&quot;, &quot;var&quot;, and
+              &quot;const&quot; are used to declare variables, but they have
+              some differences in terms of their scope and behavior.
             </p>
 
             <Var myDark={myDark} />
@@ -50,15 +50,15 @@ const Var = ({ myDark }) => {
       <h3 className="text-xl font-bold mt-6">Var</h3>
       <ul className="list-inside list-disc">
         <li>
-          Variables declared with 'var' are function-scoped. This means that
-          they are accessible within the entire function in which they are
-          defined.
+          Variables declared with &quot;var&quot; are function-scoped. This
+          means that they are accessible within the entire function in which
+          they are defined.
         </li>
         <li>
-          If a 'var' variable is declared outside of any function, it becomes a
-          global variable, accessible throughout the entire program.
+          If a &quot;var&quot; variable is declared outside of any function, it
+          becomes a global variable, accessible throughout the entire program.
         </li>
-        <li>'var' variables can be redeclared and reassigned.</li>
+        <li>&quot;var&quot; variables can be redeclared and reassigned.</li>
       </ul>
 
       <Example1 myDark={myDark} />
@@ -126,13 +126,13 @@ const Let = ({ myDark }) => {
       <h3 className="text-xl font-bold mt-6">Let</h3>
       <ul className="list-inside list-disc">
         <li>
-          Variables declared with 'let' are block-scoped. This means that they
-          are accessible only within the block in which they are defined, such
-          as within loops or conditional statement.
+          Variables declared with &quot;let&quot; are block-scoped. This means
+          that they are accessible only within the block in which they are
+          defined, such as within loops or conditional statement.
         </li>
         <li>
-          'let' variable can be reassigned, but they cannot be redeclared within
-          the same block scope.{" "}
+          &quot;let&quot; variable can be reassigned, but they cannot be
+          redeclared within the same block scope.{" "}
         </li>
       </ul>
 
@@ -186,15 +186,17 @@ const Const = ({ myDark }) => {
     <>
       <h3 className="text-xl font-bold mt-6">const</h3>
       <ul className="list-inside list-disc">
-        <li>Variables declared with 'const' are also block-scoped.</li>
         <li>
-          'const' variables cannot be reassigned once they are initialized.
-          However, for objects and arrays, the properties and elements can be
-          modified.
+          Variables declared with &quot;const&quot; are also block-scoped.
         </li>
         <li>
-          It is common to use 'const' for values that are not intended to be
-          changed.
+          &quot;const&quot; variables cannot be reassigned once they are
+          initialized. However, for objects and arrays, the properties and
+          elements can be modified.
+        </li>
+        <li>
+          It is common to use &quot;const&quot; for values that are not intended
+          to be changed.
         </li>
       </ul>
 

@@ -30,10 +30,10 @@ const MyFragment = () => {
               elements. The render method will only render a{" "}
               <strong> single root node</strong> inside it at a time. However,
               if you want to return multiple elements, the render method will
-              require a 'div' tag and put the entire content or elements inside
-              it. This extra node to DOM sometimes result in the wrong
-              formatting of your HTML output and also not loved by the many
-              developers.
+              require a &quot;div&quot; tag and put the entire content or
+              elements inside it. This extra node to DOM sometimes result in the
+              wrong formatting of your HTML output and also not loved by the
+              many developers.
             </p>
 
             <Example1 myDark={myDark} />
@@ -63,10 +63,10 @@ const MyFragment = () => {
               <p>
                 There is also a shorthand exist for declaring fragments for the
                 above method. It looks like <strong>empty</strong> tag in which
-                we can use of '{String.fromCharCode(60)}
-                {String.fromCharCode(62)}' and '{String.fromCharCode(60)}/
-                {String.fromCharCode(62)}' instead of the{" "}
-                <strong>'React.Fragment'</strong>
+                we can use of &quot;{String.fromCharCode(60)}
+                {String.fromCharCode(62)}&quot; and &quot;
+                {String.fromCharCode(60)}/{String.fromCharCode(62)}&quot;
+                instead of the <strong>&quot;React.Fragment&quot;</strong>
               </p>
 
               <Example4 myDark={myDark} />
@@ -101,27 +101,28 @@ const MyFragment = () => {
               </p>
 
               <p className="mt-3">
-                It's always undercover, spying on the real DOM and making
+                It&apos;s always undercover, spying on the real DOM and making
                 changes behind the scenes!
               </p>
 
               <p className="mt-3">
-                Virtual DOM: "I see you, real DOM, but you can't see me!"
+                Virtual DOM: &quot;I see you, real DOM, but you can&apos;t see
+                me!&quot;
               </p>
 
               <p className="mt-3">
-                Real DOM: "What's that rustling noise? Is someone messing with
-                my elements?"
+                Real DOM: &quot;What&apos;s that rustling noise? Is someone
+                messing with my elements?&quot;
               </p>
 
               <p className="mt-3">
-                Virtual DOM: wearing sunglasses "Just doing my job, keeping
-                things snappy and efficient!"
+                Virtual DOM: wearing sunglasses &quot;Just doing my job, keeping
+                things snappy and efficient!&quot;
               </p>
 
               <p className="mt-3">
-                Real DOM: "Well, as long as you're not causing any trouble...
-                Carry on, Agent VDOM!"
+                Real DOM: &quot;Well, as long as yo&apos;ure not causing any
+                trouble... Carry on, Agent VDOM!&quot;
               </p>
             </div>
           </div>

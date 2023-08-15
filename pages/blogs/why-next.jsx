@@ -112,7 +112,7 @@ const BuiltInRouting = () => {
       <p className="text-2xl pb-2">1. Built-in Routing Support</p>
       <p>
         Next js provides a built-in-file-based Routing system, which means you
-        don't need to use any external packages or libraries, React js requires
+        don&apos;t need to use any external packages or libraries, React js requires
         the use of react-router-dom for Routing.
       </p>
       <h4 className="font-bold my-1">For Pages directory</h4>
@@ -157,7 +157,7 @@ const BuiltInRouting = () => {
       <p className="text-center mb-3">Image 3</p>
       <p className="text-gray-700 text-sm">
         If you are working with Next js version 13 or above and have an{" "}
-        <strong>app</strong> directory in your project's folder structure, you
+        <strong>app</strong> directory in your project&apos;s folder structure, you
         can create a route by creating a folder inside app directory and adding
         a <strong>page.js</strong> file inside it. , for example if you create a
         folder called <strong>my-folder</strong> inside app directory and create
@@ -175,9 +175,9 @@ const FasterSpeed = () => {
       <h4 className="font-bold my-1">Meaning?</h4>
       <p className="text-gray-700 text-sm">
         Next.js can be up to 700 times faster in production mode, which means
-        that When you are building a website and it's running on localhost, any
+        that When you are building a website and it&apos;s running on localhost, any
         changes you make and save will updated 700 times faster than React.
-        However, in deployment mode, it's speed approximately the same as to
+        However, in deployment mode, it&apos;s speed approximately the same as to
         React.
       </p>
       <h4 className="font-bold my-1">Why?</h4>
@@ -199,7 +199,7 @@ const ApiSupport = () => {
       <p className="text-2xl pb-2">3. Write both Backend and Frontend</p>
       <p className="text-gray-700 text-sm">
         Next js provides developers with a built-in server system, which means
-        that you don't need to set up a separate server to write backend code
+        that you don&apos;t need to set up a separate server to write backend code
         for your application.
       </p>
       <h4 className="font-bold my-1">For Pages Directory</h4>
@@ -243,7 +243,7 @@ const Seo = () => {
       </p>
       <p className="text-gray-700 text-sm">
         Load speed is the one of most important factors when it comes to SEO and
-        Google ranking and with Next.js you're simply faster. What makes Next.js
+        Google ranking and with Next.js you&apos;re simply faster. What makes Next.js
         stand out against other popular framework, is that it renders the HTML
         on the server(server-side) rather than in the browser (client side).
       </p>

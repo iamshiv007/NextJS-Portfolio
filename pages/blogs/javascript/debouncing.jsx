@@ -99,7 +99,7 @@ const Example1 = ({ myDark }) => {
       <h3 className="text-lg font-bold mt-6 mb-4">Example 1</h3>
       <p className="mb-2">
         In This example when you stop writing for 2 second alert will be showing
-        = "Function run after 2 seconds"
+        = &quot;Function run after 2 seconds&quot;
       </p>
       <input
         className="dark:bg-black my-3 py-1 px-2 rounded border border-solid border-black dark:border-white"

@@ -11,7 +11,7 @@ const Intro = () => {
           <div className="md:pt-[100px] md:pl-[120px] ml-[30px]">
             <p className="md:text-6xl text-4xl font-bold">Hi</p>
             <p className="md:text-6xl text-4xl font-bold mt-5">
-              I'm{" "}
+              I&apos;m{" "}
               <span className="text-[#c72c6c] dark:text-[#07d0e5]">
                 Shivraj
               </span>

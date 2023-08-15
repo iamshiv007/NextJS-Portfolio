@@ -53,8 +53,8 @@ const CssTransform = () => {
 
           <div className="layoutBox2">
             <p className="text-center">
-              "College or Degree can't define you and can't decide What you can
-              do?."
+              &quot;College or Degree can&apos;t define you and can&apos;t
+              decide What you can do?.&quot;
             </p>
           </div>
         </div>
