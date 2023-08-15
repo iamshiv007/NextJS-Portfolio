@@ -1,8 +1,7 @@
 import React, { Fragment, useContext } from "react";
 import Head from "next/head";
 import SyntaxHighlighter from "react-syntax-highlighter";
-import { github } from "react-syntax-highlighter/dist/cjs/styles/hljs";
-import { dark } from "react-syntax-highlighter/dist/cjs/styles/hljs";
+import { github, dark } from "react-syntax-highlighter/dist/cjs/styles/hljs";
 
 import Theme from "@/utils/Theme";
 import { BlogContext } from "@/contextApi/blogContext";
@@ -93,8 +92,8 @@ const Example1 = ({ myDark }) => {
       <h3 className="text-lg font-bold mt-6 mb-4">Example 1</h3>
 
       <SyntaxHighlighter
-        showLineNumbers={true}
         language="javascript"
+        showLineNumbers={true}
         style={myDark ? dark : github}
       >
         {codeString}
@@ -130,8 +129,8 @@ const Example2 = ({ myDark }) => {
       <h3 className="text-lg font-bold mt-6 mb-4">Example 2</h3>
 
       <SyntaxHighlighter
-        showLineNumbers={true}
         language="javascript"
+        showLineNumbers={true}
         style={myDark ? dark : github}
       >
         {codeString}
@@ -167,8 +166,8 @@ const Example3 = ({ myDark }) => {
       <h3 className="text-lg font-bold mt-6 mb-4">Example 3</h3>
 
       <SyntaxHighlighter
-        showLineNumbers={true}
         language="javascript"
+        showLineNumbers={true}
         style={myDark ? dark : github}
       >
         {codeString}
@@ -203,8 +202,8 @@ const Example4 = ({ myDark }) => {
       <h3 className="text-lg font-bold mt-6 mb-4">Example 4</h3>
 
       <SyntaxHighlighter
-        showLineNumbers={true}
         language="javascript"
+        showLineNumbers={true}
         style={myDark ? dark : github}
       >
         {codeString}
@@ -246,8 +245,8 @@ const Example5 = ({ myDark }) => {
       <h3 className="text-lg font-bold mt-6 mb-4">Example 5</h3>
 
       <SyntaxHighlighter
-        showLineNumbers={true}
         language="javascript"
+        showLineNumbers={true}
         style={myDark ? dark : github}
       >
         {codeString}
@@ -277,8 +276,8 @@ const Example6 = ({ myDark }) => {
       <h3 className="text-lg font-bold mt-6 mb-4">Example 6</h3>
 
       <SyntaxHighlighter
-        showLineNumbers={true}
         language="javascript"
+        showLineNumbers={true}
         style={myDark ? dark : github}
       >
         {codeString}
@@ -326,8 +325,8 @@ const Example7 = ({ myDark }) => {
       <h3 className="text-lg font-bold mt-6 mb-4">Example 1</h3>
 
       <SyntaxHighlighter
-        showLineNumbers={true}
         language="javascript"
+        showLineNumbers={true}
         style={myDark ? dark : github}
       >
         {codeString}
@@ -375,8 +374,8 @@ const Example8 = ({ myDark }) => {
       <h3 className="text-lg font-bold mt-6 mb-4">Example 2</h3>
 
       <SyntaxHighlighter
-        showLineNumbers={true}
         language="javascript"
+        showLineNumbers={true}
         style={myDark ? dark : github}
       >
         {codeString}
@@ -418,8 +417,8 @@ const Example9 = ({ myDark }) => {
       <h3 className="text-lg font-bold mt-6 mb-4">Example 3</h3>
 
       <SyntaxHighlighter
-        showLineNumbers={true}
         language="javascript"
+        showLineNumbers={true}
         style={myDark ? dark : github}
       >
         {codeString}

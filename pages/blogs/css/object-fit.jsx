@@ -31,7 +31,7 @@ const ObjectFit = () => {
             </p>
 
             <div className="sm:w-[200px] sm:h-[200px] w-[150px] h-[150px] border border-solid dark:border-white border-black relative">
-              <Image src="/images/room.jpg" alt="" fill={true} />
+              <Image alt="" fill={true} src="/images/room.jpg" />
             </div>
 
             <div className="text-xl mt-6 mb-2">
@@ -43,10 +43,10 @@ const ObjectFit = () => {
             </p>
             <div className="sm:w-[200px] sm:h-[200px] w-[150px] h-[150px] border border-solid dark:border-white border-black relative">
               <Image
-                className="object-contain"
-                src="/images/room.jpg"
                 alt=""
+                className="object-contain"
                 fill={true}
+                src="/images/room.jpg"
               />
             </div>
 
@@ -59,10 +59,10 @@ const ObjectFit = () => {
             </p>
             <div className="sm:w-[200px] sm:h-[200px] w-[150px] h-[150px] border border-solid dark:border-white border-black relative">
               <Image
-                className="object-cover"
-                src="/images/room.jpg"
                 alt=""
+                className="object-cover"
                 fill={true}
+                src="/images/room.jpg"
               />
             </div>
 
@@ -74,15 +74,15 @@ const ObjectFit = () => {
             </p>
             <div className="sm:w-[200px] sm:h-[200px] w-[150px] h-[150px] border border-solid dark:border-white border-black relative">
               <Image
-                className="object-none"
-                src="/images/room.jpg"
                 alt=""
+                className="object-none"
                 fill={true}
+                src="/images/room.jpg"
               />
             </div>
           </div>
 
-          <div className="layoutBox2"></div>
+          <div className="layoutBox2" />
         </div>
       </Theme>
     </Fragment>

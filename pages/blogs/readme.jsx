@@ -56,8 +56,8 @@ const PointOne = ({ myDark }) => {
       <div className="mt-8 mb-3 font-bold text-lg">1. Typography</div>
 
       <SyntaxHighlighter
-        showLineNumbers={true}
         language="md"
+        showLineNumbers={true}
         style={myDark ? dark : github}
       >
         {codeString1}
@@ -89,8 +89,8 @@ const PointTwo = ({ myDark }) => {
 
       <SyntaxHighlighter
         className="mt-4"
-        showLineNumbers={true}
         language="md"
+        showLineNumbers={true}
         style={myDark ? dark : github}
       >
         {codeString}
@@ -113,8 +113,8 @@ Simple add two or more space in end of line for line break in a Paragraph.`;
 
       <SyntaxHighlighter
         className="mt-4"
-        showLineNumbers={true}
         language="md"
+        showLineNumbers={true}
         style={myDark ? dark : github}
       >
         {codeString}
@@ -131,15 +131,15 @@ Simple add two or more space in end of line for line break in a Paragraph.`;
 };
 
 const PointFour = ({ myDark }) => {
-  const codeString = `> To create a blockquote, add a (>) in starting of a paragraph or line.`;
+  const codeString = "> To create a blockquote, add a (>) in starting of a paragraph or line.";
 
   return (
     <>
       <div className="mt-8 mb-3 font-bold text-lg">4. Blockquotes</div>
       <SyntaxHighlighter
         className="mt-4"
-        showLineNumbers={true}
         language="md"
+        showLineNumbers={true}
         style={myDark ? dark : github}
       >
         {codeString}

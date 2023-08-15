@@ -24,11 +24,11 @@ const Intro = () => {
           <div className="mt-14 flex justify-center">
             <div className="w-[300px]">
               <Image
-                className="w-full rounded-full"
-                src="/images/cartoon 0.png"
                 alt="myimage"
-                width={300}
+                className="w-full rounded-full"
                 height={300}
+                src="/images/cartoon 0.png"
+                width={300}
               />
               <Resume />
             </div>

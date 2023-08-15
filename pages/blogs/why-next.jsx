@@ -82,14 +82,14 @@ const FirstPost = () => {
                 href={"https://shiv-s-blog.vercel.app/posts/react/fragment"}
               >
                 <div
+                  className={"border border-solid border-black h-[150px]"}
                   style={{
-                    backgroundImage: `url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT77S6c9Tlz-zqWRRPgKeJDd8kSjbR_alp30g&usqp=CAU')`,
+                    backgroundImage: "url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT77S6c9Tlz-zqWRRPgKeJDd8kSjbR_alp30g&usqp=CAU')",
                   }}
-                  className={`border border-solid border-black h-[150px]`}
                 >
                   <div
-                    onClick={() => setClose(true)}
                     className="text-[0.8rem] w-fit bg-white ml-auto z-10"
+                    onClick={() => setClose(true)}
                   >
                     <RiCloseLine color="blue" />
                   </div>
@@ -107,6 +107,7 @@ const FirstPost = () => {
 export default FirstPost;
 
 const BuiltInRouting = () => {
+  const newLocal = "https://res.cloudinary.com/practicaldev/image/fetch/s--DIT1rRjH--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://raw.githubusercontent.com/akuks/Misc/main/Images/nextjs_routing.png";
   return (
     <div className="py-4">
       <p className="text-2xl pb-2">1. Built-in Routing Support</p>
@@ -117,11 +118,11 @@ const BuiltInRouting = () => {
       </p>
       <h4 className="font-bold my-1">For Pages directory</h4>
       <Image
-        width={800}
-        height={500}
-        className="sm:w-[60%] w-[90%] m-auto mt-3"
-        src="https://res.cloudinary.com/practicaldev/image/fetch/s--DIT1rRjH--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://raw.githubusercontent.com/akuks/Misc/main/Images/nextjs_routing.png"
         alt="image1"
+        className="sm:w-[60%] w-[90%] m-auto mt-3"
+        height={500}
+        src={newLocal}
+        width={800}
       />
       <p className="text-center mb-3">Image 1</p>
       <p className="text-gray-700 text-sm">
@@ -140,19 +141,19 @@ const BuiltInRouting = () => {
       </p>
       <h4 className="font-bold my-1">For app directory</h4>
       <Image
-        width={800}
-        height={500}
-        className="sm:w-[75%] w-[90%] m-auto mt-3"
-        src="https://vercel.com/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fe5382hct74si%2FTvIi0gcnHOrapoHrT3qjq%2F9039474cdf25f27125cbdbdde35f32f5%2Froute-segments-to-path-segments.png&w=1920&q=75"
         alt="image2"
+        className="sm:w-[75%] w-[90%] m-auto mt-3"
+        height={500}
+        src="https://vercel.com/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fe5382hct74si%2FTvIi0gcnHOrapoHrT3qjq%2F9039474cdf25f27125cbdbdde35f32f5%2Froute-segments-to-path-segments.png&w=1920&q=75"
+        width={800}
       />
       <p className="text-center mb-3">Image 2</p>
       <Image
-        width={800}
-        height={500}
-        className="sm:w-[75%] w-[90%] m-auto mt-3"
-        src="https://vercel.com/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fe5382hct74si%2FTvIi0gcnHOrapoHrT3qjq%2F9039474cdf25f27125cbdbdde35f32f5%2Froute-segments-to-path-segments.png&w=1920&q=75"
         alt="image3"
+        className="sm:w-[75%] w-[90%] m-auto mt-3"
+        height={500}
+        src="https://vercel.com/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fe5382hct74si%2FTvIi0gcnHOrapoHrT3qjq%2F9039474cdf25f27125cbdbdde35f32f5%2Froute-segments-to-path-segments.png&w=1920&q=75"
+        width={800}
       />
       <p className="text-center mb-3">Image 3</p>
       <p className="text-gray-700 text-sm">
@@ -211,11 +212,11 @@ const ApiSupport = () => {
       </p>
       <h4 className="font-bold my-1">For App Directory</h4>
       <Image
-        width={800}
-        height={500}
-        className="sm:w-[75%] w-[90%] m-auto mt-3"
-        src="https://nextjs.org/_next/image?url=%2Fdocs%2Fdark%2Froute-special-file.png&w=1920&q=75"
         alt="image4"
+        className="sm:w-[75%] w-[90%] m-auto mt-3"
+        height={500}
+        src="https://nextjs.org/_next/image?url=%2Fdocs%2Fdark%2Froute-special-file.png&w=1920&q=75"
+        width={800}
       />
       <p className="text-center mb-3">Image 4</p>
       <p className="text-gray-700 text-sm">

@@ -16,11 +16,11 @@ export const School = () => {
         </div>
         <div className="md:w-[50vh] w-[40vh] h-[30vh] bg-gray-600 rounded-3xl md:rounded-s-3xl">
           <Image
-            width={300}
-            height={200}
-            src={JourneyData[0].image}
             alt="school"
             className="md:rounded-s-3xl rounded-3xl w-full h-full object-cover"
+            height={200}
+            src={JourneyData[0].image}
+            width={300}
           />
         </div>
       </div>

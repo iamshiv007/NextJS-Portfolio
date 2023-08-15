@@ -54,14 +54,14 @@ const ApnaChatGpt = () => {
           <div className="w-[92%] sm:w-[50%] m-auto mt-6">
             <div className="inputWrapper flex justify-around">
               <input
+                className="dark:bg-black p-3 py-1.5 rounded text-lg block w-[100%] border border-solid border-gray-500 dark:border-white"
+                id="question"
+                name="question"
                 onChange={(e) => setQuestion(e.target.value)}
                 onKeyDown={enterHit}
-                type="text"
-                name="question"
-                id="question"
-                value={question}
                 placeholder="Ask any question..."
-                className="dark:bg-black p-3 py-1.5 rounded text-lg block w-[100%] border border-solid border-gray-500 dark:border-white"
+                type="text"
+                value={question}
               />
             </div>
 
@@ -78,13 +78,13 @@ const ApnaChatGpt = () => {
                 ? history
                     .filter((data, key) => key !== 0)
                     .map((data, key) => (
-                      <div key={key} className="mt-5">
+                      <div className="mt-5" key={key}>
                         <p>{"Q. " + data.question}</p>
                         <div>{"Ans => " + data.answer}</div>
                       </div>
                     ))
                 : history.map((data, key) => (
-                    <div key={key} className="mt-5">
+                    <div className="mt-5" key={key}>
                       <p>{"Q. " + data.question}</p>
                       <div>{"Ans => " + data.answer}</div>
                     </div>

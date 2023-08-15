@@ -29,60 +29,60 @@ const ReactResposiveCarousel = () => {
             <div className="md:w-[80%] w-[90%] m-auto flex flex-wrap gap-5 mb-5 mt-5">
               <div>
                 <input
-                  type="checkbox"
-                  onChange={() => setArrows(!arrows)}
-                  name=""
                   checked={arrows}
-                  id="arrows"
                   className="mx-1"
+                  id="arrows"
+                  name=""
+                  onChange={() => setArrows(!arrows)}
+                  type="checkbox"
                 />
                 <label htmlFor="arrows">ShowArrows</label>
               </div>
 
               <div>
                 <input
-                  className="mx-1"
-                  type="checkbox"
-                  onChange={() => setIndicator(!indicator)}
-                  name=""
                   checked={indicator}
+                  className="mx-1"
                   id="indicator"
+                  name=""
+                  onChange={() => setIndicator(!indicator)}
+                  type="checkbox"
                 />
                 <label htmlFor="indicator">showIndicators</label>
               </div>
 
               <div>
                 <input
-                  className="mx-1"
-                  type="checkbox"
-                  onChange={() => setStatus(!status)}
-                  name=""
                   checked={status}
+                  className="mx-1"
                   id="status"
+                  name=""
+                  onChange={() => setStatus(!status)}
+                  type="checkbox"
                 />
                 <label htmlFor="status">showStatus</label>
               </div>
 
               <div>
                 <input
-                  className="mx-1"
-                  type="checkbox"
-                  onChange={() => setKeyBoard(!keyBoard)}
-                  name=""
                   checked={keyBoard}
+                  className="mx-1"
                   id="keyBoard"
+                  name=""
+                  onChange={() => setKeyBoard(!keyBoard)}
+                  type="checkbox"
                 />
                 <label htmlFor="keyBoard">useKeyboardArrows</label>
               </div>
 
               <div>
                 <input
-                  className="mx-1"
-                  type="checkbox"
-                  onChange={() => setThumbs(!thumbs)}
-                  name=""
                   checked={thumbs}
+                  className="mx-1"
                   id="thumbs"
+                  name=""
+                  onChange={() => setThumbs(!thumbs)}
+                  type="checkbox"
                 />
                 <label htmlFor="thumbs">showThumbs</label>
               </div>
@@ -92,31 +92,31 @@ const ReactResposiveCarousel = () => {
                 showArrows={arrows}
                 showIndicators={indicator}
                 showStatus={status}
-                useKeyboardArrows={keyBoard}
                 showThumbs={thumbs}
+                useKeyboardArrows={keyBoard}
               >
                 <div>
                   <Image
-                    width={500}
+                    alt="CarouselImage1"
                     height={300}
                     src="/images/carousel1.png"
-                    alt="CarouselImage1"
+                    width={500}
                   />
                 </div>
                 <div>
                   <Image
-                    width={500}
-                    height={300}
-                    src={`/images/carousel2.png`}
                     alt="CarouselImage2"
+                    height={300}
+                    src={"/images/carousel2.png"}
+                    width={500}
                   />
                 </div>
                 <div>
                   <Image
-                    width={500}
-                    height={300}
-                    src={`/images/carousel3.png`}
                     alt="CarouselImage3"
+                    height={300}
+                    src={"/images/carousel3.png"}
+                    width={500}
                   />
                 </div>
               </Carousel>

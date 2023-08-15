@@ -70,15 +70,15 @@ const QuizApp = () => {
                 {options.map((option, key) => (
                   <div className="mt-3" key={key}>
                     <input
+                      checked={answer === option}
                       className="mr-3 cursor-pointer"
-                      type="checkbox"
-                      name="answer"
                       id={option}
-                      value={option}
+                      name="answer"
                       onChange={(e) => {
                         if (!answer) setAnswer(e.target.value);
                       }}
-                      checked={answer === option}
+                      type="checkbox"
+                      value={option}
                     />
                     <label className="cursor-pointer" htmlFor={option}>
                       {key + 1}. {he.decode(option)}
@@ -121,8 +121,8 @@ const QuizApp = () => {
             <div>
               <div className="fixed bottom-8 md:static w-[100%] flex justify-center">
                 <button
-                  onClick={generateQuestion}
                   className="p-2 dark:bg-[#0ab0c2] bg-[#c72c6c] text-white px-6 border-0 dark:text-black rounded-md text-xl font-bold m-2"
+                  onClick={generateQuestion}
                 >
                   Next
                 </button>

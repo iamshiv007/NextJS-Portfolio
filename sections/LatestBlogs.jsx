@@ -10,7 +10,7 @@ const LatestBlogs = () => {
   return (
     <Fragment>
       <section id="blogs">
-        <div className={`dark:bg-[#000000d0] py-8`}>
+        <div className={"dark:bg-[#000000d0] py-8"}>
           <h3 className="sectionHeading">
             <span className="mr-4">
               <BsPenFill />
@@ -25,12 +25,12 @@ const LatestBlogs = () => {
                   <Link href={`/blogs/${blog.linkName}`}>
                     <div className="h-fit dark:bg-gray-900 rounded-md border border-gray-400 border-solid">
                       <Image
-                        className="rounded-t-md"
-                        src={blog.imageUrl}
                         alt="img not found"
+                        className="rounded-t-md"
+                        height={250}
+                        src={blog.imageUrl}
                         style={{ width: "100%" }}
                         width={400}
-                        height={250}
                       />
                       <div className="px-1 py-2  border-t border-solid border-gray-600 dark:border-white">
                         <div className="blogLink">{blog.name}</div>

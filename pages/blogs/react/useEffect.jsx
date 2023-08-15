@@ -66,8 +66,8 @@ const Example1 = ({ myDark }) => {
       <h3 className="text-lg font-bold mt-6 mb-4">Example 1</h3>
       <p className="mb-2">1. No dependency passed:</p>
       <SyntaxHighlighter
-        showLineNumbers={true}
         language="javascript"
+        showLineNumbers={true}
         style={myDark ? dark : github}
       >
         {codeString}
@@ -86,8 +86,8 @@ const Example2 = ({ myDark }) => {
       <h3 className="text-lg font-bold mt-6 mb-4">Example 2</h3>
       <p className="mb-2">2. An empty array:</p>
       <SyntaxHighlighter
-        showLineNumbers={true}
         language="javascript"
+        showLineNumbers={true}
         style={myDark ? dark : github}
       >
         {codeString}
@@ -107,8 +107,8 @@ const Example3 = ({ myDark }) => {
       <h3 className="text-lg font-bold mt-6 mb-4">Example 3</h3>
       <p className="mb-2">3. Props or state values:</p>
       <SyntaxHighlighter
-        showLineNumbers={true}
         language="javascript"
+        showLineNumbers={true}
         style={myDark ? dark : github}
       >
         {codeString}

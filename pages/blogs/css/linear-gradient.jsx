@@ -37,11 +37,11 @@ const LinearGradient = () => {
               <strong>
                 linear-gradient(to{" "}
                 <select
-                  value={dire1}
-                  name="dire1"
-                  id=""
-                  onChange={(e) => setDire1(e.target.value)}
                   className="border border-solid border-blue-600 dark:bg-black"
+                  id=""
+                  name="dire1"
+                  onChange={(e) => setDire1(e.target.value)}
+                  value={dire1}
                 >
                   <option value="top">top</option>
                   <option value="left">left</option>
@@ -50,67 +50,67 @@ const LinearGradient = () => {
                 </select>
                 ,{" "}
                 <input
-                  value={color1}
-                  name="color1"
                   id=""
+                  name="color1"
                   onChange={(e) => setColor1(e.target.value)}
                   type="color"
+                  value={color1}
                 />
                 ,{" "}
                 <input
-                  value={color2}
-                  name="color2"
                   id=""
+                  name="color2"
                   onChange={(e) => setColor2(e.target.value)}
                   type="color"
+                  value={color2}
                 />
                 )
               </strong>
             </div>
             <div
-              className={`h-[200px] w-[200px]`}
+              className={"h-[200px] w-[200px]"}
               style={{
                 background: `linear-gradient(to ${dire1}, ${color1}, ${color2})`,
               }}
-            ></div>
+             />
 
             <p className="text-2xl pb-2 mt-6 mb-3">
               background:{" "}
               <strong>
                 linear-gradient(to{" "}
                 <select
-                  value={dire2}
-                  name="dire2"
-                  id=""
-                  onChange={(e) => setDire2(e.target.value)}
                   className="border border-solid border-blue-600 dark:bg-black"
+                  id=""
+                  name="dire2"
+                  onChange={(e) => setDire2(e.target.value)}
+                  value={dire2}
                 >
                   <option value="top">top</option>
                   <option value="bottom">bottom</option>
                 </select>{" "}
                 <select
-                  value={dire3}
-                  name="dire3"
-                  id=""
-                  onChange={(e) => setDire3(e.target.value)}
                   className="border border-solid border-blue-600 dark:bg-black"
+                  id=""
+                  name="dire3"
+                  onChange={(e) => setDire3(e.target.value)}
+                  value={dire3}
                 >
                   <option value="left">left</option>
                   <option value="right">right</option>
                 </select>
                 ,
                 <input
+                  id=""
+                  name="color3"
                   onChange={(e) => setColor3(e.target.value)}
                   type="color"
-                  name="color3"
-                  id=""
                 />
                 ,{" "}
                 <input
+                  id=""
+                  name="color4"
                   onChange={(e) => setColor4(e.target.value)}
                   type="color"
-                  name="color4"
-                  id=""
                 />
                 )
               </strong>
@@ -120,18 +120,18 @@ const LinearGradient = () => {
               style={{
                 background: `linear-gradient(to ${dire2} ${dire3}, ${color3}, ${color4})`,
               }}
-            ></div>
+             />
 
             <p className="text-2xl pb-2 mt-6 mb-3">
               background:{" "}
               <strong>
                 linear-gradient(to{" "}
                 <select
-                  value={dire4}
-                  name="dire4"
-                  id=""
-                  onChange={(e) => setDire4(e.target.value)}
                   className="border border-solid border-blue-600 dark:bg-black"
+                  id=""
+                  name="dire4"
+                  onChange={(e) => setDire4(e.target.value)}
+                  value={dire4}
                 >
                   <option value="top">top</option>
                   <option value="left">left</option>
@@ -140,34 +140,34 @@ const LinearGradient = () => {
                 </select>
                 ,{" "}
                 <input
+                  id=""
+                  name="color5"
                   onChange={(e) => setColor5(e.target.value)}
                   type="color"
-                  name="color5"
-                  id=""
                 />
                 ,{" "}
                 <input
+                  id=""
+                  name="color6"
                   onChange={(e) => setColor6(e.target.value)}
                   type="color"
-                  name="color6"
-                  id=""
                 />
                 ,
                 <input
+                  id=""
+                  name="color7"
                   onChange={(e) => setColor7(e.target.value)}
                   type="color"
-                  name="color7"
-                  id=""
                 />
                 )
               </strong>
             </p>
             <div
+              className="h-[200px] w-[200px]"
               style={{
                 background: `linear-gradient(to ${dire4}, ${color5}, ${color6}, ${color7})`,
               }}
-              className="h-[200px] w-[200px]"
-            ></div>
+             />
           </div>
 
           <div className="layoutBox2">Hello</div>

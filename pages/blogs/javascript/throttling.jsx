@@ -1,8 +1,7 @@
 import Head from "next/head";
 import React, { Fragment, useContext, useState } from "react";
 import SyntaxHighlighter from "react-syntax-highlighter";
-import { github } from "react-syntax-highlighter/dist/cjs/styles/hljs";
-import { dark } from "react-syntax-highlighter/dist/cjs/styles/hljs";
+import { github, dark } from "react-syntax-highlighter/dist/cjs/styles/hljs";
 
 import Theme from "@/utils/Theme";
 import { BlogContext } from "@/contextApi/blogContext";
@@ -117,8 +116,8 @@ const Example1 = ({ myDark }) => {
       </button>
       <p className="p-2">{count}</p>
       <SyntaxHighlighter
-        showLineNumbers={true}
         language="javascript"
+        showLineNumbers={true}
         style={myDark ? dark : github}
       >
         {codeString}

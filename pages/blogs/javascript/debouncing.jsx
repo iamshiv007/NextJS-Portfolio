@@ -103,15 +103,15 @@ const Example1 = ({ myDark }) => {
       </p>
       <input
         className="dark:bg-black my-3 py-1 px-2 rounded border border-solid border-black dark:border-white"
-        onChange={innerFun}
-        type="text"
-        name=""
         id=""
+        name=""
+        onChange={innerFun}
         placeholder="Write anything"
+        type="text"
       />
       <SyntaxHighlighter
-        showLineNumbers={true}
         language="javascript"
+        showLineNumbers={true}
         style={myDark ? dark : github}
       >
         {codeString}

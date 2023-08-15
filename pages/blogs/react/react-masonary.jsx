@@ -11,7 +11,7 @@ const ReactMasonary = () => {
 
   useEffect(() => {
     axios
-      .get(`/api/masonary`)
+      .get("/api/masonary")
       .then((res) => {
         console.log(res.data.photos);
         setPhotos(res.data.photos);
@@ -46,14 +46,14 @@ const ReactMasonary = () => {
         <BackTo backTo={"blogs"} />
 
         <div className="dark:bg-black min-h-[92]">
-          <div className="dowBtn"></div>
+          <div className="dowBtn" />
           <ResponsiveMasonry
             columnsCountBreakPoints={{ 350: 2, 750: 3, 900: 4 }}
           >
             <Masonry>
               {photos?.map((photo, key) => {
                 return (
-                  <div style={{ margin: "10px" }} key={key}>
+                  <div key={key} style={{ margin: "10px" }}>
                     <button
                       onClick={() =>
                         handleDownload(photo.src.original, photo.url)
@@ -62,7 +62,7 @@ const ReactMasonary = () => {
                       Download
                     </button>
                     {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img src={photo.src.original} alt={photo.photographer} />
+                    <img alt={photo.photographer} src={photo.src.original} />
                   </div>
                 );
               })}

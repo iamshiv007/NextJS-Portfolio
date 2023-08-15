@@ -27,11 +27,11 @@ const BlendMode = () => {
             </p>
 
             <select
-              value={blendMode}
-              onChange={(e) => setBlendMode(e.target.value)}
-              name="blend-mode"
-              id=""
               className="border border-black font-bold font-xl dark:bg-black py-1 px-2"
+              id=""
+              name="blend-mode"
+              onChange={(e) => setBlendMode(e.target.value)}
+              value={blendMode}
             >
               <option value="normal">normal</option>
               <option value="screen">screen</option>
@@ -55,12 +55,12 @@ const BlendMode = () => {
             </div>
 
             <div
+              className="w-52 h-52 bg-contain mt-8"
               style={{
                 backgroundBlendMode: blendMode,
-                backgroundImage: `url(/images/circle.png), url(/images/x.png)`,
+                backgroundImage: "url(/images/circle.png), url(/images/x.png)",
               }}
-              className="w-52 h-52 bg-contain mt-8"
-            ></div>
+            />
           </div>
 
           <div className="layoutBox2">

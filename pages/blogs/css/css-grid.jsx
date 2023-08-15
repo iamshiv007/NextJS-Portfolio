@@ -19,9 +19,7 @@ const CssGrid = () => {
         <BackTo backTo={"blogs"} />
 
         <div className="min-h-[92vh] gap-x-7 dark:bg-gray-900 sm:dark:bg-gray-700 transition-all duration-1000 p-4 md:p-8">
-          <h1 className="blog-heading">
-            Css-Grid
-          </h1>
+          <h1 className="blog-heading">Css-Grid</h1>
           <ExampleOne myDark={myDark} />
           <ExampleTwo myDark={myDark} />
           <ExampleThree myDark={myDark} />
@@ -34,8 +32,8 @@ const CssGrid = () => {
 export default CssGrid;
 
 const ExampleOne = ({ myDark }) => {
-  const codeString1 = `grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr`;
-  const codeString2 = `grid-template-columns: repeat(7, 1fr)`;
+  const codeString1 = "grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr";
+  const codeString2 = "grid-template-columns: repeat(7, 1fr)";
 
   return (
     <>
@@ -50,20 +48,21 @@ const ExampleOne = ({ myDark }) => {
       </SyntaxHighlighter>
 
       <div className="grid1 mt-5">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
       </div>
     </>
   );
 };
 
 const ExampleTwo = ({ myDark }) => {
-  const codeString1 = `grid-template-columns: repeat(auto-fit, minmax(200px, 1fr))`;
+  const codeString1 =
+    "grid-template-columns: repeat(auto-fit, minmax(200px, 1fr))";
 
   return (
     <>
@@ -74,13 +73,13 @@ const ExampleTwo = ({ myDark }) => {
       </SyntaxHighlighter>
 
       <div className="grid2 mt-5">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
       </div>
     </>
   );
@@ -98,7 +97,7 @@ grid-column-end: 3;
 grid-row-start: 1;
 grid-row-end: 3;`;
 
-  const codeString4 = `grid-column: 3/6;`;
+  const codeString4 = "grid-column: 3/6;";
 
   const codeString5 = `grid-column: 1/3;
 grid-row: 3/4;`;
@@ -140,8 +139,8 @@ grid-row: 2/4;`;
             {codeString6}
           </SyntaxHighlighter>
         </div>
-        <div></div>
-        <div></div>
+        <div />
+        <div />
       </div>
     </>
   );

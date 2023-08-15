@@ -49,8 +49,8 @@ const Example1 = ({ myDark }) => {
         Example 1 : Function Declaration Hoisting
       </h3>
       <SyntaxHighlighter
-        showLineNumbers={true}
         language="javascript"
+        showLineNumbers={true}
         style={myDark ? dark : github}
       >
         {codeString}
@@ -75,19 +75,20 @@ const Example2 = ({ myDark }) => {
         Example 2 : Variable Declaration Hoisting
       </h3>
       <SyntaxHighlighter
-        showLineNumbers={true}
         language="javascript"
+        showLineNumbers={true}
         style={myDark ? dark : github}
       >
         {codeString}
       </SyntaxHighlighter>
       <div className="mt-2">
         In this example, we try to access the value of the variable{" "}
-        <strong>&quot;x&quot;</strong> before it is declared. However javaScript hoists
-        variable declaration to the top of their scope, so the variable is
-        created before the console log statement is executed. The output will be{" "}
-        <strong> &quot;undefined&quot; </strong> because the variable is declared but not
-        assigned a value at the time &quot;console log&quot; statement.
+        <strong>&quot;x&quot;</strong> before it is declared. However javaScript
+        hoists variable declaration to the top of their scope, so the variable
+        is created before the console log statement is executed. The output will
+        be <strong> &quot;undefined&quot; </strong> because the variable is
+        declared but not assigned a value at the time &quot;console log&quot;
+        statement.
       </div>
     </>
   );
@@ -107,21 +108,21 @@ const Example3 = ({ myDark }) => {
         Example 3 : Hoisting within a Function
       </h3>
       <SyntaxHighlighter
-        showLineNumbers={true}
         language="javascript"
+        showLineNumbers={true}
         style={myDark ? dark : github}
       >
         {codeString}
       </SyntaxHighlighter>
       <div className="mt-2">
-        In this example, we define a function <strong>&quot;foo&quot;</strong> that
-        contain variable declaration and assignment. When we call the function{" "}
-        JavaScript hoist the variable declarations <strong>&quot;var x&quot;</strong> to
-        the top of the functon&apos;s scope. However, the assignment{" "}
-        <strong> &quot;x=10&quot; </strong> is not hoisted, so the first{" "}
-        <strong>&quot;console.log&quot;</strong> statement will output{" "}
-        <strong> &quot;undefined&quot;</strong>, and the second{" "}
-        <strong>&quot;console.log&quot;</strong> statement will output{" "}
+        In this example, we define a function <strong>&quot;foo&quot;</strong>{" "}
+        that contain variable declaration and assignment. When we call the
+        function JavaScript hoist the variable declarations{" "}
+        <strong>&quot;var x&quot;</strong> to the top of the functon&apos;s
+        scope. However, the assignment <strong> &quot;x=10&quot; </strong> is
+        not hoisted, so the first <strong>&quot;console.log&quot;</strong>{" "}
+        statement will output <strong> &quot;undefined&quot;</strong>, and the
+        second <strong>&quot;console.log&quot;</strong> statement will output{" "}
         <strong>&quot;10&quot;</strong>
       </div>
     </>

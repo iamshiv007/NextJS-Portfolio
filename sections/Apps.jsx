@@ -12,7 +12,7 @@ const Apps = () => {
   return (
     <Fragment>
       <div className="dark:bg-[#000000d0] py-8">
-        <section id="apps"></section>
+        <section id="apps" />
         <h3 className="sectionHeading">
           <span className="mr-4">
             {" "}
@@ -23,14 +23,14 @@ const Apps = () => {
 
         <div className="md:grid hidden md:grid-cols-5 grid-cols-3 justify-center mx-8 gap-5">
           {AppsData.map((app, key) => (
-            <div key={key} className="overflow-hidden">
+            <div className="overflow-hidden" key={key}>
               <Link href={`/${app.linkName}`}>
                 <Image
-                  className="object-cover rounded md:rounded-[30px] w-full"
-                  src={dark ? app.imageUrl : app.imageLight}
                   alt="app"
-                  width={250}
+                  className="object-cover rounded md:rounded-[30px] w-full"
                   height={500}
+                  src={dark ? app.imageUrl : app.imageLight}
+                  width={250}
                 />
               </Link>
             </div>
@@ -53,11 +53,11 @@ const MobileScreenApps = () => {
           <Link href={`/${app.linkName}`}>
             <div className="p-3 rounded-xl bg-[pink] dark:bg-[aqua]">
               <Image
+                alt={app.name}
                 className="object-cover"
-                width={150}
                 height={150}
                 src={app.iconUrl}
-                alt={app.name}
+                width={150}
               />
             </div>
           </Link>

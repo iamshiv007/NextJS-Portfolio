@@ -15,11 +15,11 @@ export const YouTube = () => {
         </div>
         <div className="md:w-[50vh] w-[40vh] h-[30vh] bg-gray-600 md:rounded-e-3xl rounded-3xl">
           <Image
-            src={JourneyData[3].image}
             alt="youtube"
             className="md:rounded-e-3xl rounded-3xl w-full h-full object-cover"
-            width={300}
             height={200}
+            src={JourneyData[3].image}
+            width={300}
           />
         </div>
       </div>

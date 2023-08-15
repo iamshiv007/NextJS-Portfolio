@@ -35,19 +35,19 @@ const CssTransform = () => {
 
             {/* Example */}
             <Exa1
-              value1={value1}
-              setValue1={setValue1}
               direction1={direction1}
               setDirection1={setDirection1}
+              setValue1={setValue1}
+              value1={value1}
             />
             <br />
 
             {/* Example */}
             <Exa2
-              value2={value2}
-              setValue2={setValue2}
               direction2={direction2}
               setDirection2={setDirection2}
+              setValue2={setValue2}
+              value2={value2}
             />
           </div>
 
@@ -70,21 +70,21 @@ const Exa1 = ({ value1, setValue1, direction1, setDirection1 }) => {
     <div className="exa1 overflow-x-hidden overflow-y-hidden sm:overflow-x-visible sm:overflow-y-visible">
       <h4 className="text-2xl">Example 1</h4>
       <input
-        type="range"
-        onChange={(e) => setValue1(e.target.value)}
-        name=""
         id="value1"
-        min="-300"
         max="300"
+        min="-300"
+        name=""
+        onChange={(e) => setValue1(e.target.value)}
         step={25}
+        type="range"
         value={value1}
       />
 
       {/* Direction Radios */}
       <Exa1Radios
-        setValue1={setValue1}
         direction1={direction1}
         setDirection1={setDirection1}
+        setValue1={setValue1}
       />
 
       <div>
@@ -95,9 +95,9 @@ const Exa1 = ({ value1, setValue1, direction1, setDirection1 }) => {
         </span>
       </div>
       <div
-        style={{ transform: `translate${direction1}(${value1}px)` }}
         className="box1 m-auto mt-5 sm:w-[200px] sm:h-[200px] w-[50px] h-[50px] bg-blue-600"
-      ></div>
+        style={{ transform: `translate${direction1}(${value1}px)` }}
+       />
     </div>
   );
 };
@@ -107,14 +107,14 @@ const Exa1Radios = ({ setValue1, direction1, setDirection1 }) => {
     <div className="flex gap-5">
       <div>
         <input
-          type="radio"
+          checked={direction1 === "X"}
+          id="direX"
           name="direction1"
           onChange={() => {
             setDirection1("X");
             setValue1(0);
           }}
-          id="direX"
-          checked={direction1 === "X"}
+          type="radio"
         />
         <label className="px-2 font-bold" htmlFor="direX">
           translateX
@@ -123,14 +123,14 @@ const Exa1Radios = ({ setValue1, direction1, setDirection1 }) => {
 
       <div>
         <input
-          type="radio"
+          checked={direction1 === "Y"}
+          id="direY"
           name="direction1"
           onChange={() => {
             setDirection1("Y");
             setValue1(0);
           }}
-          id="direY"
-          checked={direction1 === "Y"}
+          type="radio"
         />
         <label className="px-2 font-bold" htmlFor="direY">
           translateY
@@ -145,21 +145,21 @@ const Exa2 = ({ value2, setValue2, direction2, setDirection2 }) => {
     <div className="exa2">
       <h4 className="text-2xl">Example 2</h4>
       <input
-        type="range"
-        onChange={(e) => setValue2(e.target.value)}
-        name=""
         id="value2"
-        min="-360"
         max="360"
+        min="-360"
+        name=""
+        onChange={(e) => setValue2(e.target.value)}
         step={25}
+        type="range"
         value={value2}
       />
 
       {/* Direction Radios */}
       <Exa2Radios
-        setValue2={setValue2}
         direction2={direction2}
         setDirection2={setDirection2}
+        setValue2={setValue2}
       />
 
       <div>
@@ -170,9 +170,9 @@ const Exa2 = ({ value2, setValue2, direction2, setDirection2 }) => {
         </span>
       </div>
       <div
-        style={{ transform: `rotate${direction2}(${value2}deg)` }}
         className="box2 m-auto mt-5 sm:w-[200px] sm:h-[200px] w-[50px] h-[50px] bg-blue-600"
-      ></div>
+        style={{ transform: `rotate${direction2}(${value2}deg)` }}
+       />
     </div>
   );
 };
@@ -182,14 +182,14 @@ const Exa2Radios = ({ setValue2, direction2, setDirection2 }) => {
     <div className="flex gap-5">
       <div>
         <input
-          type="radio"
+          checked={direction2 === "X"}
+          id="direX2"
           name="direction2"
           onChange={() => {
             setDirection2("X");
             setValue2(0);
           }}
-          id="direX2"
-          checked={direction2 === "X"}
+          type="radio"
         />
         <label className="px-2 font-bold" htmlFor="direX2">
           rotateX
@@ -198,14 +198,14 @@ const Exa2Radios = ({ setValue2, direction2, setDirection2 }) => {
 
       <div>
         <input
-          type="radio"
+          checked={direction2 === "Y"}
+          id="direY2"
           name="direction2"
           onChange={() => {
             setDirection2("Y");
             setValue2(0);
           }}
-          id="direY2"
-          checked={direction2 === "Y"}
+          type="radio"
         />
         <label className="px-2 font-bold" htmlFor="direY2">
           rotateY
@@ -214,14 +214,14 @@ const Exa2Radios = ({ setValue2, direction2, setDirection2 }) => {
 
       <div>
         <input
-          type="radio"
+          checked={direction2 === "Z"}
+          id="direZ"
           name="direction2"
           onChange={() => {
             setDirection2("Z");
             setValue2(0);
           }}
-          id="direZ"
-          checked={direction2 === "Z"}
+          type="radio"
         />
         <label className="px-2 font-bold" htmlFor="direZ">
           rotateZ

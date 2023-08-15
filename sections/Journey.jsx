@@ -10,6 +10,7 @@ import {
   FirstInternship,
   SecondInternship,
 } from "./journeyParts";
+
 import { JourneyData } from "@/constants";
 
 const Journey = () => {
@@ -34,7 +35,7 @@ const Journey = () => {
             <FirstInternship />
           </div>
 
-          <div className="border dark:border-white border-gray-700 border-solid min-h-[90vh]"></div>
+          <div className="border dark:border-white border-gray-700 border-solid min-h-[90vh]" />
 
           <div className="py-5">
             <Iit />
@@ -81,7 +82,7 @@ const MobileScreenJourney = () => {
       <div className="mx-[5%] pb-10 md:hidden">
         {JourneyData.map((journey, key) => (
           <React.Fragment key={key}>
-            <div className="h-[50px] border dark:border-white border-[black] m-auto w-fit"></div>
+            <div className="h-[50px] border dark:border-white border-[black] m-auto w-fit" />
 
             <div className="border-2 dark:border-white border-[black] border-solid rounded">
               <div className="flex gap-5 px-5 py-2">
@@ -93,16 +94,16 @@ const MobileScreenJourney = () => {
               </div>
             </div>
 
-            <div className="border-0 dark:border-white border-black m-auto w-fit h-0"></div>
+            <div className="border-0 dark:border-white border-black m-auto w-fit h-0" />
 
             <div className="border-white h-0 overflow-hidden">
               {journey.image && (
                 <Image
-                  className="w-full"
-                  src={journey.image}
                   alt={journey.heading}
-                  width={300}
+                  className="w-full"
                   height={200}
+                  src={journey.image}
+                  width={300}
                 />
               )}
               <div className="py-2">

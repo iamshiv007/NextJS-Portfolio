@@ -1,4 +1,5 @@
 import React, { Fragment } from "react";
+import Image from "next/image";
 
 import { JourneyData } from "@/constants";
 
@@ -10,16 +11,16 @@ export const SecondInternship = () => {
           <p className="text-center text-lg font-bold">
             {JourneyData[5].heading} - 2 Months
           </p>
-          <div className={`mx-4 my-2`}>{JourneyData[5].summary}</div>
+          <div className={"mx-4 my-2"}>{JourneyData[5].summary}</div>
         </div>
         {JourneyData[5].image && (
           <div className="md:w-[50vh] w-[40vh] h-[30vh] bg-gray-600 md:rounded-e-3xl rounded-3xl">
             <Image
-              src={JourneyData[5].image}
               alt="youtube"
               className="md:rounded-e-3xl rounded-3xl w-full h-full object-cover"
-              width={300}
               height={200}
+              src={JourneyData[5].image}
+              width={300}
             />
           </div>
         )}

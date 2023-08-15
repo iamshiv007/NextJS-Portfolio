@@ -48,12 +48,12 @@ const HindiTranslator = () => {
             <div className="flex">
               <textarea
                 className="border dark:bg-black border-solid dark:border-white border-black rounded p-3 text-xl h-[22vh] w-[90%] sm:w-[60%] m-auto"
-                name="from"
                 id="from"
-                value={text}
+                name="from"
                 onChange={(e) => setText(e.target.value)}
                 placeholder="Wirte here..."
-              ></textarea>
+                value={text}
+               />
             </div>
 
             <div className="w-fit m-auto my-4">
@@ -62,10 +62,10 @@ const HindiTranslator = () => {
               </label>
               <select
                 className="dark:bg-black border border-solid border-black rounded p-1 text-lg"
-                name="language"
                 id="language"
-                value={language}
+                name="language"
                 onChange={(e) => setLanguage(e.target.value)}
+                value={language}
               >
                 <option value="hi">Hindi</option>
                 {/* <option value="en">English</option> */}
@@ -82,11 +82,11 @@ const HindiTranslator = () => {
             <div className="flex">
               <textarea
                 className="border dark:bg-black dark:border-white border-solid border-black rounded p-3 text-xl h-[22vh] w-[90%] sm:w-[60%] m-auto"
-                name=""
                 id="output"
-                value={loading ? "...Loading" : output}
+                name=""
                 readOnly
-              ></textarea>
+                value={loading ? "...Loading" : output}
+               />
             </div>
           </div>
         </div>

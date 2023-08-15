@@ -22,8 +22,8 @@ const ComponentLifeCycle = () => {
               In ReactJS, every component creation process involves lifecycle
               methods. These lifecycle methods are termed as component&apos;s
               lifecycle. These lifecycle methods are not very complicated and
-              called at various points during a component&apos;s life. The lifecycle
-              of the component is divided into four phases.
+              called at various points during a component&apos;s life. The
+              lifecycle of the component is divided into four phases.
             </p>
             <ol className="list-inside list-decimal mt-3">
               <li>Initial Phase</li>
@@ -83,8 +83,8 @@ const ComponentLifeCycle = () => {
                   <p>
                     This method is defined in each and every component. It is
                     responsible for returning a single root HTML node element.
-                    If you don&apos;t want to render anything, you can return a null
-                    or false value.
+                    If you don&apos;t want to render anything, you can return a
+                    null or false value.
                   </p>
                 </div>
               </div>

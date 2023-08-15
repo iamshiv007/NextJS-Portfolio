@@ -152,8 +152,8 @@ const Example1 = ({ myDark }) => {
     <>
       <p className="my-2">Example</p>
       <SyntaxHighlighter
-        showLineNumbers={true}
         language="javascript"
+        showLineNumbers={true}
         style={myDark ? dark : github}
       >
         {codeString}
@@ -173,8 +173,8 @@ const Example2 = ({ myDark }) => {
     <>
       <p className="my-2">Syntax</p>
       <SyntaxHighlighter
-        showLineNumbers={true}
         language="javascript"
+        showLineNumbers={true}
         style={myDark ? dark : github}
       >
         {codeString}
@@ -200,8 +200,8 @@ const Example3 = ({ myDark }) => {
     <>
       <p className="my-2">Example</p>
       <SyntaxHighlighter
-        showLineNumbers={true}
         language="javascript"
+        showLineNumbers={true}
         style={myDark ? dark : github}
       >
         {codeString}
@@ -227,8 +227,8 @@ const Example4 = ({ myDark }) => {
     <>
       <p className="my-2">Example</p>
       <SyntaxHighlighter
-        showLineNumbers={true}
         language="javascript"
+        showLineNumbers={true}
         style={myDark ? dark : github}
       >
         {codeString}
@@ -257,8 +257,8 @@ const Example5 = ({ myDark }) => {
     <>
       <p className="my-2">Example</p>
       <SyntaxHighlighter
-        showLineNumbers={true}
         language="javascript"
+        showLineNumbers={true}
         style={myDark ? dark : github}
       >
         {codeString}

@@ -18,11 +18,11 @@ export const Iit = () => {
         </div>
         <div className="md:w-[50vh] w-[40vh] h-[30vh] bg-gray-600 rounded-3xl md:rounded-e-3xl">
           <Image
-            width={300}
-            height={200}
-            src={JourneyData[1].image}
             alt="IIt"
             className="md:rounded-e-3xl rounded-3xl w-full h-full object-cover"
+            height={200}
+            src={JourneyData[1].image}
+            width={300}
           />
         </div>
       </div>

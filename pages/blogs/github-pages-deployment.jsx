@@ -50,7 +50,7 @@ const GithubPagesDeploy = () => {
 export default GithubPagesDeploy;
 
 const StepOne = ({ myDark }) => {
-  const codeString = `"homepage": "https://your_github_username.github.io/repo_name",`;
+  const codeString = "\"homepage\": \"https://your_github_username.github.io/repo_name\",";
 
   return (
     <>
@@ -74,8 +74,8 @@ const StepOne = ({ myDark }) => {
 };
 
 const StepTwo = ({ myDark }) => {
-  const codeString1 = `npm install --save gh-pages`;
-  const codeString2 = `yarn add gh-pages`;
+  const codeString1 = "npm install --save gh-pages";
+  const codeString2 = "yarn add gh-pages";
 
   return (
     <>
@@ -128,7 +128,7 @@ const StepThree = ({ myDark }) => {
 };
 
 const StepFour = ({ myDark }) => {
-  const codeString = `npm run deploy`;
+  const codeString = "npm run deploy";
 
   return (
     <>

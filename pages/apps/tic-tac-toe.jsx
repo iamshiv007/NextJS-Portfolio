@@ -150,8 +150,8 @@ const TicTacToe = () => {
                 </div>
               )}
               <button
-                onClick={resetGame}
                 className="rounded bg-red-500 text-xl py-1 px-4 my-2 text-white"
+                onClick={resetGame}
               >
                 Restart
               </button>
@@ -169,9 +169,9 @@ const FirstRow = ({ gameFun }) => {
   return (
     <>
       <div>
-        <div onClick={gameFun} className="square one four seven"></div>
-        <div onClick={gameFun} className="square one five"></div>
-        <div onClick={gameFun} className="square one six eight"></div>
+        <div className="square one four seven" onClick={gameFun} />
+        <div className="square one five" onClick={gameFun} />
+        <div className="square one six eight" onClick={gameFun} />
       </div>
     </>
   );
@@ -181,9 +181,9 @@ const SecondRow = ({ gameFun }) => {
   return (
     <>
       <div>
-        <div onClick={gameFun} className="square two four"></div>
-        <div onClick={gameFun} className="square two five eight seven"></div>
-        <div onClick={gameFun} className="square two six"></div>
+        <div className="square two four" onClick={gameFun} />
+        <div className="square two five eight seven" onClick={gameFun} />
+        <div className="square two six" onClick={gameFun} />
       </div>
     </>
   );
@@ -193,9 +193,9 @@ const ThirdRow = ({ gameFun }) => {
   return (
     <>
       <div>
-        <div onClick={gameFun} className="square three four eight"></div>
-        <div onClick={gameFun} className="square three five"></div>
-        <div onClick={gameFun} className="square three six seven"></div>
+        <div className="square three four eight" onClick={gameFun} />
+        <div className="square three five" onClick={gameFun} />
+        <div className="square three six seven" onClick={gameFun} />
       </div>
     </>
   );

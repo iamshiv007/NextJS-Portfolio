@@ -78,25 +78,25 @@ const NewsApp = () => {
           <div className="text-3xl font-bold text-center pt-5 flex items-center justify-center gap-8">
             News App
             <button
-              onClick={() => setFilter(!filter)}
               className="p-3 dark:bg-[#0ab0c2] bg-[#c72c6c] text-white font-extrabold rounded-full w-10 h-10 flex items-center justify-center"
+              onClick={() => setFilter(!filter)}
             >
               <AiOutlineMenu />
             </button>
           </div>
 
           <Filters
+            category={category}
+            country={country}
             filter={filter}
             language={language}
-            country={country}
-            category={category}
-            setLanguage={setLanguage}
-            setCountry={setCountry}
-            setCategory={setCategory}
             loadNews={loadNews}
+            setCategory={setCategory}
+            setCountry={setCountry}
+            setLanguage={setLanguage}
           />
 
-          <MyMasonry loading={loading} articles={articles} />
+          <MyMasonry articles={articles} loading={loading} />
         </div>
       </Theme>
     </Fragment>
@@ -142,13 +142,13 @@ const Filters = ({
 
   return (
     <div
-      style={filter ? {} : { display: "none" }}
       className="flex justify-center flex-wrap w-fit m-auto gap-4 mt-4"
+      style={filter ? {} : { display: "none" }}
     >
       <select
         className="dark:bg-black border border-solid dark:border-white border-black rounded"
-        name="language"
         id="language"
+        name="language"
         onChange={(e) => setLanguage(e.target.value)}
         value={language}
       >
@@ -164,8 +164,8 @@ const Filters = ({
 
       <select
         className="dark:bg-black border border-solid dark:border-white border-black rounded"
-        name="country"
         id="country"
+        name="country"
         onChange={(e) => setCountry(e.target.value)}
         value={country}
       >
@@ -181,9 +181,9 @@ const Filters = ({
 
       <select
         className="dark:bg-black border border-solid dark:border-white border-black rounded"
-        onChange={(e) => setCategory(e.target.value)}
-        name="category"
         id="category"
+        name="category"
+        onChange={(e) => setCategory(e.target.value)}
         value={category}
       >
         <option disabled value="">
@@ -246,17 +246,17 @@ const MyMasonry = ({ loading, articles }) => {
 
                   <Link href={news.url} target="_blank">
                     {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img src={news.image} alt="Not Found" />
+                    <img alt="Not Found" src={news.image} />
                   </Link>
 
-                  <div onClick={descFun} className="p-3">
+                  <div className="p-3" onClick={descFun}>
                     {news.description.split(" ").slice(0, descLength).join(" ")}{" "}
                     ...
                   </div>
 
                   <div
-                    onClick={descFun2}
                     className="p-3"
+                    onClick={descFun2}
                     style={{ display: "none" }}
                   >
                     {news.description}

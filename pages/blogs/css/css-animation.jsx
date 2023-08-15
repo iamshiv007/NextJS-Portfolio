@@ -48,7 +48,7 @@ const CssAnimation = () => {
             </p>
             <p className="font-bold text-green-600">&#125;</p>
 
-            <div className="h-24 m-auto bg-red-500 animation-1 my-3"></div>
+            <div className="h-24 m-auto bg-red-500 animation-1 my-3" />
 
             <p className="font-bold text-xl text-blue-600 mt-2">
               animation-name

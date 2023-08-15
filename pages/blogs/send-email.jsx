@@ -87,11 +87,11 @@ const SendEmail = () => {
             </div>
 
             <Image
-              className="my-6 border border-solid border-black dark:border-white"
-              src="/images/screen1.png"
               alt=""
-              width={800}
+              className="my-6 border border-solid border-black dark:border-white"
               height={200}
+              src="/images/screen1.png"
+              width={800}
             />
 
             <PointFourteen myDark={myDark} />
@@ -103,11 +103,11 @@ const SendEmail = () => {
             </div>
 
             <Image
-              className="p-2 border border-black border-solid dark:border-white"
-              src="/images/screen2.png"
               alt=""
-              width={800}
+              className="p-2 border border-black border-solid dark:border-white"
               height={500}
+              src="/images/screen2.png"
+              width={800}
             />
 
             <div className="text-center m-5 text-2xl">❤️ Thank You 🙏</div>
@@ -148,8 +148,8 @@ const PointFour = ({ myDark }) => {
       </div>
 
       <SyntaxHighlighter
-        showLineNumbers={true}
         language="javascript"
+        showLineNumbers={true}
         style={myDark ? dark : github}
       >
         {codeString}
@@ -200,8 +200,8 @@ const PointSix = ({ myDark }) => {
         .
       </div>
       <SyntaxHighlighter
-        showLineNumbers={true}
         language="javascript"
+        showLineNumbers={true}
         style={myDark ? dark : github}
       >
         {codeString}
@@ -229,8 +229,8 @@ const PointSeven = ({ myDark }) => {
         file.
       </div>
       <SyntaxHighlighter
-        showLineNumbers={true}
         language="javascript"
+        showLineNumbers={true}
         style={myDark ? dark : github}
       >
         {codeString}
@@ -334,8 +334,8 @@ const PointNine = ({ myDark }) => {
       </div>
 
       <SyntaxHighlighter
-        showLineNumbers={true}
         language="javascript"
+        showLineNumbers={true}
         style={myDark ? dark : github}
       >
         {codeString}
@@ -399,8 +399,8 @@ const PointEleven = ({ myDark }) => {
       </div>
 
       <SyntaxHighlighter
-        showLineNumbers={true}
         language="javascript"
+        showLineNumbers={true}
         style={myDark ? dark : github}
       >
         {codeString}
@@ -429,8 +429,8 @@ const PointTwelve = ({ myDark }) => {
       </div>
 
       <SyntaxHighlighter
-        showLineNumbers={true}
         language="javascript"
+        showLineNumbers={true}
         style={myDark ? dark : github}
       >
         {codeString}
@@ -455,8 +455,8 @@ const PointThirteen = ({ myDark }) => {
       </div>
 
       <SyntaxHighlighter
-        showLineNumbers={true}
         language="javascript"
+        showLineNumbers={true}
         style={myDark ? dark : github}
       >
         {codeString}
@@ -543,8 +543,8 @@ const PointFourteen = ({ myDark }) => {
       </div>
 
       <SyntaxHighlighter
-        showLineNumbers={true}
         language="javascript"
+        showLineNumbers={true}
         style={myDark ? dark : github}
       >
         {codeString}
@@ -586,8 +586,8 @@ const PointSixTeen = ({ myDark }) => {
       </div>
 
       <SyntaxHighlighter
-        showLineNumbers={true}
         language="javascript"
+        showLineNumbers={true}
         style={myDark ? dark : github}
       >
         {codeString}

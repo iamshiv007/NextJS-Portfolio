@@ -35,9 +35,9 @@ const Closure = () => {
             <p className="mt-3">
               In Other words, when a function is defined inside another
               function, the inner function retains access to the variables,
-              parameters and function of it&apos;s parent function, even after the
-              parent function has completed execution. This access to the outer
-              scope is made possible by the closure.
+              parameters and function of it&apos;s parent function, even after
+              the parent function has completed execution. This access to the
+              outer scope is made possible by the closure.
             </p>
 
             <p className="mt-3 font-bold">Apni defination</p>
@@ -83,8 +83,8 @@ const Example1 = ({ myDark }) => {
         declared in outer function.
       </p>
       <SyntaxHighlighter
-        showLineNumbers={true}
         language="javascript"
+        showLineNumbers={true}
         style={myDark ? dark : github}
       >
         {codeString}
@@ -114,8 +114,8 @@ const Example2 = ({ myDark }) => {
         which is stored in store variable.
       </p>
       <SyntaxHighlighter
-        showLineNumbers={true}
         language="javascript"
+        showLineNumbers={true}
         style={myDark ? dark : github}
       >
         {codeString}
@@ -147,8 +147,8 @@ const Example3 = ({ myDark }) => {
         in outer function + parameter passed in inner function)
       </p>
       <SyntaxHighlighter
-        showLineNumbers={true}
         language="javascript"
+        showLineNumbers={true}
         style={myDark ? dark : github}
       >
         {codeString}
@@ -184,8 +184,8 @@ const Example4 = ({ myDark }) => {
         sum()().
       </p>
       <SyntaxHighlighter
-        showLineNumbers={true}
         language="javascript"
+        showLineNumbers={true}
         style={myDark ? dark : github}
       >
         {codeString}
@@ -221,8 +221,8 @@ const Example5 = ({ myDark }) => {
         functions.
       </p>
       <SyntaxHighlighter
-        showLineNumbers={true}
         language="javascript"
+        showLineNumbers={true}
         style={myDark ? dark : github}
       >
         {codeString}
