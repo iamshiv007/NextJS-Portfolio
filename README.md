@@ -94,6 +94,8 @@ Happy coding! 🚀
 
 ## 5. How to Edit This Portfolio (Make It Your's)
 
+*Note :-This is a beginner's guide for those who have never worked on a Next.js project before. If you can understand the project, it's in your hands to make changes and create a portfolio that's 10 times better. You can use its clone for a quick start.*
+
 ### 1. Your Name and Photo
 
 In the `root` directory, you'll find a `sections` folder. Inside this folder, locate the `Intro.jsx` file.
@@ -113,6 +115,23 @@ In the `root` directory, you'll find a `constants` folder. Inside this folder, l
 - Use Desire icon from `react-icons` library.
 - Give desire color to icon.
 
+### 3. Projects
+
+Just like with Skills, we have a `ProjectsData.js` file located in the `constants` folder.
+
+All you need to do is replace the existing data with your own (name: Your project name, url: Project Live URL, imageUrl: Image URL from the `images` folder in the public `directory`).
+
+### 4. My Journey
+
+Similar to Skills and Projects, you only need to customize the data in the `JourneyData.jsx` file according to yourself.
+
+### 5. Apps 
+
+You don't need to change the app data, but if you want, you can create similar easy apps and replace the data in the `AppsData.jsx` file.
+
+Suggetion for apps :- To-do List App, Weather App, Random Quote Generator, Random Jokes Generator, Basic Calculator, Countdown Timer, Recipe Finder etc.
+
+> Note :- If you're not able to customize the portfolio or run the project in your local environment, **don't worry**. It's not a journey of just 1 or 2 days, it takes time. For me, I was able to create it after 1 year of consistent learning. If you're not able to use its clone, just leave it and keep learning. You'll create a better portfolio or project one day.
 
 <div align="center">
   <h4>⭐️ If You want to show your appreciation, please give this repository a star.</h4>
