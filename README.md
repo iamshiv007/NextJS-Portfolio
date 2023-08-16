@@ -8,7 +8,7 @@
 2. Sections
 3. Tech Stacks
 4. Getting Started
-5. How to Edit This Portfolio (Make It Your'S)
+5. How to Edit This Portfolio (Make It Your's)
 6. How to Implement a Live Chat System Using [Tawk.to](https://www.tawk.to/)
 7. Required APIs for This Project (All Are Free APIs)
 8. .env.local - file
