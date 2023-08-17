@@ -56,7 +56,7 @@ Follow these steps to set up and run the project on your local machine.
 To get a local copy of this repository, run the following command in your terminal:
 
 ```sh
-git clone https://github.com/iamshiv007/Shiv-s-portfolio.git
+git clone https://github.com/iamshiv007/Next-Portfolio.git
 ```
 
 #### 2. Navigate to the Project
@@ -64,7 +64,7 @@ git clone https://github.com/iamshiv007/Shiv-s-portfolio.git
 Change your working directory to the project folder:
 
 ```sh
-cd shiv-s-portfolio
+cd next-portfolio
 ```
 
 #### 3. Install Dependencies
