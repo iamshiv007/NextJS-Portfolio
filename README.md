@@ -172,10 +172,12 @@ By following these steps, you'll have an efficient live chat system up and runni
 
 After obtaining the above mentioned API, create a `.env.local` file and put values and restart your project.
 
+```sh
 const RAPID_API_KEY = VALUE_XXXX
 const GOOGLE_NEWS_API_KEY = VALUE_XXXX
 const PEXELS_API_KEY = VALUE_XXXX
 const MONGODB_CONNECTION_STRING = VALUE_XXXX
+```
 
 
 ## 9. Contribute 🎁
