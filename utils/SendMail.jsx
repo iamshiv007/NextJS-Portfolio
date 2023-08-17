@@ -21,7 +21,7 @@ const SendMail = () => {
 
     setSending(true);
     axios
-      .post(`/api/message/new`, formData)
+      .post("/api/message/new", formData)
       .then((res) => {
         console.log(res.data);
         setSending(false);
@@ -45,47 +45,47 @@ const SendMail = () => {
           Drop A Message
         </h3>
 
-        <form onSubmit={sendMessage} action="">
+        <form action="" onSubmit={sendMessage}>
           <div className="flex flex-col gap-4 w-[90%] md:w-[35%] m-auto">
             <input
               className="dark:bg-black border dark:border-[#07d0e5] border-[#c72c6c] p-2 rounded"
               id="name"
-              placeholder="Your Good Name"
               name="name"
               onChange={collectData}
+              placeholder="Your Good Name"
               value={formData.name || ""}
             />
             <input
               className="dark:bg-black border dark:border-[#07d0e5] border-[#c72c6c] p-2 rounded"
               id="email"
-              placeholder="Your Email Address"
               name="email"
               onChange={collectData}
+              placeholder="Your Email Address"
               value={formData.email || ""}
             />
             <input
               className="dark:bg-black border dark:border-[#07d0e5] border-[#c72c6c] p-2 rounded"
               id="subject"
-              placeholder="Subject for mail"
               name="subject"
               onChange={collectData}
+              placeholder="Subject for mail"
               value={formData.subject || ""}
             />
 
             <textarea
               className="dark:bg-black border dark:border-[#07d0e5] border-[#c72c6c] p-2 rounded"
-              name="message"
               id="message"
-              rows="3"
-              placeholder="Write Your Message"
+              name="message"
               onChange={collectData}
+              placeholder="Write Your Message"
+              rows="3"
               value={formData.message || ""}
             />
 
             <button
               className="font-bold text-white dark:bg-[#0ab0c2] disabled:cursor-default p-2 rounded dark:hover:bg-[#078795] bg-[#f91071] hover:bg-[#c72c6c]"
-              type="submit"
               disabled={sending}
+              type="submit"
             >
               {sending ? "sending..." : "Send"}
             </button>
