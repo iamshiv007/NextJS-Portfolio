@@ -25,7 +25,7 @@ const Intro = () => {
             <div className="w-[300px]">
               <Image
                 alt="myimage"
-                className="w-full rounded-full"
+                className="w-full rounded-full bg-[#a262a3]"
                 height={300}
                 src="/images/cartoon 0.png"
                 width={300}
