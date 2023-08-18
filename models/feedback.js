@@ -1,6 +1,6 @@
 const { default: mongoose } = require("mongoose");
 
-const mailSchema = new mongoose.Schema({
+const feedbackSchema = new mongoose.Schema({
     name: {
         type: String,
         required: true
@@ -9,7 +9,7 @@ const mailSchema = new mongoose.Schema({
         type: String,
     },
     rating: {
-        type: number,
+        type: Number,
         required: true
     },
     good: {
@@ -25,4 +25,4 @@ const mailSchema = new mongoose.Schema({
 
 mongoose.models = {};
 
-export const Mail = mongoose.model("mail", mailSchema)
+export const Feedback = mongoose.model("feedback", feedbackSchema)
