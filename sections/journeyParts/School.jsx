@@ -10,7 +10,7 @@ export const School = () => {
         <div className="w-[50vh]">
           <p className="text-center">
             <span className="text-lg font-bold">{JourneyData[0].heading}</span>{" "}
-            <span>( Till 10nth Grad )</span>
+            <span>( Till 10th Grade )</span>
           </p>
           <div className="py-2 px-4">{JourneyData[0].summary}</div>
         </div>
