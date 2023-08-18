@@ -23,6 +23,11 @@
   background: #717171;
 }
 
+*{
+  scroll-behavior: smooth !important;
+  -webkit-scroll-behavior: smooth !important; /* other browsers */
+}
+
 p,
 div {
   text-align: justify;
