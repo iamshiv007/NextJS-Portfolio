@@ -19,7 +19,7 @@ const MobileNavbar = () => {
         </button>
       </div>
       <div
-        className={`dark:bg-[rgba(53,34,34,0.28)] z-20 md:hidden w-screen block bg-[rgba(255,255,255,0.28)] h-screen fixed top-0 left-0 ${
+        className={`z-20 md:hidden w-screen block bg-[#80808082] h-screen fixed top-0 left-0 ${
           menu ? "" : "hidden"
         }`}
         onClick={() => setMenu(!menu)}
@@ -34,7 +34,7 @@ const MobileNavbar = () => {
               <RiCloseLine color={dark ? "#07d0e5" : "#c72c6c"} size={30} />
             </button>
           </div>
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-3">
             {NavbarData.map((item) => (
               <div key={item.name}>
                 <Link

@@ -1,24 +1,28 @@
 const { default: mongoose } = require("mongoose");
 
-const messageSchema = new mongoose.Schema({
+const mailSchema = new mongoose.Schema({
     name: {
         type: String,
         required: true
     },
     email: {
         type: String,
+    },
+    rating: {
+        type: number,
         required: true
     },
-    mobileNo: {
-        type: Number,
-        required: true
-    },
-    message: {
+    good: {
         type: String,
-        required: true
+    },
+    bad: {
+        type: String,
+    },
+    suggetion: {
+        type: String,
     },
 })
 
 mongoose.models = {};
 
-export const Message = mongoose.model('Messages', messageSchema)
+export const Mail = mongoose.model("mail", mailSchema)

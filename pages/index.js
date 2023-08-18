@@ -15,6 +15,7 @@ const Apps = dynamic(() => import("@/sections/Apps"))
 const SendMail = dynamic(() => import("@/utils/SendMail"))
 const SocialMedia = dynamic(() => import("@/utils/SocialMedia"))
 const ChatSystem = dynamic(() => import("@/utils/ChatSystem"))
+const Feedback = dynamic(() => import("@/utils/Feedback"))
 
 const Home = () => {
   const { dark } = useContext(BlogContext);
@@ -76,6 +77,8 @@ const Home = () => {
           <Footer />
           {/* tawk.to Chat System */}
           <ChatSystem />
+          {/* Feedback Modal */}
+          <Feedback />
         </div>
       </div>
     </Fragment>
