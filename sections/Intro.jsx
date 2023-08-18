@@ -29,6 +29,7 @@ const Intro = () => {
                 height={300}
                 src="/images/cartoon 0.png"
                 width={300}
+                placeholder="blur"
               />
               <Resume />
             </div>
