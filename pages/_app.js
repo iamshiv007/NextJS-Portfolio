@@ -4,14 +4,14 @@ import "@/styles/cssGrid.css"
 import "@/styles/Home.module.css"
 import { Analytics } from "@vercel/analytics/react"
 
-import { BlogProvider } from "@/contextApi/blogContext"
+import { PortfolioProvider } from "@/contextApi/PortfolioContext"
 
 export default function App({ Component, pageProps }) {
 
   return (
-    <BlogProvider>
+    <PortfolioProvider>
       <Component {...pageProps} />
       <Analytics />
-    </BlogProvider>
+    </PortfolioProvider>
   )
 }

@@ -3,12 +3,12 @@ import Head from "next/head";
 import SyntaxHighlighter from "react-syntax-highlighter";
 import { github, dark } from "react-syntax-highlighter/dist/cjs/styles/hljs";
 
-import { BlogContext } from "@/contextApi/blogContext";
+import { PortfolioContext } from "@/contextApi/PortfolioContext";
 import Theme from "@/utils/Theme";
 import BackTo from "@/components/buttons/BackTo";
 
 const Closure = () => {
-  const { dark: myDark } = useContext(BlogContext);
+  const { dark: myDark } = useContext(PortfolioContext);
 
   return (
     <Fragment>

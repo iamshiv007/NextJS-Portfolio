@@ -4,10 +4,10 @@ import Image from "next/image";
 import { IoMdAppstore } from "react-icons/io";
 
 import { AppsData } from "@/constants";
-import { BlogContext } from "@/contextApi/blogContext";
+import { PortfolioContext } from "@/contextApi/PortfolioContext";
 
 const Apps = () => {
-  const { dark } = useContext(BlogContext);
+  const { dark } = useContext(PortfolioContext);
 
   return (
     <Fragment>

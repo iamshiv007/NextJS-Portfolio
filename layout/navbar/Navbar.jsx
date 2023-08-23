@@ -4,11 +4,11 @@ import { RiSunFill } from "react-icons/ri";
 import { BsFillMoonFill } from "react-icons/bs";
 import { DiTechcrunch } from "react-icons/di";
 
-import { BlogContext } from "@/contextApi/blogContext";
+import { PortfolioContext } from "@/contextApi/PortfolioContext";
 import { NavbarData } from "@/constants/NavbarData";
 
 const Navbar = () => {
-  const { dark, setDark } = useContext(BlogContext);
+  const { dark, setDark } = useContext(PortfolioContext);
 
   return (
     <Fragment>

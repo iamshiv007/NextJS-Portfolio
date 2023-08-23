@@ -5,10 +5,10 @@ import { github, dark } from "react-syntax-highlighter/dist/cjs/styles/hljs";
 
 import BackTo from "@/components/buttons/BackTo";
 import Theme from "@/utils/Theme";
-import { BlogContext } from "@/contextApi/blogContext";
+import { PortfolioContext } from "@/contextApi/PortfolioContext";
 
 const UseState = () => {
-  const { dark: myDark } = useContext(BlogContext);
+  const { dark: myDark } = useContext(PortfolioContext);
 
   return (
     <Fragment>

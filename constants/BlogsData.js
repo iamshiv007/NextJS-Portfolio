@@ -3,7 +3,7 @@ export const BlogsData = [
     name: "Why we should move in to Next js",
     imageUrl:
       "https://images.prismic.io/launchdarkly/6bfcaa10-40a3-42a5-9346-9e83d25cbeb4_What's%20So%20Great%20About%20Next.js.png?ixlib=gatsbyFP&auto=compress%2Cformat&fit=max&rect=0%2C0%2C4000%2C2252&w=2000&h=1126",
-    linkName: "why-next",
+    linkName: "others/why-next",
     date: "Aprile 17, 2023",
   },
   {
@@ -66,7 +66,7 @@ export const BlogsData = [
     name: "How to send a email with attachment in node js",
     imageUrl:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1IqjYMScfJK41xjyEnKWgYs2DgTON4QyWKkwQ3Qpmkw&usqp=CAU&ec=48600112",
-    linkName: "send-email",
+    linkName: "others/send-email",
     date: "June 8, 2023",
   },
 
@@ -95,14 +95,14 @@ export const BlogsData = [
     name: "Deployment on Github Pages",
     imageUrl:
       "https://soshace.com/wp-content/uploads/2019/05/the-ultimate-guide-to-github-pages-main.jpg",
-    linkName: "github-pages-deployment",
+    linkName: "others/github-pages-deployment",
     date: "June 18, 2023",
   },
   {
     name: "Readme file syntax",
     imageUrl:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfYZKGMNHktg0e4wVK9TNS22qijcqvYg0QmJYp-Hp7Wg&usqp=CAU&ec=48600112",
-    linkName: "readme",
+    linkName: "others/readme",
     date: "June 19, 2023",
   },
   {

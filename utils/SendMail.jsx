@@ -21,7 +21,7 @@ const SendMail = () => {
 
     setSending(true);
     axios
-      .post("/api/message/new", formData)
+      .post("/api/mail/new", formData)
       .then((res) => {
         console.log(res.data);
         setSending(false);

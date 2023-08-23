@@ -1,9 +1,9 @@
 import React, { useContext } from "react";
 
-import { BlogContext } from "@/contextApi/blogContext";
+import { PortfolioContext } from "@/contextApi/PortfolioContext";
 
 const Theme = ({ children }) => {
-  const { dark } = useContext(BlogContext);
+  const { dark } = useContext(PortfolioContext);
 
   return (
     <>

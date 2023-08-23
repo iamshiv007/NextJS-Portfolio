@@ -1,12 +1,12 @@
 import React, { Fragment, useContext, useState } from "react";
 import axios from "axios";
 
-import { BlogContext } from "@/contextApi/blogContext";
+import { PortfolioContext } from "@/contextApi/PortfolioContext";
 
 const Feedback = () => {
   const [formData, setFormData] = useState({});
   const [submit, setSubmit] = useState(false);
-  const { showModal, setShowModal } = useContext(BlogContext);
+  const { showModal, setShowModal } = useContext(PortfolioContext);
 
   const collectData = (e) => {
     const { name, value } = e.target;

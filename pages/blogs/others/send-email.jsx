@@ -5,11 +5,11 @@ import SyntaxHighlighter from "react-syntax-highlighter";
 import { dark, github } from "react-syntax-highlighter/dist/cjs/styles/hljs";
 
 import Theme from "@/utils/Theme";
-import { BlogContext } from "@/contextApi/blogContext";
+import { PortfolioContext } from "@/contextApi/PortfolioContext";
 import BackTo from "@/components/buttons/BackTo";
 
 const SendEmail = () => {
-  const { dark: myDark } = useContext(BlogContext);
+  const { dark: myDark } = useContext(PortfolioContext);
 
   return (
     <Fragment>

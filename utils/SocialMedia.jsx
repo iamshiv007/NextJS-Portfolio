@@ -2,11 +2,11 @@ import React, { Fragment, useContext } from "react";
 import Link from "next/link";
 import { MdFeedback } from "react-icons/md";
 
-import { BlogContext } from "@/contextApi/blogContext";
+import { PortfolioContext } from "@/contextApi/PortfolioContext";
 import { SocialMediaData } from "@/constants/SocialMediaData";
 
 const SocialMedia = () => {
-  const { setShowModal } = useContext(BlogContext);
+  const { setShowModal } = useContext(PortfolioContext);
 
   return (
     <Fragment>

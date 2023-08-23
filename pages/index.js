@@ -2,10 +2,10 @@ import { Fragment, useContext } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 
-import { BlogContext } from "@/contextApi/blogContext";
-const Navbar = dynamic(() => import("@/layout/Navbar"))
-const MobileNavbar = dynamic(() => import("@/layout/mobileNavbar"))
-const Footer = dynamic(() => import("@/layout/Footer"))
+import { PortfolioContext } from "@/contextApi/PortfolioContext";
+const Navbar = dynamic(() => import("@/layout/navbar/Navbar"))
+const MobileNavbar = dynamic(() => import("@/layout/navbar/mobileNavbar"))
+const Footer = dynamic(() => import("@/layout/footer/Footer"))
 const Intro = dynamic(() => import("@/sections/Intro"))
 const Skills = dynamic(() => import("@/sections/Skills"))
 const Projects = dynamic(() => import("@/sections/Projects"))
@@ -18,7 +18,7 @@ const ChatSystem = dynamic(() => import("@/utils/ChatSystem"))
 const Feedback = dynamic(() => import("@/utils/Feedback"))
 
 const Home = () => {
-  const { dark } = useContext(BlogContext);
+  const { dark } = useContext(PortfolioContext);
 
   return (
     <Fragment>
