@@ -3,6 +3,7 @@ import Head from "next/head";
 import dynamic from "next/dynamic";
 
 import { PortfolioContext } from "@/contextApi/PortfolioContext";
+import ShoveeModal from "@/utils/ShoveeModal";
 const Navbar = dynamic(() => import("@/layout/navbar/Navbar"))
 const MobileNavbar = dynamic(() => import("@/layout/navbar/mobileNavbar"))
 const Footer = dynamic(() => import("@/layout/footer/Footer"))
@@ -79,6 +80,8 @@ const Home = () => {
           <ChatSystem />
           {/* Feedback Modal */}
           <Feedback />
+          {/* ShoveeModal */}
+          <ShoveeModal />
         </div>
       </div>
     </Fragment>
