@@ -1,22 +1,29 @@
 export const ProjectsData = [
     {
-        name: "NextJs Portfolio",
-        url: "https://shivraj-dev.vercel.app",
-        imageUrl: "/images/welcome-screen.png"
+        projectName: "Shovee : Personal Portfolio Generator",
+        liveUrl: "https://shovee.com",
+        githubUrl: "https://github.com/iamshiv007/shovee",
+        projectImage: {
+            imageUrl: "http://res.cloudinary.com/dqfrtazgi/image/upload/v1696218285/yn3naeznjfgszsbbjr92.png"
+        },
+        techs: ["NextJS", "TailwindCSS", "Redux Toolkit", "Cloudinary", "Intersection Objerver"]
     },
     {
-        name: "YouTube clone",
-        url: "https://youtube-clone-shivraj.vercel.app",
-        imageUrl: "/images/youtube-clone.png"
+        projectName: "YouTube clone",
+        liveUrl: "https://youtube-clone-shivraj.vercel.app",
+        githubUrl: "https://github.com/iamshiv007/yotube-clone",
+        projectImage: {
+            imageUrl: "http://res.cloudinary.com/dqfrtazgi/image/upload/v1696218286/t1zjvlwogccwit9888w7.png"
+        },
+        techs: ["ReactJS", "ContextAPI", "ChakraUI", "YoutubeAPI", "ContextAPI"]
     },
     {
-        name: "Eccommerce Application",
-        url: "https://ecommerce-application-shivraj.vercel.app",
-        imageUrl: "/images/ecommerce.png"
-    },
-    {
-        name: "React Admin Dashboard",
-        url: "https://shiv-react-admin-dashboard.vercel.app",
-        imageUrl: "/images/admin-dashboard.png"
+        projectName: "Eccommerce Application",
+        liveUrl: "https://ecommerce-application-shivraj.vercel.app",
+        githubUrl: "https://github.com/iamshiv007/ecommerce-frontend",
+        projectImage: {
+            imageUrl: "http://res.cloudinary.com/dqfrtazgi/image/upload/v1696220173/lnnt6nmesjvvmo3nx9ep.png"
+        },
+        techs: ["ReactJS", "NodeJS", "Express", "MongoDB", "Redux Toolkit"]
     }
 ]
