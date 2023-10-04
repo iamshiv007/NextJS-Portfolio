@@ -23,7 +23,7 @@ const MobileNavbar = ({ showMenu, setShowMenu }) => {
           <div className='p-3 bg-gray-200 dark:bg-gray-800 flex justify-between items-center gap-3'>
             {/* Name Logo */}
             <div className='flex items-center gap-2'>
-              <div className='text-white w-8 h-8 bg-[#159e6e] dark:bg-[#17c1ff] rounded-full flex justify-center items-center'>
+              <div className='text-white w-8 h-8 bg-[#c72c6c] dark:bg-[#07d0e5] rounded-full flex justify-center items-center'>
                 S
               </div>
               <p className='text-gray-400 flex'>

@@ -55,11 +55,11 @@ const Navbar = () => {
           {/* Navbar Links */}
           {NavbarMenu.map((navbar) => (
             <Link
-              className={"text-[#159e6e] dark:text-[#17c1ff] font-semibold"}
+              className={"text-[#c72c6c] dark:text-[#07d0e5] font-semibold"}
               href={navbar.link}
               key={navbar.name}
             >
-              <div className='h-full pb-1 hover:pb-0 px-2 flex items-center hover:border-b-4  border-[#159e6e] dark:border-[#17c1ff] transition-all'>
+              <div className='h-full pb-1 hover:pb-0 px-2 flex items-center hover:border-b-4  border-[#c72c6c] dark:border-[#07d0e5] transition-all'>
                 {navbar.name}
               </div>
             </Link>
@@ -68,7 +68,7 @@ const Navbar = () => {
         {/* Toggle Theme button */}
         <div className='flex items-center gap-4'>
           <button
-            className='text-xl text-[#159e6e] dark:text-[#17c1ff] hover:scale-110'
+            className='text-xl text-[#c72c6c] dark:text-[#07d0e5] hover:scale-110'
             onClick={setThemeFun}
           >
             {theme === "dark" ? (

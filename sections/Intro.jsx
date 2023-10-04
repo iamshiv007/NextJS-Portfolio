@@ -47,7 +47,7 @@ const Intro = () => {
       </Head>
       <section id='home'>
         <div
-          className='min-h-[100vh] overflow-x-hidden px-[20px] md:px-[200px] lg:px-[200px] pt-[80px] md:pt-0 md:flex items-center justify-between shadow-zinc-300 dark:shadow-zinc-700 shadow-sm'
+          className='min-h-[100vh] dark:bg-[#141414] overflow-x-hidden px-[20px] md:px-[200px] lg:px-[200px] pt-[80px] md:pt-0 md:flex items-center justify-between shadow-zinc-300 dark:shadow-zinc-700 shadow-sm'
           ref={homeRef}
         >
           <div
@@ -60,9 +60,9 @@ const Intro = () => {
             {/* Profile Name */}
             <p className='text-2xl md:text-4xl py-2 font-semibold font-sans'>
               I&apos;m a full stack
-              <span className='text-[#159e6e] dark:text-[#17c1ff]'>
+              <span className='text-[#c72c6c] dark:text-[#07d0e5]'>
                 {" "}
-                web developer <span className='text-white'>|</span>
+                developer <span className='text-white'>|</span>
               </span>
             </p>
             <div className='mt-5 md:mt-10 flex gap-3'>

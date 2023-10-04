@@ -29,7 +29,7 @@ const NavbarMobile = ({ setShowMenu, setThemeFun, theme, showMenu, top }) => {
       {/* Toggle Theme Button */}
       <div className='flex items-center gap-4'>
         <button
-          className='text-[#159e6e] dark:text-[#17c1ff] text-2xl font-semibold hover:scale-110'
+          className='text-[#c72c6c] dark:text-[#07d0e5] text-2xl font-semibold hover:scale-110'
           onClick={setThemeFun}
         >
           {theme === "dark" ? <TbBulbFilled /> : <BsFillLightningChargeFill />}

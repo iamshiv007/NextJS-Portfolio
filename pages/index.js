@@ -3,6 +3,7 @@ import Head from "next/head";
 import dynamic from "next/dynamic";
 
 import ShoveeModal from "@/utils/ShoveeModal";
+import About from "@/sections/about";
 const Navbar = dynamic(() => import("@/layout/navbar/Navbar"))
 const Footer = dynamic(() => import("@/layout/footer/Footer"))
 const Intro = dynamic(() => import("@/sections/Intro"))
@@ -55,6 +56,8 @@ const Home = () => {
           <Navbar />
           {/* Welcome Page */}
           <Intro />
+          {/* About */}
+          <About />
           {/* SocialMedia */}
           <SocialMedia />
           {/* Skills  */}
