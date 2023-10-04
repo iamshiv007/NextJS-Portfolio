@@ -1,11 +1,9 @@
-import { Fragment, useContext } from "react";
+import { Fragment } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 
-import { PortfolioContext } from "@/contextApi/PortfolioContext";
 import ShoveeModal from "@/utils/ShoveeModal";
 const Navbar = dynamic(() => import("@/layout/navbar/Navbar"))
-const MobileNavbar = dynamic(() => import("@/layout/navbar/mobileNavbar"))
 const Footer = dynamic(() => import("@/layout/footer/Footer"))
 const Intro = dynamic(() => import("@/sections/Intro"))
 const Skills = dynamic(() => import("@/sections/Skills"))
@@ -19,7 +17,6 @@ const ChatSystem = dynamic(() => import("@/utils/ChatSystem"))
 const Feedback = dynamic(() => import("@/utils/Feedback"))
 
 const Home = () => {
-  const { dark } = useContext(PortfolioContext);
 
   return (
     <Fragment>
@@ -52,12 +49,10 @@ const Home = () => {
         <link href="https://shiv-s-portfolio.vercel.app/favicon.ico" rel="icon" type="image/x-icon" />
 
       </Head>
-      <div className={dark ? "dark" : ""}>
-        <div className="dark:bg-gray-700 ">
+      <div>
+        <div>
           {/* Desktop Navbar */}
           <Navbar />
-          {/* Mobile Navbar */}
-          <MobileNavbar />
           {/* Welcome Page */}
           <Intro />
           {/* SocialMedia */}
@@ -76,8 +71,10 @@ const Home = () => {
           <SendMail />
           {/* Footer */}
           <Footer />
-          {/* tawk.to Chat System */}
-          <ChatSystem />
+          <div className="z-40">
+            {/* tawk.to Chat System */}
+            <ChatSystem />
+          </div>
           {/* Feedback Modal */}
           <Feedback />
           {/* ShoveeModal */}

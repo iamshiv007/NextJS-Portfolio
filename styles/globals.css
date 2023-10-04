@@ -23,7 +23,7 @@
   background: #717171;
 }
 
-*{
+* {
   scroll-behavior: smooth !important;
   -webkit-scroll-behavior: smooth !important; /* other browsers */
 }
@@ -38,25 +38,8 @@ div {
 }
 
 @layer components {
-  /* Navbar.jsx */
-  .navbar {
-    @apply dark:bg-black h-[12vh] md:flex items-center sticky top-0 py-6 bg-white opacity-95 z-20 hidden;
-  }
-
-  .navLinks {
-    @apply dark:text-[#07d0e5] text-[#c72c6d] font-medium p-2 hover:border-b border-solid border-[#c72c6c] dark:border-[#07d0e5];
-  }
-
-  .navLinksMobile {
-    @apply text-lg px-5 flex items-center gap-4 py-2 hover:bg-[#baeef4] dark:hover:bg-[#0f0f0f] text-[#c72c6c] dark:text-[#07d0e5] font-medium;
-  }
-
   .blog-heading {
     @apply md:text-3xl text-xl font-bold text-center bg-[#07d0e5] dark:bg-[#c72c6c] rounded p-2;
-  }
-
-  .navbar a {
-    @apply hover:bg-white hover:text-black rounded-md px-4;
   }
 
   /* Blogs.jsx */
@@ -75,10 +58,6 @@ div {
   .layoutBox2 {
     @apply w-[20%] p-2 mt-2 hidden sm:block transition-all duration-1000;
   }
-  p,
-  div {
-    @apply dark:text-white text-black transition-all duration-1000;
-  }
 
   /* For tic-tac-toe */
   .ttt .one,
@@ -95,4 +74,10 @@ div {
   .ttt > div > div:nth-child(2) {
     @apply border-y-0;
   }
+}
+
+/* Home Animation and About Animation */
+.slide-in {
+  transform: translateX(0);
+  opacity: 1;
 }

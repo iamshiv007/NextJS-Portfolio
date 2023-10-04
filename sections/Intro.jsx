@@ -1,40 +1,99 @@
-import React, { Fragment } from "react";
-import Image from "next/image";
-
-import Resume from "@/utils/Resume";
+"use client";
+import React, { Fragment, useEffect, useRef, useState } from "react";
+import Head from "next/head";
+import Link from "next/link";
 
 const Intro = () => {
+  const [isHome, setIsHome] = useState(false);
+
+  const homeRef = useRef();
+  const introRef = useRef();
+  const profileRef = useRef();
+
+  // Intersection observer animation on scroll
+  useEffect(() => {
+    const getScreenWidth = () =>
+      window.innerWidth ||
+      document.documentElement.clientWidth ||
+      document.body.clientWidth;
+
+    // Scroll Animation
+    if (homeRef.current) {
+      const homeObserver = new IntersectionObserver(
+        ([homeEntry]) => {
+          setIsHome(homeEntry.isIntersecting);
+        },
+        {
+          rootMargin: `${getScreenWidth() <= 700 ? "-100px" : "-300px"}`,
+        }
+      );
+
+      homeObserver.observe(homeRef.current);
+
+      if (isHome) {
+        profileRef.current.classList.add("slide-in");
+        introRef.current.classList.add("slide-in");
+      } else {
+        profileRef.current.classList.remove("slide-in");
+        introRef.current.classList.remove("slide-in");
+      }
+    }
+  }, [homeRef, isHome]);
+
   return (
     <Fragment>
-      <div id="home">
-        <div className="min-h-[88vh] dark:bg-black bg-[#ccf2f6] md:grid grid-cols-2">
-          <div className="md:pt-[100px] md:pl-[120px] ml-[30px]">
-            <p className="md:text-6xl text-4xl font-bold">Hi</p>
-            <p className="md:text-6xl text-4xl font-bold mt-5">
-              I&apos;m{" "}
-              <span className="text-[#c72c6c] dark:text-[#07d0e5]">
-                Shivraj
+      <Head>
+        <title>Shiv&apos;s Portfolio</title>
+      </Head>
+      <section id='home'>
+        <div
+          className='min-h-[100vh] overflow-x-hidden px-[20px] md:px-[200px] lg:px-[200px] pt-[80px] md:pt-0 md:flex items-center justify-between shadow-zinc-300 dark:shadow-zinc-700 shadow-sm'
+          ref={homeRef}
+        >
+          <div
+            className='translate-x-[-500px] transition-all duration-700 opacity-0'
+            ref={introRef}
+          >
+            <p className='py-2 text-2xl md:text-4xl font-semibold font-sans'>
+              Hi There !
+            </p>
+            {/* Profile Name */}
+            <p className='text-2xl md:text-4xl py-2 font-semibold font-sans'>
+              I&apos;m a full stack
+              <span className='text-[#159e6e] dark:text-[#17c1ff]'>
+                {" "}
+                web developer <span className='text-white'>|</span>
               </span>
             </p>
-            <p className="md:text-6xl text-4xl font-bold mt-5">
-              a Web Developer
-            </p>
-          </div>
-
-          <div className="mt-14 flex justify-center">
-            <div className="w-[300px]">
-              <Image
-                alt="myimage"
-                className="w-full rounded-full bg-[#a262a3]"
-                height={300}
-                src="/images/cartoon 0.png"
-                width={300}
-              />
-              <Resume />
+            <div className='mt-5 md:mt-10 flex gap-3'>
+              {/* Hire Me Button */}
+              <Link
+                className='text-white text-xl font-semibold rounded bg-red-400 hover:bg-red-500 px-2 py-1'
+                href={"#getInTouch"}
+              >
+                Hire me
+              </Link>
+              {/* Download CV Button */}
+              <Link
+                className='text-xl font-semibold rounded border border-red-500 hover:text-white hover:bg-red-500 px-2 py-1'
+                href='https://drive.google.com/file/d/1uk-tv12y8PK-WrE4oX2xRtmSy4PUVSsE/view'
+                target='_blank'
+              >
+                Download CV
+              </Link>
             </div>
           </div>
+
+          {/* Image */}
+          <div
+            className={
+              "translate-x-[500px] transition-all opacity-0 duration-700 w-[180px] h-[300px] md:w-[240px] md:h-[400px] bg-cover m-auto md:m-0 mt-[40px] md:mt-0 bg-no-repeat"
+            }
+            ref={profileRef}
+            style={{ backgroundImage: "url(/images/male.png)" }}
+          />
         </div>
-      </div>
+      </section>
     </Fragment>
   );
 };

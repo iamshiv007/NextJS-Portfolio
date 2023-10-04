@@ -1,45 +1,96 @@
-import React, { Fragment, useContext } from "react";
+"use client";
+import React, { Fragment, useContext, useEffect, useState } from "react";
 import Link from "next/link";
-import { RiSunFill } from "react-icons/ri";
-import { BsFillMoonFill } from "react-icons/bs";
 import { DiTechcrunch } from "react-icons/di";
+import { BsFillLightningChargeFill } from "react-icons/bs";
+import { TbBulbFilled } from "react-icons/tb";
 
-import { PortfolioContext } from "@/contextApi/PortfolioContext";
-import { NavbarData } from "@/constants/NavbarData";
+import MobileNavbar from "./SidebarMobile";
+import { NavbarMenu } from "./NavbarItems";
+import NavbarMobile from "./NavbarMobile";
+
+import { ThemeContext } from "@/context/themeContext";
 
 const Navbar = () => {
-  const { dark, setDark } = useContext(PortfolioContext);
+  const [top, setTop] = useState("0");
+  const [showMenu, setShowMenu] = useState(false);
+
+  const { setThemeFun, theme } = useContext(ThemeContext);
+
+  // Logic for Navbar Hide and Show on scrolling behaviour
+  useEffect(() => {
+    let prevScrollPos = window.scrollY;
+
+    const handleScroll = () => {
+      const currentScrollPos = window.scrollY;
+
+      if (prevScrollPos > currentScrollPos) {
+        setTop("0"); // Show the navbar
+      } else {
+        setTop("-80px"); // Hide the navbar
+      }
+
+      prevScrollPos = currentScrollPos;
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      // Cleanup: Remove the event listener when the component unmounts
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <Fragment>
+      {/* Desktop Header */}
       <div
-        className={"hidden bg-[#ccf2f6] items-center justify-between py-4 px-8 h-[12vh] dark:bg-black md:flex sticky top-0 z-20"}
+        className='w-full h-[70px] px-8 bg-[rgba(255,255,255,0.8)] dark:bg-[rgba(0,0,0,0.8)] backdrop-filter backdrop-blur-lg hidden md:flex justify-between items-center gap-4 shadow-sm shadow-gray-300 dark:shadow-gray-800 fixed z-10 transition-all duration-500'
+        style={{ top: top }}
       >
-        <div className="flex dark:text-[gray] text-xl text-[gray] items-start">
-          <span className="font-extrabold font-mono">SHIV</span>
-          <span className="pl-1">
-            <DiTechcrunch />
-          </span>
-        </div>
-
-        <div className="hidden md:flex items-center gap-12">
-          {NavbarData.map((item) => (
-            <Link className="navLinks" href={item.link} key={item.name}>
-              {item.name}
+        {/* Name Logo */}
+        <p className='text-gray-400 flex'>
+          <span className='text-lg font-bold'>SHIV</span> <DiTechcrunch />
+        </p>
+        <div className='h-full flex gap-4'>
+          {/* Navbar Links */}
+          {NavbarMenu.map((navbar) => (
+            <Link
+              className={"text-[#159e6e] dark:text-[#17c1ff] font-semibold"}
+              href={navbar.link}
+              key={navbar.name}
+            >
+              <div className='h-full pb-1 hover:pb-0 px-2 flex items-center hover:border-b-4  border-[#159e6e] dark:border-[#17c1ff] transition-all'>
+                {navbar.name}
+              </div>
             </Link>
           ))}
         </div>
-
-        <div>
-          <button className="dark:text-white" onClick={() => setDark(!dark)}>
-            {dark ? (
-              <RiSunFill color="#c72c6c" size={22} />
+        {/* Toggle Theme button */}
+        <div className='flex items-center gap-4'>
+          <button
+            className='text-xl text-[#159e6e] dark:text-[#17c1ff] hover:scale-110'
+            onClick={setThemeFun}
+          >
+            {theme === "dark" ? (
+              <TbBulbFilled />
             ) : (
-              <BsFillMoonFill color="#07d0e5" size={22} />
+              <BsFillLightningChargeFill />
             )}
           </button>
         </div>
       </div>
+
+      {/* Mobile Header */}
+      <NavbarMobile
+        setShowMenu={setShowMenu}
+        setThemeFun={setThemeFun}
+        showMenu={showMenu}
+        theme={theme}
+        top={top}
+      />
+
+      {/* SideMenu For Mobile Screen */}
+      <MobileNavbar setShowMenu={setShowMenu} showMenu={showMenu} />
     </Fragment>
   );
 };
