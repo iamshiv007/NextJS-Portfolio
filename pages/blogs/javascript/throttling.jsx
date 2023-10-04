@@ -4,11 +4,11 @@ import SyntaxHighlighter from "react-syntax-highlighter";
 import { github, dark } from "react-syntax-highlighter/dist/cjs/styles/hljs";
 
 import Theme from "@/utils/Theme";
-import { PortfolioContext } from "@/contextApi/PortfolioContext";
 import BackTo from "@/components/buttons/BackTo";
+import { ThemeContext } from "@/context/themeContext";
 
 const Throttling = () => {
-  const { dark: myDark } = useContext(PortfolioContext);
+  const { theme } = useContext(ThemeContext);
 
   return (
     <Fragment>
@@ -19,20 +19,20 @@ const Throttling = () => {
       <Theme>
         <BackTo backTo={"blogs"} />
 
-        <div className="layoutContainer">
-          <div className="layoutBox1">
-            <h2 className="blog-heading">Throttling in JavaScript</h2>
+        <div className='layoutContainer'>
+          <div className='layoutBox1'>
+            <h2 className='blog-heading'>Throttling in JavaScript</h2>
 
-            <p className="text-lg font-bold mt-5">Defination</p>
+            <p className='text-lg font-bold mt-5'>Defination</p>
 
-            <p className="font-bold mt-3 mb-1">English wale</p>
+            <p className='font-bold mt-3 mb-1'>English wale</p>
             <p>
               Trottling is a technique in which, no matters how many times user
               fires the event, the attached function executed only once in a
               given time interval.
             </p>
 
-            <p className="font-bold mt-3 mb-1">Hindi Wale</p>
+            <p className='font-bold mt-3 mb-1'>Hindi Wale</p>
             <p>
               Dekho bhai user bar bar button click kar ke jyada payment na kar
               de 😂😂 .Esliye button click karte hi usko kuch time disable kr
@@ -40,10 +40,10 @@ const Throttling = () => {
               apni throttling hai.
             </p>
 
-            <Example1 myDark={myDark} />
+            <Example1 myDark={theme === "dark"} />
           </div>
 
-          <div className="layoutBox2">Hello</div>
+          <div className='layoutBox2'>Hello</div>
         </div>
       </Theme>
     </Fragment>
@@ -102,21 +102,21 @@ const Example1 = ({ myDark }) => {
 
   return (
     <>
-      <h3 className="text-lg font-bold mt-6 mb-4">Example 1</h3>
-      <p className="mb-2">
+      <h3 className='text-lg font-bold mt-6 mb-4'>Example 1</h3>
+      <p className='mb-2'>
         In This example when you clicked button it delays for 3 second before
         next call.
       </p>
       <button
-        className="bg-blue-600 text-white font-bold px-2 py-1 rounded mb-3"
+        className='bg-blue-600 text-white font-bold px-2 py-1 rounded mb-3'
         onClick={runFun}
         style={isTime ? { background: "red" } : {}}
       >
         Click
       </button>
-      <p className="p-2">{count}</p>
+      <p className='p-2'>{count}</p>
       <SyntaxHighlighter
-        language="javascript"
+        language='javascript'
         showLineNumbers={true}
         style={myDark ? dark : github}
       >

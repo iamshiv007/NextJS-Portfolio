@@ -4,11 +4,11 @@ import SyntaxHighlighter from "react-syntax-highlighter";
 import { dark, github } from "react-syntax-highlighter/dist/cjs/styles/hljs";
 
 import Theme from "@/utils/Theme";
-import { PortfolioContext } from "@/contextApi/PortfolioContext";
 import BackTo from "@/components/buttons/BackTo";
+import { ThemeContext } from "@/context/themeContext";
 
 const UseEffect = () => {
-  const { dark: myDark } = useContext(PortfolioContext);
+  const { theme } = useContext(ThemeContext);
 
   return (
     <Fragment>
@@ -19,35 +19,35 @@ const UseEffect = () => {
       <Theme>
         <BackTo backTo={"blogs"} />
 
-        <div className="layoutContainer">
-          <div className="layoutBox1">
-            <h1 className="blog-heading">useEffect in React</h1>
+        <div className='layoutContainer'>
+          <div className='layoutBox1'>
+            <h1 className='blog-heading'>useEffect in React</h1>
 
-            <ol className="list-decimal list-inside">
-              <li className="mt-5">
+            <ol className='list-decimal list-inside'>
+              <li className='mt-5'>
                 The useEffect hook allows you to perform side Effects in your
                 components.
               </li>
 
-              <li className="mt-2">
+              <li className='mt-2'>
                 Some Examples of side effect are : Fetching Data, directly
                 updating the form, and timers.
               </li>
 
-              <li className="mt-2">
+              <li className='mt-2'>
                 useEffect accepts two arguments, The second argument is optional
                 = useEffect(&lt;function&gt;, &lt;dependency&gt;)
               </li>
             </ol>
 
-            <Example1 myDark={myDark} />
-            <Example2 myDark={myDark} />
-            <Example3 myDark={myDark} />
+            <Example1 myDark={theme === "dark"} />
+            <Example2 myDark={theme === "dark"} />
+            <Example3 myDark={theme === "dark"} />
 
-            <div className="text-center m-5 text-2xl">❤️ Thank You 🙏</div>
+            <div className='text-center m-5 text-2xl'>❤️ Thank You 🙏</div>
           </div>
 
-          <div className="layoutBox2">Pranam</div>
+          <div className='layoutBox2'>Pranam</div>
         </div>
       </Theme>
     </Fragment>
@@ -63,10 +63,10 @@ const Example1 = ({ myDark }) => {
 
   return (
     <>
-      <h3 className="text-lg font-bold mt-6 mb-4">Example 1</h3>
-      <p className="mb-2">1. No dependency passed:</p>
+      <h3 className='text-lg font-bold mt-6 mb-4'>Example 1</h3>
+      <p className='mb-2'>1. No dependency passed:</p>
       <SyntaxHighlighter
-        language="javascript"
+        language='javascript'
         showLineNumbers={true}
         style={myDark ? dark : github}
       >
@@ -83,10 +83,10 @@ const Example2 = ({ myDark }) => {
 
   return (
     <>
-      <h3 className="text-lg font-bold mt-6 mb-4">Example 2</h3>
-      <p className="mb-2">2. An empty array:</p>
+      <h3 className='text-lg font-bold mt-6 mb-4'>Example 2</h3>
+      <p className='mb-2'>2. An empty array:</p>
       <SyntaxHighlighter
-        language="javascript"
+        language='javascript'
         showLineNumbers={true}
         style={myDark ? dark : github}
       >
@@ -104,10 +104,10 @@ const Example3 = ({ myDark }) => {
 
   return (
     <>
-      <h3 className="text-lg font-bold mt-6 mb-4">Example 3</h3>
-      <p className="mb-2">3. Props or state values:</p>
+      <h3 className='text-lg font-bold mt-6 mb-4'>Example 3</h3>
+      <p className='mb-2'>3. Props or state values:</p>
       <SyntaxHighlighter
-        language="javascript"
+        language='javascript'
         showLineNumbers={true}
         style={myDark ? dark : github}
       >

@@ -11,8 +11,10 @@ const ShoveeModal = () => {
       className='w-screen h-screen bg-[#74737357] flex justify-center items-center fixed top-0 left-0 z-30'
       style={showModal ? {} : { display: "none" }}
     >
-      <div className='p-5 bg-black rounded'>
-        <p>Create your personal portfolio website in 30 seconds with </p>
+      <div className='p-5 bg-white dark:bg-black rounded'>
+        <p className='text-black dark:text-white'>
+          Create your personal portfolio website in 30 seconds with{" "}
+        </p>
         <div className='mt-2 flex justify-center'>
           <Link
             className='lg:w-[20%] flex items-center gap-2'
@@ -32,13 +34,13 @@ const ShoveeModal = () => {
         </div>
         <div className='mt-5 flex justify-between'>
           <button
-            className='px-3 py-2 bg-gray-800 rounded'
+            className='text-white dark:text-black px-3 py-2 bg-gray-800 rounded'
             onClick={() => setShowModal(false)}
           >
             Ask Me Later
           </button>
           <Link
-            className='px-3 py-2 bg-blue-600 rounded'
+            className='text-white dark:text-black px-3 py-2 bg-blue-600 rounded'
             href='https://shovee.com'
             target='_blank'
           >

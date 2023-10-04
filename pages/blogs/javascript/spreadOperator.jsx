@@ -4,11 +4,11 @@ import SyntaxHighlighter from "react-syntax-highlighter";
 import { github, dark } from "react-syntax-highlighter/dist/cjs/styles/hljs";
 
 import Theme from "@/utils/Theme";
-import { PortfolioContext } from "@/contextApi/PortfolioContext";
 import BackTo from "@/components/buttons/BackTo";
+import { ThemeContext } from "@/context/themeContext";
 
 const SpreadOperator = () => {
-  const { dark: myDark } = useContext(PortfolioContext);
+  const { theme } = useContext(ThemeContext);
 
   return (
     <Fragment>
@@ -19,13 +19,13 @@ const SpreadOperator = () => {
       <Theme>
         <BackTo backTo={"blogs"} />
 
-        <div className="layoutContainer">
-          <div className="layoutBox1">
-            <h2 className="blog-heading">
+        <div className='layoutContainer'>
+          <div className='layoutBox1'>
+            <h2 className='blog-heading'>
               Rest And Spread Operator in JavaScript
             </h2>
 
-            <p className="text-lg font-bold mt-5">What is Spread Operator?</p>
+            <p className='text-lg font-bold mt-5'>What is Spread Operator?</p>
 
             <p>
               The spread operator, denoted by three dots(&quot;...&quot;), is a
@@ -35,14 +35,14 @@ const SpreadOperator = () => {
               object.
             </p>
 
-            <Example1 myDark={myDark} />
-            <Example2 myDark={myDark} />
-            <Example3 myDark={myDark} />
-            <Example4 myDark={myDark} />
-            <Example5 myDark={myDark} />
-            <Example6 myDark={myDark} />
+            <Example1 myDark={theme === "dark"} />
+            <Example2 myDark={theme === "dark"} />
+            <Example3 myDark={theme === "dark"} />
+            <Example4 myDark={theme === "dark"} />
+            <Example5 myDark={theme === "dark"} />
+            <Example6 myDark={theme === "dark"} />
 
-            <p className="text-lg font-bold mt-8">What is Rest Operator?</p>
+            <p className='text-lg font-bold mt-8'>What is Rest Operator?</p>
 
             <p>
               The rest operator also denoted by three dot(&quot;...&quot;), is
@@ -50,12 +50,12 @@ const SpreadOperator = () => {
               opposite way to the spread operator. It Allows us to gather or
               collect multiple elements into an array.
             </p>
-            <Example7 myDark={myDark} />
-            <Example8 myDark={myDark} />
-            <Example9 myDark={myDark} />
+            <Example7 myDark={theme === "dark"} />
+            <Example8 myDark={theme === "dark"} />
+            <Example9 myDark={theme === "dark"} />
           </div>
 
-          <div className="layoutBox2">Namaskaram</div>
+          <div className='layoutBox2'>Namaskaram</div>
         </div>
       </Theme>
     </Fragment>
@@ -89,10 +89,10 @@ const Example1 = ({ myDark }) => {
 
   return (
     <>
-      <h3 className="text-lg font-bold mt-6 mb-4">Example 1</h3>
+      <h3 className='text-lg font-bold mt-6 mb-4'>Example 1</h3>
 
       <SyntaxHighlighter
-        language="javascript"
+        language='javascript'
         showLineNumbers={true}
         style={myDark ? dark : github}
       >
@@ -126,10 +126,10 @@ const Example2 = ({ myDark }) => {
 
   return (
     <>
-      <h3 className="text-lg font-bold mt-6 mb-4">Example 2</h3>
+      <h3 className='text-lg font-bold mt-6 mb-4'>Example 2</h3>
 
       <SyntaxHighlighter
-        language="javascript"
+        language='javascript'
         showLineNumbers={true}
         style={myDark ? dark : github}
       >
@@ -163,10 +163,10 @@ const Example3 = ({ myDark }) => {
 
   return (
     <>
-      <h3 className="text-lg font-bold mt-6 mb-4">Example 3</h3>
+      <h3 className='text-lg font-bold mt-6 mb-4'>Example 3</h3>
 
       <SyntaxHighlighter
-        language="javascript"
+        language='javascript'
         showLineNumbers={true}
         style={myDark ? dark : github}
       >
@@ -199,10 +199,10 @@ const Example4 = ({ myDark }) => {
 
   return (
     <>
-      <h3 className="text-lg font-bold mt-6 mb-4">Example 4</h3>
+      <h3 className='text-lg font-bold mt-6 mb-4'>Example 4</h3>
 
       <SyntaxHighlighter
-        language="javascript"
+        language='javascript'
         showLineNumbers={true}
         style={myDark ? dark : github}
       >
@@ -242,10 +242,10 @@ const Example5 = ({ myDark }) => {
 
   return (
     <>
-      <h3 className="text-lg font-bold mt-6 mb-4">Example 5</h3>
+      <h3 className='text-lg font-bold mt-6 mb-4'>Example 5</h3>
 
       <SyntaxHighlighter
-        language="javascript"
+        language='javascript'
         showLineNumbers={true}
         style={myDark ? dark : github}
       >
@@ -273,10 +273,10 @@ const Example6 = ({ myDark }) => {
 
   return (
     <>
-      <h3 className="text-lg font-bold mt-6 mb-4">Example 6</h3>
+      <h3 className='text-lg font-bold mt-6 mb-4'>Example 6</h3>
 
       <SyntaxHighlighter
-        language="javascript"
+        language='javascript'
         showLineNumbers={true}
         style={myDark ? dark : github}
       >
@@ -322,10 +322,10 @@ const Example7 = ({ myDark }) => {
 
   return (
     <>
-      <h3 className="text-lg font-bold mt-6 mb-4">Example 1</h3>
+      <h3 className='text-lg font-bold mt-6 mb-4'>Example 1</h3>
 
       <SyntaxHighlighter
-        language="javascript"
+        language='javascript'
         showLineNumbers={true}
         style={myDark ? dark : github}
       >
@@ -371,10 +371,10 @@ const Example8 = ({ myDark }) => {
 
   return (
     <>
-      <h3 className="text-lg font-bold mt-6 mb-4">Example 2</h3>
+      <h3 className='text-lg font-bold mt-6 mb-4'>Example 2</h3>
 
       <SyntaxHighlighter
-        language="javascript"
+        language='javascript'
         showLineNumbers={true}
         style={myDark ? dark : github}
       >
@@ -414,10 +414,10 @@ const Example9 = ({ myDark }) => {
 
   return (
     <>
-      <h3 className="text-lg font-bold mt-6 mb-4">Example 3</h3>
+      <h3 className='text-lg font-bold mt-6 mb-4'>Example 3</h3>
 
       <SyntaxHighlighter
-        language="javascript"
+        language='javascript'
         showLineNumbers={true}
         style={myDark ? dark : github}
       >

@@ -4,11 +4,11 @@ import SyntaxHighlighter from "react-syntax-highlighter";
 import { github, dark } from "react-syntax-highlighter/dist/cjs/styles/hljs";
 
 import Theme from "@/utils/Theme";
-import { PortfolioContext } from "@/contextApi/PortfolioContext";
 import BackTo from "@/components/buttons/BackTo";
+import { ThemeContext } from "@/context/themeContext";
 
 const MyFragment = () => {
-  const { dark: myDark } = useContext(PortfolioContext);
+  const { theme } = useContext(ThemeContext);
 
   return (
     <Fragment>
@@ -19,11 +19,11 @@ const MyFragment = () => {
       <Theme>
         <BackTo backTo={"blogs"} />
 
-        <div className="layoutContainer">
-          <div className="layoutBox1">
-            <h1 className="blog-heading">Fragment in React</h1>
+        <div className='layoutContainer'>
+          <div className='layoutBox1'>
+            <h1 className='blog-heading'>Fragment in React</h1>
 
-            <p className="mt-5">
+            <p className='mt-5'>
               In React Whenever you want to render something on the screen, you
               need to use a <strong>render</strong> method inside the component.
               This render method can return single elements or multiple
@@ -36,19 +36,19 @@ const MyFragment = () => {
               many developers.
             </p>
 
-            <Example1 myDark={myDark} />
+            <Example1 myDark={theme === "dark"} />
 
-            <p className="mt-5">
+            <p className='mt-5'>
               To solve this problem, React introduced Fragment from{" "}
               <strong> 16.2 and above version</strong>. Fragments allows you to
               group a list of children without adding extra node to DOM.{" "}
             </p>
 
-            <Example2 myDark={myDark} />
-            <Example3 myDark={myDark} />
+            <Example2 myDark={theme === "dark"} />
+            <Example3 myDark={theme === "dark"} />
 
             <div>
-              <p className="text-lg mt-5 font-bold">
+              <p className='text-lg mt-5 font-bold'>
                 Why we use React Fragment?
               </p>
               <p>
@@ -59,7 +59,7 @@ const MyFragment = () => {
             </div>
 
             <div>
-              <p className="text-lg mt-5 font-bold">Fragments Short Syntax</p>
+              <p className='text-lg mt-5 font-bold'>Fragments Short Syntax</p>
               <p>
                 There is also a shorthand exist for declaring fragments for the
                 above method. It looks like <strong>empty</strong> tag in which
@@ -69,11 +69,11 @@ const MyFragment = () => {
                 instead of the <strong>&quot;React.Fragment&quot;</strong>
               </p>
 
-              <Example4 myDark={myDark} />
+              <Example4 myDark={theme === "dark"} />
             </div>
 
             <div>
-              <p className="text-lg mt-5 font-bold">Keyed Fragments</p>
+              <p className='text-lg mt-5 font-bold'>Keyed Fragments</p>
               <p>
                 This shorthand syntax does not accept key attributes. You need a
                 key for mapping a collection to an array of fragments such as to
@@ -84,43 +84,43 @@ const MyFragment = () => {
                 {String.fromCharCode(62)} syntax.
               </p>
 
-              <Example5 myDark={myDark} />
+              <Example5 myDark={theme === "dark"} />
             </div>
 
-            <p className="text-center my-3">
+            <p className='text-center my-3'>
               🙏 Thank You, You are the most lucky 1 precenty
             </p>
           </div>
 
-          <div className="layoutBox2">
+          <div className='layoutBox2'>
             <div>
-              <p className="text-center">😂</p>
+              <p className='text-center'>😂</p>
               <p>
                 Did you know that the virtual DOM of React is like a secret
                 agent?
               </p>
 
-              <p className="mt-3">
+              <p className='mt-3'>
                 It&apos;s always undercover, spying on the real DOM and making
                 changes behind the scenes!
               </p>
 
-              <p className="mt-3">
+              <p className='mt-3'>
                 Virtual DOM: &quot;I see you, real DOM, but you can&apos;t see
                 me!&quot;
               </p>
 
-              <p className="mt-3">
+              <p className='mt-3'>
                 Real DOM: &quot;What&apos;s that rustling noise? Is someone
                 messing with my elements?&quot;
               </p>
 
-              <p className="mt-3">
+              <p className='mt-3'>
                 Virtual DOM: wearing sunglasses &quot;Just doing my job, keeping
                 things snappy and efficient!&quot;
               </p>
 
-              <p className="mt-3">
+              <p className='mt-3'>
                 Real DOM: &quot;Well, as long as yo&apos;ure not causing any
                 trouble... Carry on, Agent VDOM!&quot;
               </p>
@@ -150,9 +150,9 @@ const Example1 = ({ myDark }) => {
 
   return (
     <>
-      <p className="my-2">Example</p>
+      <p className='my-2'>Example</p>
       <SyntaxHighlighter
-        language="javascript"
+        language='javascript'
         showLineNumbers={true}
         style={myDark ? dark : github}
       >
@@ -171,9 +171,9 @@ const Example2 = ({ myDark }) => {
 
   return (
     <>
-      <p className="my-2">Syntax</p>
+      <p className='my-2'>Syntax</p>
       <SyntaxHighlighter
-        language="javascript"
+        language='javascript'
         showLineNumbers={true}
         style={myDark ? dark : github}
       >
@@ -198,9 +198,9 @@ const Example3 = ({ myDark }) => {
 
   return (
     <>
-      <p className="my-2">Example</p>
+      <p className='my-2'>Example</p>
       <SyntaxHighlighter
-        language="javascript"
+        language='javascript'
         showLineNumbers={true}
         style={myDark ? dark : github}
       >
@@ -225,9 +225,9 @@ const Example4 = ({ myDark }) => {
 
   return (
     <>
-      <p className="my-2">Example</p>
+      <p className='my-2'>Example</p>
       <SyntaxHighlighter
-        language="javascript"
+        language='javascript'
         showLineNumbers={true}
         style={myDark ? dark : github}
       >
@@ -255,9 +255,9 @@ const Example5 = ({ myDark }) => {
 
   return (
     <>
-      <p className="my-2">Example</p>
+      <p className='my-2'>Example</p>
       <SyntaxHighlighter
-        language="javascript"
+        language='javascript'
         showLineNumbers={true}
         style={myDark ? dark : github}
       >

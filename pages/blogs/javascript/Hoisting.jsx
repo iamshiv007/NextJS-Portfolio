@@ -4,11 +4,11 @@ import SyntaxHighlighter from "react-syntax-highlighter";
 import { github, dark } from "react-syntax-highlighter/dist/cjs/styles/hljs";
 
 import Theme from "@/utils/Theme";
-import { PortfolioContext } from "@/contextApi/PortfolioContext";
 import BackTo from "@/components/buttons/BackTo";
+import { ThemeContext } from "@/context/themeContext";
 
 const HoistingComponent = () => {
-  const { dark: myDark } = useContext(PortfolioContext);
+  const { theme } = useContext(ThemeContext);
 
   return (
     <Fragment>
@@ -19,16 +19,16 @@ const HoistingComponent = () => {
       <Theme>
         <BackTo backTo={"blogs"} />
 
-        <div className="layoutContainer">
-          <div className="layoutBox1">
-            <h2 className="blog-heading">Hoisting</h2>
+        <div className='layoutContainer'>
+          <div className='layoutBox1'>
+            <h2 className='blog-heading'>Hoisting</h2>
 
-            <Example1 myDark={myDark} />
-            <Example2 myDark={myDark} />
-            <Example3 myDark={myDark} />
+            <Example1 myDark={theme === "dark"} />
+            <Example2 myDark={theme === "dark"} />
+            <Example3 myDark={theme === "dark"} />
           </div>
 
-          <div className="layoutBox2">Lorem</div>
+          <div className='layoutBox2'>Lorem</div>
         </div>
       </Theme>
     </Fragment>
@@ -45,17 +45,17 @@ const Example1 = ({ myDark }) => {
   }`;
   return (
     <>
-      <h3 className="text-lg font-bold my-4">
+      <h3 className='text-lg font-bold my-4'>
         Example 1 : Function Declaration Hoisting
       </h3>
       <SyntaxHighlighter
-        language="javascript"
+        language='javascript'
         showLineNumbers={true}
         style={myDark ? dark : github}
       >
         {codeString}
       </SyntaxHighlighter>
-      <div className="mt-2">
+      <div className='mt-2'>
         In this example, we call the <strong> sayHello() </strong>
         function before it is actually defined. However JavaScript hoists
         function declaration to the top of their scope, so the function can be
@@ -71,17 +71,17 @@ const Example2 = ({ myDark }) => {
   var x = 5;`;
   return (
     <>
-      <h3 className="text-lg font-bold my-4">
+      <h3 className='text-lg font-bold my-4'>
         Example 2 : Variable Declaration Hoisting
       </h3>
       <SyntaxHighlighter
-        language="javascript"
+        language='javascript'
         showLineNumbers={true}
         style={myDark ? dark : github}
       >
         {codeString}
       </SyntaxHighlighter>
-      <div className="mt-2">
+      <div className='mt-2'>
         In this example, we try to access the value of the variable{" "}
         <strong>&quot;x&quot;</strong> before it is declared. However javaScript
         hoists variable declaration to the top of their scope, so the variable
@@ -104,17 +104,17 @@ const Example3 = ({ myDark }) => {
 
   return (
     <>
-      <h3 className="text-lg font-bold my-4">
+      <h3 className='text-lg font-bold my-4'>
         Example 3 : Hoisting within a Function
       </h3>
       <SyntaxHighlighter
-        language="javascript"
+        language='javascript'
         showLineNumbers={true}
         style={myDark ? dark : github}
       >
         {codeString}
       </SyntaxHighlighter>
-      <div className="mt-2">
+      <div className='mt-2'>
         In this example, we define a function <strong>&quot;foo&quot;</strong>{" "}
         that contain variable declaration and assignment. When we call the
         function JavaScript hoist the variable declarations{" "}

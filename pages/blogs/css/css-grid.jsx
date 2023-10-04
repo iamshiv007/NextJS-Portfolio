@@ -4,11 +4,11 @@ import SyntaxHighlighter from "react-syntax-highlighter";
 import { github, dark } from "react-syntax-highlighter/dist/cjs/styles/hljs";
 
 import Theme from "@/utils/Theme";
-import { PortfolioContext } from "@/contextApi/PortfolioContext";
 import BackTo from "@/components/buttons/BackTo";
+import { ThemeContext } from "@/context/themeContext";
 
 const CssGrid = () => {
-  const { dark: myDark } = useContext(PortfolioContext);
+  const { theme } = useContext(ThemeContext);
 
   return (
     <Fragment>
@@ -18,11 +18,11 @@ const CssGrid = () => {
       <Theme>
         <BackTo backTo={"blogs"} />
 
-        <div className="min-h-[92vh] gap-x-7 dark:bg-gray-900 sm:dark:bg-gray-700 transition-all duration-1000 p-4 md:p-8">
-          <h1 className="blog-heading">Css-Grid</h1>
-          <ExampleOne myDark={myDark} />
-          <ExampleTwo myDark={myDark} />
-          <ExampleThree myDark={myDark} />
+        <div className='min-h-[92vh] gap-x-7 dark:bg-gray-900 sm:dark:bg-gray-700 transition-all duration-1000 p-4 md:p-8'>
+          <h1 className='blog-heading'>Css-Grid</h1>
+          <ExampleOne myDark={theme === "dark"} />
+          <ExampleTwo myDark={theme === "dark"} />
+          <ExampleThree myDark={theme === "dark"} />
         </div>
       </Theme>
     </Fragment>
@@ -37,17 +37,17 @@ const ExampleOne = ({ myDark }) => {
 
   return (
     <>
-      <p className="text-2xl pb-2 mt-4">Example 1</p>
+      <p className='text-2xl pb-2 mt-4'>Example 1</p>
 
-      <SyntaxHighlighter language="css" style={myDark ? dark : github}>
+      <SyntaxHighlighter language='css' style={myDark ? dark : github}>
         {codeString1}
       </SyntaxHighlighter>
-      <p className="text-center">OR</p>
-      <SyntaxHighlighter language="css" style={myDark ? dark : github}>
+      <p className='text-center'>OR</p>
+      <SyntaxHighlighter language='css' style={myDark ? dark : github}>
         {codeString2}
       </SyntaxHighlighter>
 
-      <div className="grid1 mt-5">
+      <div className='grid1 mt-5'>
         <div />
         <div />
         <div />
@@ -66,13 +66,13 @@ const ExampleTwo = ({ myDark }) => {
 
   return (
     <>
-      <p className="text-2xl pb-2 mt-8">Example 2</p>
+      <p className='text-2xl pb-2 mt-8'>Example 2</p>
 
-      <SyntaxHighlighter language="css" style={myDark ? dark : github}>
+      <SyntaxHighlighter language='css' style={myDark ? dark : github}>
         {codeString1}
       </SyntaxHighlighter>
 
-      <div className="grid2 mt-5">
+      <div className='grid2 mt-5'>
         <div />
         <div />
         <div />
@@ -107,35 +107,35 @@ grid-row: 2/4;`;
 
   return (
     <>
-      <p className="text-2xl pb-2 mt-8">Example 3</p>
+      <p className='text-2xl pb-2 mt-8'>Example 3</p>
 
-      <SyntaxHighlighter language="css" style={myDark ? dark : github}>
+      <SyntaxHighlighter language='css' style={myDark ? dark : github}>
         {codeString1}
       </SyntaxHighlighter>
 
-      <div className="grid3 mt-5">
+      <div className='grid3 mt-5'>
         <div>
           {" "}
-          <SyntaxHighlighter language="css" style={myDark ? dark : github}>
+          <SyntaxHighlighter language='css' style={myDark ? dark : github}>
             {codeString2}
           </SyntaxHighlighter>
-          <p className="text-center">OR</p>
-          <SyntaxHighlighter language="css" style={myDark ? dark : github}>
+          <p className='text-center'>OR</p>
+          <SyntaxHighlighter language='css' style={myDark ? dark : github}>
             {codeString3}
           </SyntaxHighlighter>
         </div>
         <div>
-          <SyntaxHighlighter language="css" style={myDark ? dark : github}>
+          <SyntaxHighlighter language='css' style={myDark ? dark : github}>
             {codeString4}
           </SyntaxHighlighter>
         </div>
         <div>
-          <SyntaxHighlighter language="css" style={myDark ? dark : github}>
+          <SyntaxHighlighter language='css' style={myDark ? dark : github}>
             {codeString5}
           </SyntaxHighlighter>
         </div>
         <div>
-          <SyntaxHighlighter language="css" style={myDark ? dark : github}>
+          <SyntaxHighlighter language='css' style={myDark ? dark : github}>
             {codeString6}
           </SyntaxHighlighter>
         </div>

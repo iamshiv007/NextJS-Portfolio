@@ -1,13 +1,13 @@
 import React, { useContext } from "react";
 
-import { PortfolioContext } from "@/contextApi/PortfolioContext";
+import { ThemeContext } from "@/context/themeContext";
 
 const Theme = ({ children }) => {
-  const { dark } = useContext(PortfolioContext);
+  const { theme } = useContext(ThemeContext);
 
   return (
     <>
-      <div className={dark ? "dark" : ""}>{children}</div>
+      <div className={theme === "dark" ? "dark" : ""}>{children}</div>
     </>
   );
 };

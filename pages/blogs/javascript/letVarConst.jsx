@@ -4,11 +4,11 @@ import SyntaxHighlighter from "react-syntax-highlighter";
 import { github, dark } from "react-syntax-highlighter/dist/cjs/styles/hljs";
 
 import Theme from "@/utils/Theme";
-import { PortfolioContext } from "@/contextApi/PortfolioContext";
 import BackTo from "@/components/buttons/BackTo";
+import { ThemeContext } from "@/context/themeContext";
 
 const LetVarConst = () => {
-  const { dark: myDark } = useContext(PortfolioContext);
+  const { theme } = useContext(ThemeContext);
 
   return (
     <Fragment>
@@ -19,23 +19,23 @@ const LetVarConst = () => {
       <Theme>
         <BackTo backTo={"blogs"} />
 
-        <div className="layoutContainer">
-          <div className="layoutBox1">
-            <p className="font-bold text-center mb-3">🙏Namaskaram🙏</p>
-            <h2 className="blog-heading">Let Var and Const</h2>
+        <div className='layoutContainer'>
+          <div className='layoutBox1'>
+            <p className='font-bold text-center mb-3'>🙏Namaskaram🙏</p>
+            <h2 className='blog-heading'>Let Var and Const</h2>
 
-            <p className="mt-2">
+            <p className='mt-2'>
               In javascript &quot;let&quot;, &quot;var&quot;, and
               &quot;const&quot; are used to declare variables, but they have
               some differences in terms of their scope and behavior.
             </p>
 
-            <Var myDark={myDark} />
-            <Let myDark={myDark} />
-            <Const myDark={myDark} />
+            <Var myDark={theme === "dark"} />
+            <Let myDark={theme === "dark"} />
+            <Const myDark={theme === "dark"} />
           </div>
 
-          <div className="layoutBox2">Hii</div>
+          <div className='layoutBox2'>Hii</div>
         </div>
       </Theme>
     </Fragment>
@@ -47,8 +47,8 @@ export default LetVarConst;
 const Var = ({ myDark }) => {
   return (
     <>
-      <h3 className="text-xl font-bold mt-6">Var</h3>
-      <ul className="list-inside list-disc">
+      <h3 className='text-xl font-bold mt-6'>Var</h3>
+      <ul className='list-inside list-disc'>
         <li>
           Variables declared with &quot;var&quot; are function-scoped. This
           means that they are accessible within the entire function in which
@@ -108,9 +108,9 @@ const Example1 = ({ myDark }) => {
   console.log(x); // Output: 20
   return (
     <>
-      <h3 className="text-lg font-bold my-4">Example 1</h3>
+      <h3 className='text-lg font-bold my-4'>Example 1</h3>
       <SyntaxHighlighter
-        language="javascript"
+        language='javascript'
         showLineNumbers={true}
         style={myDark ? dark : github}
       >
@@ -123,8 +123,8 @@ const Example1 = ({ myDark }) => {
 const Let = ({ myDark }) => {
   return (
     <>
-      <h3 className="text-xl font-bold mt-6">Let</h3>
-      <ul className="list-inside list-disc">
+      <h3 className='text-xl font-bold mt-6'>Let</h3>
+      <ul className='list-inside list-disc'>
         <li>
           Variables declared with &quot;let&quot; are block-scoped. This means
           that they are accessible only within the block in which they are
@@ -169,9 +169,9 @@ const Example2 = ({ myDark }) => {
   console.log(x); // Output: 10
   return (
     <div>
-      <h3 className="text-lg font-bold my-4">Example 2</h3>
+      <h3 className='text-lg font-bold my-4'>Example 2</h3>
       <SyntaxHighlighter
-        language="javascript"
+        language='javascript'
         showLineNumbers={true}
         style={myDark ? dark : github}
       >
@@ -184,8 +184,8 @@ const Example2 = ({ myDark }) => {
 const Const = ({ myDark }) => {
   return (
     <>
-      <h3 className="text-xl font-bold mt-6">const</h3>
-      <ul className="list-inside list-disc">
+      <h3 className='text-xl font-bold mt-6'>const</h3>
+      <ul className='list-inside list-disc'>
         <li>
           Variables declared with &quot;const&quot; are also block-scoped.
         </li>
@@ -232,9 +232,9 @@ const Example3 = ({ myDark }) => {
 
   return (
     <div>
-      <h3 className="text-lg font-bold my-4">Example 3</h3>
+      <h3 className='text-lg font-bold my-4'>Example 3</h3>
       <SyntaxHighlighter
-        language="javascript"
+        language='javascript'
         showLineNumbers={true}
         style={myDark ? dark : github}
       >
