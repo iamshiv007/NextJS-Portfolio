@@ -45,7 +45,7 @@ const About = () => {
   return (
     <Fragment>
       <section
-        className='dark:bg-[#141414] shadow-zinc-300 dark:shadow-zinc-700 shadow-sm overflow-x-hidden'
+        className=' shadow-zinc-300 dark:shadow-zinc-700 shadow-sm overflow-x-hidden'
         id='about'
         ref={aboutRef}
       >

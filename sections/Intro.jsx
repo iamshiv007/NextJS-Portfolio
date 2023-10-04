@@ -47,7 +47,7 @@ const Intro = () => {
       </Head>
       <section id='home'>
         <div
-          className='min-h-[100vh] dark:bg-[#141414] overflow-x-hidden px-[20px] md:px-[200px] lg:px-[200px] pt-[80px] md:pt-0 md:flex items-center justify-between shadow-zinc-300 dark:shadow-zinc-700 shadow-sm'
+          className='min-h-[100vh] overflow-x-hidden px-[20px] md:px-[200px] lg:px-[200px] pt-[80px] md:pt-0 md:flex items-center justify-between shadow-zinc-300 dark:shadow-zinc-700 shadow-sm'
           ref={homeRef}
         >
           <div

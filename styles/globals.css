@@ -60,3 +60,32 @@ div {
   transform: translateX(0);
   opacity: 1;
 }
+/* TechStack, Experience, Education, Projects animation */
+.pop-down {
+  opacity: 0;
+  scale: 0;
+}
+
+.pop-up {
+  opacity: 1;
+  scale: 1;
+}
+
+.pop-down-child > div {
+  opacity: 0;
+  scale: 0;
+}
+
+.pop-up-child > div {
+  opacity: 1;
+  scale: 1;
+}
+
+/* SocialMedia animation */
+.social-hide > div {
+  transform: scale(0);
+}
+
+.social-show > div {
+  transform: scale(0.9);
+}
