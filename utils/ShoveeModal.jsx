@@ -1,10 +1,16 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
 const ShoveeModal = () => {
-  const [showModal, setShowModal] = useState(true);
+  const [showModal, setShowModal] = useState(false);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setShowModal(true);
+    }, 25000);
+  }, []);
 
   return (
     <div
@@ -13,7 +19,7 @@ const ShoveeModal = () => {
     >
       <div className='p-5 bg-white dark:bg-black rounded'>
         <p className='text-black dark:text-white'>
-          Create your personal portfolio website in 30 seconds with{" "}
+          Create your personal portfolio website in 5 minutes with{" "}
         </p>
         <div className='mt-2 flex justify-center'>
           <Link
@@ -34,13 +40,13 @@ const ShoveeModal = () => {
         </div>
         <div className='mt-5 flex justify-between'>
           <button
-            className='text-white dark:text-black px-3 py-2 bg-gray-800 rounded'
+            className='text-white px-3 py-2 bg-gray-800 rounded'
             onClick={() => setShowModal(false)}
           >
             Ask Me Later
           </button>
           <Link
-            className='text-white dark:text-black px-3 py-2 bg-blue-600 rounded'
+            className='text-white px-3 py-2 bg-blue-600 rounded'
             href='https://shovee.com'
             target='_blank'
           >
